@@ -1,14 +1,5 @@
 (TeX-add-style-hook "hw1"
  (lambda ()
-    (LaTeX-add-labels
-     "uncommute"
-     "commute"
-     "uncommutemult"
-     "commutemult"
-     "addunassoc"
-     "addassoc"
-     "unassoc"
-     "assoc")
     (TeX-add-symbols
      "tab"
      "gap")
@@ -19,10 +10,13 @@
      "appendix"
      "microtype"
      "siunitx"
+     "amssymb"
      "url"
      "multirow"
      "mathtools"
+     "stmaryrd"
      "amsfonts"
+     "gauss"
      "amsmath"
      "graphicx"
      "enumerate"
