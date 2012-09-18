@@ -1,0 +1,242 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{siunitx}
+\usepackage{url}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{appendix}
+\usepackage{verbatim}
+\pagenumbering{Roman}
+% Extra Commands
+\newcommand{\tab}{\hspace*{5em}}
+\newcommand{\gap}{\vspace*{0.25cm}}
+
+% Formatting
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{fancyhdr}
+
+% Heading stuffs
+% \pagestyle{plain}
+\thispagestyle{fancy}
+\fancyhf{}
+\lhead{Chris Curro \\ September  4, 2012} 
+\chead{MA326 \\ Linear Algebra}
+\rhead[RE,RO]{HW \# 1 \\ Prof. Mintchev }
+\cfoot[RO,RE]{\thepage}  %Page # for footer
+% This should return the format
+% Name         Course #        Assignment #
+% Date         Course name     Prof. 
+% -------------------------------------------
+\begin{document}
+\gap
+\begin{spacing}{1.5}
+  \begin{enumerate}
+\item
+  Show that if $p$ is a prime integer then $\mathbb{Z}_p$ is a field.
+\paragraph{}
+Suppose $d \in \mathbb{N}$ and $p \in \mathbb{Z}_p$ then $\exists{}! \, q,
+r \in \mathbb{Z}$ and $0 \leq r \leq d -1$ such that $a = p \times q +
+r$.  
+
+\newpage{}
+\item
+  Show that $\mathbb{Q}\left[\sqrt{2}\,\right]$ is a field assuming that
+  $\mathbb{Q}$ and $\mathbb{R}$ are fields. 
+\begin{equation}
+\mathbb{Q}\left[\sqrt{2}\,\right]=\left\{a +b\sqrt{2} \;\middle|\; a, b \in
+\mathbb{Q}\right\}
+\end{equation}
+\begin{enumerate}[(F 1)]
+\item $ \forall \, a, b \in \mathbb{F},\, a+b = b+a$ and $a\times b = b
+  \times a$\\
+For the addition statement:
+\begin{equation}
+\left(a + b\sqrt{2}\right) + \left(c+d\sqrt{2}\right)
+\end{equation}
+\begin{equation}\label{uncommute}
+\left(a + c\right) + \left(b + d\right)\sqrt{2}
+\end{equation}
+
+For the commuted addition:
+\begin{equation}
+\left(c + d\sqrt{2}\right) + \left(a+b\sqrt{2}\right)
+\end{equation}
+\begin{equation}\label{commute}
+\left(c + a\right) + \left(d + b\right)\sqrt{2}
+\end{equation}
+Because $a,c,d,b \in \mathbb{Q}$, which is a field, expression
+\ref{commute} can be rewritten as:
+\begin{equation}
+\left(a + c\right) + \left(b + d\right)\sqrt{2}
+\end{equation}
+which is the same as expression \ref{uncommute}. Therefore
+$\mathbb{Q}\left[\sqrt{2}\,\right]$ satisfies the additive part of axiom (F 1) because
+$\left(a + c\right),\left(b + d\right) \in \mathbb{Q}$\\
+For the multiplication statement from the axiom:
+\begin{equation}\label{uncommutemult}
+\left(a+b\sqrt{2}\right) \times \left(c+d\sqrt{2}\right)
+\end{equation}
+\begin{equation}
+\left(ac + 2bd\right) + \left(ad + bc\right)\sqrt{2}
+\end{equation}
+For the commuted version:
+\begin{equation}
+\left(c+d\sqrt{2}\right) \times \left(a+b\sqrt{2}\right)
+\end{equation}
+\begin{equation}\label{commutemult}
+\left(ca + 2db\right) + \left(cb + da\right)\sqrt{2}
+\end{equation}
+Because $c,a,d,b \in \mathbb{Q}$, which is a field, expression
+\ref{commutemult} can be rewritten as:
+\begin{equation}
+\left(a+b\sqrt{2}\right) \times \left(c+d\sqrt{2}\right)
+\end{equation}
+which is the same as expression \ref{uncommutemult}.
+Therefore $\mathbb{Q}\left[\sqrt{2}\,\right]$ satisfies axiom (F 1) because
+$\left(ac + 2bd\right),\left(ad + bc\right) \in \mathbb{Q}$
+\item $\forall\; a,b,c \in \mathbb{F},\, a +\left(b+c\right) =
+  \left(a+b\right)+c$ and $a\times\left(b \times c\right) =
+  \left(a\times b\right)\times c$
+
+For addition:
+\begin{equation}
+\left(a + b\sqrt{2}\right) + \left[\left(c + d\sqrt{2}\right)+ \left(e
+    + f \sqrt{2}\right)\right]
+\end{equation}
+\begin{equation}
+\left(a + b\sqrt{2}\right) + \left(\left(c + e\right) + \left( d + f\right)\sqrt{2}\right)
+\end{equation}
+\begin{equation}\label{addunassoc}
+\left(a + c + e\right) + \left(b + d + f\right)\sqrt{2}
+\end{equation}
+
+\begin{equation}
+\left[\left(a b\sqrt{2}\right) + \left(c + d\sqrt{2}\right)\right] +
+\left(e + f\sqrt{2}\right)
+\end{equation}
+\begin{equation}
+\left(\left(a+c\right)+\left(b+d\right)\sqrt{2}\right)+\left(e+f\sqrt{2}\right)
+\end{equation}
+\begin{equation}\label{addassoc}
+\left(a + c + e\right) + \left(b + d + f\right)\sqrt{2}
+\end{equation}
+
+The equality of expressions \ref{addunassoc} and \ref{addassoc} prove
+the associativity of addition for the set
+$\mathbb{Q}\left[\sqrt{2}\,\right]$ as $\left(a + c +e\right), \left(b
++ d + f\right) \in \mathbb{Q}$
+
+For multiplication:
+\begin{equation}
+\left(a+b\sqrt{2}\right)\left[\left(c+d\sqrt{2}\right)\left(e+\sqrt{2}\right)\right]
+\end{equation}
+\begin{equation}
+\left(a+b\sqrt{2}\right)\left(ce +cf\sqrt{2} + ed\sqrt{2} + 2df\right)
+\end{equation}
+\begin{equation}\label{unassoc}
+\left(ace + 2\left(adf + bcf + bed\right)\right) + \left(acf + bce + aed\right)\sqrt{2}
+\end{equation}
+
+
+\begin{equation}
+\left[\left(a + b\sqrt{2}\right)\left(c + d\sqrt{2}\right)\right]\left(e+f\sqrt{2}\right)
+\end{equation}
+\begin{equation}
+\left(ac + ad\sqrt{2} + bc\sqrt{2}\right + 2bd)\left(e + f\sqrt{2}\right)
+\end{equation}
+\begin{equation}\label{assoc}
+\left(ace + 2\left(bde + adf + bcf\right)\right) + \left(acf + ade + bce\right)\sqrt{2}
+\end{equation}
+Because $a,b,c,d,e,f \in \mathbb{Q}$ by the law of associativity (for $\mathbb{Q}$)
+expression \ref{assoc} can be rewritten as:
+\begin{equation}
+\left(ace + 2\left(adf + bcf + bed\right)\right) + \left(acf + bce + aed\right)\sqrt{2}
+\end{equation}
+which is the same as expression \ref{unassoc} therefore proving the
+associativity axiom for multiplication  for
+$\mathbb{Q}\left[\sqrt{2}\,\right]$ as $\left(ace + 2\left(adf + bcf +
+    bed\right)\right), \left(acf + bce + aed\right) \in \mathbb{Q}$
+
+\item $\exists\; 0 \in \mathbb{F}$ such that $ 0 + a = a + 0 =
+  a,\;\forall\, a \in \mathbb{F}$ and $\exists\; 1 \in \mathbb{F}$ such
+  that $1\times a = a \times 1 = a,\;\forall, a \in \mathbb{F}$
+\\
+For the additive identity:
+\begin{equation}
+\left(a + b\sqrt{2}\right) + \left(0 + 0\sqrt{2}\right)= a + b\sqrt{2}
+\end{equation}
+Therefore $\left(0 + 0\sqrt{2}\,\right) \in
+\mathbb{Q}\left[\sqrt{2}\,\right]$ is the additive identity because $0 \in \mathbb{Q}$
+\\
+For the multiplicative identity:
+\begin{equation}
+\left(a+b\sqrt{2}\right) + \left(1 +0\sqrt{2}\right) = a + b\sqrt{2}
+\end{equation}
+Therefore $\left(1 + 0\sqrt{2}\,\right) \in
+\mathbb{Q}\left[\sqrt{2}\,\right]$ is multiplicative identity because
+$0,1 \in \mathbb{Q}$
+\item $\forall\; a \in \mathbb{F}\; \exists\; b \in \mathbb{F}$ such that
+$a+b=b+a=0$ and $ \forall\; a \in  \mathbb{F}\; \exists\; b \in
+\mathbb{F}$ such that $a \times c = c\times a = 0$
+\\
+For the additive inverse:
+\begin{equation}
+\left(a+b\sqrt{2}\right)+\left(\left(-a\right) + \left(-b\right)\sqrt{2}\right)=0
+\end{equation}
+Therefore $\left(\left(-a\right) + \left(-b\right)\sqrt{2}\,\right)\in \mathbb{Q}\left[\sqrt{2}\,\right]$ is
+the additive inverse of $\left(a+b\sqrt{2}\right)$ because $(-a),(-b)
+\in \mathbb{Q}$.\\
+For the multiplicative inverse:
+\begin{equation}
+\left(a+b\sqrt{2}\right)\times\frac{1}{a+b\sqrt{2}}
+\end{equation}
+\begin{equation}
+\left(a+b\sqrt{2}\right)\times\frac{a-b\sqrt{2}}{a^2+b^2 \sqrt{2}}
+\end{equation}
+\begin{equation}
+\left(a+b\sqrt{2}\right)\times\left[\frac{a}{a^2+2b^2}+\left(\frac{-b}{a^2+2b^2}\right)\sqrt{2}\right]=1
+\end{equation}
+Therefore
+$\left[\frac{a}{a^2+2b^2}+\left(\frac{-b}{a^2+2b^2}\right)\sqrt{2}\,\right]
+\in \mathbb{Q}\left[\sqrt{2}\,\right]$ is the multiplicative inverse
+because $\left(\frac{a}{a^2+2b^2}\right),
+\left(\frac{-b}{a^2+2b^2}\right) \in \mathbb{Q}$ and
+$\mathbb{Q}\left[\sqrt{2}\,\right]$ satisfies the axiom.
+\item $\forall\; a, b, c \in \mathbb{F},\; a\times(b+c) = a\times b + a
+  \times c$
+\begin{equation}
+\left(a+b\sqrt{2}\right)\times\left[\left(c+d\sqrt{2}\right)+\left(e+f\sqrt{2}\right)\right]
+\end{equation}
+\begin{equation}
+ac +ad\sqrt{2} +ae +af\sqrt{2} + bc\sqrt{2} +2bd +eb\sqrt{2} +2bf
+\end{equation}
+\begin{equation}
+\left(ac +ae +2bd + 2bf\right) + \left(ad +af + bc +eb \right)\sqrt{2}
+\end{equation}
+
+\begin{equation}
+\left(a+b\sqrt{2}\right)\left(c+d\sqrt{2}\right)+\left(a+b\sqrt{2}\right)\left(e+f\sqrt{2}\right)
+\end{equation}
+\begin{equation}
+ac + ad\sqrt{2} + bc\sqrt{2} + 2bd + ae +af\sqrt{2} + be\sqrt{2} + 2bf
+\end{equation}
+\begin{equation}
+\left(ac + ae +2bd +2bf\right) + \left(ad + af + bc + eb\right)\sqrt{2}
+\end{equation}
+Therefore $\mathbb{Q}\left[\sqrt{2}\,\right]$ satisfies the
+axiom. Furthermore $\mathbb{Q}\left[\sqrt{2}\,\right]$ is a field.
+
+\end{enumerate}
+\end{enumerate}
+\end{spacing}
+\end{document}
+
