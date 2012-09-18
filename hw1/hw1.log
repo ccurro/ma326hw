@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.8.14)  17 SEP 2012 00:04
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.8.14)  18 SEP 2012 10:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -792,7 +792,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \f@ncyO@erf=\skip67
 \f@ncyO@olf=\skip68
 \f@ncyO@orf=\skip69
-) (./hw1.aux)
+)
+No file hw1.aux.
 \openout1 = `hw1.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
@@ -2278,8 +2279,8 @@ nonnegative, or you can use `\delimiter <delimiter code>'.
 
 [21] [22] (./hw1.aux) ) 
 Here is how much of TeX's memory you used:
- 14327 strings out of 495007
- 279150 string characters out of 3181084
+ 14325 strings out of 495007
+ 279134 string characters out of 3181084
  335747 words of memory out of 3000000
  17257 multiletter control sequences out of 15000+200000
  12322 words of font info for 55 fonts, out of 3000000 for 9000
