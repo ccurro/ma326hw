@@ -32,7 +32,7 @@
 % \pagestyle{plain}
 \thispagestyle{fancy}
 \fancyhf{}
-\lhead{Chris Curro, John Biswakarma, Yu-An Chen \\ September  20, 2012} 
+\lhead{Chris Curro, John Biswakarma, Yu-An Chen \\ September  21, 2012} 
 \chead{ \\ MA 326 Linear Algebra}
 \rhead[RE,RO]{HW \# 2 \\ Prof. Mintchev }
 \cfoot[RO,RE]{\thepage}  %Page # for footer
@@ -290,7 +290,137 @@ v_1 &\in \mathsf{V} & w_1 &\in \mathsf{W}\\
 \begin{equation}
 \therefore\; \times_\mathsf{Z} \colon F \times \mathsf{Z} \to \mathsf{Z}
 \end{equation}
+\newpage{}
+\begin{enumerate}[(VS 1)]
+\item $\forall\; x,y \in \mathsf{V}, \; x+y = y + x$
+\\
+Suppose $z_1,z_2 \in \mathsf{Z} $ where $z_1 = \left(v_1,w_1\right)$
+and $z_2 = \left(v_2,w_2\right)$\\
+Claim: $z_1 + z_2 = z_2 + z_1$
+\begin{align}
+z_1 +_\mathsf{Z} z_2 &= \left(v_1,w_1\right) +_\mathsf{Z} \left(v_1,w_2\right)\\
+&= \left(v_1 +_\mathsf{V} v_2, w_1 +_\mathsf{W} w_2 \right)\\
+&= \left(v_2 +_\mathsf{V} v_1, w_2 +_\mathsf{W} w_1 \right)\\
+&= \left(v_2,w_2\right) +_\mathsf{Z} \left(v_1,w_1\right)\\
+&= z_2 +_\mathsf{Z} z_1
+\end{align}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+\item $\forall\; x,y,z \in \mathsf{V}, \; \left(x + y\right) + z = x +
+  \left(y + z\right)$\\
+Suppose $z_1,z_2,z_3 \in \mathsf{Z} $ where $z_1 = \left(v_1,w_1\right)$
+, $z_2 = \left(v_2,w_2\right)$ and $z_3 = \left(v_3,w_3\right)$   \\
+Claim: $\left(z_1 +_\mathsf{Z} z_2\right) +_\mathsf{Z} z_3 =z_1
++_\mathsf{Z} \left(z_2 +_\mathsf{Z} z_3\right)$
+\begin{align}
+\left(z_1 +_\mathsf{Z} z_2\right) +_\mathsf{Z} z_3 & = \left(v_1
+  +_\mathsf{V} v_2, w_1 +_\mathsf{W} w_2\right) +_\mathsf{V}
+\left(v_3,w_3\right)\\
+&= \left(v_1 +_\mathsf{V} v_2 +_\mathsf{V} v_3, w_1 +_\mathsf{W} w_2 +_\mathsf{W} w_3\right)\\
+&= \left(v_1,w_1\right) +_\mathsf{Z}
+\left(v_2+_\mathsf{V}v_3,w_2+_\mathsf{W}w_3\right)\\
+&= z_1 +_\mathsf{Z} \left(z_2 +_\mathsf{Z} z_3\right)
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\item $\exists\; 0 \in \mathsf{V}$ such that $\forall\; x \in
+  \mathsf{V}, \;x + 0 = x$\\
+Suppose $z \in \mathsf{Z}$ where $z = \left(v,w\right)$ and $0_\mathsf{Z} = \left(0_\mathsf{V},0_\mathsf{W}\right)$\\
+Claim: $z +_\mathsf{Z} 0_\mathsf{Z} = z$
+\begin{align}
+z + 0_\mathsf{Z} &= \left(v,w\right) +_\mathsf{Z}
+\left(0_\mathsf{V},0_\mathsf{W}\right)\\
+&= \left(v+_\mathsf{V}0_\mathsf{V},w+_\mathsf{W}0_\mathsf{W}\right)\\
+&= \left(v,w\right)\\
+&= z
+\end{align}
+\newpage{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item $\forall\; x \in \mathsf{V}\; \exists\; y \in \mathsf{V}$ such that
+  $x + y =0$\\
+Suppose $z_1,z_2 \in \mathsf{Z}$ where $z_1 = \left(v,w\right)$ and
+$z_2 = \left(-v,-w\right)$\\
+Claim: $z_1 +_\mathsf{Z} z_2 = 0_\mathsf{Z}$
+\begin{align}
+z_1 +_\mathsf{Z} z_2 &= \left(v,w\right) +_\mathsf{Z}
+\left(-v,-w\right)\\
+&= \left(v +_\mathsf{V} \left(-v\right), w +_\mathsf{W}
+  \left(-w\right)\right)\\
+&=\left(0_\mathsf{V},0_\mathsf{W}\right)\\
+&=0_\mathsf{Z}
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item $\forall\; x \in \mathsf{V}, 1\times x = x$
+Suppose $z \in \mathsf{Z}$ where $z = \left(v,w\right)$\\
+Claim: $1 \times_\mathsf{Z} z = z$
+\begin{align}
+1 \times_\mathsf{Z} z &= 1 \times_\mathsf{Z} \left(v,w\right)\\
+&= \left(1\times_\mathsf{V}v,1\times_\mathsf{W}w\right)\\
+&= \left(v,w\right)\\
+&= z
+\end{align}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item $\forall\; a,b \in F, \forall\; x \in \mathsf{V}, \;
+  \left(ab\right)x = a\left(bx\right)$\\
+Suppose $z\in \mathsf{Z}$ where $z = \left(v,w\right)$ and $a,b \in
+F$\\
+Claim: $\left(a\times_Fb\right)\times_\mathsf{Z}z = a\times_\mathsf{Z}\left(b\times_\mathsf{Z}z\right)$
+\begin{align}
+\left(a\times_Fb\right)\times_\mathsf{Z}z &= \left(ab\times_\mathsf{V}v,ab\times_\mathsf{W}w\right)\\
+&= a\times_\mathsf{Z}\left(b\times_\mathsf{V}v,b\times_\mathsf{W}w\right)\\
+&= a\times_\mathsf{Z}\left(b\times_\mathsf{Z}z\right)
+\end{align}
+\newpage{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item $\forall\; a \in F, \forall\; x,y \in \mathsf{V}, \;
+  a\left(x+y\right) = ax + ay$\\
+Suppose $z_1,z_2 \in \mathsf{Z}$ where $z_1=\left(v_1,w_1\right),\;
+z_2=\left(v_2,w_2\right)$ and $a \in F\right)$\\
+Claim: $a\times_\mathsf{Z}\left(z_1 +_\mathsf{Z} z_2\right) =
+a\times_\mathsf{Z}z_1 +_\mathsf{Z} a\times_\mathsf{Z}z_2$
+\begin{align}
+a\times_\mathsf{Z}\left(z_1 +_\mathsf{Z} z_2\right) &=
+a\times_\mathsf{Z}\left(v_1+v_2,w_1+w_q\right)\\
+&=
+\big(a\times_\mathsf{V}\left(v_1+v_2\right),a\times_\mathsf{W}\left(w_1+w_2\right)\big)\\
+&= \big(a\times_\mathsf{W}v_1 +_\mathsf{W}
+a\times_\mathsf{W}v_2,a\times_\mathsf{W}w_1 +_\mathsf{W}
+a\times_\mathsf{W}w_2\big)\\
+&= \left(a\times_\mathsf{V}v_1,a\times_\mathsf{W}w_1\right)
++_\mathsf{Z}
+\left(a\times_\mathsf{V}v_2,a\times_\mathsf{W}w_2\right)\\
+&= a\times_\mathsf{Z}z_1 +_\mathsf{Z} a\times_\mathsf{Z}z_2
+\end{align}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\item$\forall\; a,b \in F, \forall\; x \in \mathsf{V}, \;
+  \left(a+b\right)x = ax + bx$\\
+Suppose $z\in \mathsf{Z}$ where $z=\left(v,w\right)$ and $a,b\in F$\\
+Claim: $\left(a +_F b\right)\times_\mathsf{Z} z = a\times_\mathsf{Z}z
++_\mathsf{Z} b\times_\mathsf{Z}z$
+\begin{align}
+\left(a +_F b\right)\times_\mathsf{Z} z &= \left(a +_F
+  b\right)\times_\mathsf{Z} \left(v,w\right)\\
+&=
+\left(\left(a+_Fb\right)\times_\mathsf{V}v,\left(a+_Fb\right)\times_\mathsf{W}w\right)\\
+&=\left(a\times_\mathsf{V}v +_\mathsf{V}
+  b\times_\mathsf{V}v,a\times_\mathsf{W}w +_\mathsf{W}
+  b\times_\mathsf{W}w\right)\\
+&= \left(a\times_\mathsf{V}v,a\times_\mathsf{W}w\right) +_\mathsf{Z}
+\left(b\times_\mathsf{V}v,b\times_\mathsf{W}w\right)\\
+&= a\times_\mathsf{Z}z +_\mathsf{Z} b\times_\mathsf{Z}z
+\end{align}
+
+
+
+
+
+
+
+
+\end{enumerate}
 \end{enumerate}
 \newpage{}
 \subsection{}
@@ -775,9 +905,25 @@ Claim: \vspace{-1.5em} \[\mathsf{P}(F) =\big\{\left(c_nx^n + c_{n-1}x^{n-1} + \c
 \newpage{}
 \subsection{}
 \begin{enumerate}
+A system of linear equations such as 
+\begin{align*}
+x_1 + 3x_2 + 3x_3 = 4\\
+x_1 + 4x_2 + x_3 = 5\\
+3x_1 + x_2 + 5x_3 = 2
+\end{align*}
+Can be rewritten as an augmented matrix, with the left most columns
+representing the coefficients of the variables, and the right hand
+column representing the right hand side of the linear equations.
+\[+
+\begin{pmatrix}
+1 & 3 & 3 & 4\\
+1 & 4 & 1 & 5\\
+3 & 1 & 5 & 2
+\end{pmatrix}
+\]
 \setcounter{enumi}{1}
-\item \hfill\\
-\vspace{-1.5em}
+\item Solve the following systems of linear equations, if possible.
+%\vspace{-1.5em}
 \begin{enumerate}[(a)]
 \item \hfill \\
 %\begin{align}
@@ -853,7 +999,7 @@ $\rightarrow$
 \end{gmatrix}
 \paragraph{}
 Inconsistent; not solvable.
-\newpage{}
+%\newpage{}
 \item\hfill\\
 \begin{gmatrix}[p]
 1 & 2 & 2 & 0 & 2\\
@@ -881,6 +1027,7 @@ x_2 &= 3s +4 \\
 x_3 &= s \\
 x_4 &= 2
 \end{align}
+\newpage{}
 \item\hfill\\
 \begin{gmatrix}[p]
 1 & 2 & -4 & -1 & 1 & 7\\
@@ -915,7 +1062,7 @@ x_2 &= -3s + 2t + 3\\
 x_3 &= s\\
 x_4 &= t
 \end{align}
-\newpage{}
+%\newpage{}
 \item\hfill\\
 \begin{gmatrix}[p]
 1 & 2 & 6 & -1 \\
@@ -946,6 +1093,7 @@ x_2 &= 4\\
 x_3 &= -2
 \end{align}
 \end{enumerate}
+\newpage{}
 \setcounter{enumi}{3}
 \item\hfill\\
 \vspace{-2.5em}
@@ -1093,7 +1241,7 @@ $\rightarrow$
 \end{gmatrix}
 \paragraph{}
 Inconsistent; no linear combination.
-\newpage{}
+%\newpage{}
 \item $6x^3 - 3x^2 +x +2 \? c_1\left(x^3-x^2 + 2x +3\right) +
   c_2\left(2x^3 -3x+1\right)$
 \begin{align}
@@ -1124,6 +1272,7 @@ $\rightarrow$
 \paragraph{}
 Inconsistent; no linear combinations.
 \end{enumerate}
+\newpage{}
 \setcounter{enumi}{10}
 \item Prove that $\text{span}\left(\left\{x\right\}\right) = \left\{ax
     \colon a \in F\right\}$ for any vector $x$ is a vector

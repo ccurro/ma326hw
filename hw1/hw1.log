@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.8.14)  19 SEP 2012 16:50
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.8.14)  19 SEP 2012 19:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1114,11 +1114,17 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[3] [4] [5]
-./hw1.tex:301: Missing \right. inserted.
+[3] [4] [5] [6] [7]
+./hw1.tex:381: Extra \right.
+l.381 ...\left(v_2,w_2\right)$ and $a \in F\right)
+                                                  $\\
+I'm ignoring a \right that had no matching \left.
+
+[8]
+./hw1.tex:431: Missing \right. inserted.
 <inserted text> 
                 \right .
-l.301 Claim: $A+A^t = \left(A + A^t)^t$
+l.431 Claim: $A+A^t = \left(A + A^t)^t$
                                        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1126,9 +1132,9 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[6]
-./hw1.tex:371: Misplaced alignment tab character &.
-l.371 ...right) + \left(b_1,b_2,\dots,b_n\right) &
+[9]
+./hw1.tex:501: Misplaced alignment tab character &.
+l.501 ...right) + \left(b_1,b_2,\dots,b_n\right) &
                                                   =
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1137,16 +1143,16 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[7]
-./hw1.tex:402: Extra \right.
-l.402 \mathsf{W}_2\right)
+[10]
+./hw1.tex:532: Extra \right.
+l.532 \mathsf{W}_2\right)
                          $
 I'm ignoring a \right that had no matching \left.
 
-./hw1.tex:404: Missing delimiter (. inserted).
+./hw1.tex:534: Missing delimiter (. inserted).
 <to be read again> 
                    +
-l.404 \left(a_1,a_2,\dots,a_n\right +
+l.534 \left(a_1,a_2,\dots,a_n\right +
                                       \left(b_1,b_2,\dots,b_n\right) = \left...
 I was expecting to see something like `(' or `\{' or
 `\}' here. If you typed, e.g., `{' instead of `\{', you
@@ -1155,23 +1161,23 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-[8]
+[11]
 
-./hw1.tex:444: LaTeX Error: There's no line here to end.
+./hw1.tex:574: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.444 C
+l.574 C
        laim: $\mathsf{W}_1 + \mathsf{W}_2 \subseteq \mathsf{V}$
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[9]
-./hw1.tex:486: Undefined control sequence.
-l.486 Suppose $c \in F$ and $z \in \mathfs
+[12]
+./hw1.tex:616: Undefined control sequence.
+l.616 Suppose $c \in F$ and $z \in \mathfs
                                           {W}_1 + \mathsf{W}_2$ such that $z
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1179,107 +1185,94 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[10]
-Overfull \hbox (19.68616pt too wide) in paragraph at lines 543--553
-\OT1/cmr/m/n/12 (-20) Claim: $[] + [] =
- []
-
-[11]
-./hw1.tex:589: Missing \right. inserted.
-<inserted text> 
-                \right .
-l.589 \end{multline}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:589: Extra \right.
-<argument> ...^3 + \left (a_1+b_1\right )x\right )
-                                                   
-l.589 \end{multline}
-                    
-I'm ignoring a \right that had no matching \left.
-
-./hw1.tex:589: Missing \right. inserted.
-<inserted text> 
-                \right .
-l.589 \end{multline}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:589: Extra \right.
-<argument> ...^3 + \left (a_1+b_1\right )x\right )
-                                                   
-l.589 \end{multline}
-                    
-I'm ignoring a \right that had no matching \left.
-
-[12]
-Overfull \hbox (13.00912pt too wide) in paragraph at lines 617--627
-\OT1/cmr/m/n/12 (-20) Claim: $[] + [] =
- []
-
-./hw1.tex:663: Missing \right. inserted.
-<inserted text> 
-                \right .
-l.663 \end{multline}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:663: Extra \right.
-<argument> ...x^2 + \left (a_0+b_0\right )\right )
-                                                   
-l.663 \end{multline}
-                    
-I'm ignoring a \right that had no matching \left.
-
-./hw1.tex:663: Missing \right. inserted.
-<inserted text> 
-                \right .
-l.663 \end{multline}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:663: Extra \right.
-<argument> ...x^2 + \left (a_0+b_0\right )\right )
-                                                   
-l.663 \end{multline}
-                    
-I'm ignoring a \right that had no matching \left.
-
 [13]
-./hw1.tex:692: Missing delimiter (. inserted).
-<to be read again> 
-                   \mskip 
-l.692 ...f{W}_2$ $2\nmid \left(n+1)\right \implies
-                                                   2
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
+Overfull \hbox (19.68616pt too wide) in paragraph at lines 673--683
+\OT1/cmr/m/n/12 (-20) Claim: $[] + [] =
+ []
 
 [14]
-./hw1.tex:706: Missing delimiter (. inserted).
+./hw1.tex:719: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.719 \end{multline}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:719: Extra \right.
+<argument> ...^3 + \left (a_1+b_1\right )x\right )
+                                                   
+l.719 \end{multline}
+                    
+I'm ignoring a \right that had no matching \left.
+
+./hw1.tex:719: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.719 \end{multline}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:719: Extra \right.
+<argument> ...^3 + \left (a_1+b_1\right )x\right )
+                                                   
+l.719 \end{multline}
+                    
+I'm ignoring a \right that had no matching \left.
+
+[15]
+Overfull \hbox (13.00912pt too wide) in paragraph at lines 747--757
+\OT1/cmr/m/n/12 (-20) Claim: $[] + [] =
+ []
+
+./hw1.tex:793: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.793 \end{multline}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:793: Extra \right.
+<argument> ...x^2 + \left (a_0+b_0\right )\right )
+                                                   
+l.793 \end{multline}
+                    
+I'm ignoring a \right that had no matching \left.
+
+./hw1.tex:793: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.793 \end{multline}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:793: Extra \right.
+<argument> ...x^2 + \left (a_0+b_0\right )\right )
+                                                   
+l.793 \end{multline}
+                    
+I'm ignoring a \right that had no matching \left.
+
+[16]
+./hw1.tex:822: Missing delimiter (. inserted).
 <to be read again> 
                    \mskip 
-l.706 ...f $\mathsf{W}_1$ $2\nmid n\right \implies
+l.822 ...f{W}_2$ $2\nmid \left(n+1)\right \implies
                                                    2
 I was expecting to see something like `(' or `\{' or
 `\}' here. If you typed, e.g., `{' instead of `\{', you
@@ -1288,17 +1281,30 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-./hw1.tex:706: Extra \right.
+[17]
+./hw1.tex:836: Missing delimiter (. inserted).
 <to be read again> 
                    \mskip 
-l.706 ...f $\mathsf{W}_1$ $2\nmid n\right \implies
+l.836 ...f $\mathsf{W}_1$ $2\nmid n\right \implies
+                                                   2
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+./hw1.tex:836: Extra \right.
+<to be read again> 
+                   \mskip 
+l.836 ...f $\mathsf{W}_1$ $2\nmid n\right \implies
                                                    2
 I'm ignoring a \right that had no matching \left.
 
-./hw1.tex:726: Undefined control sequence.
+./hw1.tex:856: Undefined control sequence.
 <argument> ...W}_2\\ 0_{\mathsf {W}_1} = 0_\matsf 
                                                   {F} = 0_{\mathsf {W}_2} \\...
-l.726 \end{align}
+l.856 \end{align}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1306,10 +1312,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./hw1.tex:726: Undefined control sequence.
+./hw1.tex:856: Undefined control sequence.
 <argument> ...W}_2\\ 0_{\mathsf {W}_1} = 0_\matsf 
                                                   {F} = 0_{\mathsf {W}_2} \\...
-l.726 \end{align}
+l.856 \end{align}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1317,8 +1323,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./hw1.tex:740: Undefined control sequence.
-l.740 ...m: $\mathsf{P}(F) \subseteq \mathsf{W}_\1
+./hw1.tex:870: Undefined control sequence.
+l.870 ...m: $\mathsf{P}(F) \subseteq \mathsf{W}_\1
                                                    + \mathsf{W}_2$\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1326,32 +1332,80 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[15] [16]
+[18] [19]
 
-./hw1.tex:796: Package gauss Error:  Row index out of bounds:  3>2.
+./hw1.tex:925: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.925 \item S
+             olve the following systems of linear equations, if possible.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./hw1.tex:925: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.925 \item S
+             olve the following systems of linear equations, if possible.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./hw1.tex:925: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.925 \item S
+             olve the following systems of linear equations, if possible.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./hw1.tex:928: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.928 \item \hfill
+                   \\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./hw1.tex:942: Package gauss Error:  Row index out of bounds:  3>2.
 
 See the gauss package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.796 \add[-1/4]{1}{3}
+l.942 \add[-1/4]{1}{3}
                       
 An index of an operation points to a  row that does not exist.
 Note that the index of the  bottom row is 0 while the index of the  top row is 
 <number of  rows- 1> .
 
-./hw1.tex:798: Missing $ inserted.
+./hw1.tex:944: Missing $ inserted.
 <inserted text> 
                 $
-l.798 \end{gmatrix}
+l.944 \end{gmatrix}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:798: Missing $ inserted.
+./hw1.tex:944: Missing $ inserted.
 <inserted text> 
                 $
-l.798 \end{gmatrix}
+l.944 \end{gmatrix}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1359,18 +1413,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:798: Missing $ inserted.
+./hw1.tex:944: Missing $ inserted.
 <inserted text> 
                 $
-l.798 \end{gmatrix}
+l.944 \end{gmatrix}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:798: Missing $ inserted.
+./hw1.tex:944: Missing $ inserted.
 <inserted text> 
                 $
-l.798 \end{gmatrix}
+l.944 \end{gmatrix}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1378,18 +1432,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:804: Missing $ inserted.
+./hw1.tex:950: Missing $ inserted.
 <inserted text> 
                 $
-l.804 \end{gmatrix}
+l.950 \end{gmatrix}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:804: Missing $ inserted.
+./hw1.tex:950: Missing $ inserted.
 <inserted text> 
                 $
-l.804 \end{gmatrix}
+l.950 \end{gmatrix}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1397,18 +1451,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:804: Missing $ inserted.
+./hw1.tex:950: Missing $ inserted.
 <inserted text> 
                 $
-l.804 \end{gmatrix}
+l.950 \end{gmatrix}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:804: Missing $ inserted.
+./hw1.tex:950: Missing $ inserted.
 <inserted text> 
                 $
-l.804 \end{gmatrix}
+l.950 \end{gmatrix}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1416,18 +1470,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:826: Missing $ inserted.
+./hw1.tex:972: Missing $ inserted.
 <inserted text> 
                 $
-l.826 \end{gmatrix}
+l.972 \end{gmatrix}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:826: Missing $ inserted.
+./hw1.tex:972: Missing $ inserted.
 <inserted text> 
                 $
-l.826 \end{gmatrix}
+l.972 \end{gmatrix}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1435,420 +1489,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:826: Missing $ inserted.
+./hw1.tex:972: Missing $ inserted.
 <inserted text> 
                 $
-l.826 \end{gmatrix}
+l.972 \end{gmatrix}
                    
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:826: Missing $ inserted.
+./hw1.tex:972: Missing $ inserted.
 <inserted text> 
                 $
-l.826 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:832: Missing $ inserted.
-<inserted text> 
-                $
-l.832 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:832: Missing $ inserted.
-<inserted text> 
-                $
-l.832 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:832: Missing $ inserted.
-<inserted text> 
-                $
-l.832 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:832: Missing $ inserted.
-<inserted text> 
-                $
-l.832 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:847: Missing $ inserted.
-<inserted text> 
-                $
-l.847 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:847: Missing $ inserted.
-<inserted text> 
-                $
-l.847 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:847: Missing $ inserted.
-<inserted text> 
-                $
-l.847 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:847: Missing $ inserted.
-<inserted text> 
-                $
-l.847 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:853: Missing $ inserted.
-<inserted text> 
-                $
-l.853 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:853: Missing $ inserted.
-<inserted text> 
-                $
-l.853 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:853: Missing $ inserted.
-<inserted text> 
-                $
-l.853 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:853: Missing $ inserted.
-<inserted text> 
-                $
-l.853 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[17]
-./hw1.tex:869: Missing $ inserted.
-<inserted text> 
-                $
-l.869 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:869: Missing $ inserted.
-<inserted text> 
-                $
-l.869 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:869: Missing $ inserted.
-<inserted text> 
-                $
-l.869 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:869: Missing $ inserted.
-<inserted text> 
-                $
-l.869 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:875: Missing $ inserted.
-<inserted text> 
-                $
-l.875 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:875: Missing $ inserted.
-<inserted text> 
-                $
-l.875 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:875: Missing $ inserted.
-<inserted text> 
-                $
-l.875 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:875: Missing $ inserted.
-<inserted text> 
-                $
-l.875 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:902: Missing $ inserted.
-<inserted text> 
-                $
-l.902 \end{gmatrix}
-                   \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:902: Missing $ inserted.
-<inserted text> 
-                $
-l.902 \end{gmatrix}
-                   \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:902: Missing $ inserted.
-<inserted text> 
-                $
-l.902 \end{gmatrix}
-                   \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:902: Missing $ inserted.
-<inserted text> 
-                $
-l.902 \end{gmatrix}
-                   \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:909: Missing $ inserted.
-<inserted text> 
-                $
-l.909 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:909: Missing $ inserted.
-<inserted text> 
-                $
-l.909 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:909: Missing $ inserted.
-<inserted text> 
-                $
-l.909 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:909: Missing $ inserted.
-<inserted text> 
-                $
-l.909 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (19.32819pt too wide) in paragraph at lines 884--910
-[]$[][]$[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 884--910
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 884--910
-
- []
-
-[18]
-./hw1.tex:936: Missing $ inserted.
-<inserted text> 
-                $
-l.936 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:936: Missing $ inserted.
-<inserted text> 
-                $
-l.936 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:936: Missing $ inserted.
-<inserted text> 
-                $
-l.936 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:936: Missing $ inserted.
-<inserted text> 
-                $
-l.936 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:942: Missing $ inserted.
-<inserted text> 
-                $
-l.942 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:942: Missing $ inserted.
-<inserted text> 
-                $
-l.942 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:942: Missing $ inserted.
-<inserted text> 
-                $
-l.942 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:942: Missing $ inserted.
-<inserted text> 
-                $
-l.942 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (3.87pt too wide) in paragraph at lines 919--943
-[]$[][]$[]$ $\OMS/cmsy/m/n/12 !$ $[]$[][]$[]$ 
- []
-
-./hw1.tex:973: Missing $ inserted.
-<inserted text> 
-                $
-l.973 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:973: Missing $ inserted.
-<inserted text> 
-                $
-l.973 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:973: Missing $ inserted.
-<inserted text> 
-                $
-l.973 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:973: Missing $ inserted.
-<inserted text> 
-                $
-l.973 \end{gmatrix}
+l.972 \end{gmatrix}
                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1888,159 +1540,6 @@ you left one out. Proceed, with fingers crossed.
                 $
 l.978 \end{gmatrix}
                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[19]
-./hw1.tex:998: Missing $ inserted.
-<inserted text> 
-                $
-l.998 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:998: Missing $ inserted.
-<inserted text> 
-                $
-l.998 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:998: Missing $ inserted.
-<inserted text> 
-                $
-l.998 \end{gmatrix}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:998: Missing $ inserted.
-<inserted text> 
-                $
-l.998 \end{gmatrix}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:1005: Missing $ inserted.
-<inserted text> 
-                $
-l.1005 \end{gmatrix}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:1005: Missing $ inserted.
-<inserted text> 
-                $
-l.1005 \end{gmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:1005: Missing $ inserted.
-<inserted text> 
-                $
-l.1005 \end{gmatrix}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:1005: Missing $ inserted.
-<inserted text> 
-                $
-l.1005 \end{gmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:1026: Missing $ inserted.
-<inserted text> 
-                $
-l.1026 \end{gmatrix}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:1026: Missing $ inserted.
-<inserted text> 
-                $
-l.1026 \end{gmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:1026: Missing $ inserted.
-<inserted text> 
-                $
-l.1026 \end{gmatrix}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:1026: Missing $ inserted.
-<inserted text> 
-                $
-l.1026 \end{gmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:1033: Missing $ inserted.
-<inserted text> 
-                $
-l.1033 \end{gmatrix}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:1033: Missing $ inserted.
-<inserted text> 
-                $
-l.1033 \end{gmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:1033: Missing $ inserted.
-<inserted text> 
-                $
-l.1033 \end{gmatrix}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:1033: Missing $ inserted.
-<inserted text> 
-                $
-l.1033 \end{gmatrix}
-                    
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -2048,18 +1547,94 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 [20]
-./hw1.tex:1058: Missing $ inserted.
+./hw1.tex:993: Missing $ inserted.
 <inserted text> 
                 $
-l.1058 \end{gmatrix}
+l.993 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:993: Missing $ inserted.
+<inserted text> 
+                $
+l.993 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:993: Missing $ inserted.
+<inserted text> 
+                $
+l.993 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:993: Missing $ inserted.
+<inserted text> 
+                $
+l.993 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:999: Missing $ inserted.
+<inserted text> 
+                $
+l.999 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:999: Missing $ inserted.
+<inserted text> 
+                $
+l.999 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:999: Missing $ inserted.
+<inserted text> 
+                $
+l.999 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:999: Missing $ inserted.
+<inserted text> 
+                $
+l.999 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1015: Missing $ inserted.
+<inserted text> 
+                $
+l.1015 \end{gmatrix}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:1058: Missing $ inserted.
+./hw1.tex:1015: Missing $ inserted.
 <inserted text> 
                 $
-l.1058 \end{gmatrix}
+l.1015 \end{gmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2067,18 +1642,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:1058: Missing $ inserted.
+./hw1.tex:1015: Missing $ inserted.
 <inserted text> 
                 $
-l.1058 \end{gmatrix}
+l.1015 \end{gmatrix}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:1058: Missing $ inserted.
+./hw1.tex:1015: Missing $ inserted.
 <inserted text> 
                 $
-l.1058 \end{gmatrix}
+l.1015 \end{gmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2086,18 +1661,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:1063: Missing $ inserted.
+./hw1.tex:1021: Missing $ inserted.
 <inserted text> 
                 $
-l.1063 \end{gmatrix}
+l.1021 \end{gmatrix}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:1063: Missing $ inserted.
+./hw1.tex:1021: Missing $ inserted.
 <inserted text> 
                 $
-l.1063 \end{gmatrix}
+l.1021 \end{gmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2105,94 +1680,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:1063: Missing $ inserted.
+./hw1.tex:1021: Missing $ inserted.
 <inserted text> 
                 $
-l.1063 \end{gmatrix}
+l.1021 \end{gmatrix}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:1063: Missing $ inserted.
+./hw1.tex:1021: Missing $ inserted.
 <inserted text> 
                 $
-l.1063 \end{gmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:1086: Missing $ inserted.
-<inserted text> 
-                $
-l.1086 \end{gmatrix}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:1086: Missing $ inserted.
-<inserted text> 
-                $
-l.1086 \end{gmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:1086: Missing $ inserted.
-<inserted text> 
-                $
-l.1086 \end{gmatrix}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:1086: Missing $ inserted.
-<inserted text> 
-                $
-l.1086 \end{gmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:1093: Missing $ inserted.
-<inserted text> 
-                $
-l.1093 \end{gmatrix}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:1093: Missing $ inserted.
-<inserted text> 
-                $
-l.1093 \end{gmatrix}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-./hw1.tex:1093: Missing $ inserted.
-<inserted text> 
-                $
-l.1093 \end{gmatrix}
-                    
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./hw1.tex:1093: Missing $ inserted.
-<inserted text> 
-                $
-l.1093 \end{gmatrix}
+l.1021 \end{gmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2201,18 +1700,56 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 [21]
-./hw1.tex:1116: Missing $ inserted.
+./hw1.tex:1049: Missing $ inserted.
 <inserted text> 
                 $
-l.1116 \end{gmatrix}
+l.1049 \end{gmatrix}
+                    \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1049: Missing $ inserted.
+<inserted text> 
+                $
+l.1049 \end{gmatrix}
+                    \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1049: Missing $ inserted.
+<inserted text> 
+                $
+l.1049 \end{gmatrix}
+                    \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1049: Missing $ inserted.
+<inserted text> 
+                $
+l.1049 \end{gmatrix}
+                    \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1056: Missing $ inserted.
+<inserted text> 
+                $
+l.1056 \end{gmatrix}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:1116: Missing $ inserted.
+./hw1.tex:1056: Missing $ inserted.
 <inserted text> 
                 $
-l.1116 \end{gmatrix}
+l.1056 \end{gmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2220,18 +1757,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:1116: Missing $ inserted.
+./hw1.tex:1056: Missing $ inserted.
 <inserted text> 
                 $
-l.1116 \end{gmatrix}
+l.1056 \end{gmatrix}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:1116: Missing $ inserted.
+./hw1.tex:1056: Missing $ inserted.
 <inserted text> 
                 $
-l.1116 \end{gmatrix}
+l.1056 \end{gmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2239,18 +1776,33 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:1123: Missing $ inserted.
+
+Overfull \hbox (19.32819pt too wide) in paragraph at lines 1031--1057
+[]$[][]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1057
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1057
+
+ []
+
+./hw1.tex:1083: Missing $ inserted.
 <inserted text> 
                 $
-l.1123 \end{gmatrix}
+l.1083 \end{gmatrix}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:1123: Missing $ inserted.
+./hw1.tex:1083: Missing $ inserted.
 <inserted text> 
                 $
-l.1123 \end{gmatrix}
+l.1083 \end{gmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2258,18 +1810,18 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:1123: Missing $ inserted.
+./hw1.tex:1083: Missing $ inserted.
 <inserted text> 
                 $
-l.1123 \end{gmatrix}
+l.1083 \end{gmatrix}
                     
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./hw1.tex:1123: Missing $ inserted.
+./hw1.tex:1083: Missing $ inserted.
 <inserted text> 
                 $
-l.1123 \end{gmatrix}
+l.1083 \end{gmatrix}
                     
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2277,10 +1829,513 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./hw1.tex:1132: Undefined control sequence.
+./hw1.tex:1089: Missing $ inserted.
+<inserted text> 
+                $
+l.1089 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1089: Missing $ inserted.
+<inserted text> 
+                $
+l.1089 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1089: Missing $ inserted.
+<inserted text> 
+                $
+l.1089 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1089: Missing $ inserted.
+<inserted text> 
+                $
+l.1089 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (3.87pt too wide) in paragraph at lines 1066--1090
+[]$[][]$[]$ $\OMS/cmsy/m/n/12 !$ $[]$[][]$[]$ 
+ []
+
+[22]
+./hw1.tex:1121: Missing $ inserted.
+<inserted text> 
+                $
+l.1121 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1121: Missing $ inserted.
+<inserted text> 
+                $
+l.1121 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1121: Missing $ inserted.
+<inserted text> 
+                $
+l.1121 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1121: Missing $ inserted.
+<inserted text> 
+                $
+l.1121 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1126: Missing $ inserted.
+<inserted text> 
+                $
+l.1126 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1126: Missing $ inserted.
+<inserted text> 
+                $
+l.1126 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1126: Missing $ inserted.
+<inserted text> 
+                $
+l.1126 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1126: Missing $ inserted.
+<inserted text> 
+                $
+l.1126 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1146: Missing $ inserted.
+<inserted text> 
+                $
+l.1146 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1146: Missing $ inserted.
+<inserted text> 
+                $
+l.1146 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1146: Missing $ inserted.
+<inserted text> 
+                $
+l.1146 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1146: Missing $ inserted.
+<inserted text> 
+                $
+l.1146 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1153: Missing $ inserted.
+<inserted text> 
+                $
+l.1153 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1153: Missing $ inserted.
+<inserted text> 
+                $
+l.1153 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1153: Missing $ inserted.
+<inserted text> 
+                $
+l.1153 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1153: Missing $ inserted.
+<inserted text> 
+                $
+l.1153 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[23]
+./hw1.tex:1174: Missing $ inserted.
+<inserted text> 
+                $
+l.1174 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1174: Missing $ inserted.
+<inserted text> 
+                $
+l.1174 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1174: Missing $ inserted.
+<inserted text> 
+                $
+l.1174 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1174: Missing $ inserted.
+<inserted text> 
+                $
+l.1174 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1181: Missing $ inserted.
+<inserted text> 
+                $
+l.1181 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1181: Missing $ inserted.
+<inserted text> 
+                $
+l.1181 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1181: Missing $ inserted.
+<inserted text> 
+                $
+l.1181 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1181: Missing $ inserted.
+<inserted text> 
+                $
+l.1181 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1206: Missing $ inserted.
+<inserted text> 
+                $
+l.1206 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1206: Missing $ inserted.
+<inserted text> 
+                $
+l.1206 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1206: Missing $ inserted.
+<inserted text> 
+                $
+l.1206 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1206: Missing $ inserted.
+<inserted text> 
+                $
+l.1206 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1211: Missing $ inserted.
+<inserted text> 
+                $
+l.1211 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1211: Missing $ inserted.
+<inserted text> 
+                $
+l.1211 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1211: Missing $ inserted.
+<inserted text> 
+                $
+l.1211 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1211: Missing $ inserted.
+<inserted text> 
+                $
+l.1211 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[24]
+./hw1.tex:1234: Missing $ inserted.
+<inserted text> 
+                $
+l.1234 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1234: Missing $ inserted.
+<inserted text> 
+                $
+l.1234 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1234: Missing $ inserted.
+<inserted text> 
+                $
+l.1234 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1234: Missing $ inserted.
+<inserted text> 
+                $
+l.1234 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1241: Missing $ inserted.
+<inserted text> 
+                $
+l.1241 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1241: Missing $ inserted.
+<inserted text> 
+                $
+l.1241 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1241: Missing $ inserted.
+<inserted text> 
+                $
+l.1241 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1241: Missing $ inserted.
+<inserted text> 
+                $
+l.1241 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1264: Missing $ inserted.
+<inserted text> 
+                $
+l.1264 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1264: Missing $ inserted.
+<inserted text> 
+                $
+l.1264 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1264: Missing $ inserted.
+<inserted text> 
+                $
+l.1264 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1264: Missing $ inserted.
+<inserted text> 
+                $
+l.1264 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1271: Missing $ inserted.
+<inserted text> 
+                $
+l.1271 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1271: Missing $ inserted.
+<inserted text> 
+                $
+l.1271 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1271: Missing $ inserted.
+<inserted text> 
+                $
+l.1271 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1271: Missing $ inserted.
+<inserted text> 
+                $
+l.1271 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[25]
+./hw1.tex:1281: Undefined control sequence.
 <recently read> \mathf 
                        
-l.1132 Suppose $\mathf
+l.1281 Suppose $\mathf
                       {V}$ is a vector space.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2288,10 +2343,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./hw1.tex:1136: Missing delimiter (. inserted).
+./hw1.tex:1285: Missing delimiter (. inserted).
 <to be read again> 
                    $
-l.1136 ...\text{span}\left(\left\{x\right\}\right$
+l.1285 ...\text{span}\left(\left\{x\right\}\right$
                                                   
 I was expecting to see something like `(' or `\{' or
 `\}' here. If you typed, e.g., `{' instead of `\{', you
@@ -2300,15 +2355,15 @@ braces don't get unbalanced. Otherwise just proceed.
 Acceptable delimiters are characters whose \delcode is
 nonnegative, or you can use `\delimiter <delimiter code>'.
 
-[22] [23] (./hw1.aux) ) 
+[26] [27] (./hw1.aux) ) 
 Here is how much of TeX's memory you used:
  14327 strings out of 495007
  279150 string characters out of 3181084
- 335747 words of memory out of 3000000
+ 336747 words of memory out of 3000000
  17257 multiletter control sequences out of 15000+200000
  12322 words of font info for 55 fonts, out of 3000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,16n,43p,264b,678s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,16n,43p,264b,674s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
 /share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-d
@@ -2321,10 +2376,10 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
 ></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on hw1.pdf (23 pages, 163914 bytes).
+Output written on hw1.pdf (27 pages, 169706 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 148 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  11777 words of extra memory for PDF output out of 12000 (max. 10000000)
 
