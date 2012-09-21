@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.8.14)  20 SEP 2012 08:54
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.8.14)  20 SEP 2012 23:37
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **hw1.tex
 (./hw1.tex
@@ -23,22 +24,18 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-(/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
+) (/usr/share/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+) (/usr/share/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-
 (/usr/share/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
-
 (/usr/share/texmf-dist/tex/latex/base/t1enc.dfu
 File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
@@ -188,7 +185,6 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
-
 (/usr/share/texmf-dist/tex/latex/base/ot1enc.dfu
 File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
@@ -219,7 +215,6 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
-
 (/usr/share/texmf-dist/tex/latex/base/omsenc.dfu
 File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
@@ -243,13 +238,10 @@ Now handling font encoding U ...
    defining Unicode char U+2026 (decimal 8230)
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
-))
-(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+)) (/usr/share/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2008/07/08 v3.8m The Babel package
-
 (/usr/share/texmf-dist/tex/generic/babel/english.ldf
 Language: english 2005/03/30 v3.3o English support from the babel system
-
 (/usr/share/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count87
@@ -258,61 +250,47 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-))
-(/usr/share/texmf-dist/tex/latex/tools/enumerate.sty
+)) (/usr/share/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks16
-)
-(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-
 (/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks17
-)
-(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+) (/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
-
 (/usr/share/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-)
-(/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
+) (/usr/share/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
-
 (/usr/share/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
 (/usr/share/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+) (/usr/share/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
 ))
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip43
-
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
-
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks18
 \ex@=\dimen106
-))
-(/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen107
-)
-(/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count89
@@ -352,8 +330,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
-)
-(/usr/share/texmf-dist/tex/latex/gauss/gauss.sty
+) (/usr/share/texmf-dist/tex/latex/gauss/gauss.sty
 Package: gauss 2003/01/14
 \g@trash=\box28
 \g@matrixbox=\box29
@@ -389,23 +366,19 @@ Package: gauss 2003/01/14
 \labelskip=\dimen129
 \colopminsize=\dimen130
 \rowopminsize=\dimen131
-)
-(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
-)
-(/usr/share/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+) (/usr/share/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
 \symstmry=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
-)
-(/usr/share/texmf-site/tex/latex/mh/mathtools.sty
+) (/usr/share/texmf-site/tex/latex/mh/mathtools.sty
 Package: mathtools 2011/04/06 v1.11 mathematical typesetting tools
-
 (/usr/share/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count110
@@ -418,8 +391,7 @@ LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count112
 \calc@Cskip=\skip48
-)
-(/usr/share/texmf-site/tex/latex/mh/mhsetup.sty
+) (/usr/share/texmf-site/tex/latex/mh/mhsetup.sty
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 \g_MT_multlinerow_int=\count113
@@ -427,45 +399,34 @@ Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 \origjot=\skip49
 \l_MT_shortvdotswithinadjustabove_dim=\dimen135
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen136
-)
-(/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
+) (/usr/share/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen137
-)
-(/usr/share/texmf-dist/tex/latex/url/url.sty
+) (/usr/share/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-)
-(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2009/06/22 v3.00
 LaTeX Font Info:    Redeclaring math symbol \boxdot on input line 39.
-)
-(/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty
-(/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3names.sty
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
+) (/usr/share/texmf-dist/tex/latex/siunitx/siunitx.sty (/usr/share/texmf-dist/t
+ex/latex/l3kernel/expl3.sty (/usr/share/texmf-dist/tex/latex/l3kernel/l3names.s
+ty (/usr/share/texmf-dist/tex/latex/l3kernel/l3bootstrap.sty
 Package: l3bootstrap 2012/07/15 v3986 L3 Experimental bootstrap code
 )
 Package: l3names 2012/07/16 v3990 L3 Namespace for primitives
-)
-(/usr/share/texmf-dist/tex/latex/etex-pkg/etex.sty
+) (/usr/share/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count114
 )
 Package: expl3 2012/07/16 v3990 L3 Experimental code bundle wrapper
-
 (/usr/share/texmf-dist/tex/latex/l3kernel/l3basics.sty
 Package: l3basics 2012/07/15 v3987 L3 Basic definitions
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3expan.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3expan.sty
 Package: l3expan 2012/07/15 v3986 L3 Argument expansion
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3tl.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3tl.sty
 Package: l3tl 2012/07/15 v3986 L3 Token lists
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3seq.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3seq.sty
 Package: l3seq 2012/07/15 v3986 L3 Sequences and stacks
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3int.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3int.sty
 Package: l3int 2012/07/15 v3986 L3 Integers
 \c_max_int=\count115
 \l_tmpa_int=\count116
@@ -473,27 +434,20 @@ Package: l3int 2012/07/15 v3986 L3 Integers
 \g_tmpa_int=\count118
 \g_tmpb_int=\count119
 \l_tmpc_int=\count120
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3quark.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3quark.sty
 Package: l3quark 2012/07/15 v3986 L3 Quarks
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3prg.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3prg.sty
 Package: l3prg 2012/07/15 v3986 L3 Control structures
 \g__prg_map_int=\count121
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3clist.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3clist.sty
 Package: l3clist 2012/07/15 v3986 L3 Comma separated lists
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3token.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3token.sty
 Package: l3token 2012/07/15 v3986 L3 Experimental token manipulation
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3prop.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3prop.sty
 Package: l3prop 2012/07/15 v3986 L3 Property lists
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3msg.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3msg.sty
 Package: l3msg 2012/07/15 v3986 L3 Messages
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3file.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3file.sty
 Package: l3file 2012/07/15 v3986 L3 File and I/O operations
 \l__ior_stream_int=\count122
 \l_iow_line_count_int=\count123
@@ -501,8 +455,7 @@ Package: l3file 2012/07/15 v3986 L3 File and I/O operations
 \l__iow_current_line_int=\count125
 \l__iow_current_word_int=\count126
 \l__iow_current_indentation_int=\count127
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3skip.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3skip.sty
 Package: l3skip 2012/07/15 v3986 L3 Dimensions and skips
 \l_tmpa_dim=\dimen138
 \l_tmpb_dim=\dimen139
@@ -518,13 +471,11 @@ Package: l3skip 2012/07/15 v3986 L3 Dimensions and skips
 \l_tmpb_muskip=\muskip15
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3keys.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3keys.sty
 Package: l3keys 2012/07/15 v3986 L3 Experimental key-value interfaces
 \g__keyval_level_int=\count128
 \l_keys_choice_int=\count129
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3fp.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3fp.sty
 Package: l3fp 2012/07/15 v3986 L3 Floating points
 \c__fp_leading_shift_int=\count130
 \c__fp_middle_shift_int=\count131
@@ -532,14 +483,12 @@ Package: l3fp 2012/07/15 v3986 L3 Floating points
 \c__fp_big_leading_shift_int=\count133
 \c__fp_big_middle_shift_int=\count134
 \c__fp_big_trailing_shift_int=\count135
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3box.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3box.sty
 Package: l3box 2012/07/15 v3986 L3 Experimental boxes
 \l_tmpb_box=\box36
 \g_tmpa_box=\box37
 \g_tmpb_box=\box38
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3coffins.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3coffins.sty
 Package: l3coffins 2012/07/15 v3986 L3 Coffin code layer
 \l__coffin_internal_box=\box39
 \l__coffin_internal_dim=\dimen142
@@ -564,16 +513,13 @@ Package: l3coffins 2012/07/15 v3986 L3 Coffin code layer
 \l__coffin_display_offset_dim=\dimen153
 \l__coffin_display_x_dim=\dimen154
 \l__coffin_display_y_dim=\dimen155
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3color.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3color.sty
 Package: l3color 2012/07/15 v3986 L3 Experimental colour support
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3luatex.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3luatex.sty
 Package: l3luatex 2012/07/15 v3986 L3 Experimental LuaTeX-specific functions
 \g__cctab_allocate_int=\count136
 \g__cctab_stack_int=\count137
-)
-(/usr/share/texmf-dist/tex/latex/l3kernel/l3candidates.sty
+) (/usr/share/texmf-dist/tex/latex/l3kernel/l3candidates.sty
 Package: l3candidates 2012/05/12 v3633 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen156
 \l__box_bottom_dim=\dimen157
@@ -593,7 +539,6 @@ Package: l3candidates 2012/05/12 v3633 L3 Experimental additions to l3kernel
 \l__coffin_scaled_width_dim=\dimen170
 ))
 Package: siunitx 2012/06/13 v2.5e A comprehensive (SI) units package
-
 (/usr/share/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen171
@@ -601,9 +546,8 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \NC@list=\toks23
 \extratabsurround=\skip54
 \backup@length=\skip55
-)
-(/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-(/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+) (/usr/share/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty (/usr/share
+/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2012/07/16 v3990 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count138
 \l__xparse_m_args_int=\count139
@@ -788,7 +732,6 @@ Variant \prop_get:NVNTF already defined; not changing it on line 362
 . line 7231.
 .................................................
 \g__ior_internal_ior=\read1
-
 (/usr/share/texmf-site/tex/latex/beamer/base/translator/translator.sty
 Package: translator 2010/06/12 ver 1.10
 
@@ -804,34 +747,27 @@ LaTeX Info: Redefining \textls on input line 1605.
 \MT@outer@kern=\dimen185
 LaTeX Info: Redefining \textmicrotypecontext on input line 2156.
 Package microtype Info: Loading configuration file microtype.cfg.
-
 (/usr/share/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2010/01/10 v2.4 microtype main configuration file (RS)
-))
-(/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
+)) (/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count161
 \c@@ppsavesec=\count162
 \c@@ppsaveapp=\count163
-)
-(/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
+) (/usr/share/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks25
 \verbatim@line=\toks26
 \verbatim@in@stream=\read2
-)
-(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-
 (/usr/share/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-(/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+) (/usr/share/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-)
-(/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+) (/usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count164
@@ -846,8 +782,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen192
 \Gm@layoutvoffset=\dimen193
 \Gm@dimlist=\toks27
-)
-(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip61
 \f@ncyO@elh=\skip62
 \f@ncyO@erh=\skip63
@@ -872,7 +807,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
 LaTeX Font Info:    ... okay on input line 43.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
 LaTeX Font Info:    ... okay on input line 43.
-
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count167
@@ -889,7 +823,6 @@ LaTeX Font Info:    ... okay on input line 43.
 ) (/usr/share/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-
 (/usr/share/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
@@ -898,22 +831,16 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (/usr/share/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
 (/usr/share/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
 (/usr/share/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+)) (/usr/share/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
 (/usr/share/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
 (/usr/share/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
@@ -925,14 +852,12 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
-
 (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
-
 (/usr/share/texmf-dist/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
@@ -1008,11 +933,9 @@ File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 (/usr/share/texmf-site/tex/latex/beamer/base/translator/dicts/translator-basic-
 dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
-)
-(/usr/share/texmf-dist/tex/latex/siunitx/config/siunitx-abbreviations.cfg
+) (/usr/share/texmf-dist/tex/latex/siunitx/config/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2012/06/13 v2.5e siunitx: Abbreviated units
-)
-(/usr/share/texmf-dist/tex/latex/siunitx/config/siunitx-binary.cfg
+) (/usr/share/texmf-dist/tex/latex/siunitx/config/siunitx-binary.cfg
 File: siunitx-binary.cfg 2012/06/13 v2.5e siunitx: Binary units
 )
 LaTeX Info: Redefining \microtypecontext on input line 43.
@@ -1025,7 +948,6 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-
 (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2009/11/09 v2.0 microtype config. file: Computer Modern Roman 
 (RS)
@@ -1068,32 +990,26 @@ File: mt-cmr.cfg 2009/11/09 v2.0 microtype config. file: Computer Modern Roman
 LaTeX Font Info:    Try loading font information for U+msa on input line 43.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
-)
-(/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
+) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 43.
-
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-(/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
+) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Try loading font information for U+stmry on input line 43.
-
 (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 \c_siunitx_mathtt_int=\count174
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 62.
-
 (/usr/share/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 62.
 
-
-! LaTeX Error: There's no line here to end.
+./hw1.tex:98: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
@@ -1101,19 +1017,1361 @@ Type  H <return>  for immediate help.
                                                   
 l.98 \[
        
-? X
- 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.18335pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 124--129
+
+ []
+
+[2]
+
+./hw1.tex:166: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.166 C
+       laim: $\left\{a_n\right\} + 0_\mathsf{V} = \left\{a_n\right\}$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./hw1.tex:211: Extra }, or forgotten \right.
+<template> }
+            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \hfil \endtempl...
+l.211 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./hw1.tex:211: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.211 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:211: Missing } inserted.
+<inserted text> 
+                }
+l.211 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:211: Extra }, or forgotten \right.
+<template> }
+            $}\ifmeasuring@ \savefieldlength@ \fi \set@field \hfil \endtempl...
+l.211 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./hw1.tex:211: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.211 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:211: Missing } inserted.
+<inserted text> 
+                }
+l.211 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[3] [4] [5] [6] [7]
+./hw1.tex:381: Extra \right.
+l.381 ...\left(v_2,w_2\right)$ and $a \in F\right)
+                                                  $\\
+I'm ignoring a \right that had no matching \left.
+
+[8]
+./hw1.tex:431: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.431 Claim: $A+A^t = \left(A + A^t)^t$
+                                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[9]
+./hw1.tex:501: Misplaced alignment tab character &.
+l.501 ...right) + \left(b_1,b_2,\dots,b_n\right) &
+                                                  =
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[10]
+./hw1.tex:532: Extra \right.
+l.532 \mathsf{W}_2\right)
+                         $
+I'm ignoring a \right that had no matching \left.
+
+./hw1.tex:534: Missing delimiter (. inserted).
+<to be read again> 
+                   +
+l.534 \left(a_1,a_2,\dots,a_n\right +
+                                      \left(b_1,b_2,\dots,b_n\right) = \left...
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+[11]
+
+./hw1.tex:574: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.574 C
+       laim: $\mathsf{W}_1 + \mathsf{W}_2 \subseteq \mathsf{V}$
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[12]
+./hw1.tex:616: Undefined control sequence.
+l.616 Suppose $c \in F$ and $z \in \mathfs
+                                          {W}_1 + \mathsf{W}_2$ such that $z
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[13]
+Overfull \hbox (19.68616pt too wide) in paragraph at lines 673--683
+\OT1/cmr/m/n/12 (-20) Claim: $[] + [] =
+ []
+
+[14]
+./hw1.tex:719: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.719 \end{multline}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:719: Extra \right.
+<argument> ...^3 + \left (a_1+b_1\right )x\right )
+                                                   
+l.719 \end{multline}
+                    
+I'm ignoring a \right that had no matching \left.
+
+./hw1.tex:719: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.719 \end{multline}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:719: Extra \right.
+<argument> ...^3 + \left (a_1+b_1\right )x\right )
+                                                   
+l.719 \end{multline}
+                    
+I'm ignoring a \right that had no matching \left.
+
+[15]
+Overfull \hbox (13.00912pt too wide) in paragraph at lines 747--757
+\OT1/cmr/m/n/12 (-20) Claim: $[] + [] =
+ []
+
+./hw1.tex:793: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.793 \end{multline}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:793: Extra \right.
+<argument> ...x^2 + \left (a_0+b_0\right )\right )
+                                                   
+l.793 \end{multline}
+                    
+I'm ignoring a \right that had no matching \left.
+
+./hw1.tex:793: Missing \right. inserted.
+<inserted text> 
+                \right .
+l.793 \end{multline}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:793: Extra \right.
+<argument> ...x^2 + \left (a_0+b_0\right )\right )
+                                                   
+l.793 \end{multline}
+                    
+I'm ignoring a \right that had no matching \left.
+
+[16]
+./hw1.tex:822: Missing delimiter (. inserted).
+<to be read again> 
+                   \mskip 
+l.822 ...f{W}_2$ $2\nmid \left(n+1)\right \implies
+                                                   2
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+[17]
+./hw1.tex:836: Missing delimiter (. inserted).
+<to be read again> 
+                   \mskip 
+l.836 ...f $\mathsf{W}_1$ $2\nmid n\right \implies
+                                                   2
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+./hw1.tex:836: Extra \right.
+<to be read again> 
+                   \mskip 
+l.836 ...f $\mathsf{W}_1$ $2\nmid n\right \implies
+                                                   2
+I'm ignoring a \right that had no matching \left.
+
+./hw1.tex:856: Undefined control sequence.
+<argument> ...W}_2\\ 0_{\mathsf {W}_1} = 0_\matsf 
+                                                  {F} = 0_{\mathsf {W}_2} \\...
+l.856 \end{align}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./hw1.tex:856: Undefined control sequence.
+<argument> ...W}_2\\ 0_{\mathsf {W}_1} = 0_\matsf 
+                                                  {F} = 0_{\mathsf {W}_2} \\...
+l.856 \end{align}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./hw1.tex:870: Undefined control sequence.
+l.870 ...m: $\mathsf{P}(F) \subseteq \mathsf{W}_\1
+                                                   + \mathsf{W}_2$\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[18] [19]
+
+./hw1.tex:925: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.925 \item S
+             olve the following systems of linear equations, if possible.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./hw1.tex:925: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.925 \item S
+             olve the following systems of linear equations, if possible.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./hw1.tex:925: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.925 \item S
+             olve the following systems of linear equations, if possible.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./hw1.tex:928: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.928 \item \hfill
+                   \\
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./hw1.tex:947: Missing $ inserted.
+<inserted text> 
+                $
+l.947 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:947: Missing $ inserted.
+<inserted text> 
+                $
+l.947 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:947: Missing $ inserted.
+<inserted text> 
+                $
+l.947 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:947: Missing $ inserted.
+<inserted text> 
+                $
+l.947 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:953: Missing $ inserted.
+<inserted text> 
+                $
+l.953 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:953: Missing $ inserted.
+<inserted text> 
+                $
+l.953 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:953: Missing $ inserted.
+<inserted text> 
+                $
+l.953 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:953: Missing $ inserted.
+<inserted text> 
+                $
+l.953 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (16.20325pt too wide) in paragraph at lines 928--954
+[]$[][]$[]$ $\OMS/cmsy/m/n/12 !$ $[]$[][]$[]$ 
+ []
+
+./hw1.tex:975: Missing $ inserted.
+<inserted text> 
+                $
+l.975 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:975: Missing $ inserted.
+<inserted text> 
+                $
+l.975 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:975: Missing $ inserted.
+<inserted text> 
+                $
+l.975 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:975: Missing $ inserted.
+<inserted text> 
+                $
+l.975 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:981: Missing $ inserted.
+<inserted text> 
+                $
+l.981 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:981: Missing $ inserted.
+<inserted text> 
+                $
+l.981 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:981: Missing $ inserted.
+<inserted text> 
+                $
+l.981 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:981: Missing $ inserted.
+<inserted text> 
+                $
+l.981 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[20]
+./hw1.tex:996: Missing $ inserted.
+<inserted text> 
+                $
+l.996 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:996: Missing $ inserted.
+<inserted text> 
+                $
+l.996 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:996: Missing $ inserted.
+<inserted text> 
+                $
+l.996 \end{gmatrix}
+                   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:996: Missing $ inserted.
+<inserted text> 
+                $
+l.996 \end{gmatrix}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1002: Missing $ inserted.
+<inserted text> 
+                $
+l.1002 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1002: Missing $ inserted.
+<inserted text> 
+                $
+l.1002 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1002: Missing $ inserted.
+<inserted text> 
+                $
+l.1002 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1002: Missing $ inserted.
+<inserted text> 
+                $
+l.1002 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1018: Missing $ inserted.
+<inserted text> 
+                $
+l.1018 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1018: Missing $ inserted.
+<inserted text> 
+                $
+l.1018 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1018: Missing $ inserted.
+<inserted text> 
+                $
+l.1018 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1018: Missing $ inserted.
+<inserted text> 
+                $
+l.1018 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1024: Missing $ inserted.
+<inserted text> 
+                $
+l.1024 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1024: Missing $ inserted.
+<inserted text> 
+                $
+l.1024 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1024: Missing $ inserted.
+<inserted text> 
+                $
+l.1024 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1024: Missing $ inserted.
+<inserted text> 
+                $
+l.1024 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[21]
+./hw1.tex:1052: Missing $ inserted.
+<inserted text> 
+                $
+l.1052 \end{gmatrix}
+                    \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1052: Missing $ inserted.
+<inserted text> 
+                $
+l.1052 \end{gmatrix}
+                    \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1052: Missing $ inserted.
+<inserted text> 
+                $
+l.1052 \end{gmatrix}
+                    \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1052: Missing $ inserted.
+<inserted text> 
+                $
+l.1052 \end{gmatrix}
+                    \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1060: Missing $ inserted.
+<inserted text> 
+                $
+l.1060 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1060: Missing $ inserted.
+<inserted text> 
+                $
+l.1060 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1060: Missing $ inserted.
+<inserted text> 
+                $
+l.1060 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1060: Missing $ inserted.
+<inserted text> 
+                $
+l.1060 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (19.32819pt too wide) in paragraph at lines 1034--1061
+[]$[][]$[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1061
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1034--1061
+
+ []
+
+./hw1.tex:1088: Missing $ inserted.
+<inserted text> 
+                $
+l.1088 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1088: Missing $ inserted.
+<inserted text> 
+                $
+l.1088 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1088: Missing $ inserted.
+<inserted text> 
+                $
+l.1088 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1088: Missing $ inserted.
+<inserted text> 
+                $
+l.1088 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1094: Missing $ inserted.
+<inserted text> 
+                $
+l.1094 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1094: Missing $ inserted.
+<inserted text> 
+                $
+l.1094 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1094: Missing $ inserted.
+<inserted text> 
+                $
+l.1094 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1094: Missing $ inserted.
+<inserted text> 
+                $
+l.1094 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (3.87pt too wide) in paragraph at lines 1071--1095
+[]$[][]$[]$ $\OMS/cmsy/m/n/12 !$ $[]$[][]$[]$ 
+ []
+
+[22]
+./hw1.tex:1126: Missing $ inserted.
+<inserted text> 
+                $
+l.1126 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1126: Missing $ inserted.
+<inserted text> 
+                $
+l.1126 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1126: Missing $ inserted.
+<inserted text> 
+                $
+l.1126 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1126: Missing $ inserted.
+<inserted text> 
+                $
+l.1126 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1131: Missing $ inserted.
+<inserted text> 
+                $
+l.1131 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1131: Missing $ inserted.
+<inserted text> 
+                $
+l.1131 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1131: Missing $ inserted.
+<inserted text> 
+                $
+l.1131 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1131: Missing $ inserted.
+<inserted text> 
+                $
+l.1131 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1151: Missing $ inserted.
+<inserted text> 
+                $
+l.1151 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1151: Missing $ inserted.
+<inserted text> 
+                $
+l.1151 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1151: Missing $ inserted.
+<inserted text> 
+                $
+l.1151 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1151: Missing $ inserted.
+<inserted text> 
+                $
+l.1151 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1158: Missing $ inserted.
+<inserted text> 
+                $
+l.1158 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1158: Missing $ inserted.
+<inserted text> 
+                $
+l.1158 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1158: Missing $ inserted.
+<inserted text> 
+                $
+l.1158 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1158: Missing $ inserted.
+<inserted text> 
+                $
+l.1158 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[23]
+./hw1.tex:1183: Missing $ inserted.
+<inserted text> 
+                $
+l.1183 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1183: Missing $ inserted.
+<inserted text> 
+                $
+l.1183 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1183: Missing $ inserted.
+<inserted text> 
+                $
+l.1183 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1183: Missing $ inserted.
+<inserted text> 
+                $
+l.1183 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1190: Missing $ inserted.
+<inserted text> 
+                $
+l.1190 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1190: Missing $ inserted.
+<inserted text> 
+                $
+l.1190 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1190: Missing $ inserted.
+<inserted text> 
+                $
+l.1190 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1190: Missing $ inserted.
+<inserted text> 
+                $
+l.1190 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1218: Missing $ inserted.
+<inserted text> 
+                $
+l.1218 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1218: Missing $ inserted.
+<inserted text> 
+                $
+l.1218 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1218: Missing $ inserted.
+<inserted text> 
+                $
+l.1218 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1218: Missing $ inserted.
+<inserted text> 
+                $
+l.1218 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1223: Missing $ inserted.
+<inserted text> 
+                $
+l.1223 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1223: Missing $ inserted.
+<inserted text> 
+                $
+l.1223 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1223: Missing $ inserted.
+<inserted text> 
+                $
+l.1223 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1223: Missing $ inserted.
+<inserted text> 
+                $
+l.1223 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[24]
+./hw1.tex:1246: Missing $ inserted.
+<inserted text> 
+                $
+l.1246 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1246: Missing $ inserted.
+<inserted text> 
+                $
+l.1246 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1246: Missing $ inserted.
+<inserted text> 
+                $
+l.1246 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1246: Missing $ inserted.
+<inserted text> 
+                $
+l.1246 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1253: Missing $ inserted.
+<inserted text> 
+                $
+l.1253 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1253: Missing $ inserted.
+<inserted text> 
+                $
+l.1253 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1253: Missing $ inserted.
+<inserted text> 
+                $
+l.1253 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1253: Missing $ inserted.
+<inserted text> 
+                $
+l.1253 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1276: Missing $ inserted.
+<inserted text> 
+                $
+l.1276 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1276: Missing $ inserted.
+<inserted text> 
+                $
+l.1276 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1276: Missing $ inserted.
+<inserted text> 
+                $
+l.1276 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1276: Missing $ inserted.
+<inserted text> 
+                $
+l.1276 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1283: Missing $ inserted.
+<inserted text> 
+                $
+l.1283 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1283: Missing $ inserted.
+<inserted text> 
+                $
+l.1283 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./hw1.tex:1283: Missing $ inserted.
+<inserted text> 
+                $
+l.1283 \end{gmatrix}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./hw1.tex:1283: Missing $ inserted.
+<inserted text> 
+                $
+l.1283 \end{gmatrix}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[25]
+./hw1.tex:1293: Undefined control sequence.
+<recently read> \mathf 
+                       
+l.1293 Suppose $\mathf
+                      {V}$ is a vector space.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./hw1.tex:1297: Missing delimiter (. inserted).
+<to be read again> 
+                   $
+l.1297 ...\text{span}\left(\left\{x\right\}\right$
+                                                  
+I was expecting to see something like `(' or `\{' or
+`\}' here. If you typed, e.g., `{' instead of `\{', you
+should probably delete the `{' by typing `1' now, so that
+braces don't get unbalanced. Otherwise just proceed.
+Acceptable delimiters are characters whose \delcode is
+nonnegative, or you can use `\delimiter <delimiter code>'.
+
+[26] [27] (./hw1.aux) ) 
 Here is how much of TeX's memory you used:
- 14270 strings out of 495007
- 278832 string characters out of 3181084
- 321747 words of memory out of 3000000
- 17209 multiletter control sequences out of 15000+200000
- 11850 words of font info for 51 fonts, out of 3000000 for 9000
+ 14327 strings out of 495007
+ 279150 string characters out of 3181084
+ 337747 words of memory out of 3000000
+ 17257 multiletter control sequences out of 15000+200000
+ 12322 words of font info for 55 fonts, out of 3000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,11n,43p,264b,459s stack positions out of 5000i,500n,10000p,200000b,50000s
-No pages of output.
+ 38i,16n,43p,264b,688s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></
+usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/m
+sam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
+Output written on hw1.pdf (27 pages, 169902 bytes).
 PDF statistics:
- 0 PDF objects out of 1000 (max. 8388607)
+ 148 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 11265 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 11777 words of extra memory for PDF output out of 12000 (max. 10000000)
 
