@@ -13,6 +13,8 @@
      "url"
      "multirow"
      "mathtools"
+     "gauss"
+     "amsfonts"
      "amsmath"
      "graphicx"
      "enumerate"
