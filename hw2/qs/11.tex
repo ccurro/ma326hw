@@ -1,4 +1,20 @@
 Let $S =\left\{u_1,u_2,\dots,u_n\right\}$ be a linearly independent
-  subset of a vector space $\mathsf{V}$ over the field $Z_2$. How many
+  subset of a vector space $\mathsf{V}$ over the field $\mathbb{Z}_2$. How many
   vectors are there in $\text{span}(S)$? Justify your answer.
 
+\begin{equation}
+\mathbb{Z}_2 = \left\{0,1\right\}
+\end{equation}
+%\begin{equation}
+%\therefore c_i \in \left\{0,1\right\}
+%\end{equation}
+\begin{equation}
+c_1u_1 + c_2u_2 + \cdots + c_nu_n \neq 0,\; \forall c_1,\dots,c_n \in \left\{0,1\right\}
+\end{equation}
+unless all $c_i = 0$.
+\begin{align}
+\implies \text{card}\left(\text{span}\left(S\right)\right) &=
+\binom{n}{0} + \binom{n}{1} + \cdots + \binom{n}{n-1} + \binom{n}{n}\\
+&= \sum\limits^n_{i=1}\binom{n}{i}\\
+&= 2^n
+\end{align}

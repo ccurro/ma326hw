@@ -3,3 +3,48 @@ vectors. Prove that $S$ is linearly dependent if and only if $u_1 =0$
 or $u_{k+1} \in
 \text{span}\left(\left\{u_1,u_2,\dots,u_k\right\}\right)$ for some $k
 \left(1 \leq k < n\right)$.
+\\\hfill\\
+\textbf{Forward Direction:}\\
+Claim: $S$ is linearly dependent 
+\\Suppose $u_1=0$
+\\Assume $S$ is linearly independent.
+\\Take the linear combination:
+\begin{equation}
+c_1u_1 + c_2u_2 + \cdots + c_nu_n =0 \; \;\text{such that}\; c_1 \neq 0,
+c_2,\dots,c_n = 0
+\end{equation}
+\begin{equation}
+\implies c_1u_1 = 0 \;\lightning\; \text{Contradiction!}
+\end{equation}
+There exists a non-trivial representation of the zero vector therefore
+$S$ is linearly dependent.\\\hfill
+\\Suppose $u_{k+1} \in \text{span}(\left\{u_1,\dots,u_k\right\})$ 
+\\Assume $S$ is linearly independent.
+\begin{equation}
+u_{k+1} = a_1u_1 + a_2u_2 + \cdots + a_ku_k
+\end{equation}
+Take the linearly combination:
+\begin{equation}
+c_1u_1 + c_2u_2 + \cdots + c_ku_k + c_{k+1} + \dots + c_nu_n = 0
+\end{equation}
+Choose $c_i = (-a_i)$ for $i(1\leq i \leq k)$ and $c_{k+1}=1$
+\begin{equation}
+\implies u_{k+1} = 0 \;\lightning\; \text{Contradiction!}
+\end{equation}
+There exists a non-trivial representation of the zero vector therefore
+$S$ is linearly dependent.\\\hfill\\
+\textbf{Reverse Direction:}\\
+Suppose $u_{k+1} \in \text{span}(\left\{u_1,\dots,u_k\right\})$
+\\Claim: $S$ is linearly dependent 
+\begin{align}
+u_{k+1}  &= a_1u_1 + a_2u_2 + \cdots + a_ku_k\\
+-u_{k+1} &= \left(-1\right)\left(a_1u_1 + a_2u_2 + \cdots +
+  a_ku_k\right)\\
+&= \left(-a_1\right)u_1 + \left(a_2\right)u_2 + \cdots + \left(-a_k\right)u_k
+\end{align}
+Take the linear combination of all $u_1,\dots,u_n$
+\begin{equation}
+\left(\left(-a_1\right)u_1 + \left(a_2\right)u_2 + \cdots +
+  \left(-a_k\right)u_k\right) + \left(1u_{k+1} + 0u_{k+2}
+  + \cdots + 0u_n\right)=0
+\end{equation}
