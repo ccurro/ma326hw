@@ -4,25 +4,107 @@ linearly independent.
 \item[(b)] 
 \[
 \left\{\begin{pmatrix}
-1 & -3\\
--2 & 4
+1 & -2\\
+-1 & 4
 \end{pmatrix}
 ,
 \begin{pmatrix}
--2 & 6\\
-4 & -8
+-1 & 1\\
+2 & -4
 \end{pmatrix}\right\} 
 \text{in}\;\mathsf{M}_{2\times2}(\mathbb{R})\]
+
+\begin{equation}
+a_1\begin{pmatrix}
+1 & -2\\
+-1 & 4
+\end{pmatrix} +a_2
+\begin{pmatrix}
+-1 & 1\\
+2 & -4
+\end{pmatrix} =
+\begin{pmatrix}
+0 & 0\\
+0 & 0
+\end{pmatrix}
+\end{equation}
+\begin{align}
+a_1 &= -a_2\\
+-a_1 &= a_2\\
+\implies a_1 &= a_2 = 0
+\end{align}
+Only the trivial solution exists. The set is linearly independent.
+
 
 \item[(d)]
 \[
 \left\{x^3 - , 2x^2 + 4, -2x^3 + 3x^2 + 2x +6\right\} \;\text{in}\;  \mathsf{P}_3\left(\mathbb{R}\right)
 \]
+\begin{equation}
+a_1\left(x^3-x\right) +a_1\left(2x^2 + 4\right) + a_3\left(-2x^3
+  +3x^2+2x+6\right) = 09
+\end{equation}
+\begin{align}
+a_1 &= 2a_3\\
+2a_2 &= -3a_3\\
+4a_2 &= -6a_3
+\end{align}
+\begin{align}
+a_1 &= t\\
+a_2 &= -\left(^3/_4\right)t\\
+a_3 &= -\left(^1/_2\right)t
+\end{align}
+The set is linearly dependent.
+\newpage{}
 \item[(f)]
 \[
 \left\{\left(1,-1,2\right),\left(1,-2,1\right),\left(1,1,4\right)\right\}
 \;\text{in}\; \mathsf{R}^3
 \]
+\begin{equation}
+a\begin{bmatrix}
+1\\
+-1\\
+2
+\end{bmatrix}
++ b\begin{bmatrix}
+2\\
+0\\
+1
+\end{bmatrix}
++ c\begin{bmatrix}
+-1\\
+2\\
+-1
+\end{bmatrix}
+=0
+\end{equation}
+
+\begin{align}
+1 +2b -c = 0\\
+-a +2c =0\\
+2a+b-c=0
+\end{align}
+\[
+\begin{gmatrix}[p]
+1 & 2 &-1 &0\\
+-1 & 0 & 2 & 0\\
+2 & 1 & -1 & 0
+\rowops
+\add[1]{0}{1}
+\add[-2]{0}{2}
+\mult{1}{\cdot \frac{1}{2}}
+\add[3]{1}{2}
+\mult{2}{\cdot \frac{2}{5}}
+\end{gmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0
+\end{pmatrix}
+\]
+Only the trivial solution exists. This set is linearly independent.
 \item[(g)]
 \[
 \left\{
@@ -45,4 +127,52 @@ linearly independent.
 \right\}
 \;\text{in}\; \mathsf{M}_{2\times2}(\mathbb{R})
 \]
+\begin{equation}
+a\begin{pmatrix}
+1 & 0\\
+-2 & 1
+\end{pmatrix}
++b\begin{pmatrix}
+0 & -1\\
+1 & 1
+\end{pmatrix}
++c\begin{pmatrix}
+-1 & 2\\
+1 & 0
+\end{pmatrix}
++d\begin{pmatrix}
+2 & 1 \\
+-4 & 4
+\end{pmatrix}
+=0
+\end{equation}
+\[
+\begin{gmatrix}[p]
+1 & 0 & -1 & 2 & 0\\
+-2 & 1 & 1 & -4 &0\\
+0 & -1 & 2 & 1 & 0\\
+1 & 1 & 0 & 4 & 0
+\rowops
+\add[2]{0}{1}
+\add[-1]{0}{3}
+\add[1]{1}{2}
+\add[-1]{1}{3}
+\add[-2]{2}{3}
+\end{gmatrix}
+\rightarrow
+\begin{pmatrix}
+1 & 0 & -1 & 2 & 0\\
+0 & 1 & -1 & 0 & 0\\
+0 & 0 & 1 & 1 & 0\\
+0 & 0 & 0 & 0 & 0
+\end{pmatrix}
+\]
+\begin{align}
+a = -3t\\
+b = -t\\
+c = -t\\
+d = t
+\end{align}
+There exists a non-trivial solution, therefore the set is linearly
+dependent.
 \end{enumerate}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.9.23)  23 SEP 2012 19:37
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.9.23)  24 SEP 2012 22:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1001,7 +1001,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 LaTeX Font Info:    Try loading font information for U+stmry on input line 42.
 (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 \c_siunitx_mathtt_int=\count174
-(./qs/2.tex) (./qs/11.tex)
+(./qs/2.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.18335pt.
@@ -1010,12 +1010,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./qs/15.tex
+]) (./qs/11.tex) (./qs/15.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--12
 
  []
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 18--23
 
  []
@@ -1025,33 +1025,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--39
 
  []
 
-) [2] (./qs/20.tex) (./qs/24.tex) (./qs/31.tex) (./qs/6.tex) (./qs/12.tex) [3] 
-(./qs/14.tex) (./qs/2.2.tex) (./qs/8.tex) (./qs/2.11.tex) [4] (./hw2.aux) ) 
+) [3] (./qs/20.tex) (./qs/24.tex
+Underfull \hbox (badness 10000) in paragraph at lines 7--61
+
+ []
+
+) (./qs/31.tex) (./qs/6.tex) (./qs/12.tex) (./qs/14.tex [4]) (./qs/2.2.tex) (./
+qs/8.tex) (./qs/2.11.tex) [5] (./hw2.aux) ) 
 Here is how much of TeX's memory you used:
- 14390 strings out of 495007
- 279999 string characters out of 3181084
- 329708 words of memory out of 3000000
- 17246 multiletter control sequences out of 15000+200000
- 17401 words of font info for 89 fonts, out of 3000000 for 9000
+ 14369 strings out of 495007
+ 279347 string characters out of 3181084
+ 337708 words of memory out of 3000000
+ 17239 multiletter control sequences out of 15000+200000
+ 13449 words of font info for 68 fonts, out of 3000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,11n,43p,264b,308s stack positions out of 5000i,500n,10000p,200000b,50000s
-</us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sh
-are/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/ty
-pe1/public/stmaryrd/stmary10.pfb>
-Output written on hw2.pdf (4 pages, 139452 bytes).
+ 38i,14n,43p,264b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary
+10.pfb>
+Output written on hw2.pdf (5 pages, 137133 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 76 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21505 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 13825 words of extra memory for PDF output out of 14400 (max. 10000000)
 
