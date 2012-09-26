@@ -1,3 +1,29 @@
 Let $\mathsf{V}$ be an $n$-dimensional vector space with an ordered
 basis $\beta$. Define $\mathsf{T}\colon\mathsf{V}\to\mathsf{F}^n$ by
 $\mathsf{T}(x) = \left[x\right]_\beta$. Prove that $\mathsf{T}$ is linear.
+\\
+Suppose $\beta =\{v_1,v_2,\dots,v_n\}$
+\\Suppose $x,y \in \mathsf{V}$ 
+\begin{align}
+x &= \sum\limits^n_{i=1} a_iv_i & y &= \sum\limits^n_{i=1} b_iv_i 
+\end{align}
+\begin{equation}
+x + y = \sum\limits^n_{i=1} a_iv_i = \sum\limits^n_{i=1} b_iv_i  =
+\sum\limits^n_{i=1}(a_iv_i + b_iv_i) = \sum\limits^n_{i=1} \left(a_i
+  +b_i\right) v_i
+\end{equation}
+\begin{equation}
+\mathsf{T}(x+y) = \begin{pmatrix}a_1+b_1\\a_2+b_2\\\vdots\\a_n+b_n\end{pmatrix}
+= \begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix}
++\begin{pmatrix}b_1\\b_2\\\vdots\\b_n\end{pmatrix} = \mathsf{T}(x) +
+\mathsf{T}(y)
+\end{equation}
+\\Suppose $c \in F$ and $x \in \mathsf{V}$ 
+\begin{align}
+x = &\sum\limits^n_{i=1} a_iv_i\\
+cx = c&\sum\limits^n_{i=1} a_iv_i = \sum\limits^n_{i=1} ca_iv_i
+\end{align}
+\begin{equation}
+\mathsf{T}(cx) = \begin{pmatrix}ca_1\\ca_2\\\vdots\\ca_n\end{pmatrix}
+= c\begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix} = c\mathsf{T}(x)
+\end{equation}
