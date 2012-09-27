@@ -1,0 +1,50 @@
+Let $\mathsf{V}$ be an $n$-dimensional vector space, and let
+$\mathsf{T}\colon\mathsf{V}\to\mathsf{V}$ be a linear
+transformation. Suppose that $\mathsf{W}$ is a $\mathsf{T}$-invariant
+subspace of $\mathsf{V}$ (see the exercises of Section 2.1) having
+dimension $k$. Show that there is a basis $\beta$ for $\mathsf{V}$
+such that $\left[\mathsf{T}\right]_\beta$ has the form
+\[
+\begin{pmatrix}
+A & B\\
+O & C
+\end{pmatrix}
+\]
+where $A$ is a $k\times k$ matrix and $O$ is the $(n-k) \times k$ zero matrix.
+\\Suppose $\beta_\mathsf{W}$ is a basis of $\mathsf{W}$
+\begin{equation}
+\mathsf{T}(\beta_\mathsf{W}) \subseteq \mathsf{W}
+\end{equation}
+Suppose $x\in \beta_\mathsf{W}$ 
+\begin{equation}
+\implies \mathsf{T}(x) \in \mathsf{W}
+\end{equation}
+Therefore $\mathsf{T}(x) $ can be described as a linear combination of
+vectors in $\beta_\mathsf{W}$.
+\\Suppose $\beta_\mathsf{W}$ is extended to $\beta$ (by corollary 2 of
+theorem 2.2) such that $\beta =
+\{u_1,u_2,\dots,u_k,u_{k+1},\dots,u_n\}$ and $u_i \in
+\beta_\mathsf{W}$ for $i=1,2,\dots,n$ $\implies$ for $u_i,
+i=1,2,\dots,k$;
+\begin{equation}
+\left[\mathsf{T}(u_i)\right]_\beta =
+\begin{pmatrix}
+a_{1i}\\a_{2i}\\\vdots\\a_{ki}\\0\\\vdots\\0
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\left[\mathsf{T}\right]_\beta = 
+\begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1k} & & &  \\
+a_{21} & a_{22} & \cdots & a_{2k} & & &  \\
+\vdots & \vdots &  & \vdots & & & &  \\
+a_{k1} & a_{k2} & \cdots & a_{kk} &
+\left[\mathsf{T}(u_{k+1})\right]_\beta &
+\left[\mathsf{T}(u_{k+2})\right]_\beta & \cdots &
+\left[\mathsf{T}(u_n)\right]_\beta\\
+0 & 0 & \cdots & 0 & & & &  \\
+\vdots & \vdots &  & \vdots & & & &  \\
+0 & 0 & \cdots & 0 & & & &  \\
+0 & 0 & \cdots & 0 & & & &  
+\end{pmatrix}
+\end{equation}
