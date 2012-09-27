@@ -20,12 +20,99 @@ $\mathsf{T}\colon\mathsf{V} \to \mathsf{W}$ be linear.
 $\mathsf{T}$ is one-to-one.\\ Let $\mathsf{T}(S) = \{\mathsf{T}(x)
 \colon x \in S\}$
 \\Claim: $\mathsf{T}(S)$ is linearly independent.
-\\Suppose $x \in \text{span}(\mathsf{T}(S))$ such that $ x = c_1v_1
-+c_2v_2 + \cdots + c_nu_n =0$ for $c_i \in F$ and $v_i \in
+\\Suppose $x \in \text{span}(\mathsf{T}(S))$ such that $ x = c_1u_1
++c_2u_2 + \cdots + c_nu_n =0$ for $c_i \in F$ and $u_i \in
 \mathsf{T}(S)$
 \paragraph{}
-$\mathsf{T}$ is one-to-one $\implies v_i =\mathsf{T}(v_i)$ for some
-$v_i \in S$\\
-{\huge MAKES NO FUCKING SENSE}
+$\mathsf{T}$ is one-to-one $\implies u_i =\mathsf{T}(v_i)$ for some
+$v_i \in S$
+\begin{align}
+\implies x &= c_1\mathsf{T}(v_1) +c_2\mathsf{T}(v_2) +\cdots +
+c_n\mathsf{T}(v_n)\\
+&= \mathsf{T}(c_1v_1 +c_2v_2 +\cdots+c_nv_n)\\
+&= 0
+\end{align}
+\begin{equation}
+\implies c_1v_1 + c_2v_2 +\cdots c_nv_n = 0
+\end{equation}
+\begin{equation}
+\implies c_1=c_2=\cdots=c_n
+\end{equation}
+Therefore there only exists the trivial solution to the linear
+combination.
+
+\textbf{Reverse Direction:}
+Suppose $S\subseteq \mathsf{T}$ such that $S$ is linearly independent
+and $\mathsf{T}(S)$ is linearly independent.
+\\Claim: $\mathsf{T}$ is one-to-one
+\\Suppose $x,y \in \text{span}(S)$ such that $x\neq y$ 
+\begin{align}
+x &= a_1u_1 + a_2u_2 + \cdots a_nu_n\\
+y &= b_1u_1 + b_2u_2 + \cdots b_nu_n
+\end{align}
+Because $S$ is linearly independent each linear combination is
+unique. 
+\begin{equation}
+\implies a_i \neq b_i\;\;\text{for some}\;\; i =1,2,\dots,n
+\end{equation}
+\begin{align}
+\text{Let}\;\; \mathsf{T}(x) &= \mathsf{T}(a_1u_1 + a_2u_2 +\cdots
++a_nu_n)\\
+\implies \mathsf{T}(x) &= a_1\mathsf{T}(u_1) + a_2\mathsf{T}(u_2)
++\cdots+a_n\mathsf{T}(u_n)\\
+\text{Let}\;\; \mathsf{T}(y) &= \mathsf{T}(b_1u_1 + b_2u_2 +\cdots
++b_nu_n)\\
+\implies \mathsf{T}(y) &= b_1\mathsf{T}(u_1) + b_2\mathsf{T}(u_2) +\cdots+b_n\mathsf{T}(u_n)
+\end{align}
+\begin{equation}
+\mathsf{T}(u_1) \in \mathsf{T}(S) \forall i = 1,2,\dots,n
+\end{equation}
+\begin{equation}
+\implies \mathsf{T}(x),\mathsf{T}(y) \in \text{span}(\mathsf{T}(S))
+\end{equation}
+Because $\mathsf{T}(S)$ is linearly independent each linear
+combination is unique. 
+\begin{equation}
+\implies \mathsf{T}(x) \neq \mathsf{T}(y)
+\end{equation} 
+\newpage{}
+\item 
+Suppose $\mathsf{T}$ is one-to-one, $S \subseteq \mathsf{V}$
+\\\textbf{Forward Direction:}
+\\Suppose $S$ is linearly independent.
+\\Claim $\mathsf{T}(S)$ is linearly independent.
+\\$\mathsf{T}(S)$ is linearly independent by part (a)
 \\\textbf{Reverse Direction:}
+\\Suppose $S=\{v_1,v_2,\dots,v_m\}$
+\begin{equation}
+\implies \mathsf{T}(S) = \left\{\mathsf{T}(v_1) + \mathsf{T}(v_2)
+  +\cdots+\mathsf{T}(v_m)\right\}
+\end{equation}
+Suppose $x \in \text{span}(S)$ such that $x = c_1v_1 + c_2v_2
++\cdots+c_mv_m$
+\begin{align}
+\implies \mathsf{T}(x) &= \mathsf{T}(c_1v_1+c_2v_n +\cdots+c_mv_m)\\
+&= \mathsf{T}(0)\\
+&= 0
+\end{align}
+Because $\mathsf{T}$ is one-to-one.
+\begin{equation}
+\mathsf{T}(x) =c_1\mathsf{T}(v_1) + c_2\mathsf{T}(v_2) +\cdots+c_m\mathsf{T}(v_m)
+\end{equation}
+\begin{equation}
+\mathsf{T}(v_1)\in\mathsf{T}(S)\; \forall i=1,2,\dots,m
+\end{equation}
+Therefore $\mathsf{T}(x) \in \text{span}(\mathsf{T}(S))$ and
+$\mathsf{T}(S)$ is linearly independent.
+\begin{equation}
+c_1=c_2=\cdots=c_m=0
+\end{equation}
+\item Suppose $\beta =\{v_1,v_2,\dots,v_n\}$ is a basis for
+  $\mathsf{V}$ and $\mathsf{T}$ is one-to-one and onto.
+\\Claim: $\mathsf{T}(\beta)$ is a basis for $\mathsf{W}$
+\begin{align}
+R\left(\mathsf{T}\right) &=\mathsf{W}\\
+&= \text{span}\left(\mathsf{T}(\beta)\right) \text{(by theorem 2.2)}
+\end{align}
+$\mathsf{T}(\beta)$ is linearly independent by part (a)
 \end{enumerate}
