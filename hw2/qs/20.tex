@@ -5,3 +5,46 @@ be a subset of $\mathsf{V}$ that generates $\mathsf{V}$.
   $\mathsf{V}$. (Be careful not to assume that $S$ is finite.)
 \item Prove that $S$ contains at least $n$ vectors.
 \end{enumerate}
+\begin{enumerate}[(a)]
+\item Claim: There exists a subset of $S$ that is a basis for
+  $\mathsf{V}$. Suppose that $\beta$ is a basis for $\mathsf{V}$. This
+  implies $\beta\subseteq\text{span}(S)$. Furthermore all vectors in
+  $\beta$ can be expressed as linear combinations of vectors in
+  $S$. Collect these vectors into a set $S^*$. This set is finite
+  because linear combinations comprise of a finite number of vectors.
+\paragraph{Lemma:} $\text{span}(S^*)=\mathsf{V}$
+\\\textbf{Forward Containment:} Suppose $x\in \text{span}(S^*)$
+\begin{equation}
+S^* \subseteq S \subseteq \mathsf{V}
+\end{equation}
+\begin{equation}
+\implies x \in \mathsf{V}\;\;\text{(by theorem 1.5)}
+\end{equation}
+\textbf{Reverse Containment:} Suppose $x\in\mathsf{V}$
+\\By definition of $S^*$, $\beta\subseteq \text{span}(S*)$
+\paragraph{} This implies vectors from $\beta$ can be represented as
+linear combinations and thus linear combinations of the basis vectors
+can be formed. Every vector in $\mathsf{V}$ is a linear combination of
+vectors in $\beta$
+\begin{equation}
+\implies x \in \text{span}(S^*)
+\end{equation}
+Therefore there exists a subset of $S^*$ (and hence a subset of $S$) that is basis for
+$\mathsf{V}$ (by theorem 1.9)
+\item
+\begin{equation}
+\text{dim}(\mathsf{V}) = n
+\end{equation}
+\begin{equation}
+\implies \text{card}(\beta) = n
+\end{equation}
+\begin{equation}
+\beta \subseteq S
+\end{equation}
+\begin{equation}
+\implies \text{card}(\beta) \leq \text{card}(S)
+\end{equation}
+\begin{equation}
+\therefore n\leq \text{card}(S)
+\end{equation}
+\end{enumerate}

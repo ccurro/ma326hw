@@ -2,37 +2,51 @@ Let $\mathsf{W}_1$ and $\mathsf{W}_2$ be subspaces of $\mathsf{V}$
 having dimensions $m$ and $n$, respectively, where $m\geq n$.
 \begin{enumerate}[(a)]
 \item Prove that $\text{dim}(\mathsf{W}_1\cap\mathsf{W}_2) \leq n$
-\\$\mathsf{W}_1\cap\mathsf{W}_2$ is a vector space.
+\\$\mathsf{W}_1\cap\mathsf{W}_2$ is a vector space. (by theorem 1.4)
 \begin{equation}
 \mathsf{W}_1\cap\mathsf{W}_2 \subseteq \mathsf{W}_2
 \end{equation}
 \begin{align}
 \implies \text{dim}(\mathsf{W}_1\cap\mathsf{W}_2) &\leq
-\text{dim}(\mathsf{W}_2) \\
+\text{dim}(\mathsf{W}_2) \text{(by theorem 1.11)}\\
 \text{dim}(\mathsf{W}_1\cap\mathsf{W}_2) &\leq n
 \end{align}
-\item Prove that $\text{dim}(\mathsf{W}_1 +\mathsf{W}_2) \leq m+n$
-\\Suppose $\mathsf{W}_1 =\{v_1,v_2,\dots,v_n\},
-\mathsf{W}_2=\{u_1,u_2,\dots,u_m\}$
-\paragraph{Lemma:} $\text{span}(\mathsf{W}_1\cap\mathsf{W}_2) =
-\text{span}(\mathsf{W}_1) +\text{span}(\mathsf{W}_2)$
-\\Suppose $x \in \mathsf{W}_1\cap\mathsf{W}_2$ such that
+
+\item \hfill\\
+\\Suppose $\beta_1$ is a basis for $\mathsf{W}_1$ such that
+$\beta_1=\{v_1,v_2,\dots,v_m\}$
+\\Suppose $\beta_1$ is a basis for $\mathsf{W}_2$ such that
+$\beta_1=\{u_1,u_2,\dots,u_n\}$
+\paragraph{Lemma:} $\text{span}(\beta_1\cup \beta_2) =
+\text{span}(\beta_1) + \text{span}(\beta_2)$
+\\Suppose $x\in \text{span}(\beta_1\cup\beta_2)$ such that for $c_i
+\in F$ 
+\[x=c_1v_1+c_2v_2+\cdots+c_mv_m +c_{m+1} +\cdots+c_{m+n}u_n\]
+Let $c_1v_1+c_2v_2+\cdots+c_mv_m = v \implies v \in
+\text{span}(\beta_1)$
+\\Let $c_{m+1}u_1+c_{m+2}u_2+\cdots+c_{m+m}u_m = u \implies u \in
+\text{span}(\beta_2)$
 \begin{equation}
-x=c_1u_1
-+c_2u_2 +\cdots +c_mu_m+c_{m+1}v_1+ \cdots + c_{m+n}v_n
+\implies x\in \text{span}(\beta_1) + \text{span}(\beta_2)
 \end{equation}
-Let:
-\begin{align}
-&\sum\limits_{i=1}^mc_iu_i=\alpha \implies \alpha \in
-\text{span}(\mathsf{W}_1) \\
-&\sum\limits_{j=1}^nc_{m+j}v_j=\beta \implies \beta \in
-\text{span}(\mathsf{W}_2)
-\end{align}
+Suppose $y\in \text{span}(\beta_1) + \text{span}(\beta_2)$ such that
+for $a,b \in F$ 
+\[y = a_1v_1+a_2v_2+\cdots+a_mv_m+b_1u_1+b_2u_2+\cdots b_nu_n \]
 \begin{equation}
-\implies x = \alpha + \beta
+\implies y \in \text{span}(\beta_1\cup\beta_2)
+\end{equation}
+\\a priori $\mathsf{W}_1+\mathsf{W}_2$ is a subspace of $\mathsf{V}$
+(by HW2 Q.1.3.23)
+\\Some subset of $\beta_1\cup\beta_2$ is a basis for
+$\mathsf{W}_1+\mathsf{W}_2$ (by theorem 1.9) Define this subset to be
+$\beta$.
+\begin{equation}
+\implies \text{card}(\beta) \leq \text{card}(\beta_1\cup\beta_2)
 \end{equation}
 \begin{equation}
-\implies x \in \text{span}(\mathsf{W}_1) + \text{span}(\mathsf{W}_2)
+\text{card}(\beta_1\cup\beta_2) = \text{card}(\beta_1) +\text{card}(\beta_2)-\text{card}(\beta_1\cap\beta_2)
 \end{equation}
-Suppose $y \in \text{span}(\mathsf{W}_1) + \text{span}(\mathsf{W}_2)$
+\begin{equation}
+\implies \text{card}(\beta) \leq m+n
+\end{equation}
 \end{enumerate}

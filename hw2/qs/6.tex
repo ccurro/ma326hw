@@ -1,5 +1,132 @@
 $\mathsf{T}\colon\mathsf{M}_{n\times n}(F) \to F$ defined by
 $\mathsf{T}(A) = \text{tr}(A)$. Recall (Example 4, Section 1.3) that
 \[
-\text{tr}(A) = \sum\limits_{i=1}^n A_{ij}
+\text{tr}(A) = \sum\limits_{i=1}^n A_{ii}
 \]
+\begin{enumerate}[(a)]
+\item Suppose $A,B \in \mathsf{M}_{n\times n}(F)$ and $c\in F$
+\begin{align}
+\mathsf{T}(cA +B) &= \sum\limits_{i=1}^n(ca_{ii}+b_{ii})\\
+&=\sum\limits_{i=1}^nca_{ii}+\sum\limits_{i=1}^nb_{ii}\\
+&=c\sum\limits_{i=1}^na_{ii}+\sum\limits_{i=1}^nb_{ii}\\
+&= c\mathsf{T}(A) + \mathsf{T}(B)
+\end{align}
+\item 
+\begin{equation}
+\text{dim}(\mathsf{M}_{n\times n}(F)) = n^2
+\end{equation}
+\begin{equation}
+R(\mathsf{T}) =\{\mathsf{T}(x) \colon x \in \mathsf{M}_{n\times n}(F)\}
+\end{equation}
+Claim $R(\mathsf{T}) =F $
+\\$R(\mathsf{T})\subseteq F$ by definition of $\mathsf{T}$
+\\Suppose $c \in F$, $x \in \mathsf{M}_{n\times n}(F)$ such that 
+\[
+x = \begin{pmatrix}
+1& 0 &\cdots & 0\\
+0 & \cdots &\cdots& 0\\
+\vdots & & &\vdots\\
+0 & \cdots & \cdots& 0 
+\end{pmatrix}
+\]
+\begin{align}
+\text{tr}(cx) &= c\times\text{tr}(x) \\
+&= c \times 1 \\
+&= c
+\end{align}
+\begin{equation}
+\therefore c \in R(\mathsf{T})
+\end{equation}
+%\newpage{}
+Claim: $\{1\}$ is a basis for $F$
+\begin{equation}
+c \times 1 = 0
+\end{equation}
+\begin{equation}
+\implies c =-0\;\; \text{(by cancellation law)}
+\end{equation}
+\begin{equation}
+\therefore \{1\}\;\; \text{is linearly independent}
+\end{equation}
+\begin{equation}
+c\times 1\ c\;\;\text{for}\; c \in F
+\end{equation}
+\begin{equation}
+\text{span}(\{1\}) = f
+\end{equation}
+\begin{equation}\label{onto}
+\therefore \{1\}\;\;\text{is a basis for}\; R(\mathsf{T})
+\end{equation}
+\begin{equation}
+\implies \text{rank}(\mathsf{T}) =1
+\end{equation}
+\begin{equation}
+\implies \text{nullity}(\mathsf{T})=n^2 -1\;\;\text{(by the dimension theorem)}
+\end{equation}
+\\Claim: Basis $\beta_n$ for $N(\mathsf{T})$ is a modification of a standard
+basis for $\mathsf{M}_{n\times n}(F)$ in which each matrix containing
+a $1$ in a diagonal entry is replaced with a matrix containing 1 in the
+same entry and $-1$ in entry $(n,n)$ and the matrix where all entries
+but $(n,n)=1$ are zero are removed from the set.
+\\Claim: $\beta_n$ is linearly independent 
+\\Suppose $x \in \text{span}(\beta_n)$ such that
+$x=a_1u_1+a_2u_1+\cdots+a_nu_n$
+\begin{equation}
+\begin{pmatrix}
+a_{1,1} &\cdots & \cdots& \cdots& a_{1,n}\\
+\vdots & a_{2,2}\\
+\vdots &       & \ddots &\\
+\vdots &       &        & a_{n-1,n-1}\\
+a_n    & \cdots     &    \cdots   &   \cdots       & A
+\end{pmatrix}
+= \begin{pmatrix}
+0 & \cdots & \cdots& \cdots& 0\\
+\vdots & \ddots & & & \vdots\\
+\vdots & & \ddots & & \vdots\\
+\vdots & & & \ddots& \vdots\\
+0 & \cdots & \cdots& \cdots& 0
+\end{pmatrix}_{n\times n}
+\end{equation}
+Where $A= (-a_{1,1})+(-a_{2,2})+\cdots+(-a_{n-1,n-1})$
+\\
+Therefore all the entries of the matrix are zero. Furthermore there
+only exists the trivial representation. As such by corollary 2 of
+theorem 1.10 $\beta_n$ is a basis for $N(\mathsf{T})$.
+\\Suppose: \[x =\begin{pmatrix}
+-1&\cdots&0\\
+ \vdots&\ddots&\vdots\\
+0&\cdots&-1
+\end{pmatrix} \]
+\begin{equation}
+\text{tr}\begin{pmatrix}
+-1&\cdots&0\\
+ \vdots&\ddots&\vdots\\
+0&\cdots&-1
+\end{pmatrix}=0
+\end{equation}
+\begin{equation}
+\implies \begin{pmatrix}
+-1&\cdots&0\\
+ \vdots&\ddots&\vdots\\
+0&\cdots&-1
+\end{pmatrix} \in N(\mathsf{T})
+\end{equation}
+\begin{equation}
+\begin{pmatrix}
+-1&\cdots&0\\
+ \vdots&\ddots&\vdots\\
+0&\cdots&-1
+\end{pmatrix} \neq 
+\begin{pmatrix}
+0&\cdots&0\\
+ \vdots&\ddots&\vdots\\
+0&\cdots&0
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\implies N(\mathsf{T}) \neq \{0\}
+\end{equation}
+Therefore $\mathsf{T}$ is not one-to-one by theorem 2.4.
+\paragraph{}
+$\mathsf{T}$ was shown to be onto by equation \ref{onto}
+\end{enumerate}

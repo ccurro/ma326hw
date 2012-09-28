@@ -1,3 +1,12 @@
 Is there a linear transformation $\mathsf{T}\colon\mathsf{R}^3 \to
 \mathsf{R}^2$ such that $\mathsf{T}(1,0,3) = (1,1)$ and
 $\mathsf{T}(-2,0,-6) = (2,1)$?
+\paragraph{} No since if $\mathsf{T}$ is a linear transformation, by the
+defination of a linear transformation $\mathsf{T}(cx) =
+c\times\mathsf{T}(x)$. But the given $\mathsf{T}$ shows that
+\begin{align}
+\mathsf{T}(-2(1,0,3)) = \mathsf{T}(-2,0,-6) = (2,1)\\
+-2\mathsf{T}(-2(1,0,3)) = -2 \times (1,1) = (-2,-2)
+\end{align}
+Since $\mathsf{T}(-2(1,0,3)) \neq -2\mathsf{T}(-2(1,0,3))$ the
+transformation $\mathsf{T}$ is not a linear transformation.

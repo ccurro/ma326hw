@@ -5,9 +5,44 @@ transformation $\mathsf{T}\colon\mathsf{R}^n\to\mathsf{R}^m$, compute $\left[\ma
 \addtocounter{enumii}{1}
 \item $\mathsf{T}\colon\mathsf{R}^3\to \mathsf{R}^2$ defined by
   $\mathsf{T}(a_1,a_2,a_3) = (2a_1 + 3a_2 -a_3, a_1 +a_3)$
+\begin{align}
+\mathsf{T}(1,0,0) &= (2,1)\\
+\mathsf{T}(0,1,0) &= (3,0)\\
+\mathsf{T}(0,0,1) &= (-1,1)
+\end{align}
+\begin{equation}
+\left[\mathsf{T}\right]^\gamma_\beta = \begin{pmatrix}
+2 & -3 & -1\\
+1 & 0 & 1
+  \end{pmatrix}
+\end{equation}
 \item $\mathsf{T}\colon\mathbb{R}$ defined by $\mathsf{T}(a_1,a_2,a_3)
   = 2a_1 + a_2 -3a_3$
+\begin{align}
+\mathsf{T}(1,0,0) &= 2\\
+\mathsf{T}(0,1,0) &= 1\\
+\mathsf{T}(0,0,1) &= 3
+\end{align}
+\begin{equation}
+\left[\mathsf{T}\right]^\gamma_\beta = \begin{pmatrix}
+2 & 1 & -3
+  \end{pmatrix}
+\end{equation}
 \addtocounter{enumii}{3}
 \item $\mathsf{T}\colon\mathsf{R}^n \to \mathbb{R}$ defined by
   $\mathsf{T}(a_1,a_2,\dots,a_n) = a_1 + a_n$
+\begin{align}
+\mathsf{T}(1,0,\dots,0) &=1\\
+\mathsf{T}(0,1,\dots,0)&=0\\
+\vdots&\\
+\mathsf{T}(0,1,\dots,1,0)&=0\\
+\mathsf{T}(0,0,\dots,1)&=1
+\end{align}
+\begin{equation}
+\left[\mathsf{T}\right]^\gamma_\beta = \begin{pmatrix}
+1 & 0 & 0 & \cdots & 0 & 1
+  \end{pmatrix}
+\end{equation}
+
+
 \end{enumerate}
