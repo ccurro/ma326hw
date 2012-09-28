@@ -20,7 +20,7 @@ R(\mathsf{T}) =\{\mathsf{T}(x) \colon x \in \mathsf{M}_{n\times n}(F)\}
 \end{equation}
 Claim $R(\mathsf{T}) =F $
 \\$R(\mathsf{T})\subseteq F$ by definition of $\mathsf{T}$
-\\Suppose $c \in F$, $x \in \mathsf{M}_{n\times n}(F)$ such that 
+\\Suppose $c \in F$, and  $x \in \mathsf{M}_{n\times n}(F)$ such that 
 \[
 x = \begin{pmatrix}
 1& 0 &\cdots & 0\\
@@ -30,8 +30,8 @@ x = \begin{pmatrix}
 \end{pmatrix}
 \]
 \begin{align}
-\text{tr}(cx) &= c\times\text{tr}(x) \\
-&= c \times 1 \\
+\text{tr}(cx) &= c\cdot\text{tr}(x) \\
+&= c \cdot 1 \\
 &= c
 \end{align}
 \begin{equation}
@@ -40,19 +40,19 @@ x = \begin{pmatrix}
 %\newpage{}
 Claim: $\{1\}$ is a basis for $F$
 \begin{equation}
-c \times 1 = 0
+c \cdot 1 = 0
 \end{equation}
 \begin{equation}
-\implies c =-0\;\; \text{(by cancellation law)}
+\implies c = 0\;\; \text{(by cancellation law)}
 \end{equation}
 \begin{equation}
 \therefore \{1\}\;\; \text{is linearly independent}
 \end{equation}
 \begin{equation}
-c\times 1\ c\;\;\text{for}\; c \in F
+c\cdot 1= c\;\;\text{for}\; c \in F
 \end{equation}
 \begin{equation}
-\text{span}(\{1\}) = f
+\text{span}(\{1\}) = F
 \end{equation}
 \begin{equation}\label{onto}
 \therefore \{1\}\;\;\text{is a basis for}\; R(\mathsf{T})
@@ -70,7 +70,7 @@ same entry and $-1$ in entry $(n,n)$ and the matrix where all entries
 but $(n,n)=1$ are zero are removed from the set.
 \\Claim: $\beta_n$ is linearly independent 
 \\Suppose $x \in \text{span}(\beta_n)$ such that
-$x=a_1u_1+a_2u_1+\cdots+a_nu_n$
+$x=a_1u_1+a_2u_1+\cdots+a_{n^2-1}u_{n^2-1}$
 \begin{equation}
 \begin{pmatrix}
 a_{1,1} &\cdots & \cdots& \cdots& a_{1,n}\\
@@ -93,27 +93,27 @@ Therefore all the entries of the matrix are zero. Furthermore there
 only exists the trivial representation. As such by corollary 2 of
 theorem 1.10 $\beta_n$ is a basis for $N(\mathsf{T})$.
 \\Suppose: \[x =\begin{pmatrix}
--1&\cdots&0\\
+1&\cdots&0\\
  \vdots&\ddots&\vdots\\
 0&\cdots&-1
 \end{pmatrix} \]
 \begin{equation}
 \text{tr}\begin{pmatrix}
--1&\cdots&0\\
+1&\cdots&0\\
  \vdots&\ddots&\vdots\\
 0&\cdots&-1
 \end{pmatrix}=0
 \end{equation}
 \begin{equation}
 \implies \begin{pmatrix}
--1&\cdots&0\\
+1&\cdots&0\\
  \vdots&\ddots&\vdots\\
 0&\cdots&-1
 \end{pmatrix} \in N(\mathsf{T})
 \end{equation}
 \begin{equation}
 \begin{pmatrix}
--1&\cdots&0\\
+1&\cdots&0\\
  \vdots&\ddots&\vdots\\
 0&\cdots&-1
 \end{pmatrix} \neq 

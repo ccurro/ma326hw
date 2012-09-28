@@ -3,7 +3,6 @@
 \@writefile{toc}{\contentsline {paragraph}{Lemma:}{IV}}
 \@writefile{toc}{\contentsline {paragraph}{Lemma:}{VI}}
 \@writefile{toc}{\contentsline {paragraph}{}{IV}}
-\@writefile{toc}{\contentsline {paragraph}{}{IX}}
 \@writefile{toc}{\contentsline {paragraph}{}{VIII}}
 \@writefile{toc}{\contentsline {paragraph}{}{X}}
 \@writefile{toc}{\select@language{english}}
