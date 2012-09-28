@@ -5,34 +5,68 @@ or $u_{k+1} \in
 \left(1 \leq k < n\right)$.
 \\\hfill\\
 \textbf{Forward Direction:}\\
-Claim: $S$ is linearly dependent 
-\\Suppose $u_1=0$
-\\Assume $S$ is linearly independent.
-\\Take the linear combination:
+% Claim: $S$ is linearly dependent 
+% \\Suppose $u_1=0$
+% \\Assume $S$ is linearly independent.
+% \\Take the linear combination:
+% \begin{equation}
+% c_1u_1 + c_2u_2 + \cdots + c_nu_n =0 \; \;\text{such that}\; c_1 \neq 0,
+% c_2,\dots,c_n = 0
+% \end{equation}
+% \begin{equation}
+% \implies c_1u_1 = 0 \;\lightning\; \text{Contradiction!}
+% \end{equation}
+% There exists a non-trivial representation of the zero vector therefore
+% $S$ is linearly dependent.\\\hfill
+% \\Suppose $u_{k+1} \in \text{span}(\left\{u_1,\dots,u_k\right\})$ 
+% \\Assume $S$ is linearly independent.
+% \begin{equation}
+% u_{k+1} = a_1u_1 + a_2u_2 + \cdots + a_ku_k
+% \end{equation}
+% Take the linearly combination:
+% \begin{equation}
+% c_1u_1 + c_2u_2 + \cdots + c_ku_k + c_{k+1} + \dots + c_nu_n = 0
+% \end{equation}
+% Choose $c_i = (-a_i)$ for $i(1\leq i \leq k)$ and $c_{k+1}=1$
+% \begin{equation}
+% \implies u_{k+1} = 0 \;\lightning\; \text{Contradiction!}
+% \end{equation}
+% There exists a non-trivial representation of the zero vector therefore
+% $S$ is linearly dependent.
+\\Suppose $S$ is linearly dependent.
+\\Claim $u_1 =0$
+or $u_{k+1} \in
+\text{span}\left(\left\{u_1,u_2,\dots,u_k\right\}\right)$ for some $k
+\left(1 \leq k < n\right)$.
+\\Let $a_1u_1 +a_2u_2 +\cdots+a_{k+1}u_{k+1}=0,\; a_i \in F$
+\paragraph{Case 1} $\exists k$ such that $a_1u_1 +a_2u_2
++\cdots+a_ku_k+a_{k+1}u_{k+1}=0,\;a_{k+1} \neq 0$
 \begin{equation}
-c_1u_1 + c_2u_2 + \cdots + c_nu_n =0 \; \;\text{such that}\; c_1 \neq 0,
-c_2,\dots,c_n = 0
+\implies \frac{-a_1}{a_{k+1}}u_1 + \frac{-a_2}{a_{k+1}} +\cdots +
+\frac{a_k}{a_{k+1}}u_k = u_{k+1}
 \end{equation}
 \begin{equation}
-\implies c_1u_1 = 0 \;\lightning\; \text{Contradiction!}
+\implies u_{k+1} \in \text{span}(\{u_1,\dots,u_k\})
 \end{equation}
-There exists a non-trivial representation of the zero vector therefore
-$S$ is linearly dependent.\\\hfill
-\\Suppose $u_{k+1} \in \text{span}(\left\{u_1,\dots,u_k\right\})$ 
-\\Assume $S$ is linearly independent.
+\paragraph{Case 2} $\nexists k$ such that $a_1u_1 +a_2u_2
++\dots+a_ku_k+a_{k+1}u_{k+1}=0,\; a_{k+1}\neq 0$
 \begin{equation}
-u_{k+1} = a_1u_1 + a_2u_2 + \cdots + a_ku_k
+\implies a_{k+1}=0 \; \forall k(1 \leq k< n) 
 \end{equation}
-Take the linearly combination:
 \begin{equation}
-c_1u_1 + c_2u_2 + \cdots + c_ku_k + c_{k+1} + \dots + c_nu_n = 0
+\implies a_2=a_3=\cdots=a_{k+1}=0\;\forall k (1\leq k < n)
 \end{equation}
-Choose $c_i = (-a_i)$ for $i(1\leq i \leq k)$ and $c_{k+1}=1$
 \begin{equation}
-\implies u_{k+1} = 0 \;\lightning\; \text{Contradiction!}
+%\implies a_1u_1 +a_2u_2
+%+\dots+a_ku_k+a_{k+1}u_{k+1}&= a_1u_1 + 0\cdot u_2+\cdots
+%+0\cdot u_{k+1} \\
+\implies a_1u_1 = 0
 \end{equation}
-There exists a non-trivial representation of the zero vector therefore
-$S$ is linearly dependent.\\\hfill\\
+Because $S$ is linearly dependent $a_1\neq 0$ 
+\begin{equation}
+\implies  u_1 = 0
+\end{equation}
+\\
 \textbf{Reverse Direction:}\\
 Suppose $u_{k+1} \in \text{span}(\left\{u_1,\dots,u_k\right\})$
 \\Claim: $S$ is linearly dependent 
@@ -48,3 +82,12 @@ Take the linear combination of all $u_1,\dots,u_n$
   \left(-a_k\right)u_k\right) + \left(1u_{k+1} + 0u_{k+2}
   + \cdots + 0u_n\right)=0
 \end{equation}
+Suppose $u_1 = 0$
+\\Claim: $S$ is linearly dependent
+\\Let:
+\begin{align}
+a_1u_1 +a_2u_n +\cdots+a_nu_n &= 0,\; \forall a_i \in F\\
+\text{such that}\;a_1u_1 + 0\cdot u_2 +\cdots+0\cdot u_n &= 0,\;
+a_1\neq 0\\
+a_1u_1 &= 0
+\end{align}

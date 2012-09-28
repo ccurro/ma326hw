@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2012.8.21)  28 SEP 2012 14:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2012.8.21)  28 SEP 2012 18:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1069,17 +1069,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]) (./qs/11.tex) [2] (./qs/15.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--12
+Underfull \hbox (badness 10000) in paragraph at lines 1--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--23
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--39
+Underfull \hbox (badness 10000) in paragraph at lines 1--42
 
  []
 
@@ -1096,11 +1091,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--20
 ) [6] (./qs/6.tex [7]) [8] (./qs/12.tex) [9] (./qs/14.tex [10]) [11] (./qs/2.2.
 tex) [12] (./qs/8.tex) [13] (./qs/2.11.tex) [14] (./hw2.aux) ) 
 Here is how much of TeX's memory you used:
- 14007 strings out of 493488
- 269716 string characters out of 3146892
- 330369 words of memory out of 3000000
- 16977 multiletter control sequences out of 15000+200000
- 13761 words of font info for 74 fonts, out of 3000000 for 9000
+ 14004 strings out of 493488
+ 269696 string characters out of 3146892
+ 330357 words of memory out of 3000000
+ 16976 multiletter control sequences out of 15000+200000
+ 13712 words of font info for 73 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,14n,43p,260b,616s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf
@@ -1115,12 +1110,11 @@ ss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
 share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/symbols/msbm10.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/st
-mary10.pfb>
-Output written on hw2.pdf (14 pages, 163347 bytes).
+sfonts/symbols/msbm10.pfb>
+Output written on hw2.pdf (14 pages, 162223 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 106 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13825 words of extra memory for PDF output out of 14400 (max. 10000000)
 
