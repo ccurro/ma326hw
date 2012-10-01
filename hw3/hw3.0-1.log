@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.9.23)  30 SEP 2012 19:50
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.9.23)  30 SEP 2012 20:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1014,19 +1014,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ] (./hw3.aux) ) 
 Here is how much of TeX's memory you used:
- 14294 strings out of 495007
- 278718 string characters out of 3181084
- 320702 words of memory out of 3000000
+ 14298 strings out of 495007
+ 278748 string characters out of 3181084
+ 322702 words of memory out of 3000000
  17197 multiletter control sequences out of 15000+200000
- 11850 words of font info for 51 fonts, out of 3000000 for 9000
+ 11948 words of font info for 53 fonts, out of 3000000 for 9000
  36 hyphenation exceptions out of 8191
  38i,10n,43p,264b,221s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on hw3.pdf (1 page, 27439 bytes).
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss1
+2.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on hw3.pdf (1 page, 70810 bytes).
 PDF statistics:
- 16 PDF objects out of 1000 (max. 8388607)
- 10 compressed objects within 1 object stream
+ 36 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11265 words of extra memory for PDF output out of 12000 (max. 10000000)
 
