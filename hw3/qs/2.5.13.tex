@@ -9,3 +9,54 @@ and set $\beta^\prime =
 \{x_1^\prime,x_2^\prime,\dots,x_n^\prime\}$. Prove that $\beta^\prime$
 is a basis for $\mathsf{V}$ and hence that $Q$ is a coordinate matrix
 changing $\beta^\prime$-coordinates into $\beta$-coordinates.
+\\Claim $\text{span}(\beta) =\text{span}(\beta^\prime)$
+\paragraph{Forward Direction}\hfill\\
+Suppose $x^\prime \in \text{span}(\beta^\prime)$ 
+\begin{equation}
+x^\prime = c_1\left(\sum\limits_{i=1}^nQ_{i1}x_i\right) +
+c_2\left(\sum\limits_{i=1}^nQ_{i2}x_i\right) + \cdots +
+c_n\left(\sum\limits_{i=1}^nQ_{in}x_i\right)
+\end{equation}
+\begin{multline}
+x^\prime = c_1\left(Q_{11}x_1 + Q_{21}x_2+\cdots+Q_{n1}x_n\right) + \\
+ +c_2\left(Q_{12}x_1 + Q_{22}x_2 + \cdots + Q_{n2}x_n\right)+ \\ 
++ \cdots + c_n\left(Q_{1n}x_1 + Q_{2n}x_2 + \cdots + Q_{nn}x_n\right)
+\end{multline}
+\begin{multline}
+x^\prime = (c_1Q_{11} + c_2Q_{12} + \cdots + c_nQ_{1n})x_1 + \\
++ (c_1Q_{21} +c_2Q_{22} + \cdots + c_nQ_{2n})x_2 +\\
++\cdots + (c_1Q_{n1} + c_2Q_{n2} + \cdots + c_nQ_{nn})x_n
+\end{multline}
+\begin{equation}
+\implies x \in \text{span}(\beta^\prime)
+\end{equation}
+\paragraph{Reverse Direction}\hfill\\
+Suppose $x \in \text{span}(\beta)$
+\begin{align}
+x &= c_1x_2 + c_2x_2 + \cdots + c_nx_n\\
+&= \sum\limits_{i=1}^nc_ix_i
+\end{align}
+Let $c_i =\sum\limits_{j=1}^na_jQ_{ij}$
+\begin{equation}
+x = \sum\limits_{i=1}^n\left(x_i\sum\limits_{j=1}^na_jQ_{ij}\right)
+\end{equation}
+\begin{equation}
+x = \sum\limits_{i=1}^n\left(\left(a_1Q_{i1} + a_2Q_{i2} +\cdots +a_nQ_{in}\right)x_i\right)
+\end{equation}
+\begin{multline}
+x = (a_1Q_{11} + a_2Q_{12} + \cdots + a_nQ_{1n})x_1 +\\ 
++ (a_1Q_{21} + a_2Q_{22} + \cdots +a_nQ_{2n})x_2 + \\
++ \cdots + (a_1Q_{n1} + a_2Q_{n2} + \cdots a_nQ_{nn})x_n
+\end{multline}
+\begin{multline}
+x = a_1(Q_{11}x_1 +Q_{21}x_2 + \cdots +Q_{n1}x_n) + \\
++ a_2(Q_{12}x_1 + Q_{22}x_2 + \cdots + Q_{n2}x_n) +\\
++\cdots + a_n(Q_{1n}x_1 + Q_{2n}x_2 + \cdots + Q_{nn}x_n)
+\end{multline}
+\begin{equation}
+x = a_1\sum\limits_{i=1}^nQ_{i1}x_i +a_2\sum\limits_{i=1}^nQ_{i2}x_i
++\cdots +a_n\sum\limits_{i=1}^nQ_{in}x_i
+\end{equation}
+\begin{equation}
+\implies x \in \text{span}(\beta^\prime)
+\end{equation}
