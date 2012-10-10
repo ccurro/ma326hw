@@ -1,2 +1,24 @@
 Let $A$ be invertible. Prove that $A^t$ is invertible and $(A^t)^{-1}
 = (A^{-1})^t$.
+\\Claim: $A^t$ is invertible
+\begin{equation}
+\implies (AB)^t =(BA)^t = I^t = I
+\end{equation}
+\paragraph{Lemma:} $(AB)^t = B^tA^t$
+\begin{align}
+(AB)^t_{ij} &= (AB)^{}_{ji} \\
+&= \sum\limits_{k=1}^nA_{jk}B_{kj}\\
+(B^tA^t)_{ij} &= \sum\limits_{k=1}^nB^t_{ik}A^t_{kj}\\
+&=\sum\limits_{k=1}B_{kj}A_{jk}\\
+&=\sum\limits_{k=1}^nA_{jk}B_{kj}
+\end{align}
+\begin{equation}
+\implies B^tA^t = A^tB^t = I
+\end{equation}
+Claim: $(A^{-1})^t = (A^t)^{-1}$
+\begin{equation}
+B=A^{-1}
+\end{equation}
+\begin{equation}
+(A^t)^{-1} = B^t = (A^{-1})^t
+\end{equation}
