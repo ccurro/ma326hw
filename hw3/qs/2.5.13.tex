@@ -10,7 +10,7 @@ and set $\beta^\prime =
 is a basis for $\mathsf{V}$ and hence that $Q$ is a coordinate matrix
 changing $\beta^\prime$-coordinates into $\beta$-coordinates.
 \\Claim $\text{span}(\beta) =\text{span}(\beta^\prime)$
-\paragraph{Forward Direction}\hfill\\
+\paragraph{Reverse Direction}\hfill\\
 Suppose $x^\prime \in \text{span}(\beta^\prime)$ 
 \begin{equation}
 x^\prime = c_1\left(\sum\limits_{i=1}^nQ_{i1}x_i\right) +
@@ -30,7 +30,7 @@ x^\prime = (c_1Q_{11} + c_2Q_{12} + \cdots + c_nQ_{1n})x_1 + \\
 \begin{equation}
 \implies x \in \text{span}(\beta^\prime)
 \end{equation}
-\paragraph{Reverse Direction}\hfill\\
+\paragraph{Forward Direction}\hfill\\
 Suppose $x \in \text{span}(\beta)$
 \begin{align}
 x &= c_1x_2 + c_2x_2 + \cdots + c_nx_n\\
@@ -60,3 +60,24 @@ x = a_1\sum\limits_{i=1}^nQ_{i1}x_i +a_2\sum\limits_{i=1}^nQ_{i2}x_i
 \begin{equation}
 \implies x \in \text{span}(\beta^\prime)
 \end{equation}
+Suppose $x \in \text{span}(\beta^\prime)$ such that
+\begin{gather}
+x = a_1Qx_1 + a_2Qx_2 + \dotsb + a_nQx_n = 0\\
+\implies Q^{-1}Q(a_1x_1 + a_2x_2 + \dotsb + a_nx_n) = 0\\
+\implies I_n(a_1x_1 + a_2x_2 + \dotsb + a_nx_n) = 0\\
+\therefore \beta^\prime \;\text{is linearly independent}
+\end{gather}
+Claim: $Q =[I_\mathsf{V}]_{\beta^\prime}^\beta$
+\begin{gather}
+\mathsf{T}_{[I_\mathsf{V}]_{\beta^\prime}^\beta}(v_i) = v_i^\prime\;\text{by
+  definition of } [I_\mathsf{V}]_{\beta^\prime}^\beta\\
+\implies \mathsf{T}_{[I_\mathsf{V}]_{\beta^\prime}^\beta}(\beta) = \beta^\prime
+\end{gather}
+Define $\mathsf{T}_Q \colon \mathsf{V}\to\mathsf{V}\;\text{such that }
+\mathsf{T}_Q(x) = Qx,\; \forall x \in \mathsf{V}$
+\begin{gather}
+\mathsf{T}_Q(\beta) = \beta^\prime\\
+\implies \mathsf{T}_{[I_\mathsf{V}]_{\beta^\prime}^\beta} =
+  \mathsf{T}_Q (\text{by theorem 2.6})\\
+\implies [I_\mathsf{V}]_{\beta^\prime}^\beta = Q
+\end{gather}

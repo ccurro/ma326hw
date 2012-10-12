@@ -1,2 +1,11 @@
 Let $A$ and $B$ be $n\times n$ matrices. Prove that $\text{tr}(AB) =
 \text{tr}(BA)$ and $\text{tr}(A)=\text{tr}(A^t)$.
+\\Claim: $\text{tr}(AB) = \text{tr}(AB)$
+\begin{align}
+\text{tr}(AB) &= \sum\limits_{i=1}^n(AB)_{ii}\\
+&= \sum\limits_{i=1}^n\sum\limits_{k=1}^n A_{ik}B_{ki}\\
+&= \sum\limits_{k=1}^n\sum\limits_{i=1}^n A_{ki}B_{ik}\\
+&= \sum\limits_{k=1}^n\sum\limits_{i=1}^n B_{ik}A_{ki}\\
+&= \sum\limits_{i=1}^n(BA)_{ii}\\
+&= \text{tr}(BA)
+\end{align}

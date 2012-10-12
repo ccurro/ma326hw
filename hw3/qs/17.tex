@@ -1,3 +1,67 @@
 Let $\mathsf{V}$ be a vector space. Determine all linear
 transformations $\mathsf{T}\colon \mathsf{V}\to\mathsf{V}$ such that
 $\mathsf{T}=\mathsf{T}^2$.
+\\Suppose $\mathsf{W} = \{y\colon \mathsf{T}(y) = y\}$
+\\Claim: $\forall\mathsf{T}\in \mathcal{L}(\mathsf{V}), \mathsf{T}=\mathsf{T}^2 \Leftrightarrow \mathsf{T}$ is a projection of $\mathsf{W}$ along $N(\mathsf{T})$
+\\Claim:$\mathsf{W}\cap N(\mathsf{T}) =\{0\}$
+\\Suppose $x\in \mathsf{W}\cap N(\mathsf{T})$
+\begin{gather}
+\implies \mathsf{T}(x) = x \\
+\implies \mathsf{T}(x) = 0\\
+\implies x = 0\\
+\implies \mathsf{W} \cap N(T) = \{0\}
+\end{gather}
+\paragraph{}$N(\mathsf{T})$ is a subspace of $\mathsf{V}$ (by theorem
+2.1)
+\\Claim: $\mathsf{W}$ is subspace of $\mathsf{V}$
+\begin{equation}
+0 \in \mathsf{W}
+\end{equation}
+Suppose $x,z \in \mathsf{W}$
+\begin{equation}
+\mathsf{T}(x+z) = \mathsf{T}(x) +\mathsf{T}(z) = x + z
+\end{equation}
+Suppose $x\in \mathsf{W},\; c\in F$
+\begin{gather}
+\mathsf{T}(cx) = c\mathsf{T}(x) = cx\\
+\mathsf{W} \subseteq \mathsf{V} \;\text{by definition}
+\end{gather}
+Claim $\mathsf{V} = \mathsf{W} \oplus N(\mathsf{T})$
+\\$(\subseteq)$ Suppose $ x \in \mathsf{V}$
+\begin{gather}
+\implies x = \mathsf{T}(x) + (x -\mathsf{T}(x))\\
+\mathsf{T}(x) = \mathsf{T}^2(x)\\
+\mathsf{T}(x) \in \mathsf{W}\\
+\mathsf{T}(x-\mathsf{T}(x)) = \mathsf{T}(x) - \mathsf{T}^2(x) = 0\\
+\implies x \in \mathsf{W} \oplus N(\mathsf{T})\\
+\implies \mathsf{V}\subseteq\mathsf{W}
+\end{gather}
+$(\supseteq)$ Suppose $\mathsf{W}\subseteq\mathsf{V}$
+\begin{gather}
+N(\mathsf{T}) \subseteq \mathsf{V}\\
+\implies \mathsf{W}\oplus N(\mathsf{T})\;\text{by closure of }
+\mathsf{V}\\
+\forall x \in \mathsf{V}, x = x_1 + x_2\quad\text{for some } x \in
+\mathsf{W}, x_2 \in N(\mathsf{T})
+\end{gather}
+\begin{align}
+\mathsf{T}(x) &= \mathsf{T}(x_1) + \mathsf{T}(x_2)\\
+&=x_1 + 0\\
+&= x_1
+\end{align}
+It follows that $\mathsf{T}$ is a projection of $\mathsf{W}$ along
+$N(\mathsf{T})$
+\\Suppose $\mathsf{T}$ is a projection of $\mathsf{W}$ along
+$N(\mathsf{T})$
+\\Suppose $x \in \mathsf{W}\oplus N(\mathsf{T})$
+\begin{gather}
+\implies x = x_1 +x_2\quad \text{for some } x_1 \in \mathsf{W}, x_2
+\in N(\mathsf{T})\\
+\mathsf{T}(x) = \mathsf{T}(x_1 +x_2) = \mathsf{T}(x_1)
++\mathsf{T}(x_2) = \mathsf{T}(x_1) + 0 = x_1\\
+\implies \mathsf{T}(x_1) = 0\\
+\mathsf{T}^2(x) = \mathsf{T}(x_1)\\
+\implies \mathsf{T}^2(x) = x \\
+\implies \mathsf{T}^2(x) = \mathsf{T}(x)\; \forall x \in \mathsf{V}\\
+\therefore \mathsf{T}=\mathsf{T}^2
+\end{gather}

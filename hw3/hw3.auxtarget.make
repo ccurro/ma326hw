@@ -1,0 +1,9 @@
+\newlabel{1}
+\newlabel{2}
+\newlabel{3}
+\newlabel{4}
+\newlabel{five}
+\newlabel{four}
+\newlabel{one}
+\newlabel{three}
+\newlabel{two}

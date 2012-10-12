@@ -3,3 +3,14 @@ defined. If the $j$th column of $A$ is a linear combination of a set
 of columns of $A$, prove that the $j$th column $MA$ is linear
 combination of the corresponding columns of $MA$ with the same
 corresponding coefficients.
+\\Suppose $M \in \mathsf{M}_{m\times n}(F), A \in \mathsf{M}_{n\times p}, MA \in \mathsf{M}_{m\times p}$
+\\Suppose $v_j = j^{\text{th}}$ column of $A$ and $u_j = j^{\text{th}}$ column of $MA$
+\begin{equation}
+v_j = \sum\limits_{i=1}^p a_iv_i, \quad a_i\in F
+\end{equation}
+Claim: $ u_j = \sum\limits_{i=1}^p a_iu_i$
+\begin{gather}
+Mv_j = M\sum\limits_{i=1}^p a_iv_i = \sum\limits_{i=1}^p a_iMv_i\\
+\implies u_j = u_j = \sum\limits_{i=1}^p a_iu_i \quad (\text{by
+  theorem 2.13})
+\end{gather}

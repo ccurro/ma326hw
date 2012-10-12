@@ -4,3 +4,68 @@ m-dimensional vector space $\mathsf{W}$  Let $\beta$ and $\gamma$ be
 ordered bases for $\mathsf{V}$ and $\mathsf{W}$ respectively. Prove
 that $\text{rank}(\mathsf{T}) = \text{rank}(\mathsf{L}_A)$ and that
 $\text{nullity}(\mathsf{T} = \text{nullity}(\mathsf{L}_1)$, where $A = [\mathsf{T}]^\gamma_\beta$.
+\\Claim: $\text{nullity}(\mathsf{T}) = \text{nullity}(\mathsf{L}_A)$
+\paragraph{}$N(\mathsf{T})$ is a subspace of $\mathsf{V}$ This implies
+that $\phi_\beta(N(\mathsf{T}))$ is a subspace of $\mathsf{F}^n$ and
+$\text{dim}(N(\mathsf{T})) = \text{dim}(\phi_\beta(N(\mathsf{T})))$
+\\Claim: $\phi_\beta(N(\mathsf{T})) = N(\mathsf{L}_A)$
+\\$(\subseteq)$ Suppose $y \in \phi_\beta(N(\mathsf{T}))$
+\begin{gather}
+\implies y = \phi_\beta(x)\\
+\implies \mathsf{L}_A = \mathsf{L}_A\phi_\beta(x) =
+\phi_\gamma\mathsf{T}(x) = \phi_\gamma(0) =0 \\
+y \in N(\mathsf{L}_A)
+\end{gather}
+\\$(\supseteq)$ Suppose $y \in N(\mathsf{L}_A$
+\begin{gather}
+N(\mathsf{L}_A) \subseteq \mathsf{F}^n\;\text{by definition of }
+N(\mathsf{L}_A)\\
+\implies \forall y \in N(\mathsf{L}_A), \exists ! x\in \mathsf{V}
+\;\text{such that } \phi_\beta(x) = y\\
+\notag \because \phi_\beta\; \text{is an isomorphism}
+\end{gather}
+\begin{gather}
+\mathsf{L}_A(y) = \mathsf{L}_A(\phi_\beta(x)) =0 \\
+\mathsf{L}_A\phi_\beta = \phi_\gamma\mathsf{T}\\
+\implies \phi_\gamma(\mathsf{T}(x)) = 0
+\implies \mathsf{T}(x) =0 \\
+\notag \because \phi_\gamma\; \text{is an isomorphism}\\
+\implies y \in \phi_\beta(N(\mathsf{T}))\;\text{and } N(\phi_\gamma) =
+\{0\}\\
+\implies \text{dim}(N(\mathsf{T})) = \text{dim}(N(\mathsf{L}_A))\\
+\therefore \text{nullity}(\mathsf{T}) = \text{nullity}(\mathsf{L}_A)
+\end{gather}
+Claim: $\text{rank}(\mathsf{T}) = \text{rank}(\mathsf{L}_A)$
+\paragraph{} $R(\mathsf{T}$ is a subspace of $\mathsf{W}$. This
+implies that $\phi_\gamma(R(\mathsf{T}))$ is subspace of $\mathsf{W}$
+and $\text{dim}(R(\mathsf{T})) =
+\text{dim}(\phi_\gamma(R(\mathsf{T}))$ 
+\\Claim: $\phi_\gamma(R(\mathsf{T})) = R(\mathsf{L}_A)$
+\\$(\subseteq)$ Suppose $x \in\phi_\gamma(R(\mathsf{T}))$
+\begin{gather}
+\implies x \in \phi_\gamma(y)\quad \text{for some } y \in
+R(\mathsf{T})\\
+\implies y \in \mathsf{T}(z)\quad \text{for some } z \in \mathsf{V}
+\end{gather}
+\begin{gather}
+\phi_\gamma(\mathsf{T}(z)) = (\phi_\gamma\mathsf{T})(x)\\
+\phi_\gamma\mathsf{T} = \mathsf{L}_A\phi_\beta
+\end{gather}
+\begin{align}
+\implies x &= (\mathsf{L}_A\phi_\beta)(z)\\
+&= \mathsf{L}_A(w)\quad \text{for some } w \in \mathsf{F}^n
+\end{align}
+\begin{equation}
+\implies x \in R(\mathsf{L}_A)
+\end{equation}
+$(\supseteq)$ Suppose $x \in R(\mathsf{L}_A)$ 
+\begin{gather}
+\implies x = [\mathsf{T}]_\beta^\gamma\phi_\beta(z)\quad \text{for
+  some } z \in \mathsf{V}\\
+\implies x = \mathsf{L}_A(\phi_\beta(z)) = (\mathsf{L}_A\phi_\beta)(z)
+= \phi_\gamma\mathsf{T}(z)
+\end{gather}
+\begin{gather}
+\mathsf{T}(z) \in R(\mathsf{T})\\
+\implies x \in \phi_\gamma(R(\mathsf{T}))
+\end{gather}

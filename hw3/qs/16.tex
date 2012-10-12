@@ -8,3 +8,134 @@ $\mathsf{T}\colon \mathsf{V} \to \mathsf{V}$ be linear.
 \item Prove that $\mathsf{V} = \mathsf{R}(\mathsf{T}^k) \oplus
   \mathsf{N}(\mathsf{T}^k)$ for some positive integer $k$
 \end{enumerate}
+\begin{enumerate}[(a)]
+\item Suppose $x \in R(\mathsf{T}^2)$
+\begin{gather}
+\exists a \in \mathsf{V}\;\text{such that } \mathsf{T}(\mathsf{T}(a))
+= x\\
+\implies x \in R(\mathsf{T})\\
+\implies R(\mathsf{T}^2) \subseteq R(\mathsf{T})\\
+\text{rank}(\mathsf{T}) = \text{rank}(\mathsf{T}^2)\\
+\therefore R(\mathsf{T}) = R(\mathsf{T}^2) \label{one}
+\end{gather}
+Suppose $x \in N(\mathsf{T})$
+
+\begin{gather}
+\implies \mathsf{T}(x) = 0 \\
+\implies \mathsf{T}(\mathsf{T}(x)) = 0\\
+\implies x \in N(\mathsf{T}^2)
+\end{gather}
+By dimension theory:
+\begin{gather}
+\text{dim}(R(\mathsf{T})) + \text{dim}(N(\mathsf{T})) =
+\text{dim}(R(\mathsf{T}^2)) + \text{dim}(N(\mathsf{T}^2))\\
+\text{dim}(N(\mathsf{T})) = \text{dim}(N(\mathsf{T}^2)) \quad
+(\text{by \ref{one}})\\
+\implies N(\mathsf{T}) = \mathsf{N}(\mathsf{T}^2) \label{two}
+\end{gather}
+Claim: $R(\mathsf{T}\cap N(\mathsf{T} = \{0\}$
+\\Suppose $u \in R(\mathsf{T}) \cap N(\mathsf{T})$
+\begin{gather}
+\exists y \in \mathsf{V}\; \text{such that } \mathsf{T}(y) = u\\
+\mathsf{T}^2(y) = 0 \\
+\therefore y \in N(\mathsf{T}^2)\\
+\therefore y \in N(\mathsf{T}) \quad (\text{by \ref{two}})\\
+u = \mathsf{T}(y) = 0
+\end{gather}
+Claim: $V = N(\mathsf{T}) \oplus R(\mathsf{T})$
+\\Suppose $\beta_N$ is a basis for $N\mathsf{T}$ and $\beta_R$ is a
+basis for $R(\mathsf{T})$
+\begin{gather}
+N(\mathsf{T}) \cap R(\mathsf{T}) =\{0\}\\
+\implies \text{span}(\beta_N)\cap \text{span}(\beta_R)
+=\{0\} \label{three}\\
+\therefore \beta_N\cap \beta_R = \{\}\\
+\implies \text{card}(\beta_N\cup\beta_R) = n\\
+\beta_N =\{n_1,n_2,\dotsc,n_k\} \implies \text{card}(\beta_N) = k\\
+\beta_R =\{r_1,r_2,\dotsc,r_m\} \implies \text{card}(\beta_R) =m\\
+\end{gather}
+For $i$ from 1 to $k$ if $n_i \in \text{span}(\beta_R)$
+\begin{equation}
+\text{span}(\beta_N)\cap\text{span}(\beta_R) = \{0,n_i\} \lightning
+\text{Contradiction! with \ref{three}} 
+\end{equation}
+For $i$ from 1 to $m$, if $r_i \in \text{span}(\beta_N)$
+\begin{equation}
+\text{span}(\beta_N)\cap\text{span}(\beta_R) = \{0,r_i\} \lightning
+\text{Contradiction! with \ref{three}} 
+\end{equation}
+\begin{equation}
+\therefore \beta_N\cup\beta_R \;\text{is linearly independent} \label{four}
+\end{equation}
+\begin{align}
+\text{card}(\beta_N\cup\beta_R) & = \text{card}(\beta_N) +
+\text{card}(\beta_R) - \text{card}(\beta_N\cap \beta_R)\\
+&= \text{card}(\beta_N) + \text{card}(\beta_R)\\
+&= k + m =n \label{five}
+\end{align}
+From \ref{four} and \ref{five} it follows that
+\begin{equation}
+\mathsf{V} = \text{span}(\beta_N\cup \beta_R)
+\end{equation}
+Claim: $\text{span}(\beta_N\cup\beta_R) = \text{span}(\beta_N) +
+\text{span}(\beta_R) = N(\mathsf{T}) + R(\mathsf{T})$
+\\$(\supseteq)$ since $\text{span}(\beta_N)$ and
+$\text{span}(\beta_R)$ are both contained in $\mathsf{V}$ it follows
+that
+\begin{equation}
+\text{span}(\beta_N) + \text{span}(\beta_R) \subseteq \mathsf{V}
+\end{equation}
+$(\subseteq)$ Suppose $x \in \text{span}(\beta_N\cup\beta_R)$
+\begin{gather}
+x = a_1v_1 + \dotsb + a_kv_k +a_{k+1}v_{k+1} \dotsb + a_{k+m}v_{k+m}\\
+a_1v_1 +\dotsb + a_kv_k \in \text{span}(\beta_R)\\
+a_{k+1}v_{k+1} + \dotsb +a_{k+m} \in \text{span}(\beta_N)\\
+\implies x \in \text{span}(\beta_N) + \text{span}(\beta_R)
+\end{gather}
+\begin{equation}
+\implies N(\mathsf{T}) \oplus R(\mathsf{T}) = \mathsf{V}
+\end{equation}
+\item Claim: $\text{rank}(\mathsf{T}^k) =
+  \text{rank}(\mathsf{T}^{k+1})$ for some integer $k$
+\begin{equation}
+0\leq\dots \leq \text{dim}(R(\mathsf{T}^3)) \leq
+\text{dim}(R(\mathsf{T}^2))\leq \text{dim}(R(\mathsf{T})) \leq n \label{1}
+\end{equation}
+Suppose $x \in R(\mathsf{T}^{k+1})$
+\begin{gather}
+\exists a \in \mathsf{V}\; \text{such that } \mathsf{T}(\mathsf{T}(a))
+= x\\
+\implies x \in R(\mathsf{T}^k)\\
+\implies R(\mathsf{T}^k) \leq R(\mathsf{T}^{k+1}) \label{2}
+\end{gather}
+Since there is a lower bound 0 and an upper bound $n$ in \ref{1} it
+follows that for some integer $k$
+\begin{gather}
+\text{dim}(R(\mathsf{T}^{k+1})) =
+\text{dim}(R(\mathsf{T}^k)) \label{3}\\
+\implies R(\mathsf{T}^{k+1}) = R(\mathsf{T}^k) \; (\text{by  \ref{2}
+and \ref{3}}) \label{4}\\
+\implies \text{rank}(\mathsf{T}^k) = \text{rank}(\mathsf{T}^{k+1})
+\quad \text{for some integer } k
+\end{gather}
+Claim: $R\left(\mathsf{T}^{k+1}\right) = R(\mathsf{T}^m)\;\forall m \geq 1$
+\\For $m=1$ by \ref{4}\\
+For $m=j \rightarrow R(\mathsf{T}^{k+j}) = R(\mathsf{T}^k)$\\
+For $m = j+1$
+\begin{gather}
+R\left(\mathsf{T}^{k+j+1}\right) =
+\mathsf{T}\left(R\left(\mathsf{T}^{k+j}\right)\right) = 
+\mathsf{T}\left(R\left(\mathsf{T}^k\right)\right) =
+R\left(\mathsf{T}^{k+1}\right) = R\left(\mathsf{T}^k\right)\\
+\implies R\left(\mathsf{T}^{k+j+1}\right) = R\left(\mathsf{T}^k\right)\\
+\implies \text{rank}\left(\mathsf{T}^{k+m}\right) =\text{rank}\left(\mathsf{T}^k\right)\;
+\text{for some integer } k\; \text{and for all integer } m\\
+\implies \text{rank}(\mathsf{T}^{2k} = \text{rank}(\mathsf{T}^k) \;
+\text{for some } k
+\end{gather}
+Apply the same method as in part (a) and it follows that
+\begin{equation}
+\mathsf{V} = R(\mathsf{T}^k)\oplus N(\mathsf{T}^k)\; \text{for some } k
+\end{equation}
+\end{enumerate}
+
