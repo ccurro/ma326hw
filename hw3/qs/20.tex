@@ -3,11 +3,11 @@ transformation from an $n$-dimensional vector space $\mathsf{V}$ to an
 m-dimensional vector space $\mathsf{W}$  Let $\beta$ and $\gamma$ be
 ordered bases for $\mathsf{V}$ and $\mathsf{W}$ respectively. Prove
 that $\text{rank}(\mathsf{T}) = \text{rank}(\mathsf{L}_A)$ and that
-$\text{nullity}(\mathsf{T} = \text{nullity}(\mathsf{L}_1)$, where $A = [\mathsf{T}]^\gamma_\beta$.
+$\text{nullity}(\mathsf{T}) = \text{nullity}(\mathsf{L}_A)$, where $A = [\mathsf{T}]^\gamma_\beta$.
 \\Claim: $\text{nullity}(\mathsf{T}) = \text{nullity}(\mathsf{L}_A)$
-\paragraph{}$N(\mathsf{T})$ is a subspace of $\mathsf{V}$ This implies
+\paragraph{}$N(\mathsf{T})$ is a subspace of $\mathsf{V}$. This implies
 that $\phi_\beta(N(\mathsf{T}))$ is a subspace of $\mathsf{F}^n$ and
-$\text{dim}(N(\mathsf{T})) = \text{dim}(\phi_\beta(N(\mathsf{T})))$
+$\text{dim}(N(\mathsf{T})) = \text{dim}(\phi_\beta(N(\mathsf{T})))$ by HW.2.4.17
 \\Claim: $\phi_\beta(N(\mathsf{T})) = N(\mathsf{L}_A)$
 \\$(\subseteq)$ Suppose $y \in \phi_\beta(N(\mathsf{T}))$
 \begin{gather}
@@ -16,31 +16,31 @@ $\text{dim}(N(\mathsf{T})) = \text{dim}(\phi_\beta(N(\mathsf{T})))$
 \phi_\gamma\mathsf{T}(x) = \phi_\gamma(0) =0 \\
 y \in N(\mathsf{L}_A)
 \end{gather}
-\\$(\supseteq)$ Suppose $y \in N(\mathsf{L}_A$
+\\$(\supseteq)$ Suppose $y \in N(\mathsf{L}_A)$
 \begin{gather}
 N(\mathsf{L}_A) \subseteq \mathsf{F}^n\;\text{by definition of }
 N(\mathsf{L}_A)\\
 \implies \forall y \in N(\mathsf{L}_A), \exists ! x\in \mathsf{V}
 \;\text{such that } \phi_\beta(x) = y\\
-\notag \because \phi_\beta\; \text{is an isomorphism}
-\end{gather}
-\begin{gather}
+\notag \because \phi_\beta\; \text{is an isomorphism}\\
+%\end{gather}
+%\begin{gather}
 \mathsf{L}_A(y) = \mathsf{L}_A(\phi_\beta(x)) =0 \\
 \mathsf{L}_A\phi_\beta = \phi_\gamma\mathsf{T}\\
 \implies \phi_\gamma(\mathsf{T}(x)) = 0
 \implies \mathsf{T}(x) =0 \\
 \notag \because \phi_\gamma\; \text{is an isomorphism}\\
-\implies y \in \phi_\beta(N(\mathsf{T}))\;\text{and } N(\phi_\gamma) =
-\{0\}\\
-\implies \text{dim}(N(\mathsf{T})) = \text{dim}(N(\mathsf{L}_A))\\
+\therefore y \in \phi_\beta(N(\mathsf{T}))\\
+% N(\phi_\gamma) = \{0\}\\
+\phi_\beta(N(\mathsf{T})) = N(\mathsf{L}_A) \implies \text{dim}(\phi_\beta(N(\mathsf{T}))) = \text{dim}(N(\mathsf{L}_A))=\text{dim}(N(\mathsf{T}))\\
 \therefore \text{nullity}(\mathsf{T}) = \text{nullity}(\mathsf{L}_A)
 \end{gather}
 \newpage{}
 Claim: $\text{rank}(\mathsf{T}) = \text{rank}(\mathsf{L}_A)$
-\paragraph{} $R(\mathsf{T}$ is a subspace of $\mathsf{W}$. This
+\paragraph{} $R(\mathsf{T})$ is a subspace of $\mathsf{W}$. This
 implies that $\phi_\gamma(R(\mathsf{T}))$ is subspace of $\mathsf{W}$
 and $\text{dim}(R(\mathsf{T})) =
-\text{dim}(\phi_\gamma(R(\mathsf{T}))$ 
+\text{dim}(\phi_\gamma(R(\mathsf{T}))$ by HW.2.4.17
 \\Claim: $\phi_\gamma(R(\mathsf{T})) = R(\mathsf{L}_A)$
 \\$(\subseteq)$ Suppose $x \in\phi_\gamma(R(\mathsf{T}))$
 \begin{gather}
@@ -68,5 +68,9 @@ $(\supseteq)$ Suppose $x \in R(\mathsf{L}_A)$
 \end{gather}
 \begin{gather}
 \mathsf{T}(z) \in R(\mathsf{T})\\
-\implies x \in \phi_\gamma(R(\mathsf{T}))
+\implies x \in \phi_\gamma(R(\mathsf{T}))\\
+\phi_\gamma(R(\mathsf{T})) = R(\mathsf{L}_A) \implies
+\text{dim}(\phi_\gamma(R(\mathsf{T}))) = \text{dim}(R(\mathsf{L}_A)) =
+\text{dim}(R(\mathsf{T}))\\
+\therefore \text{rank}(\mathsf{T}) = \text{rank}(\mathsf{L}_A)
 \end{gather}

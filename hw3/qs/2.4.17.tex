@@ -58,21 +58,25 @@ ca_n\mathsf{T}(u_n)\\
 $\mathsf{T}(\mathsf{V}_0) \subseteq \mathsf{W}$ by the definition of
 $\mathsf{T}$. It follows that $\mathsf{T}(\mathsf{V}_0)$ is a subspace
 of $\mathsf{W}$.
-\item Suppose $\beta_{\mathsf{V}_0}$ is a basis of $\mathsf{V}_0$
-\\Claim: $\text{card}(\beta_{\mathsf{V}_0}) =
-\text{card}(\mathsf{T}(\beta_{\mathsf{V}_0}))$
-\paragraph{} $\mathsf{T}$ is an isomorphism. Equivalently it also
-invertible and 1-1. Therefore it follows that for every $x\in
-\mathsf{T}(\beta_{\mathsf{V}_0})$ there exists a unique vector $y \in
-\beta_{\mathsf{V}_0}$ such that $\mathsf{T}(y) =x$
-\\Claim: $\mathsf{T}(\beta_{\mathsf{V}_0})$ is a basis of
-$\mathsf{T}(\mathsf{V}_0)$
-\begin{equation}
-\mathsf{T}(\beta_{\mathsf{V}_0})\;\text{is a basis of }
-\mathsf{T}(\mathsf{V}_0) \Leftrightarrow
-\text{span}(\mathsf{T}(\beta_{\mathsf{V}_0})) = \mathsf{T}(\text{span}(\beta_{\mathsf{V}_0}))
-\end{equation}
-$(\subseteq)$ Suppose $x \in
+\item Claim: $\text{dim}(\mathsf{V}_0) = \text{dim}(\mathsf{T}(\mathsf{V}_0$))
+\\Suppose $\beta_{\mathsf{V}_0}$ is a basis of $\mathsf{V}_0$
+\paragraph{Lemma:} $\mathsf{T}(\beta_{\mathsf{V}_0}) \; \text{is a
+  basis of } \mathsf{T}(\mathsf{V}_0)$
+
+% \\Claim: $\text{card}(\beta_{\mathsf{V}_0}) =
+% \text{card}(\mathsf{T}(\beta_{\mathsf{V}_0}))$
+% \paragraph{} $\mathsf{T}$ is an isomorphism. Equivalently it also
+% invertible and 1-1. Therefore it follows that for every $x\in
+% \mathsf{T}(\beta_{\mathsf{V}_0})$ there exists a unique vector $y \in
+% \beta_{\mathsf{V}_0}$ such that $\mathsf{T}(y) =x$
+%\\Claim: $\mathsf{T}(\beta_{\mathsf{V}_0})$ is a basis of
+%$\mathsf{T}(\mathsf{V}_0)$
+%\begin{equation}
+%\mathsf{T}(\beta_{\mathsf{V}_0})\;\text{is a basis of }
+%\mathsf{T}(\mathsf{V}_0) \Leftrightarrow
+Claim: $\text{span}(\mathsf{T}(\beta_{\mathsf{V}_0})) = \mathsf{T}(\text{span}(\beta_{\mathsf{V}_0}))$
+%\end{equation}
+\\$(\subseteq)$ Suppose $x \in
 \text{span}(\mathsf{T}(\beta_{\mathsf{V}_0}))$
 \begin{align}
 x &= a_1\mathsf{T}(u_1) + a_2\mathsf{T}(u_2) + \dotsb +
@@ -88,13 +92,29 @@ a_1u_1 +a_2u_2 +\dotsb + a_nu_n \in
 $(\supseteq)$ Suppose $x\in
 \mathsf{T}(\text{span}(\beta_{\mathsf{V}_0}))$ such that 
 \begin{align}
-x &= a_1\mathsf{T}((u_1) + a_1\mathsf{T}(u_2) +\dotsb +
-a_n\mathsf{T}(u_n))\quad\text{for }a_i \in F, u_i \in
+x &= \mathsf{T}(a_1u_1 + a_1u_2 +\dotsb +
+a_nu_n)\quad\text{for }a_i \in F, u_i \in
 \beta_{\mathsf{V}_0}\\
 &= a_1\mathsf{T}(u_1) + a_2\mathsf{T}(u_2) + \dotsb + a_n\mathsf{T}(u_n)
 \end{align}
+\begin{equation}
+\implies x \in \text{span}(\mathsf{T}(\beta_{\mathsf{V}_0}))
+\end{equation}
+Claim: $\mathsf{T}(\beta_{\mathsf{V}_0})$ is linearly independent
 \begin{gather}
-\implies x \in \text{span}(\mathsf{T}(\beta_{\mathsf{V}_0}))\\
-\therefore \text{dim}(\beta_{\mathsf{V}_0}) = \text{dim}(\mathsf{T}(\beta_{\mathsf{V}_0}))
+\beta_{\mathsf{V}_0}\; \text{is linearly independent and } \mathsf{T}
+\; \text{is 1-1}\\
+\implies \mathsf{T}(\beta_{\mathsf{V}_0})\; \text{is linearly
+  independent by HW.2.1.14.a} 
 \end{gather}
+\newpage{}
+Claim: $\text{card}(\beta_{\mathsf{V}_0}) =
+\text{card}(\mathsf{T}(\beta_{\mathsf{V}_0}))$
+\paragraph{} $\mathsf{T}$ is an isomorphism. Equivalently it also
+invertible and 1-1. Therefore it follows that for every $x\in
+\mathsf{T}(\beta_{\mathsf{V}_0})$ there exists a unique vector $y \in
+\beta_{\mathsf{V}_0}$ such that $\mathsf{T}(y) =x$
+\begin{equation}
+\therefore \text{dim}(\beta_{\mathsf{V}_0}) = \text{dim}(\mathsf{T}(\beta_{\mathsf{V}_0}))
+\end{equation}
 \end{enumerate}

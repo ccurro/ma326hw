@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2012.8.21)  12 OCT 2012 14:10
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2012.8.21)  12 OCT 2012 18:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1063,14 +1063,14 @@ LaTeX Font Info:    Try loading font information for U+stmry on input line 45.
 map/pdftex.map}
 
 ] [2] [3]) (./qs/17.tex [4]) [5] (./qs/2.tex [6]) [7] (./qs/5.tex) (./qs/2.4.17
-.tex [8]) (./qs/20.tex [9] [10]) [11] (./qs/3.tex [12]) [13] (./qs/6.tex [14] [
+.tex [8] [9]) (./qs/20.tex [10]) [11] (./qs/3.tex [12]) [13] (./qs/6.tex [14] [
 15]) (./qs/10.tex) (./qs/2.5.13.tex [16]) [17] (./hw3.aux) ) 
 Here is how much of TeX's memory you used:
- 13991 strings out of 493488
- 269568 string characters out of 3146892
+ 13995 strings out of 493488
+ 269594 string characters out of 3146892
  332498 words of memory out of 3000000
  16981 multiletter control sequences out of 15000+200000
- 12835 words of font info for 64 fonts, out of 3000000 for 9000
+ 12951 words of font info for 66 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  38i,14n,43p,264b,614s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-d
@@ -1087,7 +1087,7 @@ fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/sy
 mbols/msam10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb></usr/share/texmf-dist/fonts/type1/public/stmaryrd/stmary10.pfb>
-Output written on hw3.pdf (17 pages, 179614 bytes).
+Output written on hw3.pdf (17 pages, 179596 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
  87 compressed objects within 1 object stream
