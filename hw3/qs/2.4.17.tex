@@ -6,3 +6,95 @@ isomorphism. Let $\mathsf{V}_0$ be a subspace of $\mathsf{V}$.
   $\mathsf{W}$.
 \item Prove that $\text{dim}(\mathsf{V}_0) = \text{dim}(\mathsf{T}(\mathsf{V}_0))$.
 \end{enumerate}
+Let $\mathsf{V}_0$ be a subspace of $\mathsf{V}$ 
+\begin{enumerate}[(a)]
+\item Claim: $0 \in \mathsf{V}_0$
+\begin{gather}
+0 \in \mathsf{V}_0\\
+\implies \mathsf{T}(0) = 0 
+\end{gather}
+Claim: $\forall x , y \in \mathsf{T}(\mathsf{V}_0), x + y \in
+\mathsf{T}(\mathsf{V}_0)$
+\\Suppose $\beta_{\mathsf{V}_0}$ is basis for $\mathsf{V}_0$
+\begin{equation}
+\implies \mathsf{V}_0 = \text{span}(\beta_{\mathsf{V}_0})
+\end{equation}
+Suppose $x, y \in \mathsf{T}(\mathsf{V}_0)$
+\begin{align}
+\implies x &= \mathsf{T}(a_1u_1 + a_2u_2 + \dotsb + a_nu_n)\\
+y &= \mathsf{T}(b_1u_1 + b_2u_2 + \dotsb + b_nu_n) \quad \text{for }
+a_i,b_i \in F, \; u_i \in \beta_{\mathsf{V}_0}\\
+\implies x &= a_1\mathsf{T}(u_1) + a_2\mathsf{T}(u_2) + \dotsb +
+a_n\mathsf{T}(u_n)\\
+y &= b_1\mathsf{T}(u_1) + b_2\mathsf{T}(u_2) +\dotsb +
+b_n\mathsf{T}(u_n)\\
+\implies x +y &= (a_1+b_1)\mathsf{T}(u_1) + (a_2 +b_2)\mathsf{T}(u_2) +
+\dotsb + (a_n+b_n)\mathsf{T}(u_n)\\
+&= \mathsf{T}((a_1 +b_2)u_1 + (a_2+b_2)u_2 + \dotsb + (a_n + b_n)u_n)
+\end{align}
+\begin{equation}
+\implies x + y \in \mathsf{T}(\text{span}(\beta_{\mathsf{V}_0}))
+\end{equation}
+Claim: $\forall x \in \mathsf{T}(\mathsf{V}_0)$ and $\forall c \in F,
+cx \in \mathsf{T}(\mathsf{V}_0)$
+\\Suppose $x \in \mathsf{T}(\mathsf{V}_0)$ such that
+\begin{equation}
+x = \mathsf{T}(a_1u_1 + a_2u_2 + \dotsb + a_nu_n)\quad \text{for }
+u_i\in \beta_{\mathsf{V}_0}, a_i \in F
+\end{equation}
+\begin{equation}
+\implies x = a_1\mathsf{T}(u_1) + a_2\mathsf{T}(u_2) + \dotsb + a_n\mathsf{T}(u_n)
+\end{equation}
+\begin{align}
+cx &= c\left(a_1\mathsf{T}(u_1) + a_2\mathsf{T}(u_2) + \dotsb +
+  a_n\mathsf{T}(u_n) \right)\\
+&= ca_1\mathsf{T}(u_1) + ca_2\mathsf{T}(u_2) +\dotsb +
+ca_n\mathsf{T}(u_n)\\
+&= \mathsf{T}(ca_1u_1 + ca_2u_2 + \dotsb + ca_nu_n)
+\end{align}
+\begin{equation}
+\implies cx \in \mathsf{T}(\text{span}(\beta_{\mathsf{V}_0}))
+\end{equation}
+$\mathsf{T}(\mathsf{V}_0) \subseteq \mathsf{W}$ by the definition of
+$\mathsf{T}$. It follows that $\mathsf{T}(\mathsf{V}_0)$ is a subspace
+of $\mathsf{W}$.
+\item Suppose $\beta_{\mathsf{V}_0}$ is a basis of $\mathsf{V}_0$
+\\Claim: $\text{card}(\beta_{\mathsf{V}_0}) =
+\text{card}(\mathsf{T}(\beta_{\mathsf{V}_0}))$
+\paragraph{} $\mathsf{T}$ is an isomorphism. Equivalently it also
+invertible and 1-1. Therefore it follows that for every $x\in
+\mathsf{T}(\beta_{\mathsf{V}_0})$ there exists a unique vector $y \in
+\beta_{\mathsf{V}_0}$ such that $\mathsf{T}(y) =x$
+\\Claim: $\mathsf{T}(\beta_{\mathsf{V}_0})$ is a basis of
+$\mathsf{T}(\mathsf{V}_0)$
+\begin{equation}
+\mathsf{T}(\beta_{\mathsf{V}_0})\;\text{is a basis of }
+\mathsf{T}(\mathsf{V}_0) \Leftrightarrow
+\text{span}(\mathsf{T}(\beta_{\mathsf{V}_0})) = \mathsf{T}(\text{span}(\beta_{\mathsf{V}_0}))
+\end{equation}
+$(\subseteq)$ Suppose $x \in
+\text{span}(\mathsf{T}(\beta_{\mathsf{V}_0}))$
+\begin{align}
+x &= a_1\mathsf{T}(u_1) + a_2\mathsf{T}(u_2) + \dotsb +
+a_n\mathsf{T}(u_n)\\
+&= \mathsf{T}(a_1u_1 +a_2u_2 + \dotsb + a_nu_n)\quad \text{for } u_i
+\in \beta_{\mathsf{V}_0}, a_i \in F
+\end{align}
+\begin{gather}
+a_1u_1 +a_2u_2 +\dotsb + a_nu_n \in
+\text{span}(\beta_{\mathsf{V}_0})\\
+\implies x \in \mathsf{T}(\text{span}(\beta_{\mathsf{V}_0}))
+\end{gather}
+$(\supseteq)$ Suppose $x\in
+\mathsf{T}(\text{span}(\beta_{\mathsf{V}_0}))$ such that 
+\begin{align}
+x &= a_1\mathsf{T}((u_1) + a_1\mathsf{T}(u_2) +\dotsb +
+a_n\mathsf{T}(u_n))\quad\text{for }a_i \in F, u_i \in
+\beta_{\mathsf{V}_0}\\
+&= a_1\mathsf{T}(u_1) + a_2\mathsf{T}(u_2) + \dotsb + a_n\mathsf{T}(u_n)
+\end{align}
+\begin{gather}
+\implies x \in \text{span}(\mathsf{T}(\beta_{\mathsf{V}_0}))\\
+\therefore \text{dim}(\beta_{\mathsf{V}_0}) = \text{dim}(\mathsf{T}(\beta_{\mathsf{V}_0}))
+\end{gather}
+\end{enumerate}
