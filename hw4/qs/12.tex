@@ -44,7 +44,60 @@ a_{11}& a_{12} & \cdots & a_{1m} & a_{1,m+1} \cdots & a_{1n}\\
 \end{enumerate}
 \item For $m = k + 1$
 \begin{enumerate}
-\item If $m > n$ 
-\item If $m < n$ 
+\item If $m > n$, assume the $m=k$ case holds
+\begin{equation}
+A =
+\begin{pmatrix}
+a_{11} & \cdots & \cdots & a_{1n}\\
+& a_{22} & & \vdots\\
+& & \ddots & \vdots\\
+&\bigzero & & a_{nn}\\
+& & & \vdots\\
+& & & a_{mn}\\
+a_{m+1,1} & a_{m+1,2} & \cdots & a_{m+1,n}
+\end{pmatrix}
+\end{equation}
+Using row operations of type 3 on row $m+1$ from row 1 to row $n$ in
+order and make $a_{m+1,1} =0$ in each row with row operations of type
+3 on row $m+1$ for $i$ from 1 to $n$.
+\begin{equation}
+A \leadsto \begin{pmatrix}
+a_{11} & \cdots & \cdots & a_{1n}\\
+& a_{22} & & \vdots\\
+& & \ddots & \vdots\\
+& & & a_{nn}\\
+&\bigzero & & \vdots\\
+& & & a_{mn}\\
+& & & a_{m+1,n}
+\end{pmatrix}
+\end{equation}
+\item If $m < n$, assume the $m=k$ case holds
+\begin{equation}
+A =
+\begin{pmatrix}
+a_{11} & \cdots & \cdots & a_{1m} & a_{1,m+1} & \cdots & a_{1n}\\
+& a_{22} & & \vdots &  & & \vdots\\
+\bigzero& & \ddots & \vdots&  & & \vdots\\
+%&\bigzero & & a_{nn}&  & & \vdots\\
+%& & & \vdots & & & \vdots\\
+& & & a_{mm}& a_{m,m+1} & \cdots & a_{mn}\\
+a_{m+1,1} & a_{m+1,2} & \cdots & a_{m+1,n} & a_{m+1,m+1} & \cdots & a_{m+1,n}
+\end{pmatrix}
+\end{equation}
+Using row operations of type 3 on row $m+1$ from row 1 to row $m$ in
+order and make $a_{m+1,j} = 0 $ in each row $i$ apply a row operation
+of type 3 on row $m+1$ for $i$ from 1 to $m$
+\begin{equation}
+A \leadsto 
+\begin{pmatrix}
+a_{11} & \cdots & \cdots & a_{1m} & a_{1,m+1} & \cdots & a_{1n}\\
+& a_{22} & & \vdots &  & & \vdots\\
+& & \ddots & \vdots&  & & \vdots\\
+%& & & a_{nn}&  & & \vdots\\
+%&\bigzero & & \vdots & & & \vdots\\
+& \bigzero& & a_{mm}& a_{m,m+1} & \cdots & a_{mn}\\
+& &&& a_{m+1,m+1} & \cdots & a_{m+1,n}
+\end{pmatrix}
+\end{equation}
 \end{enumerate}
 \end{enumerate}

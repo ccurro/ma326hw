@@ -1,0 +1,174 @@
+For each of the following linear transformations $\T$, determine
+whether $\T$ is invertible, and compute $\T^{-1}$ if it exists.
+\begin{enumerate}
+\item $\T \colon \mathsf{P}_2(\mathbb{R}) \to
+  \mathsf{P}_2(\mathbb{R})$ defined by $\T(f(x)) = f^{\prime\prime}
+  +2f^\prime(x) -f(x)$
+\begin{align}
+\T(1) = -1 & & \T(x) = 2-x & & \T(x^2) = 2a +4x -x^2
+\end{align}
+\begin{equation}
+\implies [\T]_\alpha^\beta = \begin{pmatrix}
+-1 & 2 & 2\\
+0 & -1 & 4\\
+0 & 0 & -1
+\end{pmatrix}
+\end{equation}
+\begin{gather}
+\begin{gmatrix}[left]
+-1 & 2 & 2&\\
+0 & -1 & 4&\\
+0 & 0 & -1&
+\end{gmatrix}
+\begin{gmatrix}[right]
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\rowops
+\add[4]{2}{1}
+\add[2]{2}{0}
+\add[2]{1}{0}
+\mult{0}{\cdot -1}
+\mult{1}{\cdot -1}
+\mult{2}{\cdot -1}
+\end{gmatrix}
+\\
+\notag
+\leadsto
+\begin{gmatrix}[left]
+1 & 0 & 0&\\
+0 & 1 & 0&\\
+0 & 0 & 1&
+\end{gmatrix}
+\begin{gmatrix}[right]
+-1 & -2 & -10\\
+0 & -1 & -4\\
+0 & 0 & -1
+\end{gmatrix}\\
+\implies [\T^{-1}]_\beta^\alpha = \begin{pmatrix}
+-1 & -2 & -10\\
+0 & -1 & -4\\
+0 & 0 & -1
+\end{pmatrix}\\
+\T^{-1}(c +bx+ax^2) = -ax^2 -(4a +b) - (a + 2b +c)
+\end{gather}
+\setcounter{enumii}{3}
+\item $\T\colon \mathsf{R}^3 \to \mathsf{P}_2(\mathbb{R})$ defined
+  by \[
+\T(a_1,a_2,a_3) = (a_1 +a_2+a_3) + (a_1 -a_2 +a_3)x +a_1x^2
+\]
+\begin{align}
+\T(1,0,0) = 1 +x +x^2 & & \T(0,1,0) =1 -x & & \T(0,0,1) = 1+x
+\end{align}
+\begin{equation}
+[\T]_\alpha^\beta = \begin{pmatrix}
+1 & 1 & 1\\
+1 & -1 & 1\\
+1 & 0 & 0
+\end{pmatrix}
+\end{equation}
+\begin{gather}
+\begin{gmatrix}[left]
+1 & 1 & 1&\\
+1 & -1 & 1&\\
+1 & 0 & 0&
+\end{gmatrix}
+\begin{gmatrix}[right]
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\rowops
+\swap{2}{0}
+\add[-1]{0}{1}
+\add[-1]{0}{2}
+\add[1]{1}{2}
+\mult{1}{\cdot -1}
+\mult{2}{\cdot \frac{1}{2}}
+\add[1]{2}{1}
+\end{gmatrix}
+\\
+\notag
+\leadsto
+\begin{gmatrix}[left]
+1 & 0 & 0&\\
+0 & 1 & 0&\\
+0 & 0 & 1&
+\end{gmatrix}
+\begin{gmatrix}[right]
+0 & 0& 1\\
+\mfrac{1}{2} & \mfrac{-1}{2} & 0\\
+\mfrac{1}{2} & \mfrac{1}{2} & -1
+\end{gmatrix}\\
+\implies [\T^{-1}]_\beta^\alpha = \begin{pmatrix}
+0 & 0& 1\\
+\mfrac{1}{2} & \mfrac{-1}{2} & 0\\
+\mfrac{1}{2} & \mfrac{1}{2} & -1
+\end{pmatrix}\\
+\T^{-1}(ax^2 +bx +c) = \left(a,\left(\frac{1}{2}\right)c -\left(\frac{1}{2}\right)b,\left(\frac{1}{2}\right)c+\left(\frac{1}{2}\right)b-a\right)
+\end{gather}
+\setcounter{enumii}{5}
+\item $\T \colon \mathsf{M}_{2\times 2}(\mathbb{R}) \to \mathsf{R}^4$
+  defined by \[
+\T(A) = (\tr{A},\tr{A^t},\tr{EA},\tr{AE}),
+\]
+where
+\[E =
+\begin{pmatrix}
+0 & 1\\
+1 & 0
+\end{pmatrix}
+\]
+\begin{equation}
+A = \begin{pmatrix}
+a & b\\
+c & d
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\T(A) = (a+d,a+d,c+b, c+b)
+\end{equation}
+\begin{align}
+\T\left(\begin{smallmatrix}
+1 & 0\\
+0 & 0
+\end{smallmatrix}\right) & = (1,1,0,0)\\
+\T\left(\begin{smallmatrix}
+0 & 1\\
+0 & 0
+\end{smallmatrix}\right) & = (0,0,1,1)\\
+\T\left(\begin{smallmatrix}
+0 & 0\\
+1 & 0
+\end{smallmatrix}\right) & = (0,0,1,1)\\
+\T\left(\begin{smallmatrix}
+0 & 0\\
+0 & 1
+\end{smallmatrix}\right) & = (1,1,0,0)
+\end{align}
+\begin{equation}
+[\T]_\alpha^\beta = \begin{pmatrix}
+1 & 0 & 0 &1\\
+1 & 0 & 0 & 1\\
+0 & 1 & 1 & 0\\
+0 & 1 & 1 & 0
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\begin{gmatrix}[p]
+1 & 0 & 0 &1\\
+1 & 0 & 0 & 1\\
+0 & 1 & 1 & 0\\
+0 & 1 & 1 & 0
+\rowops
+\add[-1]{2}{3}
+\end{gmatrix}
+\leadsto
+\begin{pmatrix}
+1 & 0 & 0 &1\\
+1 & 0 & 0 & 1\\
+0 & 1 & 1 & 0\\
+0 & 0 & 0 & 0
+\end{pmatrix}
+\end{equation}
+$\T$ is not invertible.
+\end{enumerate}

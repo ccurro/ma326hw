@@ -1,8 +1,13 @@
 (TeX-add-style-hook "hw4"
  (lambda ()
     (TeX-add-symbols
+     '("mfrac" 2)
+     '("dime" 1)
+     '("rank" 1)
+     '("tr" 1)
      "tab"
      "gap"
+     "T"
      "bigzero")
     (TeX-run-style-hooks
      "fancyhdr"

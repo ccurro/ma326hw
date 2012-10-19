@@ -1,0 +1,153 @@
+For each of the following matrices, compute the rank and the inverse
+if it exists.
+\begin{enumerate}
+\setcounter{enumii}{1}
+\item $\begin{pmatrix}1 & 2 \\ 2 & 4
+  \end{pmatrix}$
+\begin{equation}
+\begin{gmatrix}[left]
+1 & 2&\\
+2 & 4&
+\colops
+\add[-2]{0}{1}
+\end{gmatrix}
+\begin{gmatrix}[right]
+1 & 0\\
+0 & 1
+\rowops
+\add[-2]{0}{1}
+\colops
+\add[-2]{0}{1}
+\end{gmatrix}
+\leadsto
+\begin{gmatrix}[left]
+1 & 0&\\
+0 & 0&
+\end{gmatrix}
+\begin{gmatrix}[right]
+0 & 1\\ 
+0 & 0
+\end{gmatrix}
+\end{equation}
+The rank of the matrix is 1, and it is not invertible.
+\setcounter{enumii}{4}
+\item $\begin{pmatrix}
+1 & 2 & 1\\
+-1 & 1 & 2\\
+1 & 0 &1 
+  \end{pmatrix}$
+\begin{gather}
+\begin{gmatrix}[left]
+1 & 2 & 1&\\
+-1 & 1 & 2&\\
+1 & 0 &1& 
+\end{gmatrix}
+\begin{gmatrix}[right]
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\rowops
+\add[1]{1}{0}
+\add[-1]{0}{2}
+\swap{2}{1}
+\add[\frac{3}{2}]{1}{2}
+\mult{1}{\cdot \frac{-1}{2}}
+\mult{2}{\cdot \frac{1}{3}}
+\add[-2]{1}{0}
+\add[-1]{2}{0}
+\end{gmatrix}
+\\
+\notag
+\leadsto
+\begin{gmatrix}[left]
+1 & 0 & 0&\\
+0 & 1 & 0&\\
+0 & 0 & 1&
+\end{gmatrix}
+\begin{gmatrix}[right]
+\mfrac{1}{6} & \mfrac{-1}{3} & \mfrac{1}{2}\\
+\mfrac{1}{2} & 0 & \mfrac{-1}{2}\\
+\mfrac{-1}{6} & \mfrac{1}{3} & \mfrac{1}{2}
+\end{gmatrix}
+\end{gather}
+It follows that the rank is 3 and the inverse is
+\begin{equation}
+\begin{pmatrix}
+\mfrac{1}{6} & \mfrac{-1}{3} & \mfrac{1}{2}\\
+\mfrac{1}{2} & 0 & \mfrac{-1}{2}\\
+\mfrac{-1}{6} & \mfrac{1}{3} & \mfrac{1}{2}
+\end{pmatrix}
+\end{equation}
+\setcounter{enumii}{6}
+\item $\begin{pmatrix}
+1 & 2 & 1 & 0\\
+2 & 5 & 5& 1\\
+-2 & -3 & 0 & 3\\
+3 & 4 & -2 & -3
+\end{pmatrix}$
+\begin{gather}
+\begin{gmatrix}[left]
+1 & 2 & 1 & 0&\\
+2 & 5 & 5& 1&\\
+-2 & -3 & 0 & 3&\\
+3 & 4 & -2 & -3&
+\end{gmatrix}
+\begin{gmatrix}[right]
+1& 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\rowops
+\add[-2]{0}{1}
+\add[2]{0}{2}
+\add[-3]{0}{3}
+\add[-1]{1}{2}
+\add[2]{1}{3}
+\add[1]{2}{3}
+\end{gmatrix}
+\\\notag
+\leadsto
+\begin{gmatrix}[left]
+1 & 2 & 1 & 0 &\\
+0 & 1 & 3 & 1 & \\
+0 & 0 & -1 &2 & \\
+0 & 0 & 0 & 1 &
+\end{gmatrix}
+\begin{gmatrix}[right]
+1 & 0 & 0  & 0\\
+-2 & 1 & 0 & 0\\
+4 & -1 & 1 & 0\\
+-3 & 1 & 1 & 1
+\rowops
+\mult{2}{\cdot -1}
+\add[2]{3}{2}
+\add[-1]{3}{1}
+\add[-1]{2}{0}
+\add[-3]{2}{1}
+\add[-2]{1}{0}
+\end{gmatrix}
+\\\notag
+\leadsto
+\begin{gmatrix}[left]
+1& 0 & 0 & 0&\\
+0 & 1 & 0 & 0&\\
+0 & 0 & 1 & 0&\\
+0 & 0 & 0 & 1&
+\end{gmatrix}
+\begin{gmatrix}[right]
+-51 & 15  & 7 & 12\\
+31 & -9 & -4 & -7 \\
+-10 & 3 & 1 & 2\\
+-3 & 1 & 1 & 1
+\end{gmatrix}
+\end{gather}
+It follows that the rank is 4 and the inverse is 
+\begin{equation}
+\begin{pmatrix}
+-51 & 15  & 7 & 12\\
+31 & -9 & -4 & -7 \\
+-10 & 3 & 1 & 2\\
+-3 & 1 & 1 & 1
+\end{pmatrix}
+\end{equation}
+\end{enumerate}
