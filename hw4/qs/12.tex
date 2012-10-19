@@ -26,9 +26,9 @@ a_{11} & \cdots & \cdots & a_{1n}\\
 & a_{22} & & \vdots\\
 & & \ddots & \vdots\\
 & & & a_{nn}\\
-&\bigzero & & a_{n+1,n}\\
+&\bigzero & & 0\\
 & & & \vdots\\
-& & & a_{mn}
+& & & 0
 \end{pmatrix}
 \end{equation}
 \item If $m<n$ 
@@ -41,6 +41,15 @@ a_{11}& a_{12} & \cdots & a_{1m} & a_{1,m+1} \cdots & a_{1n}\\
 & & & a_{mm} & a_{m,m+1} \cdots & a_{mn}\\
 \end{pmatrix}
 \end{equation}
+\item If $m=n$
+\begin{equation}
+A \leadsto \begin{pmatrix}
+a_{11} & \cdots & \cdots & a_{1n}\\
+      & a_{22}& & \vdots\\
+& \bigzero & \ddots& \vdots\\
+& & & a_{mn}
+\end{pmatrix}
+\end{equation}
 \end{enumerate}
 \item For $m = k + 1$
 \begin{enumerate}
@@ -51,24 +60,25 @@ A =
 a_{11} & \cdots & \cdots & a_{1n}\\
 & a_{22} & & \vdots\\
 & & \ddots & \vdots\\
-&\bigzero & & a_{nn}\\
+& & & a_{nn}\\
+&\bigzero & & 0\\
 & & & \vdots\\
-& & & a_{mn}\\
+& & & 0\\
 a_{m+1,1} & a_{m+1,2} & \cdots & a_{m+1,n}
 \end{pmatrix}
 \end{equation}
+\newpage{}
 Using row operations of type 3 on row $m+1$ from row 1 to row $n$ in
-order and make $a_{m+1,1} =0$ in each row with row operations of type
-3 on row $m+1$ for $i$ from 1 to $n$.
+order and make $a_{m+1,i} =0$ for $i$ from 1 to $n$.
 \begin{equation}
 A \leadsto \begin{pmatrix}
 a_{11} & \cdots & \cdots & a_{1n}\\
 & a_{22} & & \vdots\\
 & & \ddots & \vdots\\
 & & & a_{nn}\\
-&\bigzero & & \vdots\\
-& & & a_{mn}\\
-& & & a_{m+1,n}
+&\bigzero & & 0\\
+& & & \vdots\\
+& & & 0
 \end{pmatrix}
 \end{equation}
 \item If $m < n$, assume the $m=k$ case holds
@@ -85,8 +95,7 @@ a_{m+1,1} & a_{m+1,2} & \cdots & a_{m+1,n} & a_{m+1,m+1} & \cdots & a_{m+1,n}
 \end{pmatrix}
 \end{equation}
 Using row operations of type 3 on row $m+1$ from row 1 to row $m$ in
-order and make $a_{m+1,j} = 0 $ in each row $i$ apply a row operation
-of type 3 on row $m+1$ for $i$ from 1 to $m$
+order and make $a_{m+1,i} = 0 $ for $i$ from 1 to $m$
 \begin{equation}
 A \leadsto 
 \begin{pmatrix}
@@ -97,6 +106,27 @@ a_{11} & \cdots & \cdots & a_{1m} & a_{1,m+1} & \cdots & a_{1n}\\
 %&\bigzero & & \vdots & & & \vdots\\
 & \bigzero& & a_{mm}& a_{m,m+1} & \cdots & a_{mn}\\
 & &&& a_{m+1,m+1} & \cdots & a_{m+1,n}
+\end{pmatrix}
+\end{equation}
+\item If $m=n$, assume the $m=k$ case hold
+\begin{equation}
+A = \begin{pmatrix}
+a_{11} & \cdots & \cdots & a_{1n}\\
+      & a_{22}& & \vdots\\
+& \bigzero & \ddots& \vdots\\
+& & & a_{mn}\\
+a_{m+1,i} &\cdots & \cdots & a_{m+1,n}
+\end{pmatrix}
+\end{equation}
+Using row operations of type 3 on row $m+1$ from row 1 to row $m$ in
+order to make $a_{m+1,i} =0 $ fro $i$ from 1 to $n$
+\begin{equation}
+A \leadsto \begin{pmatrix}
+a_{11} & \cdots & \cdots & a_{1n}\\
+      & a_{22}& & \vdots\\
+& \bigzero & \ddots& \vdots\\
+& & & a_{mn}\\
+& & & 0
 \end{pmatrix}
 \end{equation}
 \end{enumerate}
