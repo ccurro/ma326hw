@@ -1,0 +1,43 @@
+Let $\T,\U\colon \V \to \W$ be linear transformations
+\begin{enumerate}
+\item Prove that $\mathsf{R}(\T +\U) \subseteq \mathsf{R}(\T) +
+  \mathsf{R}(\U)$
+\item Prove that $\W$ is finite-dimensional, then $\rank{\T+\U} \leq
+  \rank{\T} +\rank{\U}$
+\item Deduce from (b) that $\rank{A+B} \leq \rank{A} +\rank{B}$ for
+  any $m\times n$ matrices $A$ and $B$
+\end{enumerate}
+\begin{enumerate}
+\item Claim: $\mathsf{R}(\T +\U) \subseteq \mathsf{R}(\T) +
+  \mathsf{R}(\U)$
+\begin{gather}
+\forall x \in \V, (\T+\U)(x) = \T(x) +\U(x)\quad \text{where } \T(x)\in
+\mathsf{R}(\T), \U(x) \in \mathsf{R}(\U)\\
+\implies \mathsf{R}(\T +\U) \subseteq \mathsf{R}(\T) +
+  \mathsf{R}(\U)
+\end{gather}
+\item From (a) it follows that
+\begin{equation}
+\dime{\mathsf{R}(\T+\U)} \leq \dime{\mathsf{R}(\T) +\mathsf{R}(\U)}
+\end{equation}
+From 1.6 exercise 31 (b) it follows that
+\begin{gather}
+\dime{\mathsf{R}(\T)+\mathsf{R}(\U)} \leq \dime{\mathsf{R}(\T)}
++\dime{\mathsf{R}(\U)}\\
+\implies \dime{\mathsf{R}(\T+\U)}\leq \dime{\mathsf{R}(\T)}
++\dime{\mathsf{R}(\U)}\\
+\implies \rank{\T+\U} \leq
+  \rank{\T} +\rank{\U}
+\end{gather}
+\item From theorem 3.3 it follows that
+\begin{gather}
+\rank{A+B} =\rank{\mathsf{L}_{A+B}}\\
+(A+B)x = Ax+Bx\quad \forall x \in \V\\
+\implies \mathsf{L}_{A+B} = \mathsf{L}_A + \mathsf{L}_B\\
+\implies [\T_{A+B}]_\alpha^\beta = [\T_A]_\alpha^\beta +
+[\T_B]_\alpha^\beta\\
+\rank{\mathsf{L}_A+\mathsf{L}_B} \leq \rank{\mathsf{L}_A} +
+\rank{\mathsf{L}_B} \quad \text{by 1.6 ex. 31}\\
+\implies \rank{A+B} \leq \rank{A} + \rank{B} \quad \text{by theorem 3.3}
+\end{gather}
+\end{enumerate}
