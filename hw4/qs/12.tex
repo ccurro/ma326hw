@@ -1,0 +1,50 @@
+Let $A$ be an $m\times n$ matrix. Prove that there exists a sequence
+of elementary row operations of types 1 and 3 that transforms $A$ into
+an upper triangular matrix.
+\begin{enumerate}
+\item For $m = 2$
+\begin{enumerate}
+\item If $a_{11} = 0$ and $a_{21}\neq 0$ interchanging rows 1 and 2
+  creates an upper triangular matrix.
+\item If $a_{11} \neq 0$ adding the row 1 scaled by $a_{21}/a_{11}$
+  and subtracted from row 2 creates an upper triangular matrix.
+\end{enumerate}
+\item For $m = k$ 
+\begin{equation}
+A = \begin{pmatrix}
+a_{11} & a_{12} & \cdots & a_{1n}\\
+\vdots & \ddots & & \vdots\\
+\vdots & & \ddots & \vdots\\
+a_{m1} & \cdots & \cdots & a_{mn}
+\end{pmatrix}
+\end{equation}
+\begin{enumerate}
+\item If $m> n$
+\begin{equation}
+A \leadsto \begin{pmatrix}
+a_{11} & \cdots & \cdots & a_{1n}\\
+& a_{22} & & \vdots\\
+& & \ddots & \vdots\\
+& & & a_{nn}\\
+&\bigzero & & a_{n+1,n}\\
+& & & \vdots\\
+& & & a_{mn}
+\end{pmatrix}
+\end{equation}
+\item If $m<n$ 
+\begin{equation}
+A \leadsto
+\begin{pmatrix}
+a_{11}& a_{12} & \cdots & a_{1m} & a_{1,m+1} \cdots & a_{1n}\\
+& a_{22} & & \vdots & &  \vdots\\
+& \bigzero & \ddots & \vdots & &  \vdots\\
+& & & a_{mm} & a_{m,m+1} \cdots & a_{mn}\\
+\end{pmatrix}
+\end{equation}
+\end{enumerate}
+\item For $m = k + 1$
+\begin{enumerate}
+\item If $m > n$ 
+\item If $m < n$ 
+\end{enumerate}
+\end{enumerate}

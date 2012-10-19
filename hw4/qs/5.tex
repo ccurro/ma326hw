@@ -1,0 +1,36 @@
+Prove that $E$ is an elementary matrix if and only if $E^t$ is.
+\\Claim: $E \leadsto E^t$
+\begin{equation}
+I_n = \begin{bmatrix}e_1&e_2&\cdots&e_i&\cdots&e_j&\cdots&e_n\end{bmatrix}
+\end{equation}
+\begin{enumerate}
+\item Claim: The interchange of any two rows $i$ and $j$ is equivalent
+  to interchanging any two columns $i$ and $j$
+\\By applying the interchange to $E$ it follows that:
+\begin{align}
+E &= \begin{bmatrix}e_1&e_2&\cdots& e_j & \cdots & e_i &
+  \cdots&e_n\end{bmatrix} \\
+\implies E^t &= \begin{bmatrix}e_1&e_2&\cdots& e_j & \cdots & e_i &
+  \cdots&e_n\end{bmatrix} = E
+\end{align}
+\item Claim: Multiplying any row $i$ with nonzero scalar $c$ is equivalent to
+  multiplying any column $j$ with the same scalar $c$.
+\\By applying the scaling to $E$ is follows that:
+\begin{align}
+E
+&=  \begin{bmatrix}e_1&e_2&\cdots&ce_j&\cdots&e_n\end{bmatrix}\\
+\implies E^t
+&= \begin{bmatrix}e_1&e_2&\cdots&ce_i&\cdots&e_n\end{bmatrix} = E
+\end{align}
+\item Claim: Adding any scalar multiple of row $i$ to row $j$ is equivalent
+  to adding any scalar multiple of column $i$ it column $j$ 
+\\By applying the replacement to $E$ it follows that:
+\begin{align}
+E &=  \begin{bmatrix}e_1&e_2&\cdots&ce_i +
+  e_j&\cdots&e_n\end{bmatrix}\\
+\implies E^t &= \begin{bmatrix}e_1&e_2&\cdots&ce_j+e_i&\cdots&e_n\end{bmatrix}
+\end{align}
+\begin{equation}
+\therefore E^t\; \text{is elementary}
+\end{equation}
+\end{enumerate}
