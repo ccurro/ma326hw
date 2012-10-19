@@ -1,0 +1,73 @@
+Let 
+\[
+A = \begin{pmatrix}
+1 & 0 & -1 & 2 & 1\\
+-1 & 1& 3& -1 & 0\\
+-2 & 1 & 4 & -1 & 3\\
+3 & -1 & -5 & 1 & -6
+\end{pmatrix}
+\]
+\begin{enumerate}
+\item Find a $5\times 5$ matrix $M$ with rank 2 such that $AM =O$, where
+$O$ is the $4\times 5$ zero matrix.
+\item Suppose that $B$ is a $5\times 5$ matrix such that $AB=O$. Prove
+  that $\rank{B} \leq 2$
+\end{enumerate}
+\begin{enumerate}
+\item 
+\begin{gather}
+\begin{gmatrix}[p]
+1 & 0 & -1 & 2 & 1\\
+-1 & 1& 3& -1 & 0\\
+-2 & 1 & 4 & -1 & 3\\
+3 & -1 & -5 & 1 & -6
+\rowops
+\add[1]{0}{1}
+\add[2]{1}{2}
+\add[-3]{0}{3}
+\add[-1]{1}{2}
+\add[1]{1}{3}
+\add[2]{2}{3}
+\mult{2}{\cdot \frac{1}{2}}
+  \end{gmatrix}\\
+\leadsto
+\notag
+\begin{pmatrix}
+1 & 0 & -1 & 2 & 1\\
+0 & 1 & 2 & 1 & 1\\
+0 & 0 & 0 & 1 &2\\
+0 & 0 & 0 & 0 &0
+\end{pmatrix}
+\end{gather}
+\begin{align}
+x_1 = s+3t && x_2 = -2s +t && x_3 =s && x_4 = -2t && x_5 = t
+\end{align}
+\begin{equation}
+\implies x = \left\{t\begin{pmatrix}3\\1\\0\\-2\\1\end{pmatrix}
+  +s\begin{pmatrix}1\\-2\\1\\0\\0\end{pmatrix}\colon s,t \in \mathbb{R}\right\}
+\end{equation}
+It follows that a $5\times 5$ matrix with rank 2 can be made by taking
+$t=s=1$ and appended columns of zeros.
+\begin{equation}
+M = \begin{pmatrix}
+3 & 1 & 0 & 0 & 0\\
+1 & -2 & 0 & 0 & 0\\
+0 & 1& 0 & 0 & 0\\
+-2 & 0 & 0 & 0 &0\\
+1 & 0 & 0 &0 &0 
+\end{pmatrix}
+\end{equation}
+\newpage{}
+\item From part (a) it follows that $\dime{K_H} = 2$ for $Ax=0$
+\\Claim: $\forall B \in \mathsf{M}_{5\times 5}(\mathbb{R}$) such that
+$AB=0, \rank{B}\leq 2$
+\\Suppose AB=0
+\begin{gather}
+\implies B_n\in K_H \forall j\\
+\{B_j\colon j=1,2,\dotsc,n\}\subseteq K_H\\
+\text{span}(B_j) \subseteq K_H \forall j\\
+\implies \text{col}(B_j)\subseteq K_K\\
+\implies \rank{\text{col}(B_j)} \leq \dime{K_H}=2\\
+\implies \rank{B}\leq 2
+\end{gather}
+\end{enumerate}

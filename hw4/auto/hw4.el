@@ -8,6 +8,9 @@
      "tab"
      "gap"
      "T"
+     "U"
+     "V"
+     "W"
      "bigzero")
     (TeX-run-style-hooks
      "fancyhdr"
@@ -39,7 +42,7 @@
      "./qs/5"
      "./qs/12"
      "qs/6"
-     "qs/13"
+     "qs/14"
      "qs/20"
      "qs/2"
      "qs/3"

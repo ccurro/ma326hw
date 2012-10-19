@@ -1,0 +1,86 @@
+Determine which of the following systems of linear equations has a
+solution. 
+\begin{enumerate}
+\setcounter{enumii}{1}
+\item 
+\begin{align}
+x_1 +x_2 -x_2=1 && 2x_1 +x_2 +3x_2 =2
+\end{align}
+\begin{equation}
+\begin{gmatrix}[left]
+1 & 1 &-1&\\
+2 & 1 & 3&
+\end{gmatrix}
+\begin{gmatrix}[right]
+1\\2
+\rowops
+\add[-2]{0}{1}
+\end{gmatrix}
+\leadsto
+\begin{gmatrix}[left]
+1& 1& -1&\\
+0 & -1& 5&
+\end{gmatrix}
+\begin{gmatrix}[right]
+1\\0
+\end{gmatrix}
+\end{equation}
+\begin{align}
+\implies x_3&= t\\
+x_2 &= 5t\\
+x_1 &= 1 -4t
+\end{align}
+\begin{equation}
+\implies x =\left\{\begin{pmatrix}1\\0\\0\end{pmatrix}
+  +t \begin{pmatrix}-4\\5\\1\end{pmatrix}\colon t \in \mathbb{R}\right\}
+\end{equation}
+\setcounter{enumii}{3}
+\item 
+\begin{align}
+x_1 +x_2 +3x_3 -x_4 =0\\
+x_1 +x_2 +x_3 +x_3=1\\
+x_1-2x_2 +x_3 -x_4=1\\
+4x_1+x_2+8x_3-x_4=0
+\end{align}
+\begin{gather}
+\begin{gmatrix}[left]
+1 & 1& 3 & -1 &\\
+1 & 1 & 1 &1 &\\
+1 & -2 & 1 & -1 &\\
+4 & 1 &8 &-1 &
+\end{gmatrix}
+\begin{gmatrix}[right]
+0\\1\\1\\0
+\rowops
+\add[-1]{0}{1}
+\add[-1]{0}{2}
+\add[-4]{0}{3}
+\add[-1]{2}{3}
+\add[-1]{1}{3}
+\swap{1}{2}
+\mult{2}{\cdot -\frac{1}{2}}
+\mult{1}{\cdot -\frac{1}{2}}
+\end{gmatrix}
+\\
+\notag
+\leadsto
+\begin{gmatrix}[left]
+1 & 1& 3& -1&\\
+0 &1 & \mfrac{2}{3} & 0&\\
+0 &0 & 1 & 1&\\
+0 & 0 & 0 & 1&
+\end{gmatrix}
+\begin{gmatrix}[right]
+0\\
+\mfrac{-1}{3}\\
+\mfrac{1}{2}\\
+-2
+\end{gmatrix}
+\end{gather}
+\begin{align}
+\implies x_1 =-\frac{5}{2} && x_2 = -2 && x_3 =\frac{5}{2} && x_4 =-2
+\end{align}
+\begin{equation}
+x =\left\{\begin{pmatrix}\mfrac{-5}{2}\\2\\\mfrac{5}{2}\\-2\end{pmatrix}\right\}
+\end{equation}
+\end{enumerate}

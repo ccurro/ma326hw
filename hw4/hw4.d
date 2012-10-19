@@ -74,7 +74,7 @@ hw4.aux hw4.aux.make hw4.d hw4.pdf: $(call path-norm,/usr/share/texmf-site/tex/l
 hw4.aux hw4.aux.make hw4.d hw4.pdf: $(call path-norm,hw4.tex)
 hw4.aux hw4.aux.make hw4.d hw4.pdf: $(call path-norm,qs/10.tex)
 hw4.aux hw4.aux.make hw4.d hw4.pdf: $(call path-norm,qs/12.tex)
-hw4.aux hw4.aux.make hw4.d hw4.pdf: $(call path-norm,qs/13.tex)
+hw4.aux hw4.aux.make hw4.d hw4.pdf: $(call path-norm,qs/14.tex)
 hw4.aux hw4.aux.make hw4.d hw4.pdf: $(call path-norm,qs/2.tex)
 hw4.aux hw4.aux.make hw4.d hw4.pdf: $(call path-norm,qs/20.tex)
 hw4.aux hw4.aux.make hw4.d hw4.pdf: $(call path-norm,qs/3.2.5.tex)
