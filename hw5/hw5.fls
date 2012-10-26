@@ -237,6 +237,8 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT ./qs/2.tex
 INPUT ./qs/2.tex
+OUTPUT hw5.pdf
+INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT ./qs/8.tex
 INPUT ./qs/8.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
@@ -248,8 +250,6 @@ INPUT ./qs/15.tex
 INPUT ./qs/15.tex
 INPUT qs/10.tex
 INPUT qs/10.tex
-OUTPUT hw5.pdf
-INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
 INPUT qs/23.tex
 INPUT qs/23.tex
 INPUT qs/29.tex
