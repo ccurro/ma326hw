@@ -1,0 +1,31 @@
+Prove the corollary to Theorem 3.16: The reduced row echelon form of a
+matrix is unique. 
+\paragraph{} Suppose $A \in \M{m}{n}{F}$ such that $\rank{A} = r
+\leq\text{min}\{m,n\}$
+\\Proof by induction 
+\\Suppose $n=1$ 
+\paragraph{Case 1}
+\begin{equation}
+A = \begin{pmatrix} 0 \\ 0 \\ \vdots \\ 0\end{pmatrix}
+\end{equation}
+$A$ is in reduced row echelon form and this the unique representation.
+\paragraph{Case 2}
+\begin{equation}
+A = \begin{pmatrix}a_{11}\\a_{21}\\\vdots\\A_{m1}\end{pmatrix} \quad
+\text{for some } a_{i1} \neq 0
+\end{equation}
+\paragraph{} Execute the following sequence of row operations on
+$A$. Perform type 1 row operation to move $a_{i1}$ to the first
+row. Perform type 3 row operations to eliminate all lower
+terms. Perform type 2 row operation to the change the first term in
+the column to 1.
+\begin{equation}
+A \leadsto \begin{pmatrix}1\\0\\0\\\vdots\\0\end{pmatrix}
+\end{equation}
+The reduced row echelon form of a column must be of this form. It
+follows that this matrix is the unique row reduced echelon form.
+
+Suppose true for $1\leq n \neq k$
+\\Suppose $n = k+1$
+\\{\huge COME BACK TO THIS}
+

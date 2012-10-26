@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.13)  26 OCT 2012 01:15
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.13)  26 OCT 2012 02:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1118,36 +1118,36 @@ LaTeX Font Info:    Try loading font information for U+stmry on input line 56.
 \c_siunitx_mathtt_int=\count175
 (./qs/2.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-]) (./qs/8.tex) (./qs/11.tex [2] [3]) (./qs/14.tex) (./qs/15.tex) (./qs/10.tex 
-[4]) (./qs/23.tex) (./qs/29.tex) (./qs/30.tex [5]) (./qs/10.tex [6]) (./qs/4.3.
-10.tex) (./qs/12.tex) (./qs/15.tex) [7] (./hw5.aux) ) 
+]) (./qs/8.tex) (./qs/11.tex [2] [3]) (./qs/14.tex) (./qs/15.tex) [4] (./qs/10.
+tex [5]) (./qs/23.tex [6]) (./qs/29.tex) (./qs/30.tex [7]) (./qs/10.tex [8]) (.
+/qs/4.3.10.tex) (./qs/12.tex) (./qs/15.tex [9]) [10] (./hw5.aux) ) 
 Here is how much of TeX's memory you used:
- 15156 strings out of 495007
- 297022 string characters out of 3181083
+ 15162 strings out of 495007
+ 297066 string characters out of 3181083
  356589 words of memory out of 3000000
  18014 multiletter control sequences out of 15000+200000
- 17292 words of font info for 81 fonts, out of 3000000 for 9000
+ 17439 words of font info for 84 fonts, out of 3000000 for 9000
  36 hyphenation exceptions out of 8191
- 44i,21n,43p,312b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
-/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
-fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw5.pdf (7 pages, 167572 bytes).
+ 44i,21n,43p,312b,598s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></us
+r/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
+are/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on hw5.pdf (10 pages, 180019 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 75 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  20993 words of extra memory for PDF output out of 24883 (max. 10000000)
 
