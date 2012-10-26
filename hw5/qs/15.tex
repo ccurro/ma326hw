@@ -2,8 +2,10 @@ Prove the corollary to Theorem 3.16: The reduced row echelon form of a
 matrix is unique. 
 \paragraph{} Suppose $A \in \M{m}{n}{F}$ such that $\rank{A} = r
 \leq\text{min}\{m,n\}$
-\\Proof by induction 
-\\Suppose $n=1$ 
+
+Proof by induction 
+
+Suppose $n=1$ 
 \paragraph{Case 1}
 \begin{equation}
 A = \begin{pmatrix} 0 \\ 0 \\ \vdots \\ 0\end{pmatrix}
@@ -26,6 +28,52 @@ The reduced row echelon form of a column must be of this form. It
 follows that this matrix is the unique row reduced echelon form.
 
 Suppose true for $1\leq n \neq k$
-\\Suppose $n = k+1$
-\\{\huge COME BACK TO THIS}
 
+Suppose $n = k+1$
+
+Suppose $A \in \M{m}{k+1}{F}$. Suppose $A = (A^\prime\,|b)$ such that
+$A^\prime \in \M{m}{k}{F}$ and $ b \in \M{m}{1}{F}$
+
+Let $(B^\prime\,|b^\prime)$ be the reduced row echelon form of
+$(A^\prime\,|b)$ By HW.3.4.14, $B^\prime$ is in reduced row echelon
+form. It follows from $B^\prime \in \M{m}{k}{F}$ that, by the
+induction hypothesis, that $B^\prime$ is in the unique row reduced
+echelon form of $A^\prime$.
+\paragraph{Case 1:} $b \notin \text{col}(A^\prime)$
+
+If $b$ in on the column space of $A^\prime$, then $b^\prime$ is not in
+the column space of $B^\prime$. It follows that $b^\prime$ cannot be
+replaced as a linear combination of vectors from a basis for the
+column space of $B^\prime$. Column $b^\prime$ is replaced as:
+\begin{equation}
+\begin{pmatrix}
+0\\0\\\vdots\\1\\\vdots\\0\\0
+\end{pmatrix}
+\end{equation}
+Where $b^\prime_{r+1,1}=1$. This is the unique representation. Suppose
+$b^\prime$ were
+\begin{equation}
+\begin{pmatrix}
+0\\0\\\vdots\\1\\\vdots\\0\\0
+\end{pmatrix}
+\end{equation}
+where $b^\prime_{r+j,1}=1, j\geq 1$. $B^\prime$ is in reduced row
+echelon form and is of rank $r$ . It follows that all rows after the
+$r^{\text{th}}$ are entirely zero. $(B^\prime\,|b^\prime)$ is not in
+reduced row echelon form because there is a row of zeros above a row
+containing a nonzero value.
+\paragraph{Case 2:} $b \in \text{col}(A^\prime)$
+\begin{gather}
+\implies b^\prime \in \text{col}(B^\prime)\\
+b^\prime = \sum\limits_{i=1}^r c_iv_i
+\end{gather}
+For $c_i \in F$ and $v_iin \beta$ where $\beta$ is a basis for
+$\text{col}(B^\prime)$ such that $\beta$ is the standard ordered basis
+for $\mathsf{F}^m$. Because $\beta$ is linearly independent, the
+coefficients of the linear combination are unique.
+\begin{gather}
+b^\primes \in \text{col}(B^\primes)\\
+\implies \rank{B^\prime} = \rank{B^\prime\,|b^\prime}
+\end{gather}
+It follows that all rows of $(B^\prime\,|b^\prime)$ after the
+$r^{\text{th}}$  are entirely zero. Therefore $(B^\prime\,|b^\prime)$.
