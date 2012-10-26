@@ -1,0 +1,90 @@
+The {\bf classical adjoint} of a $2\times 2$ matrix $A \in
+\M{2}{2}{F}$ is the matrix
+\begin{equation*}
+C = \begin{pmatrix}
+A_{22} & - A_{12}\\
+-A_{21} & A_{11}
+\end{pmatrix}
+\end{equation*}
+Prove that
+\begin{enumerate}
+\item $CA = AC = \left[\dete{A}\right]I$
+\item $\dete{C} = \dete{A}$
+\item The classical adjoint of $A^t$ is $C^t$
+\item If $A$ is invertible, then $A^{-1} = \left[\dete{A}\right]^{-1}C$
+\end{enumerate}
+\begin{enumerate}
+\item 
+\begin{align}
+A & = \begin{pmatrix}A_{11}&A_{12}\\A_{21}&A_{22}\end{pmatrix}\\
+C & = \begin{pmatrix}A_{22}&-A_{12}\\-A_{21}&A_{11}\end{pmatrix}
+\end{align}
+\begin{align}
+AC
+&= \begin{pmatrix}A_{11}&A_{12}\\A_{21}&A_{22}\end{pmatrix}\begin{pmatrix}A_{22}&-A_{12}\\-A_{21}&A_{11}\end{pmatrix}\\
+&= \begin{pmatrix}
+A_{11}A_{22} -A_{12}A_{21} &  -A_{12}A_{11} +A_{12}A_{11}\\ 
+A_{22}A_{21}-A_{22}A_{21} & -A_{12}A_{21} + A_{11}A_{22}
+\end{pmatrix}\\
+&= \begin{pmatrix}
+A_{11}A_{22} -A_{12}A_{21} &  0\\ 
+0 & -A_{12}A_{21} + A_{11}A_{22}
+\end{pmatrix}
+\end{align}
+\begin{align}
+CA &= 
+\begin{pmatrix}
+A_{22} & - A_{12}\\
+-A_{21} & A_{11}
+\end{pmatrix}
+\begin{pmatrix}
+A_{11} & A_{12}\\
+A_{21} & A_{22}
+\end{pmatrix}\\
+&= \begin{pmatrix}
+A_{22}A_{11}-A_{21}A_{12} & A_{22}A_{12} -A_{12}A_{22} \\
+-A_{11}A_{21} + A_{21}A_{11} & -A_{21}A_{11} +A_{11}A_{22}
+\end{pmatrix}\\
+&= \begin{pmatrix}
+A_{11}A_{22} -A_{12}A_{21} &  0\\ 
+0 & -A_{12}A_{21} + A_{11}A_{22}
+\end{pmatrix}
+=AC
+\end{align}
+\begin{gather}
+\dete{A} = A_{11}A_{22} - A_{12}A_{21}\\
+\implies AC = CA = \dete{A}I_2
+\end{gather}
+\item $\dete{C} = A_{22}A_{11} -(-A_{12})(-A_{21}) =
+  A_{22}A_{11}-A_{21}A_{12} =\dete{A}$
+\item
+\begin{align}
+A^t &= \begin{pmatrix}
+A_{11}  & A_{21}\\
+A_{12}  & A_{22}\\
+\end{pmatrix}\\
+D &= \begin{pmatrix}
+A_{22} & -A_{21}\\
+-A_{12} & A_{11}
+\end{pmatrix}
+\end{align}
+\paragraph{}It follows that $D$ is the classical adjoint of $A^t$
+\begin{equation}
+C^t = \begin{pmatrix}
+A_{22} & -A_{21}\\
+A_{12} & A_{11}
+\end{pmatrix} = D
+\end{equation}
+It follows that $C^t$ is the classical adjoint of $A^t$
+\item Suppose $A$ is invertible
+\begin{gather}
+\implies \exists B \colon AB = BA = I\\
+\implies \dete{A} \neq 0 
+\end{gather}
+\begin{gather}
+CA =AC = \dete{A}I\\
+\implies [\dete{A}]^{-1}CA  = [\dete{A}]^{-1} = A[\dete{A}]^{-1}C =
+I\\
+\implies A^{-1} = [\dete{A}]^{-1}C
+\end{gather}
+\end{enumerate}

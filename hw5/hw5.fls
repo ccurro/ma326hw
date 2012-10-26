@@ -250,11 +250,11 @@ INPUT ./qs/15.tex
 INPUT ./qs/15.tex
 INPUT qs/10.tex
 INPUT qs/10.tex
-INPUT qs/23.tex
-INPUT qs/23.tex
-INPUT qs/29.tex
-INPUT qs/29.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT qs/23.tex
+INPUT qs/23.tex
+INPUT qs/29.tex
+INPUT qs/29.tex
 INPUT qs/30.tex
 INPUT qs/30.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
