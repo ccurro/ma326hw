@@ -1,1 +1,44 @@
-{\huge John's email}
+
+Claim $(A\,|b)$ in row reduced echelon form ipmlies $A$ in row reduced echelon form
+
+Suppose $(A\,|b)$ is an element of $\M{m}{(n+1)}{F}$ such that. $(A\,|b)$ is in row reduced echelon form.  To
+complete this proof, it is necessary to show that $A$ satisfies the
+definition of reduced row echelon form.
+
+\begin{enumerate}
+\item Claim: any row of $A$ containing a nonzero entry precedes any row in
+which all the entries are zero (if any)
+\paragraph{Case 1:} The last column consists entirely of zeroes.
+$(A\,|b)$ is in row reduced echelon form, so removing the last column still satisfies this
+requirement
+
+\paragraph{Case 2:} There is a nonzero value in the last column
+Because there is a nonzero entry, it is the first nonzero entry of its
+row.  However, since it is in the last row position, all other values in
+the row are zero.  By property $C$ of row reduced echelon form, all subsequent rows (if any)
+must consist entirely of zeroes.  Thus, the partition of row reduced
+echelon form of $(A\,|b)$ that
+removes the last row yields a matrix in which any row containing a nonzero
+entry precedes any row in which all the entries are zero (if any)
+
+\item Claim: The first nonzero entry in each row is the only nonzero entry in
+its column. 
+
+Removing the last column yields a matrix in which the first nonzero entry
+in each row is the only nonzero entry in its column.
+
+\item Claim:  The first nonzero entry in each row is 1 and it occurs in a
+column to the right of the first nonzero entry in the preceding row.
+
+\paragraph{Case 1:} The last column consists entirely of zeroes.
+Thus, removing the last column from the row reduced echelon form of $(A\,|b)$ yields a matrix in which the
+first nonzero entry in each row is 1 nd it occurs to the righ tof the
+first nonzero entry in the preceding row.
+
+\paragraph{Case 2:}  There is a non zero value in the last column
+If there is a nonzero value in the last column, than that row consists
+entirely of zeroes otherwise and all subsequent rows (if any) consist
+entire of zeroes.  Thus, removing this column from the row reduced
+echelon form of $(A\,|b)$ yields a
+matrix that satisfies this property.
+\end{enumerate}
