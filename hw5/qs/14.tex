@@ -1,9 +1,14 @@
-
-Claim $(A\,|b)$ in row reduced echelon form ipmlies $A$ in row reduced echelon form
+If $(A\, | b)$ is in reduced row echelon form, prove that $A$ is
+also in reduced row echelon form.
 
 Suppose $(A\,|b)$ is an element of $\M{m}{(n+1)}{F}$ such that. $(A\,|b)$ is in row reduced echelon form.  To
 complete this proof, it is necessary to show that $A$ satisfies the
 definition of reduced row echelon form.
+
+Claim $(A\,|b)$ in row reduced echelon form implies $A$ in row reduced echelon form
+
+It is necessary to show that $A$ satisfies the definition of reduced
+row echelon form.
 
 \begin{enumerate}
 \item Claim: any row of $A$ containing a nonzero entry precedes any row in
@@ -14,12 +19,12 @@ requirement
 
 \paragraph{Case 2:} There is a nonzero value in the last column
 Because there is a nonzero entry, it is the first nonzero entry of its
-row.  However, since it is in the last row position, all other values in
-the row are zero.  By property $C$ of row reduced echelon form, all subsequent rows (if any)
-must consist entirely of zeroes.  Thus, the partition of row reduced
+row.  However, it is in the last column position, and thus all other values in
+the column are zero.  By property $C$ of the row reduced echelon form, all subsequent rows (if any)
+must consist entirely of zeroes. 
+Thus, the partition of the row reduced
 echelon form of $(A\,|b)$ that
-removes the last row yields a matrix in which any row containing a nonzero
-entry precedes any row in which all the entries are zero (if any)
+removes the last column yields matrix $A$ which satisfies this property.
 
 \item Claim: The first nonzero entry in each row is the only nonzero entry in
 its column. 
