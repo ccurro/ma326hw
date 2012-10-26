@@ -1,6 +1,7 @@
 (TeX-add-style-hook "hw5"
  (lambda ()
     (TeX-add-symbols
+     '("M" 3)
      '("mfrac" 2)
      '("dete" 1)
      '("dime" 1)
@@ -20,6 +21,7 @@
      "appendix"
      "microtype"
      "siunitx"
+     "xfrac"
      "url"
      "multirow"
      "mathtools"

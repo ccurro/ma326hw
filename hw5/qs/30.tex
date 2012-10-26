@@ -1,0 +1,31 @@
+Let the rows of $A \in \M{n}{n}{F}$. be $a_1,a_2,\dotsc,a_n$ and let
+$B$ be the matrix in which the rows are
+$a_n,a_{n-1},\dotsc,a_1$. Calculate $\dete{B}$ in terms of $\dete{A}$.
+\begin{enumerate}
+\item {\bf $\mathbf{n}$ is even}
+\paragraph{}In $A$, swap
+\begin{align}
+a_{n-1} &\text{ with } a_1\\
+ a_{n-2} &\text{ with } a_2\\
+\notag&\vdots\\
+ a_{n-\frac{n}{2}+1} &\text{ with } a_{n-\frac{n}{2}}
+\end{align}
+From the fact that $\mfrac{n}{2}$ swaps were performed it follows from
+Theorem 4.6 that
+\begin{equation}
+\dete{B} = (-1)^\frac{n}{2} \dete{A} 
+\end{equation}
+\item {\bf $\mathbf{n}$ is odd}
+In $A$, swap 
+\begin{align}
+a_{n-1} &\text{ with } a_1\\
+ a_{n-2} &\text{ with } a_2\\
+\notag&\vdots\\
+ a_{n-\frac{n+1}{2}+1} &\text{ with } a_{n-\frac{n+1}{2}}
+\end{align}
+From the fact that $n-\frac{n+1}{2}$ swaps were performed it follows
+from Theorem 4.6 that
+\begin{equation}
+\dete{B} = (-1)^{\frac{n-1}{2}}\dete{A}
+\end{equation}
+\end{enumerate}
