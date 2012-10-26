@@ -1,0 +1,60 @@
+Let $\V$ be as in Exercise 10.
+\begin{enumerate}
+\item Show that $S=\{(1,2,1,0,0)\}$ is a linearly independent subset
+  of $\V$.
+\item Extend $S$ to a basis for $\V$.
+\end{enumerate}
+\begin{enumerate}
+\item Claim: $S$ is a linearly independent subset of $\V$.
+\\For $x \in S, x = (1,2,1,0,0)$
+\begin{gather}
+1+ (-2)(2) + 3(1) +(-1)(0) +(2)(0) = 0\\
+\implies x \in \V\\
+\implies S \subseteq \V
+\end{gather}
+Suppose $cx -0$ 
+\begin{gather}
+c(1,2,1,0,0) = 0\\
+\implies (c,2c,c,0,0) = 0\\
+\implies c =0
+\end{gather}
+It follows that $S$ is linearly independent.
+\item Suppose $x_1,x_2,\dotsc,x_5 \in F \colon x_1 = 2x_2 -3x_3 +x_4
+  -2x_5$ 
+\begin{align}
+\begin{pmatrix}x_1\\x_2\\x_3\\x_4\\x_5\end{pmatrix} &= \begin{pmatrix}2x_2 -3x_3 +x_4 -2x_5\\x_2\\x_3\\x_4\\x_5\end{pmatrix}\\
+&= x_2\begin{pmatrix}2\\1\\0\\0\\0\end{pmatrix}
++x_3\begin{pmatrix}-3\\0\\1\\0\\0\end{pmatrix}
++x_4\begin{pmatrix}1\\0\\0\\1\\0\end{pmatrix}
++x_5\begin{pmatrix}-2\\0\\0\\0\\1\end{pmatrix}
+\end{align}
+\begin{equation}
+\beta =\left\{\begin{pmatrix}2\\1\\0\\0\\0\end{pmatrix},
+\begin{pmatrix}-3\\0\\1\\0\\0\end{pmatrix},
+\begin{pmatrix}1\\0\\0\\1\\0\end{pmatrix},
+\begin{pmatrix}-2\\0\\0\\0\\1\end{pmatrix}\right\}
+\end{equation}
+\paragraph{} Where $\beta$ is a basis $\V$.
+\begin{equation}
+(S\, | B )
+=
+\begin{pmatrix}
+1 & 2 & -3 & 1 & -2 \\
+2 & 1 & 0 & 0 & 0 \\
+1 & 0 & 1 & 0 & 0 \\
+0 & 0 & 0 & 1 & 0 \\
+0 & 0 & 0 & 0 & 1
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+1 & 0 & 1 & 0 & 0\\
+0 & 1 & 2 & 0 & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\\
+0 & 0 & 0 & 0 & 0
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+S_\beta\footnote{We need say what exaclty thsi is} = \left\{\begin{pmatrix}1\\2\\1\\0\\0\end{pmatrix},\begin{pmatrix}2\\1\\0\\0\\0\end{pmatrix},\begin{pmatrix}1\\0\\0\\1\\0\end{pmatrix},\begin{pmatrix}-2\\0\\0\\0\\1\end{pmatrix}\right\}
+\end{equation}
+\end{enumerate}
