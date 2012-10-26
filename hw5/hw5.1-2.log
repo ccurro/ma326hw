@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.13)  25 OCT 2012 22:26
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.10.13)  25 OCT 2012 22:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -794,18 +794,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ) (./hw5.aux)
 \openout1 = `hw5.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 (/usr/share/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count167
@@ -937,7 +937,7 @@ File: siunitx-abbreviations.cfg 2012/06/13 v2.5e siunitx: Abbreviated units
 ) (/usr/share/texmf-dist/tex/latex/siunitx/config/siunitx-binary.cfg
 File: siunitx-binary.cfg 2012/06/13 v2.5e siunitx: Binary units
 )
-LaTeX Info: Redefining \microtypecontext on input line 54.
+LaTeX Info: Redefining \microtypecontext on input line 55.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -986,19 +986,19 @@ File: mt-cmr.cfg 2009/11/09 v2.0 microtype config. file: Computer Modern Roman
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c_siunitx_mathsf_int=\count173
-LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 55.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+LaTeX Font Info:    Try loading font information for U+msb on input line 55.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 ) (/usr/share/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 54.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 55.
 (/usr/share/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 \c_siunitx_mathtt_int=\count174
 (./qs/2.tex) (./qs/8.tex) (./qs/11.tex) (./qs/14.tex) (./qs/15.tex) (./qs/10.te
@@ -1007,26 +1007,27 @@ x) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 ] (./qs/23.tex) (./qs/29.tex) (./qs/30.tex) (./qs/10.tex) (./qs/4.3.10.tex) (./
 qs/12.tex) (./qs/15.tex) [2] (./hw5.aux) ) 
 Here is how much of TeX's memory you used:
- 14316 strings out of 495007
- 278933 string characters out of 3181083
- 328839 words of memory out of 3000000
- 17208 multiletter control sequences out of 15000+200000
- 12363 words of font info for 56 fonts, out of 3000000 for 9000
+ 14319 strings out of 495007
+ 278976 string characters out of 3181083
+ 328853 words of memory out of 3000000
+ 17211 multiletter control sequences out of 15000+200000
+ 12670 words of font info for 57 fonts, out of 3000000 for 9000
  36 hyphenation exceptions out of 8191
- 38i,17n,43p,260b,339s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,17n,43p,260b,595s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></us
-r/share/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on hw5.pdf (2 pages, 89115 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.
+pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
+e/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on hw5.pdf (2 pages, 99137 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11777 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 12289 words of extra memory for PDF output out of 14400 (max. 10000000)
 

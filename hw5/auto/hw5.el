@@ -2,6 +2,7 @@
  (lambda ()
     (TeX-add-symbols
      '("mfrac" 2)
+     '("dete" 1)
      '("dime" 1)
      '("rank" 1)
      '("tr" 1)
