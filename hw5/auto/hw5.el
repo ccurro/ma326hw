@@ -21,7 +21,6 @@
      "appendix"
      "microtype"
      "siunitx"
-     "xfrac"
      "url"
      "multirow"
      "mathtools"
@@ -51,6 +50,5 @@
      "qs/23"
      "qs/29"
      "qs/30"
-     "qs/12"
-     "qs/15")))
+     "qs/12")))
 
