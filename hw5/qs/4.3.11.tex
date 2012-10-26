@@ -1,0 +1,54 @@
+A matrix $M \in \M{n}{n}{C}$ is called {\bf skew-symmetric} if
+$M^t=-M$. Prove that if $M$ is skew-symmetric and $n$ is odd, then $M$
+is not invertible. What happens if $n$ is even?
+
+\paragraph{Lemma: } $\dete{-M} = (-1)^n\dete{M}$ for some $M \in
+\M{n}{n}{F}$
+
+Proof by induction:
+
+For $n=1$: 
+\begin{gather}
+M \in \M{1}{1}{F} \implies M = (m_{11}) \implies -M =
+(-m_{11})\\
+\dete{M} = m_{11}\\
+\dete{-M} = -m_{11} = (-1)^1m_{11} = (-1)^1\dete{M}
+\end{gather}
+
+Suppose true for $1\leq n \leq k$ 
+
+For $n=k+1$, $M \in \M{k+1}{k+1}{F}$
+
+\begin{equation}
+\dete{-M} =
+\sum\limits_{j=1}^{k+1}(-1)^{k+1+j}(-M)_{k+1,j}\dete{(-M)_{k+1,j}}
+\end{equation}
+\begin{gather}
+(-\tilde{M})_{k+1,j} \in \M{k}{k}{F}\\
+\implies (-\tilde{M})_{k+1,j} = (-1)(\tilde(M)_{k+1,j})
+\end{gather}
+\begin{align}
+\implies \dete{-M} &=
+(-1)^{k+1}\sum\limits_{j=1}^{k+1}(-1)^j(-1)M_{k+1,j}(-1)^k\dete{\tilde{M}_{k+1,j}}\\
+&=
+(-1)^{k+1}\sum\limits_{j=1}^{k+1}(-a)^{k+1+j}M_{k+1,j}\dete{\tilde{M}_{k+1,n}}\\
+&= (-1)^{k+1}\dete{M}\quad \square
+\end{align}
+\begin{gather}
+\dete{M^t} = \dete{M}\\
+\implies \dete{-M} = \dete{M}\\
+\implies (-1)^n\dete{M} = \dete{M} \quad \text{(by Lemma)}\\
+\implies \dete{M} - \dete{M}(-1)^n = \dete{M}(1- (-1)^n) = 0
+\end{gather}
+\paragraph{Case 1:} $n$ is odd
+\begin{gather}
+\dete{M}(1-(-1)^n) = \dete{M}{2} = 0\\
+\implies \dete{M} = 0
+\implies M \text{ is not invertible} \notag
+\end{gather}
+\paragraph{Case 2:} $n$ is even
+\begin{equation}
+\det{M}(1- (-1)^n) =\dete{M}(0) = 0
+\end{equation}
+The determinate of $M$ can either be zero or nonzero. Thus the
+invertibility of $M$ cannot be determined.
