@@ -1,0 +1,108 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{stmaryrd}
+\usepackage{gauss}
+\usepackage{mathtools}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{siunitx}
+\usepackage{url}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{appendix}
+\usepackage{verbatim}
+\pagenumbering{Roman}
+% Extra Commands
+\newcommand{\tab}{\hspace*{5em}}
+\newcommand{\gap}{\vspace*{0.25cm}}
+\renewcommand{\implies}{\Rightarrow}
+\newcommand{\T}{\mathsf{T}}
+\newcommand{\U}{\mathsf{U}}
+\newcommand{\V}{\mathsf{V}}
+\newcommand{\W}{\mathsf{W}}
+\newcommand{\tr}[1]{\text{tr}({#1})}
+\newcommand{\rank}[1]{\text{rank}({#1})}
+\newcommand{\dime}[1]{\text{dim}({#1})}
+\newcommand{\mfrac}[2]{^{#1}/_{#2}}
+\newmatrix{(}{|}{left}
+\newmatrix{.}{)}{right}
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+% Formatting
+\usepackage[top=1in, bottom=1in, left=1.2in, right=1.2in]{geometry}
+\usepackage{fancyhdr}
+
+% Heading stuffs
+% \pagestyle{plain}
+\setlength{\headheight}{28pt}
+\thispagestyle{fancy}
+\fancyhf{}
+\lhead{Chris Curro, John Biswakarma, Victor Chen \\ October 25, 2012} 
+\chead{\hfill \\ MA326}
+\rhead[RE,RO]{HW \#6 \\ Prof. Mintchev}
+\cfoot[RO,RE]{\thepage}  %Page # for footer
+% This should return the format
+% Name         Course #        Assignment #
+% Date         Course name     Prof. 
+% -------------------------------------------
+\begin{document}
+%\begin{spacing}{1.2}
+\section*{Assignment}
+Section 3.4: 2(fj), 8, 11, 14, 15; Section 4.1: 10; Section 4.2: 23,
+29, 30; Section 4.3: 10, 11, 12, 15
+\section*{Work}
+\subsection*{3.4}
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item
+\input{./qs/2.tex}
+\setcounter{enumi}{7}
+\item
+\input{./qs/8.tex}
+\setcounter{enumi}{10}
+\item
+\input{./qs/11.tex}
+\setcounter{enumi}{13}
+\item
+\input{./qs/14.tex}
+\item
+\input{./qs/15.tex}
+\end{enumerate}
+\subsection*{4.1}
+\begin{enumerate}
+\setcounter{enumi}{9}
+\item
+\input{qs/10.tex}
+\end{enumerate}
+\subsection*{4.2}
+\begin{enumerate}
+\setcounter{enumi}{22}
+\item
+\input{qs/23.tex}
+\setcounter{enumi}{28}
+\item
+\input{qs/29.tex}
+\item
+\input{qs/30.tex}
+\end{enumerate}
+\section*{4.3}
+\begin{enumerate}
+\setcounter{enumi}{9}
+\item
+\input{qs/10.tex}
+\item
+\input{qs/4.3.10.tex}
+\item
+\input{qs/12.tex}
+\setcounter{enumi}{14}
+\input{qs/15.tex}
+\end{enumerate}
+% \end{spacing}
+\end{document}
+
