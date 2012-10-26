@@ -8,6 +8,7 @@
 *.so
 *.d
 *.aux
+*.temp
 *.make
 *.fls
 
