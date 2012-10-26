@@ -1,0 +1,15 @@
+Prove that if $A,B \in \M{n}{n}{F}$ are similar, then
+$\dete{A}=\dete{B}$.
+
+Suppose $A,B \in \M{n}{n}{F}$ such that $A$ and $B$ are similar.
+\begin{equation}
+\implies A = Q^{-1}BQ\text{ for some } Q^{-1} \text{ invertible}
+\end{equation}
+\begin{align}
+\implies \dete{A} &= \dete{Q^{-1}BQ}\\
+&= \dete{Q^{-1}}\dete{BQ}\\
+&= \dete{Q^{-1}}\dete{B}\dete{Q}\\
+&= \dete{Q}^{-1}\dete{B}\dete{Q}\\
+&= \dete{B}\dete{Q}^{-1}\dete{Q}\\
+&= \dete{B}
+\end{align}
