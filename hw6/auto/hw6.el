@@ -25,6 +25,7 @@
      "multirow"
      "mathtools"
      "gauss"
+     "booktabs"
      "stmaryrd"
      "amsfonts"
      "amssymb"

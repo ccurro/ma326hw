@@ -1,0 +1,38 @@
+Suppose that $M \in \mathsf{M}_{n\times n}(F)$ can be written in the
+form 
+\[
+M = \begin{pmatrix} A & B\\O & I
+\end{pmatrix}
+\]
+where $A$ is a square matrix. Prove that $\det{(M)} = \det{(A)}$
+
+Suppose $A \in \mathsf{M}_{k\times k}(F)$
+
+Perform Type 3 operations such that the partition (A B) becomes an
+upper triangular matrix.
+\begin{equation}
+\implies M^\prime = \begin{pmatrix} A^\prime & B^\prime \\ O & I
+\end{pmatrix}
+\end{equation}
+$M^\prime$ is an upper triangular matrix so the determinant of $M$ is
+the product of its diagonal terms.
+\begin{equation}
+\implies \det{(A)} = \prod\limits_{i=1}^n M^\prime_{ii}
+\end{equation}
+\begin{gather}
+M^\prime_{ii} = 1 \quad \text{if } (k +1 \leq i \leq n)\\
+\implies \prod\limits_{i=1}^n M^\prime_{ii} = \prod\limits_{i=1}^k
+M^\prime_{ii}
+\end{gather}
+The first $k$ diagonal terms of $M^\prime$ are the diagonal terms of
+$A$. It follows that
+\begin{equation}
+\prod\limits_{i=1}^k M^\prime_{ii} = \prod\limits_{i=1}^k A^\prime_{ii}
+\end{equation}
+Because $A^\prime$ was obtained from $A$ using Type 3 operations, and
+$M^\prime$ was obtained from $M$ using Type 3 operations
+\begin{align}
+\det{(A^\prime)} &= \det{(A)}\\
+\det{(M^\prime)} &= \det{(M)}\\
+\therefore \det{(M)} = \det{(M^\prime)} &= \det{(A^\prime)} = \det{(A)}
+\end{align}
