@@ -1,0 +1,101 @@
+Let $\mathsf{T}$ be a linear operator on a finite-dimensional vector
+space $\mathsf{V}$. We define the {\bf determinant} of $\mathsf{T}$,
+denoted $\det{(\mathsf{T})}$, as follows: Choose any ordered basis
+$\beta$ for $\mathsf{V}$, and define $\det{(\mathsf{T})}=
+\det{([\mathsf{T}]_\beta )}$.
+\begin{enumerate}
+\item Prove that he preceding definition is independent of the choice
+  of an ordered basis for $\mathsf{V}$. That is, prove that if $\beta$
+  and $\gamma$ are two ordered bases for $\mathsf{V}$, then $\det{([\mathsf{T}]_\beta)}=\det{([\mathsf{T}]_\gamma)}$.
+\item Prove that $\mathsf{T}$ is invertible if and only if
+  $\det{\mathsf{T}}\neq 0$.
+\item Prove that if $\mathsf{T}$ is invertible, then
+  $\det{(\mathsf{T}^{-12})}= [\det{(\mathsf{T})}]^{-1}$.
+\item Prove that if $\mathsf{U}$ is also a linear operator on
+  $\mathsf{V}$, then $\det{(\mathsf{TU})} = \det{(\mathsf{T})}\cdot\det{(\mathsf{U})}$.
+\item Prove that $\det{(\mathsf{T}-\lambda \mathsf{I}_\mathsf{V})} =
+    \det{[\mathsf{T}]_\beta -\lambda I)}$ for any scalar $\lambda$ and
+      any ordered basis $\beta$ for $\mathsf{V}$.
+\end{enumerate}
+\begin{enumerate}
+\item
+Suppose $Q$ is the change of coordinates matrix from $\gamma$ to
+$\beta$.
+\begin{gather}
+Q=[\mathsf{I}_\mathsf{V}]_\gamma^\beta \implies
+Q^{-1}=[\mathsf{I}_\mathsf{V}]^\gamma_\beta \\
+[\mathsf{I}_\mathsf{V}]_\gamma^\beta
+[\mathsf{T}]_\gamma[\mathsf{I}_\mathsf{V}]^\gamma_\beta =
+[\mathsf{T}]_\beta\\
+\implies \det{([\mathsf{I}_\mathsf{V}]_\gamma^\beta
+[\mathsf{T}]_\gamma[\mathsf{I}_\mathsf{V}]^\gamma_\beta)} =
+\det{[\mathsf{T}]_\beta}\\
+\implies\det{[\mathsf{I}_\mathsf{V}]_\gamma^\beta}
+\det{[\mathsf{T}]_\gamma}\det{[\mathsf{I}_\mathsf{V}]^\gamma_\beta}\\
+[\mathsf{I}_\mathsf{V}]_\gamma^\beta =
+([\mathsf{I}_\mathsf{V}]^\gamma_\beta)^{-1}\\
+\det{[\mathsf{I}_\mathsf{V}]_\gamma^\beta}=
+\det{([\mathsf{I}_\mathsf{V}]^\gamma_\beta)^{-1}}
+\end{gather}
+\begin{align}
+\implies \det{[\mathsf{I}_\mathsf{V}]_\gamma^\beta}
+\det{[\mathsf{T}]_\gamma}\det{[\mathsf{I}_\mathsf{V}]^\gamma_\beta} &=
+\det{([\mathsf{I}_\mathsf{V}]^\gamma_\beta)^{-1}}\det{[\mathsf{T}]_\gamma}\det{[\mathsf{I}_\mathsf{V}]^\gamma_\beta}\\
+&= \det[\mathsf{T}]_\gamma = \det[\mathsf{T}]_\beta
+\end{align}
+\item 
+($\implies$) 
+
+Suppose $\mathsf{T}$ is invertible\\
+Suppose $\beta$ is an ordered basis of $\mathsf{V}$.
+\begin{gather}
+[\mathsf{I}_\mathsf{V}]_\beta = [\mathsf{T}\cdot\mathsf{T}^{-1}]_\beta
+= [\mathsf{T}]_\beta[\mathsf{T}^{-1}]_\beta\\
+\implies \det{[\mathsf{I}_\mathsf{V}]_\beta} =
+\det{[\mathsf{T}]_\beta}\det{[\mathsf{T}^{-1}]_\beta}\\
+\det{[\mathsf{I}_\mathsf{V}]_\beta} =1 \\
+\implies \det{[\mathsf{T}]_\beta}\det{[\mathsf{T}^{-1}]_\beta} =1\\
+\implies \det{[\mathsf{T}]_\beta} \neq 0\\
+\implies \det{\mathsf{T}} \neq 0
+\end{gather}
+($\Leftarrow$)
+
+Suppose $\det{\mathsf{T}}\neq 0$ 
+\begin{gather}
+\implies \det[\mathsf{T}]_\beta \neq 0 \quad \text{for some ordered
+  basis } \beta \text{ of } \mathsf{V}\\
+\det{[\mathsf{T}]_\beta} \neq  0\\
+\implies \mathsf{T} \text{ is invertible, by corollary to Th. 2.18}
+\end{gather}
+\item Suppose $\mathsf{T}$ is invertible and $\beta$ is some ordered
+  basis of $\mathsf{V}$.
+\begin{align}
+\det{\mathsf{I}_\mathsf{V}} &= \det{\mathsf{T}\cdot\mathsf{T}^{-1}}\\
+&= \det{[\mathsf{T}\cdot\mathsf{T}^{-1}]_\beta}\\
+&= \det{[\mathsf{T}]_\beta[\mathsf{T}^{-1}]_\beta}\\
+&= \det{[\mathsf{T}]_\beta}\det{[\mathsf{T}^{-1}]_\beta}\\
+&= \det{\mathsf{T}}\det{\mathsf{T}^{-1}}
+\end{align}
+\begin{gather}
+\det{\mathsf{I}_\mathsf{V}} = \det{[\mathsf{I}_\mathsf{V}]_\beta} =
+  \det{I_n} =1\\
+\implies \det{\mathsf{T}} \det{\mathsf{T}^{-1}} = 1\\
+\implies \det{\mathsf{T}^{-1}} = (\det{\mathsf{T}})^{-1}
+\end{gather}
+\item Suppose $\beta$ is an ordered basis of $\mathsf{V}$.
+\begin{align}
+\det{\mathsf{TU}} &= \det{[\mathsf{TU}]_\beta}\\
+&= \det{[\mathsf{T}]_\beta[\mathsf{U}]_\beta}\\
+&= \det{[\mathsf{T}]_\beta}\det{[\mathsf{U}]_\beta}\\
+&= \det{\mathsf{T}}\det{\mathsf{U}}
+\end{align}
+\item 
+\begin{align}
+\det{([\mathsf{T}]_\beta -\lambda I)} &= \det{([\mathsf{T}]_\beta
+  -\lambda[\mathsf{I}_\mathsf{V}]_\beta)}\\
+&= \det{([\mathsf{T}]_\beta
+  -[\lambda\mathsf{I}_\mathsf{V}]_\beta)}\\
+&= \det{[\mathsf{T}_\beta -\lambda \mathsf{I}_\mathsf{V}]_\beta}\\
+&= \det{(\mathsf{T}-\lambda \mathsf{I}_\mathsf{V})}
+\end{align}
+\end{enumerate}
