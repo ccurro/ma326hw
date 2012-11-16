@@ -1,0 +1,53 @@
+Prove that if $M\in \mathsf{M}_{n\times n}(F)$ can be written in the
+form
+\[
+M = \begin{pmatrix} A & B\\ O & C
+\end{pmatrix}
+\]
+where $A$ and $C$ are square matrices, then $\det{(M)} =
+\det{(A)}\cdot\det{(C)}$.
+
+$M$ can be reduced using strictly Type 3 row operations such that the
+partitions $(A\; B)$ become an upper triangular matrix $(A^\prime\; 
+B^\prime)$. $M$ can also be reduced using strictly Type 3 row
+operations such that the partition $(O\; C)$ becomes the matrix $(O\; 
+C^\prime)$ where $C^\prime$ is an upper triangular matrix in
+$\mathsf{M}_{(n-k)\times(n-k)}(F)$ where $A \in \mathsf{M}_{n\times
+  n}(F)$.
+\begin{equation}
+\implies M^\prime = \begin{pmatrix}A^\prime & B^\prime \\ O & C^\prime
+\end{pmatrix}
+\end{equation}
+$M^\prime$ is upper triangular, so the determinant of $M^\prime$ is a
+the product of the diagonal terms.
+\begin{align}
+\det{(M^\prime)} &= \prod\limits^{n}_{i=1}M^\prime_{ii}\\
+&= \left(\prod\limits^{k}_{i=1}M^\prime_{ii}\right)\left(\prod\limits^{n}_{i=k+1}M^\prime_{ii}\right)
+\end{align}
+\begin{equation}
+M^\prime_{ii} = A^\prime_{ii} \quad \forall i \; (1\leq i\leq k)
+\end{equation}
+\begin{align}
+\implies \prod\limits_{i=1}^k M^\prime_{ii} &= \prod\limits_{i=1}^k
+A^\prime_{ii}\\
+&= \det{(A^\prime)}
+\end{align}
+\begin{equation}
+M^\prime_{k+1,k+1} = C^\prime_{ii} \quad \forall i \; (1\leq i\leq n-k)
+\end{equation}
+\begin{align}
+\implies \prod\limits_{i=k+1}^k M^\prime_{ii} &= \prod\limits_{i=1}{n-k}
+C^\prime_{ii}\\
+&= \det{(C^\prime)}
+\end{align}
+Matrices $C^\prime,A^\prime$ and $M^\prime$ were obtained respectively
+from the matrices $C,A$ and $M$ strictly using Type 3 row
+operations. It follows that
+\begin{align}
+\det{(M^\prime)} &= \det{(M)}\\
+\det{(A^\prime)} &= \det{(A)}\\
+\det{(C^\prime)} &= \det{(C)}
+\end{align}
+\begin{equation}
+\therefore \det{(M)} = \det{(A)} \cdot \det{(C)}
+\end{equation}

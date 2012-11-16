@@ -1,0 +1,498 @@
+For each linear operator $\mathsf{T}$ on $\mathsf{V}$, find the
+egienvalues of $\mathsf{T}$ and an ordered bases $\beta$ of
+$\mathsf{V}$ such that $[\mathsf{T}]_\beta$ is a diagonal matrix.
+\begin{enumerate}
+\setcounter{enumii}{2}
+\item $\mathsf{V} = \mathsf{R}^3$ and $\mathsf{T}(a,b,c) =(-4a+
+  3b-6c,6a-7b+12c,6a-6b+11c)$
+\begin{gather}
+\alpha =
+\left\{\begin{pmatrix}1\\0\\0\end{pmatrix},\begin{pmatrix}0\\1\\0\end{pmatrix},\begin{pmatrix}0\\0\\1\end{pmatrix}\right\}\\
+[\mathsf{T}]_\alpha = \begin{pmatrix}
+-4 & 3 & -6\\
+6 & -7 & 12\\
+6 & 6 & 11
+\end{pmatrix}
+\end{gather}
+\begin{align}
+\det{([\mathsf{T}]_\alpha -\lambda I_3)} &= \det{\begin{pmatrix}
+-4-\lambda & 3 & -6\\
+6 & -7-\lambda & 12\\
+6 & -6 & 11-\lambda
+  \end{pmatrix}}\\
+&=\det{\begin{pmatrix}
+-4 -\lambda & 4 & -6 \\
+6 & -7-\lambda & 12\\
+0 & 1+\lambda & 1+\lambda
+  \end{pmatrix}}\\
+&= (\lambda+4)(\lambda+7)(\lambda+1)\\
+&\qquad {} \qquad -2(\lambda+1)(\lambda+1)(\lambda+4)-18(\lambda+1)\\
+&=-\lambda^3+3\lambda+2=0\\
+&=-(\lambda+1)(\lambda-2)(\lambda+1) =0
+\end{align}
+\begin{equation}
+\implies \lambda=\left\{2,-1\right\}
+\end{equation}
+\begin{itemize}
+\item For $\lambda =2$
+\begin{gather}
+[\mathsf{T}]_\alpha v = 0\\
+([\mathsf{T}]_\alpha -2I)v=0\\
+\left(
+\begin{pmatrix}
+-4 & 3 & -6\\
+6 & -7 & 12\\
+6 & -6 & 11
+\end{pmatrix}
+-
+2\begin{pmatrix}
+1 & 0  &0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\right)v=0\\
+\begin{pmatrix}
+-6 & 3 & -6\\
+6 & -9 &12\\
+6 & -6 & 9
+\end{pmatrix}v=0\\
+\begin{pmatrix}
+-6 & 3 & -6\\
+6 & -9 &12\\
+6 & -6 & 9
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+1 & 0 & \mfrac{1}{2}\\
+0 & 1 & -1\\
+0 & 0 & 0
+\end{pmatrix}
+\end{gather}
+\begin{align}
+x_1 &= -\frac{1}{2}t\\
+x_2 &= t\\
+x_3 &= t
+\end{align}
+\begin{equation}
+v = \left\{t\begin{pmatrix}-\frac{1}{2}\\1\\1\end{pmatrix}\colon t \in \mathbb{R}\right\}
+\end{equation}
+\item For $\lambda = -1$
+\begin{gather}
+[\mathsf{T}_\alpha]v = -v\\
+[\mathsf{T}]_\alpha]v = 0\\
+\left(
+\begin{pmatrix}
+-4 & 3 & -6\\
+6 & -7 & 12\\
+6 & -6 & 11
+\end{pmatrix}
++
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\right)v=0\\
+\begin{pmatrix}
+-3 & 3 & -6\\
+6 & -6 & 12\\
+6 & -6 & 12
+\end{pmatrix}v=0\\
+\begin{pmatrix}
+-3 & 3 & -6\\
+6 & -6 & 12\\
+6 & -6 & 12
+\end{pmatrix}\leadsto
+\begin{pmatrix}
+1 & -1 & 2\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}
+\end{gather}
+\begin{align}
+x_1 &= s-2t\\
+x_2 &= s\\
+x_3 &= t
+\end{align}
+\begin{equation}
+v=\left\{s\begin{pmatrix}1\\1\\0\end{pmatrix}+t\begin{pmatrix}-2\\0\\1\end{pmatrix}\colon
+  s,t\in \mathbb{R}^3\right\}
+\end{equation}
+\end{itemize}
+\begin{equation}
+\beta =\left\{\begin{pmatrix}-\frac{1}{2}\\-1\\1\end{pmatrix},\begin{pmatrix}1\\1\\0\end{pmatrix},\begin{pmatrix}-1\\0\\1\end{pmatrix}\right\}
+\end{equation}
+\begin{gather}
+[\mathsf{T}]_\beta = Q^{-1}[\mathsf{T}]_\alpha Q\\
+Q = \begin{pmatrix}
+\mfrac{-1}{2} & 1 & -2\\
+1 & 1 & 0\\
+1 & 0 & 1
+\end{pmatrix}\\
+\begin{gmatrix}[left]
+\mfrac{-1}{2} & 1 & -2&\\
+1 & 1 & 0&\\
+1 & 0 & 1&
+\end{gmatrix}
+\begin{gmatrix}[right]
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{gmatrix}
+\leadsto
+\begin{gmatrix}[left]
+1 & 0 & 0&\\
+0 & 1 & 0&\\
+0 & 0 & 1&
+\end{gmatrix}
+\begin{gmatrix}[right]
+\mfrac{2}{5} & \mfrac{-2}{5} & \mfrac{4}{5}\\
+\mfrac{2}{5} & \mfrac{3}{5} & \mfrac{4}{5}\\
+\mfrac{-2}{5} & \mfrac{2}{5} & \mfrac{1}{5}
+\end{gmatrix}\\
+\implies Q^{-1} =
+\begin{pmatrix}
+\mfrac{2}{5} & \mfrac{-2}{5} & \mfrac{4}{5}\\
+\mfrac{2}{5} & \mfrac{3}{5} & \mfrac{4}{5}\\
+\mfrac{-2}{5} & \mfrac{2}{5} & \mfrac{1}{5}
+\end{pmatrix}
+\end{gather}
+\begin{align}
+[\mathsf{T}]_\beta &= \begin{pmatrix}
+\mfrac{2}{5} & \mfrac{-2}{5} & \mfrac{4}{5}\\
+\mfrac{2}{5} & \mfrac{3}{5} & \mfrac{4}{5}\\
+\mfrac{-2}{5} & \mfrac{2}{5} & \mfrac{1}{5}
+\end{pmatrix}
+\begin{pmatrix}
+-4 & 3 & -6\\
+6 & -7 & 12\\
+6 & -6 & 11
+\end{pmatrix}
+\begin{pmatrix}
+\mfrac{-1}{2} & 1 & -2&\\
+1 & 1 & 0&\\
+1 & 0 & 1&
+\end{pmatrix}\\
+&= \begin{pmatrix}
+2 & 0 & 0\\
+0 & -1 & 0\\
+0 & 0 & -1
+\end{pmatrix}
+\end{align}
+\setcounter{enumii}{4}
+\item $\mathsf{V}=\mathsf{P}_3(\mathbb{R})$ and
+  $\mathsf{T}(f(x))=xf^\prime(x)+f(2)x+f(3)$
+\begin{gather}
+\alpha =
+\left\{\begin{pmatrix}1\\0\\0\end{pmatrix},\begin{pmatrix}0\\1\\0\end{pmatrix},\begin{pmatrix}0\\0\\1\end{pmatrix}\right\}\\
+[\mathsf{T}]_\alpha = \begin{pmatrix}
+1 & 3 & 9\\
+1 & 3 & 4\\
+0 & 0 & 2
+\end{pmatrix}
+\end{gather}
+\begin{align}
+\det{([\mathsf{T}]_\alpha-\lambda I)} &= 0\\
+&= \det{\begin{pmatrix}
+1 -\lambda & 3 & 9\\
+1 & 3-\lambda & 4\\
+0 & 0 & 2-\lambda
+\end{pmatrix}}\\
+&= (1-\lambda)(3-\lambda)(2-\lambda)-6(2-\lambda)\\
+&=\lambda(2-\lambda)(\lambda-4)
+\end{align}
+\begin{equation}
+\lambda =\{0,2,4\}
+\end{equation}
+\begin{itemize}
+\item For $\lambda =0$
+\begin{gather}
+Av = 0v\\
+Av = 0\\
+\begin{pmatrix}
+1 & 3 & 9\\
+1 & 3 & 4\\
+0 & 0 & 2
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+1 & 3 & 4\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{pmatrix}
+\end{gather}
+\begin{align}
+x_1 &=-3t\\
+x_2 &= t\\
+x_3 &= 0
+\end{align}
+\begin{equation}
+v= \left\{t\begin{pmatrix}-3\\1\\0\end{pmatrix}\colon t \in \mathbb{R}\right\}
+\end{equation}
+\item For $\lambda = 2$
+\begin{gather}
+Av = 2v\\
+(A-2I) = v\\
+\begin{pmatrix}
+-1 & 3 & 9\\
+1 & 1 & 4\\
+0 & 0 & 0
+\end{pmatrix}v =0\\
+\begin{pmatrix}
+-1 & 3 & 9\\
+1 & 1 & 4\\
+0 & 0 & 0
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+-1 & 3 & 4\\
+0 & 4 & 13\\
+0 & 0 & 0
+\end{pmatrix}
+\end{gather}
+\begin{align}
+x_1 &= -\frac{39}{4}t +9t\\
+x_2 &= -\frac{12}{4}t\\
+x_3 &= t
+\end{align}
+\begin{equation}
+v = \left\{t\begin{pmatrix}-3\\-13\\4\end{pmatrix}\colon t \in \mathbb{R}\right\}
+\end{equation}
+\item For $\lambda = 4$
+\begin{gather}
+Av =4v\\
+(A -4I)= v\\
+\begin{pmatrix}
+-3 & 3 & 9\\
+1 & -1 & 4\\
+0 & 0 & -2
+\end{pmatrix}v =0\\
+\begin{pmatrix}
+-3 & 3 & 9\\
+1 & -1 & 4\\
+0 & 0 & -2
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+0 & 0 & 21\\
+1 & -1 & 4\\
+0 & 0 & 2
+\end{pmatrix}
+\end{gather}
+\begin{align}
+x_1 &= t\\
+x_2 &= t\\
+x_3 &= 0
+\end{align}
+\begin{equation}
+v = \left\{t\begin{pmatrix}1\\1\\0\end{pmatrix} \colon t \in \mathbb{R}\right\}
+\end{equation}
+\end{itemize}
+\begin{gather}
+\beta=
+\left\{\begin{pmatrix}-3\\1\\0\end{pmatrix},\begin{pmatrix}-3\\-12\\4\end{pmatrix},\begin{pmatrix}1\\1\\0\end{pmatrix}\right\}\\
+\implies \left\{(-3+x),(-3-13x+4x^2),(1+x)\right\}
+\end{gather}
+\begin{gather}
+Q = \begin{pmatrix}
+-3 & -3 & 1\\
+1 & -13 & 1\\
+0 & 4 & 0
+\end{pmatrix}\\
+\begin{gmatrix}[left]
+-3 & -3 & 1&\\
+1 & -13 & 1&\\
+0 & 4 & 0&
+\end{gmatrix}
+\begin{gmatrix}[right]
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 &1
+\end{gmatrix}
+\leadsto
+\begin{gmatrix}[left]
+1 & 0 & 0&\\
+0 & 1 & 0&\\
+0 & 0 &1&
+\end{gmatrix}
+\begin{gmatrix}[right]
+\mfrac{-1}{4} & \mfrac{1}{4} & \mfrac{5}{8}\\
+0 & 0 & \mfrac{1}{4}\\
+\mfrac{1}{4} &\mfrac{3}{4} & \mfrac{21}{8}
+\end{gmatrix}\\
+Q^{-1} = \begin{pmatrix}
+\mfrac{-1}{4} & \mfrac{1}{4} & \mfrac{5}{8}\\
+0 & 0 & \mfrac{1}{4}\\
+\mfrac{1}{4} &\mfrac{3}{4} & \mfrac{21}{8}
+\end{pmatrix}
+\end{gather}
+\begin{align}
+[\mathsf{T}]_\beta &= Q^{-1}[\mathsf{T}]_\alpha Q\\
+&= \begin{pmatrix}
+\mfrac{-1}{4} & \mfrac{1}{4} & \mfrac{5}{8}\\
+0 & 0 & \mfrac{1}{4}\\
+\mfrac{1}{4} &\mfrac{3}{4} & \mfrac{21}{8}
+\end{pmatrix}
+\begin{pmatrix}
+1 & 3 & 9\\
+1 & 3 & 4\\
+0 & 0 & 2
+\end{pmatrix}
+\begin{pmatrix}
+- 3& -3 & 1\\
+1 & -13 & 1\\
+0 & 4 & 0
+\end{pmatrix}\\
+&= \begin{pmatrix}
+0 & 0 & 0\\
+0 & 2 & 0\\
+0 & 0 & 4
+\end{pmatrix}
+\end{align}
+\setcounter{enumii}{7}
+\item $\mathsf{V} = \mathsf{M}_{n\times n}(\mathbb{R})$ and
+  $\mathsf{T}\begin{pmatrix} a & b\\ c & d\end{pmatrix}
+  = \begin{pmatrix} d & b\\ c & a \end{pmatrix}$
+\begin{gather}
+\alpha = \left\{\begin{pmatrix} 1 & 0 \\ 0 &
+     0\end{pmatrix},\begin{pmatrix} 0 & 1 \\ 0 &
+     0\end{pmatrix},\begin{pmatrix} 0 & 0 \\ 1 &
+     0\end{pmatrix},\begin{pmatrix} 0 & 0 \\ 0 &
+     1\end{pmatrix}\right \}\\
+[\mathsf{T}]_\alpha = \begin{pmatrix}
+0 & 0 & 0 & 1\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+1 & 0 & 0 & 0
+\end{pmatrix}\\
+\det{([\mathsf{T}]_\alpha-\lambda I)} = \det{\begin{pmatrix}
+-\lambda & 0 & 0 & 1\\
+0 & 1-\lambda & 0 & 0\\
+0 & 0 & 1-\lambda & 0\\
+1 & 0 & 0 & -\lambda
+  \end{pmatrix}}\\
+\begin{pmatrix}
+-\lambda & 0 & 0 & 1\\
+0 & 1-\lambda & 0 & 0\\
+0 & 0 & 1-\lambda & 0\\
+1 & 0 & 0 & -\lambda
+  \end{pmatrix}
+\leadsto
+\begin{pmatrix}
+1 & 0 & 0 & -\lambda\\
+0 & 1-\lambda & 0 & 0\\
+0 & 0 & 1-\lambda & 0\\
+0 & 0 & 0 &1 -\lambda^2
+\end{pmatrix}\\
+\det{\begin{pmatrix}
+1 & 0 & 0 & -\lambda\\
+0 & 1-\lambda & 0 & 0\\
+0 & 0 & 1-\lambda & 0\\
+0 & 0 & 0 &1 -\lambda^2
+\end{pmatrix}} = 0\\
+\implies (1-\lambda)^2(1-\lambda^2) =0\\
+\implies \lambda = \pm 1
+\end{gather}
+\begin{itemize}
+\item For $\lambda = 1$
+\begin{gather}
+[\mathsf{T}]_\alpha v = v\\
+([\mathsf[T]_\alpha - I)v = 0\\
+\begin{pmatrix}
+-1 & 0 & 0 & 1\\
+0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0\\
+1 & 0 & 0 & -1
+\end{pmatrix}v =0
+\end{gather}
+\begin{align}
+x_1 &= t\\
+x_2 &= k\\
+x_3 &= s\\
+x_4 &= t
+\end{align}
+\begin{equation}
+v = \left\{t\begin{pmatrix}1\\0\\0\\1\end{pmatrix}
+  +k\begin{pmatrix}0\\1\\0\\0\end{pmatrix}+s\begin{pmatrix}0\\0\\1\\0\end{pmatrix}\colon
+  t,k,s \in \mathbb{R}\right\}
+\end{equation}
+\item For $\lambda = -1$
+\begin{gather}
+[\mathsf{T}]_\alpha v = v\\
+([\mathsf{T}]_\alpha + I)v = 0\\
+\begin{pmatrix}
+1 & 0 & 0 & 1\\
+0 & 2 & 0 & 0\\
+0 & 0 & 2 & 0\\
+1 & 0 & 0 & 1
+\end{pmatrix}v = 0
+\end{gather}
+\begin{align}
+x_1 &= -t\\
+x_2 &= 0 \\
+x_3 &= 0\\
+x_4 &= t
+\end{align}
+\begin{equation}
+v = \left\{t\begin{pmatrix}-1\\0\\0\\1\end{pmatrix}\colon t \in \mathbb{R}\right\}
+\end{equation}
+\begin{gather}
+  \beta =
+  \left\{\begin{pmatrix}1\\0\\0\\1\end{pmatrix},\begin{pmatrix}0\\1\\0\\0\end{pmatrix},\begin{pmatrix}0\\0\\1\\0\end{pmatrix},\begin{pmatrix}-1\\0\\0\\1\end{pmatrix}\right\}
+  \\
+\implies \left\{\begin{pmatrix}1 & 0\\0
+    &1\end{pmatrix},\begin{pmatrix}0 & 1\\0
+      &0\end{pmatrix},\begin{pmatrix}0 & 0\\1
+        &0\end{pmatrix},\begin{pmatrix}-1 & 0\\0
+          &1\end{pmatrix}\right\}
+ \end{gather}
+\end{itemize}
+\begin{gather}
+Q = \begin{pmatrix}
+1 & 0 & 0 & -1\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+1 & 0 & 0 & 1
+\end{pmatrix}\\
+\begin{gmatrix}[left]
+1 & 0 & 0 & -1&\\
+0 & 1 & 0 & 0&\\
+0 & 0 & 1 & 0&\\
+1 & 0 & 0 & 1&
+\end{gmatrix}
+\begin{gmatrix}
+1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1
+\end{gmatrix}
+\leadsto
+\begin{gmatrix}[left]
+1 & 0 & 0 & 0&\\
+0 & 1 & 0 & 0&\\
+0 & 0 & 1 & 0&\\
+0 & 0 & 0 & 1&
+\end{gmatrix}
+\begin{gmatrix}[right]
+\mfrac{1}{2} & 0 & 0 & \mfrac{1}{2}\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 1\\
+\mfrac{-1}{2} & 0 & 0 & \mfrac{1}{2}
+\end{gmatrix}\\
+\implies Q^{-1} = \begin{pmatrix}
+\mfrac{1}{2} & 0 & 0 & \mfrac{1}{2}\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 1\\
+\mfrac{-1}{2} & 0 & 0 & \mfrac{1}{2}
+\end{pmatrix}
+\end{gather}
+\begin{align}
+[\mathsf{T}]_\beta &= Q^{-1}[\mathsf{T}]_\alpha Q\\
+&= \begin{pmatrix}
+1 & 0 & 0 & 0&\\
+0 & 1 & 0 & 0&\\
+0 & 0 & 1 & 0&\\
+0 & 0 & 0 & -1&
+\end{pmatrix}
+\end{align}
+\end{enumerate}
