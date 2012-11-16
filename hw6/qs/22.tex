@@ -1,0 +1,95 @@
+\begin{enumerate}
+\item Let $\mathsf{T}$ be a linear operator on a vector space
+  $\mathsf{V}$ over the field $F$, and let $g(t)$ be a polynomial with
+  coefficients form $F$. Prove that if $x$ is an eigenvector of
+  $\mathsf{T}$ with corresponding eigenvalue $\lambda$, then
+  $g(\mathsf{T})(x)= g(\lambda)(x)$. That is, $x$ is an eigenvector of
+  $g(\mathsf{T})$ with corresponding eigenvalue $g(\lambda)$.
+\item Sate and prove the comparable results for matrices.
+\item Verify (b) for the matrix $A$ in Exercise 3(a) with a
+  polynomial $g(t) 2t^2 -t +1$, eigenvector $x
+  = \begin{pmatrix}2\\3\end{pmatrix}$, and corresponding eigenvalue
+  $\lambda = 4$.
+\end{enumerate}
+\begin{enumerate}
+\item Suppose $\mathsf{T} \in \mathcal{L}(\mathsf{V})$, $\mathsf{V}$
+  is a vector space over $F$.
+
+Let $g(t)$ be a polynomial with coefficients from $F$
+
+Claim: If $x$ is an eigenvector of $\mathsf{T}$ with corresponding
+eigenvalue $\lambda$ then $g(\mathsf{T})(x) = g(\lambda)x$
+
+Suppose $g(t)$ is of degree $n$;
+\begin{align}
+\implies g(t) &= a_nx^n +a_{n-1}x^{n-1} +\dotsb+ a_1x + a_o\\
+\implies g(\mathsf{T}) &= a_n\mathsf{T}^n + a_{n-1}\mathsf{T}^{n-1}
++\dotsb + a_1\mathsf{T} +a_0\mathsf{I}_{\mathsf{V}}\\
+\implies g(\mathsf{T}) (x)&= a_n\mathsf{T}^n(x) + a_{n-1}\mathsf{T}^{n-1}(x)
++\dotsb + a_1\mathsf{T}(x) +a_0\mathsf{I}_{\mathsf{V}}(x)\\
+&=a_n\lambda^nx +a_{n-1}\lambda^{n-1}x +\dotsb +a_1\lambda x+ a_0x\\
+&=(a_n\lambda^n +a_{n-1}\lambda^{n-1} +\dotsb +a_1\lambda + a_0)x\\
+&=g(\lambda)x
+\end{align}
+\item Prove that if $x$ is an eigenvector of $A$, with corresponding
+  eigenvalue $\lambda$ then $g(A)(x) = g(\lambda)(x)$.
+
+Suppose $A \in \mathsf{M}_{n\times n}(F)$, and Let $g(t) \in
+\mathsf{P}_n(F)$ such that g(t) is of degree $n$, and $x$ is an
+eigenvector of $A$ corresponding to the eigenvalue $\lambda$
+\begin{align}
+\implies g(t) &= a_nx^n +a_{n-1}x^{n-1} +\dotsb+ a_1x + a_o\\
+\implies g(\mathsf{A}) &= a_n\mathsf{A}^n + a_{n-1}\mathsf{A}^{n-1}
++\dotsb + a_1\mathsf{A} +a_0I_n\\
+\implies g(\mathsf{A}) (x)&= a_n\mathsf{A}^n(x) + a_{n-1}\mathsf{A}^{n-1}(x)
++\dotsb + a_1\mathsf{A}(x) +a_0I_n(x)\\
+&=a_n\lambda^nx +a_{n-1}\lambda^{n-1}x +\dotsb +a_1\lambda x+ a_0x\\
+&=(a_n\lambda^n +a_{n-1}\lambda^{n-1} +\dotsb +a_1\lambda + a_0)x\\
+&=g(\lambda)x
+\end{align}
+\item 
+\begin{gather}
+A  = \begin{pmatrix}
+1 & 2\\
+3 & 2\\
+\end{pmatrix}\\
+A^2 =\begin{pmatrix}
+7 & 6\\
+9 & 10
+\end{pmatrix}\\
+g(A) = 2\begin{pmatrix}
+7 & 6 \\
+9 & 10
+\end{pmatrix}
+-\begin{pmatrix}
+1 & 2 \\
+2 & 3
+\end{pmatrix}
++
+\begin{pmatrix}
+1 & 0
+0 & 1
+\end{pmatrix}
+\end{gather}
+\begin{align}
+g(A)\begin{pmatrix}2\\3\end{pmatrix} &= 2\begin{pmatrix}
+7 & 6 \\
+9 & 10
+\end{pmatrix}\begin{pmatrix}2\\3\end{pmatrix}
+-\begin{pmatrix}
+1 & 2 \\
+2 & 3
+\end{pmatrix}\begin{pmatrix}2\\3\end{pmatrix}
++
+\begin{pmatrix}
+1 & 0
+0 & 1
+\end{pmatrix}\begin{pmatrix}2\\3\end{pmatrix}\\
+&=
+(2)(16)\begin{pmatrix}2\\3\end{pmatrix} +\begin{pmatrix}2\\3\end{pmatrix}
+(-1)(4)\begin{pmatrix}2\\3\end{pmatrix}
++ \begin{pmatrix}2\\3\end{pmatrix}\\
+&= \left((2)(4^2)+(-1)(4)+(1)\right)\begin{pmatrix}2\\3\end{pmatrix}\\
+&= g(4)\begin{pmatrix}2\\3\end{pmatrix}
+\end{align}
+\end{enumerate}
