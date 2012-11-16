@@ -1,0 +1,37 @@
+Let $A$ and $B$ be similar $n \times n$ matrices. Prove that there
+exists an $n$-dimensional vector space $\mathsf{V}$, a linear operator
+$\mathsf{T}$ on $\mathsf{V}$, and ordered bases $\beta$ and $\gamma$
+for $\mathsf{V}$ such that $A=[\mathsf{T}]_\beta$ and
+$B=[\mathsf{T}]_\gamma$.
+
+Suppose $A,B \in \mathsf{M}_{n\times n}(F)$ such that $A = Q^{-1}BQ$
+
+Suppose $\mathsf{V}=\mathsf{F}^n$ and $\mathsf{T} = L_A\colon
+\mathsf{F}^n\to\mathsf{F}^n$
+
+\begin{equation}
+\implies \dim{\mathsf{V}} = \dim{\mathsf{F}^n} = n \text{ and }
+\mathsf{T} \in \mathcal{L}(\mathsf{V})
+\end{equation}
+Suppose $\beta$ is the standard ordered basis of $\mathsf{F}^n$ and
+$\gamma$ is an ordered basis of $\mathsf{F}^n$
+\begin{equation}
+\implies A = [L_A]_\beta
+\end{equation}
+Let $Q = [\mathsf{I}_{\mathsf{F}^n}]_\beta^\gamma$
+\begin{gather}
+\implies A = [\mathsf{I}_{\mathsf{F}^n}]_\gamma^\beta B[\mathsf{I}_{\mathsf{F}^n}]^\gamma_\beta
+\implies [L_A]_\beta = [\mathsf{I}_{\mathsf{F}^n}]_\gamma^\beta B[\mathsf{I}_{\mathsf{F}^n}]^\gamma_\beta
+\end{gather}
+\begin{align}
+ [\mathsf{I}_{\mathsf{F}^n}]^\gamma_\beta
+ [L_A]_\beta[\mathsf{I}_{\mathsf{F}^n}]_\gamma^\beta & =
+ [\mathsf{I}_{\mathsf{F}^n}L_A]_\beta^\gamma\\
+&= [L_A]_\beta^\gamma[\mathsf{I}_{\mathsf{F}^n}]\\
+&= [L_A]\mathsf{I}_{\mathsf{F}^n}]_\gamma\\
+&= [L_A]_\gamma\\
+&= B
+\end{align}
+\begin{equation}
+\implies A = [L_A]_\beta = [\mathsf{T}]_\beta \text{ and } B = [L_A]_\gamma=[\mathsf{T}]_\gamma
+\end{equation}
