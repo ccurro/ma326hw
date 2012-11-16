@@ -1,0 +1,44 @@
+\begin{enumerate}
+\item Prove that similar matrices have the same characteristic
+  polynomial.
+\item Show that the definition of the characteristic polynomial of a
+  linear operator on a finite-dimensional vector space $\mathsf{V}$ is
+  independent of the choice of basis for $\mathsf{V}$.
+\end{enumerate}
+\begin{enumerate}
+\item
+Suppose $A,B \in \mathsf{M}_{n\times n}(F)$ such that $A=Q^{-1}BQ$ for
+some invertible $Q \in \mathsf{M}_{n\times n}(F)$
+
+Claim: $\det{(A=\lambda I_n)} = \det{(B-\lambda I_n)}$
+\begin{align}
+\det{(A -\lambda I_n)} &= \det{(Q^{-1}BQ - \lambda I_n)}\\
+&=\det{(Q^{-1}BQ -\lambda Q^{-1}Q)}\\
+&=\det{Q^{-1}}\det{(BQ -\lambda Q)}\\
+&=\det{Q^{-1}}\det{(B -\lambda )}\det{Q}\\
+&=(\det{Q})^{-1}\det{Q}\det{(B-\lambda I_n)}\\
+&=\det{(B-\lambda I_n)}
+\end{align}
+\item Suppose $ \mathsf{T} \in \mathcal{L}(\mathsf{V})$ such that
+  $\mathsf{V}$ is finitely dimensioned and $\beta$ and $\gamma$ are
+  ordered bases of $\mathsf{V}$ 
+
+Let $A = [\mathsf{T}]_\beta$, $B =[\mathsf{T}]_\gamma$ 
+
+Let $Q$ be the change of coordinates matrix from $\gamma$ to $\beta$.
+\begin{equation}
+\implies Q = [\mathsf{I}_\mathsf{V}]_\gamma^\beta
+\end{equation}
+\begin{equation}
+A = [\mathsf{T}]_\beta =
+[\mathsf{I}_\mathsf{V}]_\gamma^\beta[\mathsf{T}]_\gamma[\mathsf{I}_\mathsf{V}]_\beta^\gamma
+= [\mathsf{I}_\mathsf{V}]_\gamma^\beta B[\mathsf{I}_\mathsf{V}]_\beta^\gamma
+\end{equation}
+\begin{equation}
+[\mathsf{I}_\mathsf{V}]_\gamma^\beta = ([\mathsf{I}_\mathsf{V}]^\gamma_\beta)^{-1}
+\end{equation}
+It follows that $A$ is similar to $B$ and therefore by part (a)
+\begin{equation}
+\det{([T]_\beta-\lambda I_n)} = \det{([\mathsf{T}]_\gamma - \lambda I_n)}
+\end{equation}
+\end{enumerate}

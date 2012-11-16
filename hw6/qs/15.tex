@@ -1,0 +1,57 @@
+\begin{enumerate}
+\item
+Let $\mathsf{T}$ be a linear operator on a vector space $\mathsf{V}$, and let $x$ be an
+eigenvector of $\mathsf{T}$ corresponding to the eigenvalue
+$\lambda$. For any positive integer $m$, prove that $x$ is an
+eigenvector of $\mathsf{T}^m$ corresponding to the eigenvalue
+$\lambda^m$.
+\item Sate and prove the analogous result for matrices.
+\end{enumerate}
+\begin{enumerate}
+\item Suppose  $\mathsf{T} \in \mathcal{L}(\mathsf{V})$ such that $x$
+  is an eigenvector corresponding to $\lambda$.
+\paragraph{}
+Proof by induction.
+
+Base Case; $n=1$
+
+\begin{equation}
+\mathsf{T}^1(x) = \lambda^1 x
+\end{equation}
+Suppose true for $1\leq m \leq k$ 
+\begin{equation}
+\implies \mathsf{T}^m(x) = \lambda^m x
+\end{equation}
+Show True for $m = k+1$ 
+\begin{align}
+\mathsf{T}^{m+1}(x) &= \mathsf{T}(\mathsf{T}^m(x))\\
+&= \mathsf{T}(\lambda^m x)\\
+&= \lambda^m\mathsf{T}(x)\\
+&=\lambda^m \lambda\\
+&= \lambda^{m+1}
+\end{align}
+\item Let $A \in \mathsf{M}_{n \times n}$ and let $x$ be an
+  eigenvector corresponding to the eigenvalue $\lambda$ .For any
+  positive integer $m$ prove that $x$ is an eigenvector of $A^m$
+  corresponding to the eigenvalue $\lambda^m$.
+
+Suppose $A \in \mathsf{M}_{n\times n}(F)$ and let $x$ be an
+eigenvector of $A$ corresponding to the eigenvalue $\lambda$.
+\paragraph{}
+Proof by induction.
+
+Base Case; n= 1
+\begin{equation}
+Ax = \lambda x
+\end{equation}
+Suppose true for $1 \leq m \leq k$
+
+Suppose $m=k+1$.
+\begin{align}
+A^{k+1}x &= A(A^kx)\\
+&= A(\lambda^k x)\\
+&=\lambda^k(Ax)\\
+&=\lambda^k\lambda\\
+&=\lambda^{k+1}
+\end{align}
+\end{enumerate}

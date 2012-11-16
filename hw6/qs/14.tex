@@ -1,0 +1,17 @@
+For any square matrix $A$, prove that $A$ and $A^t$ have the same
+characteristic polynomial.
+
+Suppose $A \in \mathsf{M}_{n\times n}$
+
+Claim: $\det{(A-\lambda I_n)} = \det{(A^t-\lambda I_n)}$.
+
+\begin{align}
+(A-\lambda I_n)^t &= A^t + (-\lambda)(I_n)^t\\
+&= A^t -\lambda I_n\\
+&= A -\lambda I_n
+\end{align}
+\begin{gather}
+\det{(A-\lambda I_n)} = \det{(A-\lambda)^t} \quad \text{(by theorem
+  4.8)}\\
+\implies \det{(A-\lambda I_n)} = \det{(A^t-\lambda I_n)}
+\end{gather}
