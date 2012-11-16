@@ -5,7 +5,7 @@
   $\mathsf{T}$ with corresponding eigenvalue $\lambda$, then
   $g(\mathsf{T})(x)= g(\lambda)(x)$. That is, $x$ is an eigenvector of
   $g(\mathsf{T})$ with corresponding eigenvalue $g(\lambda)$.
-\item Sate and prove the comparable results for matrices.
+\item State and prove the comparable results for matrices.
 \item Verify (b) for the matrix $A$ in Exercise 3(a) with a
   polynomial $g(t) 2t^2 -t +1$, eigenvector $x
   = \begin{pmatrix}2\\3\end{pmatrix}$, and corresponding eigenvalue
@@ -27,7 +27,8 @@ Suppose $g(t)$ is of degree $n$;
 +\dotsb + a_1\mathsf{T} +a_0\mathsf{I}_{\mathsf{V}}\\
 \implies g(\mathsf{T}) (x)&= a_n\mathsf{T}^n(x) + a_{n-1}\mathsf{T}^{n-1}(x)
 +\dotsb + a_1\mathsf{T}(x) +a_0\mathsf{I}_{\mathsf{V}}(x)\\
-&=a_n\lambda^nx +a_{n-1}\lambda^{n-1}x +\dotsb +a_1\lambda x+ a_0x\\
+&=a_n\lambda^nx +a_{n-1}\lambda^{n-1}x +\dotsb +a_1\lambda x+ a_0x
+\text{ by 5.1.15.a}\\
 &=(a_n\lambda^n +a_{n-1}\lambda^{n-1} +\dotsb +a_1\lambda + a_0)x\\
 &=g(\lambda)x
 \end{align}
@@ -39,11 +40,12 @@ Suppose $A \in \mathsf{M}_{n\times n}(F)$, and Let $g(t) \in
 eigenvector of $A$ corresponding to the eigenvalue $\lambda$
 \begin{align}
 \implies g(t) &= a_nx^n +a_{n-1}x^{n-1} +\dotsb+ a_1x + a_o\\
-\implies g(\mathsf{A}) &= a_n\mathsf{A}^n + a_{n-1}\mathsf{A}^{n-1}
-+\dotsb + a_1\mathsf{A} +a_0I_n\\
-\implies g(\mathsf{A}) (x)&= a_n\mathsf{A}^n(x) + a_{n-1}\mathsf{A}^{n-1}(x)
-+\dotsb + a_1\mathsf{A}(x) +a_0I_n(x)\\
-&=a_n\lambda^nx +a_{n-1}\lambda^{n-1}x +\dotsb +a_1\lambda x+ a_0x\\
+\implies g(A) &= a_nA^n + a_{n-1}A^{n-1}
++\dotsb + a_1A +a_0I_n\\
+\implies g(A) (x)&= a_nA^n(x) + a_{n-1}A^{n-1}(x)
++\dotsb + a_1A(x) +a_0I_n(x)\\
+&=a_n\lambda^nx +a_{n-1}\lambda^{n-1}x +\dotsb +a_1\lambda x+
+a_0x\text{ by 5.1.15.b}\\
 &=(a_n\lambda^n +a_{n-1}\lambda^{n-1} +\dotsb +a_1\lambda + a_0)x\\
 &=g(\lambda)x
 \end{align}
@@ -67,7 +69,7 @@ g(A) = 2\begin{pmatrix}
 \end{pmatrix}
 +
 \begin{pmatrix}
-1 & 0
+1 & 0\\
 0 & 1
 \end{pmatrix}
 \end{gather}

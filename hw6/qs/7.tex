@@ -10,7 +10,7 @@ $\beta$ for $\mathsf{V}$, and define $\det{(\mathsf{T})}=
 \item Prove that $\mathsf{T}$ is invertible if and only if
   $\det{\mathsf{T}}\neq 0$.
 \item Prove that if $\mathsf{T}$ is invertible, then
-  $\det{(\mathsf{T}^{-12})}= [\det{(\mathsf{T})}]^{-1}$.
+  $\det{(\mathsf{T}^{-1})}= [\det{(\mathsf{T})}]^{-1}$.
 \item Prove that if $\mathsf{U}$ is also a linear operator on
   $\mathsf{V}$, then $\det{(\mathsf{TU})} = \det{(\mathsf{T})}\cdot\det{(\mathsf{U})}$.
 \item Prove that $\det{(\mathsf{T}-\lambda \mathsf{I}_\mathsf{V})} =
@@ -64,7 +64,8 @@ Suppose $\det{\mathsf{T}}\neq 0$
 \begin{gather}
 \implies \det[\mathsf{T}]_\beta \neq 0 \quad \text{for some ordered
   basis } \beta \text{ of } \mathsf{V}\\
-\det{[\mathsf{T}]_\beta} \neq  0\\
+%\det{[\mathsf{T}]_\beta} \neq  0\\
+\implies [\mathsf{T}]_\beta \text{ is invertible, by corollary to Th. 4.7}\\ 
 \implies \mathsf{T} \text{ is invertible, by corollary to Th. 2.18}
 \end{gather}
 \item Suppose $\mathsf{T}$ is invertible and $\beta$ is some ordered
@@ -85,8 +86,8 @@ Suppose $\det{\mathsf{T}}\neq 0$
 \item Suppose $\beta$ is an ordered basis of $\mathsf{V}$.
 \begin{align}
 \det{\mathsf{TU}} &= \det{[\mathsf{TU}]_\beta}\\
-&= \det{[\mathsf{T}]_\beta[\mathsf{U}]_\beta}\\
-&= \det{[\mathsf{T}]_\beta}\det{[\mathsf{U}]_\beta}\\
+&= \det{[\mathsf{T}]_\beta[\mathsf{U}]_\beta} \text{ by Th. 2.11}\\
+&= \det{[\mathsf{T}]_\beta}\det{[\mathsf{U}]_\beta} \text{ by Th. 4.7}\\
 &= \det{\mathsf{T}}\det{\mathsf{U}}
 \end{align}
 \item 
@@ -94,8 +95,9 @@ Suppose $\det{\mathsf{T}}\neq 0$
 \det{([\mathsf{T}]_\beta -\lambda I)} &= \det{([\mathsf{T}]_\beta
   -\lambda[\mathsf{I}_\mathsf{V}]_\beta)}\\
 &= \det{([\mathsf{T}]_\beta
-  -[\lambda\mathsf{I}_\mathsf{V}]_\beta)}\\
-&= \det{[\mathsf{T}_\beta -\lambda \mathsf{I}_\mathsf{V}]_\beta}\\
+  -[\lambda\mathsf{I}_\mathsf{V}]_\beta)} \text{ by Th. 2.8.b}\\
+&= \det{[\mathsf{T}-\lambda \mathsf{I}_\mathsf{V}]_\beta} \text{ by
+  Th. 2.8.a}\\
 &= \det{(\mathsf{T}-\lambda \mathsf{I}_\mathsf{V})}
 \end{align}
 \end{enumerate}

@@ -12,7 +12,7 @@ partitions $(A\; B)$ become an upper triangular matrix $(A^\prime\;
 B^\prime)$. $M$ can also be reduced using strictly Type 3 row
 operations such that the partition $(O\; C)$ becomes the matrix $(O\; 
 C^\prime)$ where $C^\prime$ is an upper triangular matrix in
-$\mathsf{M}_{(n-k)\times(n-k)}(F)$ where $A \in \mathsf{M}_{n\times
+$\mathsf{M}_{(n-k)\times(n-k)}(F)$ and $A \in \mathsf{M}_{n\times
   n}(F)$.
 \begin{equation}
 \implies M^\prime = \begin{pmatrix}A^\prime & B^\prime \\ O & C^\prime
@@ -33,10 +33,10 @@ A^\prime_{ii}\\
 &= \det{(A^\prime)}
 \end{align}
 \begin{equation}
-M^\prime_{k+1,k+1} = C^\prime_{ii} \quad \forall i \; (1\leq i\leq n-k)
+M^\prime_{k+i,k+i} = C^\prime_{ii} \quad \forall i \; (1\leq i\leq n-k)
 \end{equation}
 \begin{align}
-\implies \prod\limits_{i=k+1}^k M^\prime_{ii} &= \prod\limits_{i=1}{n-k}
+\implies \prod\limits_{i=k+1}^k M^\prime_{ii} &= \prod\limits_{i=1}^{n-k}
 C^\prime_{ii}\\
 &= \det{(C^\prime)}
 \end{align}
