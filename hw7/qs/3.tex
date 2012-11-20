@@ -1,0 +1,31 @@
+For each of the following linear operators $\mathsf{T}$ on a vector
+space $\mathsf{V}$, test $\mathsf{T}$ for diagonalizability, and if
+$\mathsf{T}$ is diagonalizable, find a basis $\beta$ for $\mathsf{V}$
+such that $[\mathsf{T}]_\beta$ is a diagonal matrix.
+\begin{enumerate}
+\item $\mathsf{V}=\mathsf{P}_3(\mathbb{R})$ and $\mathsf{T}$ is
+  defined by $\mathsf{T}(f(x)) = f^\prime(x) + f^{\prime\prime}(x),$
+  respectively.
+
+Let $\alpha$ be the standard ordered basis of
+$\mathsf{P}_3(\mathbb{R})$.
+\begin{gather}
+\mathsf{T}(\alpha) = \{0,1,2x+2,3x^2+6x\}\\
+\implies [\mathsf{T}]_\alpha = \begin{pmatrix}
+0 & 1 & 2 & 0\\
+0 & 0 & 2 & 6\\
+0 & 0 & 0 & 3\\
+0 & 0 & 0 & 0
+\end{pmatrix}\\
+\det{([\mathsf{T}]_\beta -\lambda I_4)} = \det{\begin{pmatrix}
+-\lambda & 1 & 2 & 0\\
+0 & -\lambda & 2 & 6\\
+0 & 0 & -\lambda & 3\\
+0 & 0 & 0 & -\lambda
+    \end{pmatrix}} = \lambda^4\\
+\implies \lambda_1 = 0 \text{ with multiplicity 4}\\
+\rank{[\mathsf{T}]_\beta - \lambda_1I_3} = 3\\
+4-3\neq 4 \text{ multiplicity of } \lambda_1 \\
+\notag \implies \mathsf{T} \text{ is not diagonalizable}
+\end{gather}
+\end{enumerate}
