@@ -1,0 +1,57 @@
+Any two distinct irreducible monic polynomials are relatively prime.
+
+\paragraph{Lemma: } All factors of an irreducible monic polynomial
+$\phi(x)$ are either of the form $c \neq 0, c \in F$ of $d\phi(x), d
+\neq 0, d \in F$
+
+Suppose $f(x), \phi(x) \in \mathsf{P}(F)$ and $\phi(x)$ is an
+irreducible polynomial.
+
+Suppose $f(x)$ divides $\phi(x)$
+\begin{equation}
+\implies \phi(x) = f(x)g(x)\quad \text{for some } q(x) \in
+\mathsf{P}(F)
+\end{equation}
+\begin{enumerate}[{\bf {Case} 1}]
+\item $\text{deg}(f(x)) \notin \mathbb{Z}^+$
+\begin{gather}
+f(x)\neq 0 \because \phi(x) \neq 0\\
+\implies \text{deg}(f(x)) = 0 \\
+\implies f(x) = c \quad \text{for some } c \in F
+\end{gather}
+\item$\text{deg}(f(x)) \in \mathbb{Z}^+$
+\begin{equation}
+\phi(x) = f(x)q(x)
+\end{equation}
+Because $\phi(x)$ is irreducible, it cannot be expressed as a product
+of polynomials both possessing positive degree.
+\begin{gather}
+\implies \text{deg}(q(x)) \leq 0 \\
+\implies g(x) = \frac{1}{d} \quad \text{for some nonzero } d \in F\\
+\implies \phi(x) = \frac{f(x)}{d}\\
+\implies d\phi(x) = f(x)
+\end{gather}
+\begin{align}
+\notag & & & & \qedsymbol
+\end{align}
+\newpage{}
+By lemma, suppose the factors of $\phi_1$ are $c$ and $d\phi_1$ where
+$c,d \in F$ and $c,d\neq 0.$ suppose the factors of $\phi_2$ are $e$
+and $g\phi_2$ where $e,g \in F, e,g \neq 0$
+
+Claim: $d\phi_1 \neq g\phi_2$
+
+Suppose $g\phi_2 | \phi_1$
+\begin{gather}
+\implies g\phi_2 = d\phi_1\\
+\implies \phi_2 = \frac{d}{g}\phi_1
+\implies \phi_2 = \frac{d}{g}(x^n +a_{n-1}x^{n-1} + \dotsb +a_1x + a_0)\\
+\implies \phi_2 = \frac{d}{g}x^n +\frac{d}{g}a_{n-1}x^{n-1} + \dotsb +
+\frac{d}{g}a_1x + a_0\\
+\implies \frac{d}{g} = 1\text{ because } \phi_2 \text{ is monic.} \\
+\implies \phi_2 = \phi_1\; \lightning \text{ Contradiction!} \\
+\text{Theorem states } \phi_1 \text{ and } \phi_2 \text{ are distinct
+  polynomials.} \notag
+\end{gather}
+\end{enumerate}
+

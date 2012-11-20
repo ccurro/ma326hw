@@ -1,0 +1,37 @@
+Let $\mathsf{T}$ be a linear operator on a vector space $\mathsf{V}$
+over a field $F,$ and let $A$ be an $n\times n$ matrix with entries
+from $F.$ If $f_1(x)$ and $f_2(x)$ are relatively prime polynomials
+with entries from $F,$ then there exist polynomials $q_1(x)$ and
+$q_2(x)$ with entries from $F$ such that
+\begin{enumerate}
+\item $q_1(\mathsf{T})f_1(\mathsf{T}) + q_2(\mathsf{T})f_2(\mathsf{T})
+  = \mathsf{I}$
+\item$q_1(A)f_1(A) + q_2(A)f_2(A) = I.$
+\end{enumerate}
+Suppose $\mathsf{T} \in \mathcal{L}(\mathsf{V}),$ such that
+$\mathsf{V}$ is a vector space over $F,$ and $A\in
+\mathsf{M}_{n\times n}(F)$
+
+Suppose $f_1(x), f_2(x) \in \mathsf{P}(F)$ such that they are
+relatively prime.
+\begin{enumerate}
+\item Claim: $ \exists q_1(x)$ and $q_2(x)$ such that
+  $q_1(\mathsf{T})f_1(\mathsf{T}) + q_2(\mathsf{T})f_2(\mathsf{T}) =
+  \mathsf{I}$ 
+\paragraph{}
+Because $f_1(x)$ and $f_2(x)$ are relatively prime there exists
+polynomials $q_1(x)$ and $q_2(x)$ such that 
+\begin{equation}
+f_1(x)q_1(x) + f_2(x)q_2(x) = 1
+\end{equation}
+It follows that 
+\begin{equation}
+f_1(\mathsf{T})q_1(\mathsf{T}) + f_2(\mathsf{T})q_2(\mathsf{T}) = \mathsf{I}_\mathsf{V}
+\end{equation}
+\item Claim: $\exists q_1(x)$ and $q_2(x)$ such that $q_1(A)f_1(A) +
+  q_2(A)f_2(A) = I_n$
+\begin{gather}
+f_1(x)q_1(x) + f_2(x)q_2(x) = 1\\
+\implies f_1(A)q_1(A) + f_2(A)q_2(A) = I_n
+\end{gather}
+\end{enumerate}

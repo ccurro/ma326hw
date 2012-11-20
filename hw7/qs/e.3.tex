@@ -1,0 +1,79 @@
+Let $f(x)$ be a polynomial with coefficients from a field $F,$ and let
+$\mathsf{T}$ be a linear operator on a vector space $\mathsf{V}$ over
+$F$. Then the following statements are true
+\begin{enumerate}
+\item $f(\mathsf{T})$ is a linear operator on $\mathsf{V}.$
+\item If $\beta$ is a finite ordered basis for $\mathsf{V}$ and $A =
+  [\mathsf{T}]_\beta,$ then $[f(\mathsf{T})]_\beta = f(A).$
+\end{enumerate}
+
+Suppose $f(x)$ is a polynomial with coefficients in $F$
+
+Suppose $\mathsf{T} \in \mathcal{V}$ and $\mathsf{V}$ is a vector
+space over $F.$
+\begin{enumerate}
+\item Claim: $f(\mathsf{T})$ is a linear operator on $\mathsf{V}.$
+\begin{align}
+f(x) &= a_nx^n + a_{n-1}x^{n-1} + \dotsb + a_1x + a_0 \\
+f(\mathsf{T}) &= a_n\mathsf{T}^n + a_{n-1}\mathsf{T}^{n-1} + \dotsb +
+a_1\mathsf{T} + a_0\mathsf{I}_\mathsf{V}
+\end{align}
+\paragraph{Lemma: } $\mathsf{T}^n \in \mathcal{L}(\mathsf{V})\; \forall
+n \in \mathbb{Z}^+.$
+
+Suppose $y,z \in \mathsf{V}.$
+
+Suppose $n=1$
+\begin{equation}
+\mathsf{T}(az+y) = a\mathsf{T}(z) +\mathsf{T}(y)
+\end{equation}
+Suppose true for $1\leq n\leq k.$
+
+Suppose $n=k+1$
+\begin{align}
+\mathsf{T}^{k+1}(az+y) &= \mathsf{T}(\mathsf{T}^k(az+y))\\
+&= \mathsf{T}(a\mathsf{T}^k(z) + \mathsf{T}(y))\\
+&= a\mathsf{T}^{k+1}(z) + \mathsf{T}^{k+1}(y) \\ & & \qedsymbol\notag
+\end{align}
+\begin{multline}
+\therefore f(\mathsf{T}(az+y)) = a_n\mathsf{T}^n(az+y)
++a_{n-1}\mathsf{T}^{n-1}(az+y) +\dotsb + \\  {}+a_1\mathsf{T}(az +y) +
+a_0(az+y)
+\end{multline}
+\begin{multline}
+f(\mathsf{T}(az+y)) = a_n(a\mathsf{T}^n(z) + \mathsf{T}^n(y)) +
+a_{n-1}(a\mathsf{T}^{n-1}(z) +\mathsf{T}^{n-1}(y)) + \dotsb + \\ {} +
+a_1(a\mathsf{T}(z) +\mathsf{T}(y)) +a_0(az +y)
+\end{multline}
+\begin{multline}
+f(\mathsf{T}(az+y)) = a(a_n\mathsf{T}^n(z)+a_{n-1}\mathsf{T}^{n-1}(z)
++ \dotsb + a_1\mathsf{T}(z) +a_oz) + \\
++ (a_n\mathsf{T}^n(y)+a_{n-1}\mathsf{T}^{n-1}(y)
++ \dotsb + a_1\mathsf{T}(y) +a_oy)
+\end{multline}
+\begin{equation}
+f(\mathsf{T}(az+y)) = af(\mathsf{T})(z) + f(\mathsf{T})(y) \in \mathsf{V}
+\end{equation}
+\begin{equation}
+\implies f(\mathsf{T}) \in \mathcal{L}(\mathsf{V})
+\end{equation}
+\item Claim: If $\beta$ is a finite ordered basis for $\mathsf{V}$ and
+  $A=[\mathsf{T}]_\beta,$ then $\left[f(\mathsf{T})\right]_\beta = f(A).$
+\begin{equation}
+f(\mathsf{T}) = a_n\mathsf{T}^n +a_{n-1}\mathsf{T}^{n-1}+\dotsb
++a_1\mathsf{T} +a_0\mathsf{I}_\mathsf{V}
+\end{equation}
+\begin{align}
+\implies\left[f(\mathsf{T})\right]_\beta &= \left[a_n\mathsf{T}^n +a_{n-1}\mathsf{T}^{n-1}+\dotsb
++a_1\mathsf{T} +a_0\mathsf{I}_\mathsf{V}\right]_\beta\\
+&= a_n\left[\mathsf{T}^n\right]_\beta
+a_{n-1}\left[\mathsf{T}^{n-1}\right]_\beta + \dotsb +
+a_1\left[\mathsf{T}\right]_\beta
+  +a_0\left[\mathsf{I}_\mathsf{V}\right]_\beta\\
+&= a_n\left(\left[\mathsf{T}\right]_\beta\right)^n
++a_{n-1}\left(\left[\mathsf{T}\right]_\beta\right)^{n-1} + \dotsb +
+a_1\left[\mathsf{T}\right]_\beta + a_0\mathsf{I}_\mathsf{V}\\
+&= a_nA^n +a_{n-1}A^{n-1} +\dotsb + a_1A +a_0\\
+&= f(A)
+\end{align}
+\end{enumerate}
