@@ -1,0 +1,48 @@
+Let $A$ be an $n \times n$ matrix that is similar to an upper
+triangular matrix and has the distinct eigenvalues
+$\lambda_1,\lambda_2,\dotsc,\lambda_k$ with corresponding
+multiplicities $m_1,m_2,\dotsc,m_k.$ Prove the following statements.
+\begin{enumerate}
+\item $\text{tr}(A) = \sum\limits_{i=1}^k m_i\lambda_i$
+\item $\det{(A)} =
+  (\lambda_1)^{m_1}(\lambda_2)^{m_2}\dotsb(\lambda_k)^{m_k}$
+\end{enumerate}
+Suppose $A\in \mathsf{M}_{n\times n}(F).$ A has
+distinct eigenvalues $\lambda_1,\lambda_2,\dotsc,\lambda_k$ with
+corresponding multiplicities $m_1,m_2,\dotsc,m_k$. 
+
+Suppose $A=Q^{-1}UQ$ for $U,Q \in \mathsf{M}_{n\times n}(F)$ such that
+$U$ is upper triangular and $Q$ is invertible.
+\begin{equation}
+\det{(A-\lambda I_n)} = \det{(U -\lambda I_n)} =
+(U_{11}-\lambda)(U_{22} -\lambda)\dotsb(U_{nn}-\lambda)
+\end{equation}
+$A$ and $U$ have the same characteristic polynomial so they have the
+same eigenvalues. Thus $U$ has eigenvalues
+$\lambda_1,\lambda_2,\dotsc,\lambda_k$ with corresponding
+multiplicities $m_1,m_2,\dotsc,m_k.$
+\begin{equation}
+\det{(U -\lambda I_n)} = (U_{11}-\lambda)(U_{22}
+-\lambda)\dotsb(U_{nn}-\lambda)= 0 \text{ (by HW.5.2.9.b)}
+\end{equation}
+It follows that the diagonal entries of $U$ correspond to its eigenvalues.
+\begin{enumerate}
+\item Claim: $\text{tr}(A) = \sum\limits_{i=1}^k m_i\lambda_i$
+\begin{align}
+\tr{A} &= \tr{Q^{-1}UQ} \\
+&= \tr{Q(Q^{-1})A} \text{ (by HW.2.3.12)}\\
+&= \tr{(QQ^{-1})U}\\
+&=\tr{U}\\
+&= \sum\limits_{i=1}^n U_{ii}\\
+&= \sum\limits_{i=1}^k m_i\lambda_i
+\end{align}
+\item Claim: $\det{(A)} =
+  (\lambda_1)^{m_1}(\lambda_2)^{m_2}\dotsb(\lambda_k)^{m_k}$
+\begin{align}
+\det{(A)} &= \det{(Q^{-1}UQ)}\\
+&= (\det{Q})^{-1}\det{Q}\det{U}\\
+&= \det{U}\\
+&= \prod\limits^n_{i=1} U_{ii}\\
+&= \prod\limits^k_{i=1} (\lambda_i)^{m_i}
+\end{align}
+\end{enumerate}

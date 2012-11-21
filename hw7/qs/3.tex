@@ -28,4 +28,378 @@ $\mathsf{P}_3(\mathbb{R})$.
 4-3\neq 4 \text{ multiplicity of } \lambda_1 \\
 \notag \implies \mathsf{T} \text{ is not diagonalizable}
 \end{gather}
+\setcounter{enumii}{3}
+\item $\mathsf{V} = \mathsf{P}_2(\mathbb{R})$ and $\mathsf{T}$ is
+  defined by $\mathsf{T}(f(x)) = f(0) +f(1)(x+x^2)$.
+
+Suppose $\alpha$ is the standard ordered basis of
+$\mathsf{P}_2(\mathbb{R})$.
+
+\begin{gather}
+\implies \mathsf{T}(\alpha) = \{x^2+x+1,x+x^2,x+x^2 \}\\
+\implies [\mathsf{T}]_\alpha = \begin{pmatrix}
+1 & 0 & 0\\
+1 & 1 & 1 \\
+1 & 1 & 1
+\end{pmatrix}
+\end{gather}
+\begin{align}
+\det{([\mathsf{T}]_\beta -\lambda I_2)} &= \det{\begin{pmatrix}
+1-\lambda & 0 & 0\\
+1 & 1-\lambda & 0\\
+1 & 1 & 1-\lambda
+  \end{pmatrix}}\\
+&= (\lambda)(1-\lambda)(\lambda - 2)
+\end{align}
+\begin{align}
+\implies \lambda_1 &= 0, \text{ multiplicity } 1\\
+\lambda_2 &= 1, \text{ multiplicity } 1\\
+\lambda_3 &= 2, \text{ multiplicity } 1
+\end{align}
+\begin{itemize}
+\item For $\lambda_1 = 0$
+\begin{gather}
+[\mathsf{T}]_\beta -0 I_3= \begin{pmatrix}
+1 & 0 & 0\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{pmatrix}\\
+\begin{pmatrix}
+1 & 0 & 0\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{pmatrix}\leadsto
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 1 & 0
+\end{pmatrix}\\
+\implies \rank{[\mathsf{T}]_\beta} = 2\\
+\text{multiplicity } \lambda_1 =1; \; 3-2 =1 \checkmark
+\end{gather}
+\item For $\lambda_2 = 1$
+\begin{gather}
+[\mathsf{T}]_\beta - I_3 = \begin{pmatrix}
+0 & 0 & 0\\
+1 & 0 & 1\\
+1 & 1 & 0
+\end{pmatrix}\\
+\begin{pmatrix}
+0 & 0 & 0\\
+1 & 0 & 1\\
+1 & 1 & 0
+\end{pmatrix}\leadsto
+\begin{pmatrix}
+0 & 0 & 0\\
+0 & 0 & 1\\
+0 & 1 & 0
+\end{pmatrix}\\
+\implies \rank{[\mathsf{T}]_\beta -I_3} = 2 \\
+\text{multiplicity } \lambda_2 =1; \; 3-2 =1 \checkmark
+\end{gather}
+\item For $\lambda_3 = 2$
+\begin{gather}
+[\mathsf{T}]_\beta - 2 I_3 = \begin{pmatrix}
+-1 & 0 & 0\\
+1 & -1 & 1\\
+1 & 1 & 1
+\end{pmatrix}\leadsto
+\begin{pmatrix}
+-1 & 0 & 0\\
+0  & 0 & 1\\
+2 & 0 & -1
+\end{pmatrix}\\
+\implies \rank{[\mathsf{T}]_\beta} =2\\
+\text{multiplicity } \lambda_3 =1; \; 3-2 =1 \checkmark
+\end{gather}
+It follows that $\mathsf{T}$ is diagonalizable.
+\end{itemize}
+\begin{itemize}
+\item For $\lambda_1 = 0$
+\begin{equation}
+\begin{pmatrix}
+1 & 0 & 0\\
+1 & 1 & 1 \\
+1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 1\\
+0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+\end{equation}
+\begin{gather}
+\implies x_1 = 0\\
+x_2 = -x_3\\
+S_1 = \left\{z\begin{pmatrix}0\\-1\\1\end{pmatrix} \colon z \in
+  \mathbb{R}\right \}\\
+\notag \implies \begin{pmatrix}0\\-1\\1\end{pmatrix} \text{ is the
+  eigenvector corresponding to } \lambda_2
+\end{gather}
+\item For $\lambda_2 = 1$
+\begin{equation}
+\begin{pmatrix}
+0 & 0 & 0\\
+1 & 0 & 1\\
+1 & 1 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+0 & 0 & 0\\
+1 & 0 & 1\\
+0 & 1 & -1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+\end{equation}
+\begin{gather}
+\implies x_1 =- x_3\\
+x_2 = x_3\\
+S_2 = \left\{ z\begin{pmatrix}-1\\1\\1\end{pmatrix} \colon z \in
+  \mathbb{R}\right\}\\
+\notag \implies \begin{pmatrix}-1\\1\\1\end{pmatrix} \text{ is the
+  eigenvector corresponding to } \lambda_2
+\end{gather}
+\item For $\lambda_3 = 2$
+\begin{equation}
+\begin{pmatrix}
+-1 & 0 & 0\\
+1 & -1 & 1\\
+1 & 1 & -1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+-1 & 0 & 0\\
+0 & 0 & 0\\
+0 & 1 & -1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+\end{equation}
+\begin{align}
+\implies x_1 &= 0\\
+x_2 &= x_3\\
+\end{align}
+\begin{gather}
+S_3 = \left\{z\begin{pmatrix}0\\1\\1\end{pmatrix}\colon z \in
+  \mathbb{R}\right\}\\
+\implies \begin{pmatrix}0\\1\\1\end{pmatrix} \text{ is the eigenvector
+  corresponding to } \lambda_2\\
+\implies \beta = \left\{\begin{pmatrix}0\\-1\\1
+  \end{pmatrix},\begin{pmatrix}-1\\1\\1\end{pmatrix},\begin{pmatrix}0\\1\\1\end{pmatrix}\right\}\\
+\implies [\mathsf{T}]_\beta = \begin{pmatrix}
+0 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 2
+\end{pmatrix}
+\end{gather}
+\end{itemize}
+\item $\mathsf{V} = \mathsf{C}^2$ and $\mathsf{T}$ is defined by
+  $\mathsf{T}(z,w) = (z+iw,iz+2)$
+
+Suppose $\alpha = \left\{(1,0),(-,1) \right\}$ is a basis for $\mathsf{C}^2$
+\begin{gather}
+\mathsf{T}(\alpha) = \left\{(1,i),(i,1)\right \}\\
+\implies [\mathsf{T}]_\alpha = \begin{pmatrix}
+1 & i\\
+i & 1
+\end{pmatrix}
+\end{gather}
+\begin{align}
+\det{([\mathsf{T}]_\beta -\lambda I_2)} &= \det{\begin{pmatrix}
+1-\lambda & i\\
+i & 1-\lambda 
+\end{pmatrix}
+}\\
+&= \lambda^2-2\lambda +2
+\end{align}
+$\mathbb{C}$ is algebraically closed so the characteristic polynomial
+splits over $\mathbb{C}$
+\begin{gather}
+\lambda^2-2\lambda +2 =0 \\
+\implies 1\pm i
+\end{gather}
+\begin{align}
+\implies \lambda_1 &= 1+i, \text{ multiplicity } 1\\
+\lambda_2 &= 1-i, \text{ multiplicity } 1 
+\end{align}
+\begin{itemize}
+\item For $\lambda_1 = 1 +i$
+\begin{gather}
+[\mathsf{T}]_\beta -(i+1)I_2 = \begin{pmatrix}
+-i & i\\
+i & -i
+\end{pmatrix}\\
+\begin{pmatrix}
+-i & i\\
+i & -i
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+0 & 1\\
+0 & -1
+\end{pmatrix}\\
+\rank{[\mathsf{T}]_\beta -(i+1)I_2} =1\\
+\text{multiplicity } \lambda_1 =i+1; \; 2-1 =1 \checkmark
+\end{gather}
+\item For $\lambda_2 = 1 -i$
+\begin{gather}
+[\mathsf{T}]_\beta - (1-i)I_2 = \begin{pmatrix} i & i \\ i &
+  i\end{pmatrix}\\
+\begin{pmatrix}
+ i & i \\
+ i & i
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+1 & 0\\
+1 & 0 
+\end{pmatrix}\\
+\implies \rank{[\mathsf{T}]_\beta-(1-i)I_2}=1\\
+\text{multiplicity } \lambda_2 =1-i; \; 2-1 =1 \checkmark\\
+\end{gather}
+\end{itemize}
+It follows that $\mathsf{T}$ is diagonalizable.
+\begin{itemize}
+\item For $\lambda_1 = 1 +i$
+\begin{gather}
+\begin{pmatrix}
+-i & i\\
+i & -1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & -1\\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}\\
+\implies x_1 = x_2\\
+S_1 = \left\{z\begin{pmatrix}1\\1\end{pmatrix}\colon x \in
+  \mathbb{C}\right\}\\
+\notag \begin{pmatrix}1\\1\end{pmatrix} \text{ is the eigenvector
+  corresponding to } \lambda_1
+\end{gather}
+\item For $\lambda_2 = 1 -i$
+\begin{gather}
+\begin{pmatrix}
+i & i\\
+i & i
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}
+\leadsto
+\begin{pmatrix}
+1 & 1\\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}\\
+\implies x_1 = -x_2 \\
+S_2 = \left\{z\begin{pmatrix}-1\\1\end{pmatrix}\colon z\in
+  \mathbb{C}\right\}
+\\\notag \begin{pmatrix}-1\\1\end{pmatrix} \text{ is the eigenvector
+  corresponding to } \lambda_2\\
+\beta
+=\left\{\begin{pmatrix}1\\1\end{pmatrix},\begin{pmatrix}-1\\1\end{pmatrix}\right\}\\
+\implies [\mathsf{T}]_\beta =
+\begin{pmatrix}
+1+i & 0\\
+0 & 1-i
+\end{pmatrix}
+\end{gather}
+\end{itemize}
+\item $\mathsf{V} = \mathsf{M}_{n \times n}(\mathbb{R})$ and
+  $\mathsf{T}$ is defined by $\mathsf{T}(A) = A^t$
+
+Suppose $\alpha$ is the standard ordered basis of $\mathsf{M}_{n\times
+  n}(\mathbb{R})$
+\begin{gather}
+\implies \mathsf{T}(\alpha) =\left\{\begin{pmatrix}1&0\\0 &
+    0\end{pmatrix},\begin{pmatrix}0&1\\0& 0\end{pmatrix},\begin{pmatrix}0
+    & 0 \\1&0\end{pmatrix},\begin{pmatrix}0& 0
+    \\0&1\end{pmatrix}\right\}\\
+\implies [\mathsf{T}]_\alpha = \begin{pmatrix}
+1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1
+\end{pmatrix}
+\end{gather}
+\begin{align}
+\implies \det{([\mathsf{T}]_\beta-\lambda I_4)} &= \det{
+\begin{pmatrix}
+1-\lambda & 0 & 0 & 0\\
+0 & -\lambda & 1 &  0\\
+0 & 1 & -\lambda & 0\\
+0 & 0 &0 & 1-\lambda
+\end{pmatrix}
+}\\
+&=(1-\lambda^2)(\lambda^2-1)\\
+\end{align}
+\begin{align}
+\implies \lambda_1 &= 1, \text{ multiplicity } 3\\
+\implies \lambda_2 &= =1, \text{ multiplicity } 1
+\end{align}
 \end{enumerate}

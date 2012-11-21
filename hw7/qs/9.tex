@@ -1,0 +1,43 @@
+Let $\mathsf{T}$ be a linear operator on a finite-dimensional vector
+space $\mathsf{V},$ and suppose there exists an ordered basis $\beta$
+for $\mathsf{V}$ such that $[\mathsf{T}]_\beta$ is an upper triangular
+matrix.
+\begin{enumerate}
+\item Prove that the characteristic polynomial for $\mathsf{T}$
+  splits.
+\item State and prove an analogous results for matrices.
+\end{enumerate}
+\begin{enumerate}
+\item
+\begin{equation}
+[\mathsf{T}]_\beta \implies [\mathsf{T}]_\beta -\lambda I_n \text{ is
+  upper triangular}
+\end{equation}
+\begin{align}
+\det{([\mathsf{T}]_\beta -\lambda I_n)} &= \prod\limits_{i=1}^n
+([\mathsf{T}]_\beta -\lambda I_n) \\
+&= \prod\limits_{i=1}^n([\mathsf{T}]_\beta)_{ii} -\lambda\\
+&= (a_{11}-\lambda)(a_{22}-\lambda)\dotsb(a_{nn}-\lambda) \text{ for }
+a_{ii} \in F
+\end{align}
+It follows that $\mathsf{V}$ is $n$ dimensional, so the characteristic
+polynomial splits over $F.$
+\item 
+Suppose $A\in \mathsf{M}_{n \times n}(F)$ is similar to an upper
+triangular matrix. Prove the characteristic polynomial of $A$ splits.
+
+Suppose $A = Q^{-1}UQ$ for some $U,Q \in \mathsf{M}_{n \times n}(F)$
+such that $U$ is upper triangular and $Q$ is invertible. 
+\begin{equation}
+\implies \det{(A-\lambda I_n)} = \det{(U-\lambda I_n)}
+\end{equation}
+Because $U$ is upper triangular, $U0\lambda I_n$ is also upper
+triangular.
+\begin{align}
+\det{(U-\lambda I_n)} &= \prod\limits^n_{i=1} (U-\lambda I_n)\\
+&=\prod\limits^n_{i=1} (U_{ii} -\lambda)
+\end{align}
+It follows that the characteristic polynomial of $U$ splits. $U$ and
+$A$ are similar, so $A$ and $U$ have the same characteristic
+polynomial. Therefore the characteristic polynomial of $A$ splits.
+\end{enumerate}
