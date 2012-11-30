@@ -1,0 +1,79 @@
+Let $A$ denote the $k\times k$ matrix
+\[
+\begin{pmatrix}
+0 & 0 & \cdots & 0 & -a_0\\
+1 & 0 & \cdots & 0 & -a_1\\
+0 & 1 & \cdots & 0 & -a_2\\
+\vdots& \vdots & & \vdots & \vdots\\
+0 & 0 & \cdots & 0 & -a_{k-2}\\
+0 & 0 & \cdots & 1 & -a_{k-1}
+\end{pmatrix}
+\]
+where $a_0,a_1,\dotsc,a_{k-1}$ are arbitrary scalars. Prove that the
+characteristic polynomial of $A$ is
+\[
+(-1)^k(a_0 +a_1t + \dotsb + a_{k-1}t^{k-1} + t^k)
+\]
+
+Proof by induction on $k.$
+
+Suppose $k=1$
+\begin{align}
+\implies A &= -a_0\\
+\det{(A- tI_1)} &= \det{(-a_0 -t)} \\
+&= -a_0 -t \\
+&= (-1)^1(a_0 + t^1)
+\end{align}
+
+Suppose true for $2 \leq k \leq n-1$
+
+Suppose $k=n$
+\begin{gather}
+\implies A =
+\begin{pmatrix}
+0 & 0 & \cdots & 0 & -a_0\\
+1 & 0 & \cdots & 0 & -a_1\\
+0 & 1 & \cdots & 0 & -a_2\\
+\vdots& \vdots & & \vdots & \vdots\\
+0 & 0 & \cdots & 0 & -a_{n-2}\\
+0 & 0 & \cdots & 1 & -a_{n-1}
+\end{pmatrix}\\
+\implies A - tI_n =
+\begin{pmatrix}
+-t & 0 & \cdots & 0 & -a_0\\
+1 & -t & \cdots & 0 & -a_1\\
+0 & 1 & \cdots & 0 & -a_2\\
+\vdots& \vdots & & \vdots & \vdots\\
+0 & 0 & \cdots & -t & -a_{n-2}\\
+0 & 0 & \cdots & 1 & -a_{n-1} -t
+\end{pmatrix}\\
+\implies \det{(A-tI_n)} = (-t)(-1)^2\det{\tilde{A}_{11}} +
+(a_0)(-1)^{n+1}\det{\tilde{A}_{1n}}
+\end{gather}
+\begin{align}
+\det{\tilde{A}_{11}} &= \det{\begin{pmatrix}
+-t & 0 & \cdots & 0 & -a_0\\
+1 & -t & \cdots & 0 & -a_1\\
+0 & 1 & \cdots & 0 & -a_2\\
+\vdots& \vdots & & \vdots & \vdots\\
+0 & 0 & \cdots & -t & -a_{n-2}\\
+0 & 0 & \cdots & 1 & -a_{n-1} -t
+  \end{pmatrix}}\\
+&= (-a)^{n-1}(a_1 +a_2 t + \dotsb + a_{n-1}t^{n-2} + t^{n-1}) 
+\end{align}
+\begin{align}
+\det{\tilde{A}_{1n}} &= \det{\begin{pmatrix}
+1 & -t & 0 & \cdots & 0 \\
+0 & 1 & -t & \cdots & 0  \\
+0 & 0 & 1 & \cdots & 0  \\
+\vdots & \vdots& \vdots & & \vdots \\
+0 & 0 & 0 & \cdots & -t \\
+0 & 0 & 0 & \cdots & 1 
+    \end{pmatrix}}\\
+&= 1 \because (\tilde{A}_{1n})_{ii} =1 \forall i (1\leq i \leq n-1)
+\end{align}
+\begin{align}
+\implies \det{(A-tI_n)} &= (-1)(t)(-1)^{n-1}(a_1 +a_2 t + \dotsb +
+a_{n-1}t^{n-2} + t^{n-1}) + (a_0)(-1)^n\\
+&= (-1)^n(a_0 + a_1 +a_2 t + \dotsb + a_{n-1}t^{n-2} + t^{n-1})
+\end{align}

@@ -1,0 +1,50 @@
+Let $\mathsf{T}$ be a linear operator on a vector space $\mathsf{V},$
+and let $\mathsf{W}$ be a $\mathsf{T}$-invariant subspace of
+$\mathsf{V}.$ Prove that $\mathsf{W}$ is $g(\mathsf{T})$-invariant for
+any polynomial $g(t).$
+
+Suppose $\mathsf{T} \in \mathcal{L}(\mathsf{V})$ 
+
+Let $\mathsf{W}$ be a $\mathsf{T}$-invariant subspace of $\mathsf{V}$
+
+\paragraph{Lemma:} $\mathsf{T}^k(\mathsf{W})$ is
+$\mathsf{T}$-invariant for all $k \in \mathbb{Z}^+$
+
+Proof by induction.
+
+Base case: Suppose $k=1$
+\begin{gather}
+\mathsf{T}(\mathsf{W}) \subseteq \mathsf{W}\\
+\implies \mathsf{T}^2(\mathsf{W}) = \mathsf{T}(\mathsf{T}(\mathsf{W}))
+\subseteq \mathsf{W}
+\end{gather}
+Suppose $\mathsf{T}^k(\mathsf{W})$ is $\mathsf{T}$-invariant for $1
+\leq k \leq n.$
+
+Suppose $k=n+1$
+\begin{gather}
+\mathsf{T}^{n+1}(\mathsf{W}) \subseteq
+\mathsf{T}(\mathsf{T}^n(\mathsf{W}))\\
+\mathsf{T}^n(\mathsf{W}) \subseteq \mathsf{W}\\
+\implies \mathsf{T}^{n+1}(\mathsf{W}) =
+\mathsf{T}(\mathsf{T}^n(\mathsf{W})) \subseteq \mathsf{W}
+\end{gather}
+\begin{equation}
+\notag \therefore \mathsf{T}^k(\mathsf{W}) \text{ is }
+\mathsf{T}\text{-invariant for all } k \in \mathbb{Z}^+ \qquad \qedsymbol
+\end{equation}
+Suppose $w \in \mathsf{W}$ and $g(t) \in \mathsf{P}(F)$ such that 
+\begin{equation}
+g(t) = a_nx^n +a_{n-1}x^{n-1} + \dotsb + a_1x + a_0 
+\end{equation}
+\begin{gather}
+\implies g(\mathsf{T}) = a_n\mathsf{T}^n + a_{n-1}\mathsf{T}^{n-1} +
+\dotsb + a_1\mathsf{T} +a_0\mathsf{I}_\mathsf{V}\\
+\implies g(\mathsf{T})(\mathsf{W}) = a_n\mathsf{T}^n(w) +
+a_{n-1}\mathsf{T}^{n-1}(w) +\dotsb + a_1\mathsf{T}(w) +
+a_0\mathsf{I}_\mathsf{V}\\
+\implies g(\mathsf{T})(w) \in \mathsf{W}\; \forall w \in \mathsf{W}
+\end{gather}
+\begin{equation}
+\notag \therefore \mathsf{W} \text{ is } g(\mathsf{T})\text{-invariant}
+\end{equation}

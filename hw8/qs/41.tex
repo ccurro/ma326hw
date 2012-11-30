@@ -1,0 +1,204 @@
+Let
+\[
+A = \begin{pmatrix}
+1 & 2 & \cdots & n\\
+n+1 & n+2 & \cdots & 2n\\
+\vdots & \vdots & & \vdots\\
+n^2-n + 1 & n^2 -n +2 & \cdots & n^2
+\end{pmatrix}
+\]
+Find the characteristic polynomial of $A.$ {\it Hint:} First prove
+that $A$ has rank 2 and that
+$\text{span}(\{(1,1,\dotsc,1),(1,2,\dotsc,n)\})$ is
+$\mathsf{L}_A$-invariant.
+\paragraph{Hint \#2} Show that $\text{span}(\{(1,1,\dotsc,1),(1,2,\dotsc,n)\})$ is
+$\mathsf{L}_A$-invariant.
+\begin{align}
+v_1 = \begin{pmatrix}1\\1\\\vdots\\1\end{pmatrix} & & v_2
+= \begin{pmatrix} 1\\2\\\vdots\\n\end{pmatrix}
+\end{align}
+Let 
+\begin{equation}
+b = \frac{(n)(n+1)}{2}
+\end{equation}
+\begin{align}
+Av_1 &= \begin{pmatrix}
+b\\
+n^2 +b\\
+2n^2 + b\\
+\cdots\\
+(n-1)(n^2) + b
+\end{pmatrix}
++
+\begin{pmatrix}
+0\\
+n^2\\
+2n^2\\
+\cdots\\
+(n-1)n^2
+\end{pmatrix}
++
+b\begin{pmatrix}
+1\\
+1\\
+\cdots\\
+1
+\end{pmatrix}\\
+&= n^2(v_2-v_1) + b(v_1)\\
+&= (b-n^2)v_1 + n^2(v_2)
+\end{align}
+\begin{align}
+Av_2 &=
+\begin{pmatrix}
+ \sum\limits_{i=1}^n i^2\\
+ \sum\limits_{i=1}^n (n+i)i\\
+ \sum\limits_{i=1}^n (2n+i)i\\
+ \vdots\\
+ \sum\limits_{i=1}^n \left((n)(n-1)+i\right)i
+\end{pmatrix}\\
+&=v_1\left(\sum\limits_{i=1}^n i^2\right) + \begin{pmatrix}
+0\\
+ \sum\limits_{i=1}^n ni\\
+ \sum\limits_{i=1}^n 2ni\\
+\vdots\\
+ \sum\limits_{i=1}^n(n-1)(n)i
+\end{pmatrix}
+\end{align}
+\begin{equation}
+Av_2 =  \sum\limits_{i=1}^n(i^2)v_1 + nb(v_2-v_1)
+\end{equation}
+\begin{equation}
+\sum\limits_{i=1}^n(i^2) = \frac{2n^3 + 2n^2 +n}{6} = a
+\end{equation}
+\begin{align}
+\implies Av_2 &= av_1 + nb(v_2-v_1)\\
+&= (a-nb)v_1 + nb(v_2)
+\end{align}
+\paragraph{Hint \#2} Show $A$ has rank 2
+
+Suppose $x$ is a column of $A$
+\begin{align}
+\implies x &= \begin{pmatrix}
+0 + k\\
+n + k\\
+\vdots\\
+(n-1)(n)+k
+\end{pmatrix}\\
+&= kv_1 + n\begin{pmatrix}
+0\\
+1\\
+2\\
+\vdots\\
+n-1
+\end{pmatrix}\\
+&= kv_1 + n(v_2-v_1)\\
+&= (k-n)v_1 + nv_2
+\end{align}
+Every column of $A$ is in
+$\text{span}(\{(1,1,\dotsc,1),(1,2,\dotsc,n)\})$ 
+\begin{gather}
+\implies \text{Col}(A) \subseteq
+\text{span}(\{(1,1,\dotsc,1),(1,2,\dotsc,n)\})\\
+\implies \rank{A} \leq
+\dim{\left(\text{span}(\{(1,1,\dotsc,1),(1,2,\dotsc,n)\})\right)}=2\
+\end{gather}
+$\rank{A}\neq 0$ because $A\neq 0$.
+
+Suppose $\rank{A}=1$.
+
+It follows that every column of $A$ could be expressed as a scalar
+multiple of one vector $z \in \mathsf{F}^n.$
+
+Suppose $x,y$ are district columns of $A$ and $c \in F$  
+\begin{align}
+\implies x = (k_1 -n)v_1 + nv_1 & & y = (k_2 -n)v_1 + nv_2
+\end{align}
+Suppose $cx= y$.
+\begin{gather}
+\implies c(k_1-n)v_1 + cnv_2  = (k_2 -n)v_1 + nv_2\\
+\implies c(k_1-n) = (k_2 - n) \text{ and } cn =n\\
+\implies n(c-1) = 0
+\end{gather}
+\paragraph{Case 1} $c=1$
+\begin{equation}
+\implies x = y \;\lightning \text{ Contradiction! } x,y \text{ are distinct}
+\end{equation}
+\paragraph{Case 2} $n=0$
+
+Impossible.
+
+Therefore $\rank{A} \neq 1$ and it follows that $\rank{A} = 2.$
+
+By the dimension theorem,
+\begin{gather}
+\rank{\mathsf{L}_A} + \text{Nullity}(\mathsf{L}_A) =
+\dim{(\mathsf{L}_A)}\\
+\dim{(\mathsf{L}_A)} = n\\
+\rank{\mathsf{L}_A} = \rank{A} = 2\\
+\implies \text{Nullity}(\mathsf{L}_A) = n -2\\
+\implies \text{Nullity}(A) = n-2
+\end{gather}
+Let the eigenspace of eigenvalue zero be $E_0$
+\begin{gather}
+E_0 = \text{N}(A = 0 \cdot I_n) = \text{N}(A)\\
+\implies \dim{E_0} = \text{Nullity}(A) = n-2
+\end{gather}
+Let $m$ be the algebraic multiplicity of eigenvalue zero.
+\begin{equation}
+m \geq \dim{E_0} = n - 2 \text{ by theorem 5.7}
+\end{equation}
+
+Suppose $\mathsf{W} = \text{span}(\{(1,1,\dotsc,1),(1,2,\dotsc,n)\})$
+
+Suppose $\alpha = \{(1,1,\dotsc,1),(1,2,\dotsc,n)\}$ 
+
+$\mathsf{W}$ is $\mathsf{L}_A$-invariant. It suffices to calculate the
+characteristic polynomial of the restriction of $\mathsf{L}_A$ to
+$\mathsf{W}$ because its characteristic polynomial divides the
+characteristic polynomial of $\mathsf{L}_A$ by theorem
+5.21. $\mathsf{L}_A$ and $A$ posses the same characteristic polynomial
+because $\left[\mathsf{L}_A\right]_\gamma = A$ for some ordered basis
+$\gamma$ of $\mathsf{F}^n$.
+\begin{gather}
+Av_1 = (b-n^2)v_1 + (n^2)v_2\\
+Av_2 = (a-nb)v_1 + (nb)v_2
+\end{gather}
+\begin{equation}
+\implies \left[\mathsf{L}_{A_\mathsf{W}}\right]_\alpha =
+\begin{pmatrix}
+b-n^2 & a-nb\\
+n^2 & nb
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\implies
+\det{\left(\left[\mathsf{L}_{A_\mathsf{W}}\right]_\alpha-tI_2\right)}
+= \det{\begin{pmatrix}
+b-n^2 -t & a-nb\\
+n^2 & nb -t
+  \end{pmatrix}
+}
+\end{equation}
+\begin{equation}
+\implies t = \frac{1}{2}\left(\frac{n^3+n}{2} \pm
+  \frac{n}{2\sqrt{2}}\sqrt{3n^4 +4n^3+6n^2-4n+3}\right)
+\end{equation}
+It follows that the characteristic polynomial of
+$\mathsf{L}_{A_\mathsf{W}}$ is 
+\begin{equation}
+f_{\mathsf{L}_{A_\mathsf{W}}}(t) = (t_1-t)(t_2-t)
+\end{equation}
+\begin{gather}
+f_{\mathsf{L}_{A_\mathsf{W}}}(t) | f(t) \\
+\implies f(t) = g(t)f_{\mathsf{L}_{A_\mathsf{W}}}(t) = g(t)(t_1-t)(t_2-t)
+\end{gather}
+Since the degree of $g(t)f_{\mathsf{L}_{A_\mathsf{W}}}(t)$ is 2, the
+degree of $g(t)$ is $n-2$ It follows that the algebraic multiplicity
+$m= n-2.$
+\begin{equation}
+\implies g(t) = (-t)^{n-2}
+\end{equation}
+\begin{align}
+\implies f(t) &= (t_1-t)(t_2-t)(-t)^{n-2} \\
+&= (-1)^n(t)^{n-2}(t_1-t)(t_2-t)
+\end{align}

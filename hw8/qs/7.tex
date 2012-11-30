@@ -1,0 +1,36 @@
+Let $\beta$ be a basis for a subspace $\mathsf{W}$ of an inner product
+space $\mathsf{V},$ and let $z \in \mathsf{V}.$ Prove that $z \in
+\mathsf{W}^\perp$ if and only if $\langle z, v \rangle = 0$ for every
+$v \in \beta.$
+
+Claim: $x \in \mathsf{W}^\perp \Leftrightarrow \langle z,v \rangle = 0
+\quad \forall v \in \beta$
+
+$(\Rightarrow)$ 
+
+Suppose $z \in \mathsf{W}^\perp$ 
+\begin{gather}
+\implies \langle z,x \rangle = 0 \quad \forall x \in S\\
+\beta \subseteq S\\
+\implies \langle z,y \rangle = 0 \quad \forall y \in \beta
+\end{gather}
+
+$(\Leftarrow)$
+
+Suppose $\langle z,v\rangle =0 \quad \forall v \in \beta$
+
+Suppose $w \in \mathsf{W}$
+\begin{gather}
+\text{span}(\beta) = \mathsf{W}\\
+\implies w = a_1v_1 + a_1v_2 + \dotsb + a_nv_n
+\end{gather}
+\begin{align}
+\langle z,w \rangle &= \left\langle z, \sum\limits_{i=1}^n a_iv_i\right\rangle \\
+&= \sum\limits_{i=1}^n a_i \langle z,v_i\rangle\\
+&= \sum\limits_{i=1}^n a_i \cdot 0\\
+&= 0
+\end{align}
+\begin{gather}
+\implies \langle v,w \rangle = 0 \quad \forall w \in \mathsf{W}\\
+\implies z \in \mathsf{W}^\perp
+\end{gather}

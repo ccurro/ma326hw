@@ -1,6 +1,7 @@
 (TeX-add-style-hook "hw8"
  (lambda ()
     (TeX-add-symbols
+     '("norm" 1)
      '("M" 3)
      '("mfrac" 2)
      '("dete" 1)
@@ -44,14 +45,13 @@
      "letterpaper"
      "12pt"
      "./qs/4"
-     "./qs/14"
+     "./qs/15"
      "./qs/17"
      "./qs/19"
      "./qs/41"
      "qs/3"
      "qs/8"
      "qs/12"
-     "qs/17"
      "qs/2"
      "qs/6"
      "qs/7")))

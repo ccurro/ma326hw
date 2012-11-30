@@ -1,0 +1,34 @@
+Provide reasons why each of the following is not an inner product on
+the given vector spaces.
+\begin{enumerate}
+\item $\langle(a,b),(c,d)\rangle = ac - bd$ on $\mathsf{R}^2.$
+
+Suppose $(a,b) = (c,d) = (1,1)$
+\begin{equation}
+\langle (1,1),(1,1) \rangle = 1 - 1 = 0.
+\end{equation}
+This is not an inner product because it fails Property D of an inner
+product.
+\item $\langle A,B \rangle = \text{tr}(A+B)$ on $\mathsf{M}_{n\times
+    n}(\mathbb{R}).$
+
+Suppose $A = \left(\begin{smallmatrix} 0 & 1 \\ 1 &
+    0\end{smallmatrix}\right)$
+
+\begin{equation}
+\langle A, A \rangle = \text{tr}\begin{pmatrix} 0  & 2 \\2 &
+  0\end{pmatrix} = 0
+\end{equation}
+This is not an inner product because it fails Property D of an inner
+product.
+\item $\langle f(x),g(x) \rangle =
+  \int\limits^1_0f^\prime(t)g^\prime(t) \; \mathrm{d}t$ on
+  $\mathsf{P}(\mathbb{R}),$ where $^\prime$ denotes differentiation.
+
+Suppose $f(x) \equiv 1$
+\begin{equation}
+\langle f(x),f(x) \rangle = \int\limits_0^1 0\cdot 1 \; \mathrm{d}t = 0
+\end{equation}
+This is not an inner product because it fails Property D of an inner
+product.
+\end{enumerate}

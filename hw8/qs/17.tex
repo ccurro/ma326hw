@@ -1,0 +1,34 @@
+Let $A$ be an $n \times n$ matrix. Prove that
+\[
+\dim{(\text{span}(\{I_n,A,A^2,\dots\}))}\leq n
+\]
+
+The characteristic polynomial of $A$ is 
+\begin{equation}
+f(t) = (-1)t^n + a_{n-1}t^{n-1} + \dotsb + a_1t + a_0
+\end{equation}
+\begin{gather}
+\implies f(A) = (-1)^nA^n + a_{n-1}A^{n-1} + \dotsb + a_1A + a_0I_n =
+0\\
+\implies A^n = (-1)^{n+1}a_{n-1}A^{n-1} + \dotsb + (-1)^{n+1}A +
+(-1)^{n+1}a_0I_n\\
+\implies A^n \in \text{span}(\{I_n,A,A^2,\dotsc,A^{n-1}\})
+\end{gather}
+Claim: $A^k \in \text{span}(\{I_nA,A^2,\dotsc,A^{n-1}\}) \; \forall k
+\in \mathbb{Z}, k\geq n$
+
+Proof by induction.
+
+True for $k=n$
+
+Suppose true for $n\leq k \leq n+i-1$ for some $i \in \mathbb{Z}^+, i
+\geq 2$
+
+Suppose $k= n+i$
+\begin{gather}
+\implies A^{k+i} = A^n\cdot A^i\\
+A^k \in \text{span}(\{I_nA,A^2,\dotsc,A^{n-1}\})\\
+i < n + i\\
+\implies A^i \in \text{span}(\{I_nA,A^2,\dotsc,A^{n-1}\})\\
+\implies A^{i+n} = A^i \cdot A^n \in \text{span}(\{I_nA,A^2,\dotsc,A^{n-1}\})
+\end{gather}

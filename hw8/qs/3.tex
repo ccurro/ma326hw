@@ -1,0 +1,37 @@
+In $\mathsf{C}([0,1]),$ let $f(t) = t$ and $g(t) = e^t.$ Compute
+$\langle f,g \rangle$ (as defined in Example 3), $\norm{f},\norm{g},$
+and $\norm{f+g}.$ Then verify both the Cauchy-Schwartz inequality and
+the triangle inequality.
+\begin{equation}
+\langle f,g \rangle \vcentcolon = \int\limits_0^1 f(t)g(t) \; \mathrm{d}t
+\end{equation}
+\begin{gather}
+\langle f,g\rangle = \int\limits_0^1 te^t \; \mathrm{d}t = 1\\
+\norm{f} = \sqrt{\langle f,f \rangle} = \int\limits_0^1 t^2\;
+\mathrm{d}t = \frac{1}{\sqrt{3}}\\
+\norm{g} = \sqrt{\langle g,g\rangle} = \int\limits_0^1 e^{2t} \;
+\mathrm{d}t = \sqrt{\frac{e^2 -1}{2}}\\
+\norm{f+g} = \sqrt{\langle f+g,f+g \rangle}
+\end{gather}
+\begin{align}
+\langle f+g,f+g \rangle &= \langle f+g,f\rangle + \langle f+g,g\rangle\\
+&=\langle  f,f \rangle + \langle g,f \rangle + \langle f,g \rangle +
+\langle g,g\rangle\\
+&= \frac{3e^2 + 11}{6}
+\end{align}
+\begin{equation}
+\implies \norm{f+g} = \sqrt{\frac{3e^2 + 11}{6}}
+\end{equation}
+\paragraph{Cauchy-Schwartz Inequality}
+\begin{align}
+\norm{f}\norm{g} &\stackrel{?}{\geq} \langle f,g \rangle \\
+\sqrt{\frac{3e^2 + 11}{6}} &\stackrel{?}{\geq} 1\\
+\implies e^2 &\geq 7 \; \checkmark
+\end{align}
+\paragraph{Triangle Inequality}
+\begin{align}
+\norm{f} + \norm{g} &\stackrel{?}{\geq} \norm{f+g}\\
+\frac{1}{\sqrt{3}} + \sqrt{\frac{e^2-1}{6}} &\stackrel{?}{\geq}
+\sqrt{\frac{3e^2 +11}{6}}\\
+\implies \sqrt{\frac{e^2-1}{6}} &\geq 1 \; \checkmark
+\end{align}

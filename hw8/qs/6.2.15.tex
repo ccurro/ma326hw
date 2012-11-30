@@ -1,0 +1,59 @@
+Let $\mathsf{V}$ be a finite-dimensional inner product space over $F.$
+\begin{enumerate}
+\item {\it Pasrseval's Identity.} Let $\{v_1,v_2,\dotsc,v_n\}$ be an
+orthonormal basis for $\mathsf{V}.$ For any $x,y \in \mathsf{V}$ prov
+that
+\[
+\langle x,y \rangle = \sum\limits_{i=1}^n \langle x,v_i\rangle
+\overline{\langle y,v_i\rangle}
+\]
+\item Use (a) to prove that if $\beta$ is an orthonormal basis for
+  $\mathsf{V}$ with inner product $\langle \cdot, \cdot \rangle,$ then
+  for any $x,y \in \mathsf{V}$
+\[
+\left\langle \phi_\beta(x),\phi_\beta(y)\right\rangle^\prime = \left\langle
+[x]_\beta,[y]_\beta\right\rangle^\prime = \left\langle x,y \right\rangle,
+\]
+where $\langle \cdot,\cdot\rangle^\prime$ is the standard inner
+product on $\mathsf{F}^n$.
+\end{enumerate}
+\begin{enumerate}
+\item Suppose $x,y \in \mathsf{V}$
+\begin{align}
+\implies x = \sum\limits_{i=1}^n a_iv_i & & y = \sum\limits_{i=1}^n b_iv_i
+\end{align}
+Suppose $\beta$ is an orthonormal basis.
+\begin{equation}
+\implies \langle v_i,v_j \rangle\; \forall v_i,v_j \in \beta \text{
+  such that } i\neq j \; (1\leq i,j \leq n)
+\end{equation}
+Fix some $k \; (1 \leq k \leq n)$
+\begin{align}
+\langle x,v_k \rangle &= \left \langle \sum\limits_{i=1}^n
+  a_iv_i,v_k\right\rangle \\
+&= \sum\limits_{i=1}^n a_i \langle v_i,v_k \rangle\\
+&= a_k \langle v_k, v_k \rangle\\
+&= a_k \norm{v_k}^2\\
+&= a_k
+\end{align}
+\begin{equation}
+\implies \sum\limits_{i=1}^n \langle x,v_i \rangle \overline{\langle
+  y,v_i\rangle} = \sum\limits_{i=1}^n a_i\overline{b_i} = \langle x,y\rangle
+\end{equation}
+\item Suppose $\phi_\beta$ is the coordinate isomorphism from
+  $\mathsf{V} \to \mathsf{F}^n$
+\begin{equation}
+\implies \phi_\beta(x),\phi_\beta(y) \in \mathsf{F}^n
+\end{equation}
+\begin{align}
+\implies \phi_\beta(x) = [x]_\beta
+= \begin{pmatrix}a_1\\a_2\\\vdots\\a_n\end{pmatrix} & & \phi_\beta(y)
+= [y]_\beta = \begin{pmatrix}b_1\\b_2\\\vdots\\b_n\end{pmatrix}
+\end{align}
+\begin{gather}
+\implies \langle [x]_\beta,[y]_\beta\rangle^\prime =
+\sum\limits_{i=1}^n a_i\overline{b_i} = \langle x,y \rangle\\
+\therefore \langle \phi_\beta(x) , \phi_\beta(y) \rangle^\prime =
+\langle [x]_\beta, [y]_\beta \rangle^\prime = \langle x,y\rangle
+\end{gather}
+\end{enumerate}
