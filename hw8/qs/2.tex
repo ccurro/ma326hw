@@ -1,0 +1,198 @@
+In each part, apply the Gram-Schmidt process to the given subset $S$
+of the inner product space $\mathsf{V}$ to obtain an orthogonal basis
+for $\text{span}(S).$ Then normalize the vectors in this basis to
+obtain an orthonormal basis $\beta$ for $\text{span}(S),$ and compute
+the Fourier coefficients of the given vector relative to $\beta.$
+Finally, use Theorem 6.5 to verify your results.
+\begin{enumerate}
+\item $\mathsf{V} = \mathsf{R}^3, S= \{(1,0,1),(0,1,1),(1,3,3)\},$ and
+  $x = (1,1,2)$
+\begin{align}
+w_1 = (1,0,1) & & w_2 = (0,1,1) & & w_3 = (1,3,3)
+\end{align}
+\begin{equation}
+v_1 = (1,0,1)
+\end{equation}
+\begin{equation}
+v_2 = (0,1,1) - \frac{\langle w_2,v_1 \rangle}{\norm{v_1}^2}v_1 = \left(-\frac{1}{2},1,\frac{1}{2}\right)
+\end{equation}
+\begin{equation}
+v_3 = (1,3,3) - \left( \frac{\langle w_3,v_1\rangle}{\norm{v_1}^2}v_1
+  +  \frac{\langle w_3,v_2\rangle}{\norm{v_2}^2}v_2\right) = \left(\frac{1}{3},\frac{1}{3},\frac{1}{3}\right)
+\end{equation}
+An orthogonal basis is
+\begin{equation}
+\notag \left\{(1,3,3),\left(-\frac{1}{2},1,\frac{1}{2}\right),\left(\frac{1}{3},\frac{1}{3},\frac{1}{3}\right)\right\}
+\end{equation}
+The corresponding orthonormal basis is
+\begin{equation}
+\beta = \left\{\left(\frac{1}{\sqrt{2}}\right),\left(-\frac{1}{\sqrt{6}},\sqrt{\frac{2}{3}},\frac{1}{\sqrt{6}}\right),\left(\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}},-\frac{1}{\sqrt{3}}\right)\right\}
+\end{equation}
+\begin{align}
+\langle x,v_1\rangle = \frac{3}{\sqrt{2}} & & \langle x,v_2\rangle =
+\sqrt{\frac{3}{2}} && \langle x,v_3\rangle = 0
+\end{align}
+The Fourier coefficients relative to $\beta$ are
+\begin{equation}
+\notag \left\{\frac{3}{\sqrt{2}},\sqrt{\frac{3}{3}},0\right\}
+\end{equation}
+\begin{equation}
+\left(\frac{3}{\sqrt{2}}\right)\left(\frac{1}{\sqrt{2}}\right) +
+\left(\sqrt{\frac{3}{2}}\right)\left(-\frac{1}{\sqrt{6}},\sqrt{\frac{2}{3}},\frac{1}{\sqrt{6}}\right)
++\left(0\right)\left(\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}},-\frac{1}{\sqrt{3}}\right)
+= (1,1,2) \; \checkmark
+\end{equation}
+\setcounter{enumii}{2}
+\item $\mathsf{V} = \mathsf{P}_2(\mathbb{R})$ with the inner product
+  $\langle f(x),g(x)\rangle = \int_0^1f(t)g(t)\; \mathrm{d}t,$
+$S=\{1,x,x^2\},$ and $h(x) = 1+x$
+\begin{align}
+w_1 = 1 & & w_2 = x & & w_3 = x^2
+\end{align}
+\begin{equation}
+v_1 = w_1 = 1
+\end{equation}
+\begin{equation}
+v_2 = w_2 - \frac{\langle w_2,v_1\rangle}{\norm{v_1}^2}v_1 = x - \frac{1}{2}
+\end{equation}
+\begin{equation}
+v_3 = w_3 -\left(
+ \frac{\langle w_3,v_1\rangle}{\norm{v_1}^2}v_1 +  \frac{\langle
+   w_3,v_2\rangle}{\norm{v_2}^2}v_2\right) = x^2 -x + \frac{1}{6}
+\end{equation}
+An orthogonal basis is 
+\begin{equation}
+\notag \left\{1,x-\frac{1}{2},x^2-x+\frac{1}{6}\right\}
+\end{equation}
+The corresponding orthonormal basis is
+\begin{equation}
+\beta = \left\{1,\sqrt{3}(2x-1),\sqrt{3}(6x^2-6x+1)\right\}
+\end{equation}
+\begin{align}
+\langle h(x),1\rangle &= \frac{3}{2} \\  \langle
+h(x),\sqrt{3}(2x-1)\rangle &= \frac{\sqrt{3}}{6} \\ \langle
+h(x),\sqrt{3}(6x^2-6x+1)\rangle &= 0
+\end{align}
+The Fourier coefficients relative to $\beta$ are 
+\begin{equation}
+\notag \left\{\frac{3}{2},\frac{\sqrt{3}}{6},0\right\}
+\end{equation}
+\begin{equation}
+\left(\frac{3}{2}\right)(1)
++\left(\frac{\sqrt{3}}{6}\right)(\sqrt{3})(2x-1) + \frac{3}{2} +
+\left(\frac{3}{6}\right)(2x-1) = x +1 \; \checkmark
+\end{equation}
+\setcounter{enumii}{6}
+\item $\mathsf{V} = \mathsf{M}_{2\times 2}(\mathbb{R}),$ $S
+  =\left\{\begin{pmatrix}3 & 5 \\-1 & 1\end{pmatrix},\begin{pmatrix}-1
+      & 9\\5 & -1\end{pmatrix},\begin{pmatrix}7 & -17\\2 &
+      -6\end{pmatrix}\right\},$ and $A = \begin{pmatrix}-1 & 27\\-4 &
+    8\end{pmatrix}$
+\begin{align}
+w_1 = \begin{pmatrix}3 & 5 \\-1 & 1\end{pmatrix} & & w_2 = \begin{pmatrix}-1
+      & 9\\5 & -1\end{pmatrix} &  & w_3 = \begin{pmatrix}7 & -17\\2 &
+      -6\end{pmatrix}
+\end{align}
+\begin{equation}
+v_1 = w_1 = \begin{pmatrix}3 & 5 \\-1 & 1\end{pmatrix}
+\end{equation}
+\begin{equation}
+v_2 = w_2 \frac{\langle w_2,v_1\rangle}{\norm{v_1}^2}v_1
+= \begin{pmatrix}-4 & 4\\6 & -2\end{pmatrix}
+\end{equation}
+\begin{equation}
+v_3 = w_3 -\left(
+ \frac{\langle w_3,v_1\rangle}{\norm{v_1}^2}v_1 +  \frac{\langle
+   w_3,v_2\rangle}{\norm{v_2}^2}v_2\right) = \begin{pmatrix}9 & -3\\6
+ &  -6 \end{pmatrix}
+\end{equation}
+An orthogonal basis is
+\begin{equation}
+\notag \left\{\begin{pmatrix}3 & 5 \\-1 & 1\end{pmatrix},\begin{pmatrix}-4 & 4\\6 & -2\end{pmatrix},\begin{pmatrix}9 & -3\\6
+ &  -6 \end{pmatrix}\right\}
+\end{equation}
+The corresponding orthonormal basis is 
+\begin{equation}
+\beta = \left\{
+\begin{pmatrix}
+\mfrac{1}{2} & \mfrac{5}{6}\\
+\mfrac{-1}{6} & \mfrac{1}{6}
+\end{pmatrix},
+\begin{pmatrix}
+\mfrac{-\sqrt{2}}{3} & \mfrac{\sqrt{2}}{3}\\
+\mfrac{1}{\sqrt{2}} & \mfrac{-1}{3\sqrt{2}}
+\end{pmatrix},
+\begin{pmatrix}
+\mfrac{1}{\sqrt{2}} & \mfrac{-1}{3\sqrt{2}}\\
+\mfrac{\sqrt{2}}{3} & \mfrac{-\sqrt{2}}{3}
+\end{pmatrix}
+\right\}
+\end{equation}
+The Fourier coefficients relative to $\beta$ are
+\begin{equation}
+\notag \left\{24,6\sqrt{2},-9\sqrt{2}\right\}
+\end{equation}
+\begin{equation}
+24
+\begin{pmatrix}
+\mfrac{1}{2} & \mfrac{5}{6}\\
+\mfrac{-1}{6} & \mfrac{1}{6}
+\end{pmatrix}+
+6\sqrt{2}
+\begin{pmatrix}
+\mfrac{-\sqrt{2}}{3} & \mfrac{\sqrt{2}}{3}\\
+\mfrac{1}{\sqrt{2}} & \mfrac{-1}{3\sqrt{2}}
+\end{pmatrix}
+-9\sqrt{2}
+\begin{pmatrix}
+\mfrac{1}{\sqrt{2}} & \mfrac{-1}{3\sqrt{2}}\\
+\mfrac{\sqrt{2}}{3} & \mfrac{-\sqrt{2}}{3}
+\end{pmatrix}= \begin{pmatrix}-1 & 27\\-4 &
+    8\end{pmatrix} \; \checkmark
+\end{equation}
+\setcounter{enumii}{9}
+\item $\mathsf{V} = \mathsf{C}^4,$ $S =
+  \{(1,i,2-i,-1),(2+3i,2i,1-i,2i),(-1+7i,6+10i,11-4i,3+4i)\}$ and $x =
+  (-2+7i,6+9i,9-3i,4+4i)$
+\begin{align}
+w_1  = \begin{pmatrix}1\\i\\2-i\\-1\end{pmatrix} & & w_2
+= \begin{pmatrix}2+3i\\2i\\1-i\\2i\end{pmatrix} & & w_3 = \begin{pmatrix}-2+7i\\6+9i\\9-3i\\4+4i\end{pmatrix}
+\end{align}
+\begin{equation}
+v_1 = w_1 = \begin{pmatrix}1\\i\\2-i\\-1\end{pmatrix}
+\end{equation}
+\begin{equation}
+v_2 = w_2 \frac{\langle w_2,v_1\rangle}{\norm{v_1}^2}v_1 = \begin{pmatrix}1+3i\\2i\\-1\\1+2i\end{pmatrix}
+\end{equation}
+\begin{equation}
+v_3 = w_3 -\left(
+ \frac{\langle w_3,v_1\rangle}{\norm{v_1}^2}v_1 +  \frac{\langle
+   w_3,v_2\rangle}{\norm{v_2}^2}v_2\right) = \begin{pmatrix}-7+i \\6+2i\\5\\5\end{pmatrix}
+\end{equation}
+An orthogonal basis is
+\begin{equation}
+\notag \left\{
+\begin{pmatrix}1\\i\\2-i\\-1\end{pmatrix},\begin{pmatrix}1+3i\\2i\\-1\\1+2i\end{pmatrix},\begin{pmatrix}-7+i \\6+2i\\5\\5\end{pmatrix}
+\right\}
+\end{equation}
+The corresponding orthonormal basis is
+\begin{equation}
+\beta = \left\{
+\frac{1}{\sqrt{8}}\begin{pmatrix}1\\i\\2-i\\-1\end{pmatrix},\frac{1}{2\sqrt{5}}\begin{pmatrix}1+3i\\2i\\-1\\1+2i\end{pmatrix},\frac{1}{2\sqrt{35}}\begin{pmatrix}-7+i \\6+2i\\5\\5\end{pmatrix}
+\right\}
+\end{equation}
+The Fourier coefficients are
+\begin{equation}
+\notag \left\{
+6\sqrt{2},4\sqrt{5},2\sqrt{35}
+\right\}
+\end{equation}
+\begin{equation}
+\frac{6\sqrt{2}}{\sqrt{8}}\begin{pmatrix}1\\i\\2-i\\-1\end{pmatrix}+
+\frac{4\sqrt{5}}{2\sqrt{5}}\begin{pmatrix}1+3i\\2i\\-1\\1+2i\end{pmatrix}+
+\frac{2\sqrt{35}}{2\sqrt{35}}\begin{pmatrix}-7+i
+  \\6+2i\\5\\5\end{pmatrix}
+=\begin{pmatrix}-2+7i\\6+9i\\9-3i\\4+4i
+\end{pmatrix}\;\checkmark
+\end{equation}
+\end{enumerate}
