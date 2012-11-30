@@ -1,0 +1,31 @@
+Let $\{v_1,v_2,\dotsc,v_k\}$ be an orthogonal set in $\mathsf{V},$ and
+let $a_1,a_2,\dotsc,a_k$ be scalars. Prove that
+\[
+\norm{\sum\limits_{i=1}^ka_iv_i}^2 = \sum\limits_{i=1}^k \left\lvert a_i
+\right\rvert^2 \norm{v_i}^2
+\]
+
+\begin{align}
+\norm{\sum\limits_{i=1}^ka_iv_i}^2 &= \left\langle
+  \sum\limits_{i=1}^ka_iv_i, \sum\limits_{i=1}^ka_iv_i\right\rangle\\
+&= \left\langle a_1v_1, \sum\limits_{i=1}^ka_iv_i \right\rangle +
+\left\langle a_2v_2, \sum\limits_{i=1}^ka_iv_i \right\rangle + \dotsb
++ \left\langle a_kv_k, \sum\limits_{i=1}^ka_iv_i \right\rangle 
+\end{align}
+Fix some $j\; (1\leq j\leq k)$
+\begin{equation}
+\langle a_jv_j,a_mv_m\rangle = 0 \; \forall m \; (1\leq m\leq k), \;
+m \neq j \because A \text{ is orthogonal}
+\end{equation}
+\begin{align}
+\implies \left\langle a_jv_j, \sum\limits_{i=1}^ka_iv_i \right\rangle
+&= \langle a_jv_j,a_jv_j\rangle\\
+&= \norm{a_jv_j}^2 \; \forall j \; (1\leq j\leq m)
+\end{align}
+\begin{align}
+\norm{\sum\limits_{i=1}^ka_iv_i}^2 &=  \sum\limits_{i=1}^k
+\norm{a_iv_i}^2\\
+&= \sum\limits_{i=1}^ka_i^2 \langle v_i,v_i\rangle\\
+&= \sum\limits_{i=1}^ka_i^2 \norm{v_i}^2 \\
+&= \sum\limits_{i=1}^k\left\lvert a_i\right\rvert^2 \norm{v_i}^2 \\
+\end{align}
