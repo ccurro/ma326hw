@@ -1,0 +1,20 @@
+Use Cayley-Hamilton theorem to prove its corollary for matrices. 
+
+\paragraph{Corollary to Cayley-Hamilton theorem for matrices} Let $A
+\in \mathsf{M}_{n\times n}(F)$ and let $f(t)$ be the characteristic
+polynomial of $A.$ Then $f(A) = O$, the $n\times n$ zero matrix.
+
+Suppose $A \in \mathsf{M}_{n \times n}(F)$ and let $f(t)$ be the characteristic
+polynomial of $A.$
+
+Suppose $\beta$ is the standard ordered basis of $\mathsf{F}^n$
+\begin{equation}
+\implies A = [\mathsf{L}_A]_\beta
+\end{equation}
+$A$ and $\mathsf{L}_A$ have the same characteristic polynomial by the
+definition of characteristic polynomial for functions.
+\begin{gather}
+f(A) = \left[f(\mathsf{L}_A)\right]_\beta \text{ by theorem E.3}\\
+f(\mathsf{L}_A) = 0 \in \mathsf{F}^n \text{ by Cayley Hamilton}\\
+\implies f(A) = \left[0\right]_\beta = O \in \mathsf{M}_{n \times n}(F)
+\end{gather}
