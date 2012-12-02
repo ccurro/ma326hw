@@ -48,18 +48,18 @@ Suppose $k=n$
 0 & 0 & \cdots & 1 & -a_{n-1} -t
 \end{pmatrix}\\
 \implies \det{(A-tI_n)} = (-t)(-1)^2\det{\tilde{A}_{11}} +
-(a_0)(-1)^{n+1}\det{\tilde{A}_{1n}}
+(-a_0)(-1)^{n+1}\det{\tilde{A}_{1n}}
 \end{gather}
 \begin{align}
 \det{\tilde{A}_{11}} &= \det{\begin{pmatrix}
--t & 0 & \cdots & 0 & -a_0\\
-1 & -t & \cdots & 0 & -a_1\\
-0 & 1 & \cdots & 0 & -a_2\\
+-t & 0 & \cdots & 0 & -a_1\\
+1 & -t & \cdots & 0 & -a_2\\
+0 & 1 & \cdots & 0 & -a_3\\
 \vdots& \vdots & & \vdots & \vdots\\
 0 & 0 & \cdots & -t & -a_{n-2}\\
 0 & 0 & \cdots & 1 & -a_{n-1} -t
   \end{pmatrix}}\\
-&= (-a)^{n-1}(a_1 +a_2 t + \dotsb + a_{n-1}t^{n-2} + t^{n-1}) 
+&= (-1)^{n-1}(a_1 +a_2 t + \dotsb + a_{n-1}t^{n-2} + t^{n-1}) 
 \end{align}
 \begin{align}
 \det{\tilde{A}_{1n}} &= \det{\begin{pmatrix}

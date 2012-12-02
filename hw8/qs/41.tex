@@ -74,7 +74,19 @@ Av_2 =  \sum\limits_{i=1}^n(i^2)v_1 + nb(v_2-v_1)
 \implies Av_2 &= av_1 + nb(v_2-v_1)\\
 &= (a-nb)v_1 + nb(v_2)
 \end{align}
-\paragraph{Hint \#2} Show $A$ has rank 2
+Suppose $x \in \text{span}{(\{v_1,v_2\})}$ such that
+\begin{equation}
+x = a_1v_1 + a_2v_2
+\end{equation}
+\begin{align}
+\mathsf{L}_A(x) &= Ax \\
+&= A(a_1v_1 + a_2v_2)\\
+&= a_1Av_1 + a_2Av_2\\
+&= a_1((b-n^2)v_1 + n^2(v_2))+ a_2((a-nb)v_1 + nb(v_2))\\
+&= (a_1(b-n^2) +a_2(a-nb))v_1 + (a_1n^2 + a_2nb)v_2
+\end{align}
+
+\paragraph{Hint \#1} Show $A$ has rank 2
 
 Suppose $x$ is a column of $A$
 \begin{align}
@@ -94,7 +106,7 @@ n-1
 &= kv_1 + n(v_2-v_1)\\
 &= (k-n)v_1 + nv_2
 \end{align}
-Every column of $A$ is in
+Therefore every column of $A$ is in
 $\text{span}(\{(1,1,\dotsc,1),(1,2,\dotsc,n)\})$ 
 \begin{gather}
 \implies \text{Col}(A) \subseteq
@@ -109,7 +121,7 @@ Suppose $\rank{A}=1$.
 It follows that every column of $A$ could be expressed as a scalar
 multiple of one vector $z \in \mathsf{F}^n.$
 
-Suppose $x,y$ are district columns of $A$ and $c \in F$  
+Suppose $x,y$ are distinct columns of $A$ and $c \in F$  
 \begin{align}
 \implies x = (k_1 -n)v_1 + nv_1 & & y = (k_2 -n)v_1 + nv_2
 \end{align}
@@ -140,7 +152,7 @@ By the dimension theorem,
 \end{gather}
 Let the eigenspace of eigenvalue zero be $E_0$
 \begin{gather}
-E_0 = \text{N}(A = 0 \cdot I_n) = \text{N}(A)\\
+E_0 = \text{N}(A - 0 \cdot I_n) = \text{N}(A)\\
 \implies \dim{E_0} = \text{Nullity}(A) = n-2
 \end{gather}
 Let $m$ be the algebraic multiplicity of eigenvalue zero.
@@ -180,9 +192,14 @@ n^2 & nb -t
 }
 \end{equation}
 \begin{equation}
-\implies t = \frac{1}{2}\left(\frac{n^3+n}{2} \pm
+\implies t_1 = \frac{1}{2}\left(\frac{n^3+n}{2} +
   \frac{n}{2\sqrt{2}}\sqrt{3n^4 +4n^3+6n^2-4n+3}\right)
 \end{equation}
+\begin{equation}
+\implies t_2 = \frac{1}{2}\left(\frac{n^3+n}{2} -
+  \frac{n}{2\sqrt{2}}\sqrt{3n^4 +4n^3+6n^2-4n+3}\right)
+\end{equation}
+
 It follows that the characteristic polynomial of
 $\mathsf{L}_{A_\mathsf{W}}$ is 
 \begin{equation}
