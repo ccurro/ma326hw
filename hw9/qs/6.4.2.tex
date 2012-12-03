@@ -1,0 +1,157 @@
+For each linear operator $\mathsf{T}$ on an inner product space
+$\mathsf{V},$ determine whether $\mathsf{T}$ is normal, self-adjoint,
+or neither. If possible, produce an orthonormal basis of eigenvectors
+of $\mathsf{T}$ for $\mathsf{V}$ and list the corresponding
+eigenvalues.
+\begin{enumerate}
+\item $\mathsf{V} = \mathsf{R}^2$ and $\mathsf{T}$ is defined by
+  $\mathsf{T}(a,b) = (2a-2b,-2a+5b)$
+
+Suppose $\beta$ is the standard ordered basis for $\mathsf{R}^2$
+\begin{gather}
+[\mathsf{T}]_\beta = \begin{pmatrix}
+2 & -2 \\
+-2 & 5
+\end{pmatrix}\\
+\implies \left([\mathsf{T}]_\beta\right)^* =
+\left([\mathsf{T}^*]\right) = \begin{pmatrix}
+2 & -2\\
+-2 & 5
+\end{pmatrix}\\
+\implies \mathsf{T} = \mathsf{T}^*
+\end{gather}
+\begin{gather}
+\det{
+\begin{pmatrix}
+2-\lambda & -2\\
+-2 & 5-\lambda
+\end{pmatrix}
+} = 0\\
+\implies (\lambda -6)(\lambda-1) = 0
+\end{gather}
+\begin{align}
+\implies \lambda_1 &= 6\\
+\lambda_2 &= 1
+\end{align}
+\begin{itemize}
+\item For $\lambda_1 = 6$
+\begin{gather}
+[\mathsf{T}]_\beta - 6I_2 = \begin{pmatrix}
+-4 & -2\\
+-2 & -1 
+\end{pmatrix}\\
+\begin{pmatrix}
+-4 & -2\\
+-2 & -1 
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\
+x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+  0\\
+  0
+\end{pmatrix}\\
+\implies
+\begin{pmatrix}
+0 & 0\\
+2 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\
+x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+  0\\
+  0
+\end{pmatrix}\\
+\implies x_1 = -\frac{1}{2}x_2\\
+\implies E_{\lambda_1} =
+\left\{t\begin{pmatrix}\mfrac{-1}{2}\\1\end{pmatrix}\colon t \in \mathbb{R}\right\}
+\end{gather}
+\item For $\lambda_2 = 1$
+\begin{gather}
+[\mathsf{T}]_\beta - I_2 = \begin{pmatrix}
+1 & -2\\
+-2 & 4
+\end{pmatrix}\\
+\implies \begin{pmatrix}
+1 & -2\\
+-2 & 4
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\
+x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+  0\\
+  0
+\end{pmatrix}\\
+\implies \begin{pmatrix}
+1 & -2\\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\
+x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+  0\\
+  0
+\end{pmatrix}\\
+\implies x_1 = 2x_2\\
+\implies E_{\lambda_2} =
+\left\{t\begin{pmatrix}2\\1\end{pmatrix}\colon t \in \mathbb{R}\right\}
+\end{gather}
+\end{itemize}
+Suppose
+\begin{align}
+v_1^\prime = (-\frac{1}{2},1) & & v_2^\prime = (2,1)
+\end{align}
+Let
+\begin{align}
+v_1 &= v_1^\prime\\
+v_2 &= v_2^\prime - \frac{\langle v_2^\prime, v_1\rangle}{\norm{v_1}^2}v_1
+\end{align}
+\begin{gather}
+\langle v_2^\prime,v_1\rangle = 0\\
+\implies v_2 = v_2^\prime\\
+\norm{v_1}^2 = \frac{5}{4}\\
+\implies \norm{v_1} = \frac{\sqrt{5}}{2}\\
+\implies o_1 = \frac{1}{\sqrt{5}}(-1,2)\\
+\norm{v_2}^2 = 5 \\
+\implies \norm{v_2} =5\\
+\implies o_2 = \frac{1}{\sqrt{5}}(2,1)
+\end{gather}
+An orthonormal basis is
+\begin{equation}
+\gamma = \left\{\frac{1}{\sqrt{5}}(-1,2),\frac{1}{\sqrt{3}}(2,1)\right\}
+\end{equation}
+The eigenvector $\frac{1}{\sqrt{5}}(-1,2)$ corresponds to the
+eigenvalue 6, and the eigenvector $\frac{1}{\sqrt{3}}(2,1)$
+corresponds to the eigenvalue 1.
+
+\item $\mathsf{V} = \mathsf{R}^2$ and $\mathsf{T}$ is defined by
+  $\mathsf{T}(a,b,c) = (-a+b,5b,4a-2b+5c)$
+
+Suppose $\beta$ is the standard ordered basis of $\mathsf{R}^3$
+\begin{gather}
+\implies [\mathsf{T}]_\beta = \begin{pmatrix}
+-1 & 1 & 0\\
+0 & 5 & 0\\
+4 & -2 & 5
+\end{pmatrix}\\
+([\mathsf{T}]_\beta)^* = [\mathsf{T}^*]_\beta = \begin{pmatrix}
+-1 & 0 & 4\\
+1 & 5 & -2\\
+0 & 0 & 5
+\end{pmatrix}\\
+\implies \mathsf{T}^* \neq \mathsf{T}\\
+([\mathsf{T}]_\beta)^*[\mathsf{T}]_\beta \neq ([\mathsf{T}]_\beta)^*
+\end{gather}
+$\mathsf{T}$ is neither normal nor adjoint.
+\end{enumerate}
