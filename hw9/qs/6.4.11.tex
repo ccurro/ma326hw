@@ -1,0 +1,94 @@
+Assume that $\mathsf{T}$ is a linear operator on a complex (not
+necessarily finite-dimensional) inner product space $\mathsf{V}$ with
+an adjoint $\mathsf{T}^*.$ Prove the following results.
+\begin{enumerate}
+\item If $\mathsf{T}$ is self-adjoint, then $\langle
+  \mathsf{T}(x),x\rangle$ is real for all $x \in \mathsf{V}.$
+\item If $\mathsf{T}$ satisfies $\langle \mathsf{T}(x),x \rangle = 0$
+  for all $x \in \mathsf{V},$ then $\mathsf{T} = \mathsf{T}_0.$\\
+\item If $\langle \mathsf{T}(x),x \rangle$ is real for all $x \in
+  \mathsf{V},$ then $\mathsf{T} = \mathsf{T}^*.$
+\end{enumerate}
+\begin{enumerate}
+\item Claim: If $\mathsf{T}$ is self-adjoint then $\langle
+  \mathsf{T}(x),x \rangle$ is real $\forall x \in \mathsf{V}$
+\begin{gather}
+\langle \mathsf{T}(x),x \rangle = \langle x, \mathsf{T}^*(x) \rangle =
+\langle x, \mathsf{T}(x) \rangle\\
+\overline{\langle \mathsf{T}(x),x \rangle} = \langle x, \mathsf{T}(x)
+\rangle\\
+\implies \langle \mathsf{T}(x),x \rangle = \overline{\langle
+  \mathsf{T}(x),x \rangle}\\
+\notag \implies \langle\mathsf{T}(x), x \rangle \text{ is real}
+\end{gather}
+\item Suppose $\mathsf{T}$ satisfies $\langle \mathsf{T}(x),x \rangle =0 \;
+\forall x \in \mathsf{V}$ 
+
+Claim: $\mathsf{T} = \mathsf{T}_0$
+
+Let $z = x + y$
+\begin{align}
+\langle \mathsf{T}(z),z\rangle &= \langle \mathsf{T}(x+y),x+y\rangle
+\\
+&= \langle \mathsf{T}(x+y),x\rangle + \langle
+\mathsf{T}(x+y),x\rangle\\
+&= \langle\mathsf{T}(x)+\mathsf{T}(y),x\rangle + \langle
+\mathsf{T}(x)+\mathsf{T}(y),y\rangle \\
+&= \langle \mathsf{T}(x),x \rangle + \langle \mathsf{T}(y),x \rangle +
+\langle \mathsf{T}(x),y\rangle + \langle \mathsf{T}(y),y\rangle\\
+&= \langle \mathsf{T}(y),x \rangle + \langle \mathsf{T}(x),y\rangle \\
+&= 0
+\end{align}
+\begin{equation}
+\implies \langle \mathsf{T}(y),x \rangle =  -\langle \mathsf{T}(x),y\rangle
+\end{equation}
+
+Let $x = x + iy$
+\begin{align}
+\langle \mathsf{T}(z),z\rangle &= \langle \mathsf{T}(x+iy),x+iy\rangle
+\\
+&= \langle \mathsf{T}(x+iy),x\rangle + \langle
+\mathsf{T}(x+iy),x\rangle\\
+&= \langle\mathsf{T}(x)+\mathsf{T}(iy),x\rangle + \langle
+\mathsf{T}(x)+\mathsf{T}(iy),iy\rangle \\
+&= \langle \mathsf{T}(x),x \rangle + \langle \mathsf{T}(iy),x \rangle +
+\langle \mathsf{T}(x),iy\rangle + \langle \mathsf{T}(iy),iy\rangle\\
+&= \langle \mathsf{T}(iy),x \rangle + \langle \mathsf{T}(x),iy\rangle
+\\
+&= i\langle\mathsf{T}(y),x \rangle + -i\langle\mathsf{T}(x),y\rangle\\
+&= 0
+\end{align}
+\begin{equation}
+\implies \langle\mathsf{T}(y),x \rangle = \langle\mathsf{T}(x),y\rangle
+\end{equation}
+\begin{gather}
+\implies \langle\mathsf{T}(y),x \rangle =
+\langle\mathsf{T}(x),y\rangle = - \langle\mathsf{T}(x),y\rangle\\
+\implies \langle \mathsf{T}(x),x \rangle = \langle
+\mathsf{T}(x),y\rangle =0 \quad \forall x,y \in \mathsf{V}
+\end{gather}
+Suppose $x,y$ are nonzero.
+\begin{gather}
+\langle \mathsf{T}(y),x\rangle = \langle 0,x\rangle = 0 \quad \forall
+x \in \mathsf{V}\\
+\implies \mathsf{T}(y) = 0 \quad \forall y \in \mathsf{V}\\
+\implies \mathsf{T} = \mathsf{T}_0
+\end{gather}
+\item Suppose $\langle \mathsf{T}(x),x \rangle$ is real for all $x \in
+  \mathsf{V}$
+
+Claim: $\mathsf{T} = \mathsf{T}^*$
+
+\begin{gather}
+\langle \mathsf{T}(x),x \rangle = \overline{\langle
+  \mathsf{T}(x),x\rangle}\quad \forall x \in \mathsf{V}\\
+\overline{\langle \mathsf{T}(x),x \rangle} = \langle
+x,\mathsf{T}(x)\rangle\\
+\langle \mathsf{T}(x),x\rangle = \langle x,\mathsf{T}^*(x)\rangle\\
+\implies \langle x, \mathsf{T}(x)\rangle = \langle x
+\mathsf{T}^*(x)\rangle \quad \forall x \in \mathsf{T}(x)\\
+\implies \mathsf{T}(x) = \mathsf{T}^*(x) \quad \forall x \in
+\mathsf{V}\\
+\implies \mathsf{T} = \mathsf{T}^*
+\end{gather}
+\end{enumerate}
