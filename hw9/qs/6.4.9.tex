@@ -1,0 +1,51 @@
+Let $\mathsf{T}$ be a normal operator on a finite-dimensional inner
+product space $\mathsf{V}.$ Prove that $N(\mathsf{T}) =
+N(\mathsf{T}^*)$ and $R(\mathsf{T}) = R(\mathsf{T}^*).$
+
+Claim:  $N(\mathsf{T}) = N(\mathsf{T}^*)$
+
+$(\subseteq)$ Suppose $x \in N(\mathsf{T})$
+\begin{gather}
+\implies \mathsf{T}(x) = 0\cdot x\\
+\implies \mathsf{T}^*(x) = \bar{0}\cdot x =0\\
+\implies x \in N(\mathsf{T}^*)
+\end{gather}
+
+$(\supseteq)$ Suppose $x \in N(\mathsf{T}^*)$
+\begin{gather}
+\implies \mathsf{T}^*(x) = 0 \cdot x\\
+\implies \left(\mathsf{T}^*\right)^*(x) = \bar{0}\cdot x = x\\
+\left(\mathsf{T}^*\right)^*(x) = \mathsf{T}\\
+\implies \mathsf{T}(x) = 0\\
+\implies x \in N(\mathsf{T})
+\end{gather}
+
+Claim: $R(\mathsf{T}) = R(\mathsf{T}^*)$
+
+\begin{gather}
+N(\mathsf{T}) = N(\mathsf{T}^*)\\
+N(\mathsf{T}) = R(\mathsf{T}^*)^\perp \quad (\text{Problem 6.3.12})\\
+\implies R(\mathsf{T}^*)^\perp = R(\mathsf{T})^\perp\\
+\mathsf{V} = R(\mathsf{T}^*)^\perp \oplus R(\mathsf{T}^*) =
+R(\mathsf{T})^\perp \oplus R(\mathsf{T})
+\end{gather}
+
+$(\subseteq)$ Suppose $x \in R(\mathsf{T})$
+\begin{gather}
+\implies x \in R(\mathsf{T})^\perp \oplus R(\mathsf{T})\\
+\implies x \in R(\mathsf{T}^*)^\perp \oplus R(\mathsf{T}^*)\\
+\implies x \in R(\mathsf{T}^*)^\perp \text{ or } x \in
+R(\mathsf{T}^*)\\
+R(\mathsf{T}^*) = N(\mathsf{T}) \text{ and } x \notin N(\mathsf{T})\\
+\implies x \in R(\mathsf{T}^*)
+\end{gather}
+
+$(\supseteq)$ Suppose $x \in R(\mathsf{T}^*)$
+\begin{gather}
+\implies x \in R(\mathsf{T}^*)^\perp \oplus R(\mathsf{T}^*)\\
+\implies x \in (\mathsf{T})^\perp \oplus R(\mathsf{T})\\
+\implies x \in R(\mathsf{T})^\perp \text{ or } x \in R(\mathsf{T})\\
+R(\mathsf{T})^\perp = N(\mathsf{T}^*) \text{ and } x \notin
+N(\mathsf{T}^*)\\
+\implies x \in R(\mathsf{T})
+\end{gather}

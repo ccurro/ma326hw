@@ -154,4 +154,52 @@ Suppose $\beta$ is the standard ordered basis of $\mathsf{R}^3$
 ([\mathsf{T}]_\beta)^*[\mathsf{T}]_\beta \neq ([\mathsf{T}]_\beta)^*
 \end{gather}
 $\mathsf{T}$ is neither normal nor adjoint.
+\item
+\item $\mathsf{V}= \mathsf{P}_2(\mathbb{R})$ and $\mathsf{T}$ is
+  defined by $\mathsf{T}(f) = f^\prime,$ where
+\[
+\langle f,g \rangle = \int\limits_0^1 f(t)g(t) \; \mathrm{d}t
+\]
+
+Suppose $\beta$ is the standard ordered basis of
+$\mathsf{P}_2(\mathbb{R})$
+\begin{gather}
+[\mathsf{T}]_\beta = \begin{pmatrix}
+0 & 1 & 0\\
+0 & 0 & 2\\
+0 & 0 & 0
+\end{pmatrix}\\
+([\mathsf{T}]_\beta)^* = [\mathsf{T}^*]_\beta = \begin{pmatrix} 
+0 & 0 & 0\\
+1 & 0 & 0\\
+0 & 2 & 0
+\end{pmatrix}\\
+\begin{pmatrix} 
+0 & 0 & 0\\
+1 & 0 & 0\\
+0 & 2 & 0
+\end{pmatrix}
+\begin{pmatrix}
+0 & 1 & 0\\
+0 & 0 & 2\\
+0 & 0 & 0
+\end{pmatrix}
+\neq
+\begin{pmatrix}
+0 & 1 & 0\\
+0 & 0 & 2\\
+0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix} 
+0 & 0 & 0\\
+1 & 0 & 0\\
+0 & 2 & 0
+\end{pmatrix}
+\end{gather}
+It follows that $\mathsf{T}$ is neither self-adjoint nor normal.
+\item $\mathsf{V} = \mathsf{M}_{2\times n}(\mathbb{R})$ and
+  $\mathsf{T}$ is defined by $\mathsf{T}(A) = A^t$.
+
+Suppose $\beta$ is the standard ordered basis of $\mathsf{M}_{n\times 
+  n}(\mathbb{R})$
 \end{enumerate}
