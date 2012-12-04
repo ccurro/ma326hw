@@ -1,0 +1,51 @@
+Let $A$ be an $n \times n$ real symmetric or complex normal
+matrix. Prove that
+\[
+\text{tr}(A) = \sum\limits_{i=1}^n \lambda_i \text{ and }
+\text{tr}(A^*A) = \sum\limits_{i=1}^n\lvert \lambda_i \rvert^2
+\]
+where $\lambda_i$'s are the (not necessarily distinct) eigenvalues of $A.$
+\begin{enumerate}
+\item Take the diagonal matrix $D = P^*AP$ where the diagonal terms of
+  $D$ are the eigenvalues of $A.$
+\begin{equation}
+\implies A = P^*DP
+\end{equation}
+\begin{align}
+\tr{A} &= \tr{P^*DP}\\
+&=\tr{P^*(DP)}\\
+&=\tr{P^*(PD)}\\
+&=\tr{(P^*P)D}\\
+&=\tr{ID}\\
+&=\tr{D}
+\end{align}
+\begin{equation}
+\implies \sum\limits_{i=1}^n \lambda_i = \tr{D} = \tr{A}
+\end{equation}
+\item Claim: $\tr{A^*A} = \sum\limits_{i=1}^n\lvert \lambda_i\rvert^2$
+\begin{equation}
+A = P^*DP
+\end{equation}
+\begin{align}
+A^* &= (P^*DP)^*\\
+&=P^*D^*P^{**}\\
+&= P^*D^*P
+\end{align}
+\begin{align}
+\implies A^*A &= P^*P^*PP^*DP\\
+&= P^*D^*DP
+\end{align}
+\begin{align}
+\implies \tr{A^*A} &= \tr{P^*D^*DP}\\
+&= \tr{(DP)(P^*D^*)}\\
+&= \tr{(D(PP^*)D^*}\\
+&= \tr{D(I)D^*}\\
+&= \tr{DD^*}
+\end{align}
+Because $D_{ii} = \lambda_i,\; D_{ii}^* = \bar{\lambda}_i$
+\begin{gather}
+\implies (DD^*)_{ii} = \lambda_i\bar{\lambda}_i = \lvert
+\lambda_i\rvert^2\quad \forall i\; (1\leq i \leq n)\\
+\implies \tr{A} = \tr{DD^*} = \sum\limits_{i=1}^n\lvert \lambda_i\rvert^2
+\end{gather}
+\end{enumerate}

@@ -1,0 +1,83 @@
+Let $A$ and $B$ be $n \times n$ matrices that are unitarily
+equivalent.
+\begin{enumerate}
+\item Prove that $\tr{A^*A} = \tr{B*B}$
+\item Use (a) to prove that
+\[
+\sum\limits_{i,j=1}^n\lvert A_{ij}\rvert^2 = \sum\limits_{i,j=1}^n\lvert B_{ij}\rvert^2 
+\]
+\item Use (b) to show that the matrices
+\[
+\begin{pmatrix}
+1 & 2\\
+2 & i
+\end{pmatrix}
+\text{ and }
+\begin{pmatrix}
+i & 4\\
+1 & 1
+\end{pmatrix}
+\]
+\end{enumerate}
+\begin{enumerate}
+\item Claim: $\tr{A^*A} = \tr{B^*B}$
+\begin{align}
+A^* &= (P^*BP)^*\\
+&= P^*B^*P
+\end{align}
+\begin{align}
+\implies A^*A &= P^*B^*PP^*BP\\
+&= P^*B^*IBP\\
+&=P^*B^*BP
+\end{align}
+\begin{align}
+\implies \tr{A^*A} &= \tr{P^*B^*BP}\\
+&=\tr{(BP)(P^*B)}\\
+&=\tr{BB^*}\\
+&=\tr{B^*B}
+\end{align}
+\item Claim: $\sum\limits_{i,j=1}^n\lvert A_{ij}\rvert^2 =
+  \sum\limits_{i,j=1}^n\lvert B_{ij}\rvert^2 $
+\begin{align}
+\tr{A^*A} &= \sum\limits_{i=1}^n(A^*A)_{ii}\\
+&= \sum\limits_{i=1}^n\sum\limits_{j=1}^n(A^*_{ij})(A_{ji})\\
+&=\sum\limits_{i,j=1}^n \overline{A_{ji}}A_{ji}\\
+&=\sum\limits_{i,j=1}^n\lvert A_{ji}\rvert^2
+\end{align}
+\begin{align}
+\implies \sum\limits_{i,j=1}^n\lvert B_{ji}\rvert^2  &= \tr{B^*B}\\
+&=\tr{A^*A}\\
+&=\sum\limits_{i,j=1}^n\lvert A_{ji}\rvert^2 
+\end{align}
+\item Show that \begin{align}
+A= \begin{pmatrix}
+1 & 2 \\
+2 & i
+\end{pmatrix}
+&\text{ and } & 
+B = \begin{pmatrix}
+i & 4\\
+1 & 1
+\end{pmatrix}
+\end{align}
+are not unitarily equivalent.
+
+\begin{align}
+\sum\limits_{i,j=1}^n\lvert A_{ji}\rvert^2  &= 10\\
+\sum\limits_{i,j=1}^n\lvert B_{ji}\rvert^2  &= 19
+\end{align}
+\begin{equation}
+\implies \tr{B^*B} \neq \tr{A^*A} \quad \text{by part (b)}
+\end{equation}
+Suppose $A = P^*BP$ for some unitary matrix $P.$
+\begin{align}
+\tr{A^*A} &= \tr{P^*B^*PP^*BP}\\
+&= \tr{P^*B^*IBP}\\
+&=\tr{(BP)(P^*B^*)}\\
+&=\tr{BIB^*}\\
+&=\tr{BB^*}\\
+&=\tr{B^*B} \; \lightning \text{ Contradiction!}
+\end{align}
+It follow that $A \neq P^*BP$ and thus $A$ and $B$ are not unitarily
+equivalent.
+\end{enumerate}

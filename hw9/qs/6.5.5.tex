@@ -1,0 +1,78 @@
+Which of the following pairs of matrices are unitarily equivalent?
+\begin{enumerate}
+\item $\begin{pmatrix} 1& 0\\0 & 1\end{pmatrix}$ and $\begin{pmatrix}0
+    & 0\\1 & 0\end{pmatrix}$
+\begin{equation}
+\det{\begin{pmatrix} 1-\lambda& 0\\0 & 1-\lambda\end{pmatrix}} = (1-\lambda)^2
+\end{equation}
+\begin{equation}
+\det{\begin{pmatrix}-\lambda & 1\\1 & -\lambda\end{pmatrix}} =
+\lambda^2 -1
+\end{equation}
+Not unitarily equivalent  because they have different eigenvalues.
+\item $\begin{pmatrix}0 & 1\\1 & 0 \end{pmatrix}$ and
+  $\begin{pmatrix}0 & \mfrac{1}{2}\\ \mfrac{1}{2} & 0 \end{pmatrix}$
+\begin{equation}
+\det{
+\begin{pmatrix}
+-\lambda & 1\\
+1 & -\lambda
+\end{pmatrix}
+} = (\lambda-1)(\lambda +1)
+\end{equation}
+\begin{equation}
+\det{
+\begin{pmatrix}
+-\lambda & \mfrac{1}{2}\\
+\mfrac{1}{2} & -\lambda
+\end{pmatrix}} = \lambda^2 - \frac{1}{4}
+\end{equation}
+Not unitarily equivalent  because they have different eigenvalues.
+\item$\begin{pmatrix} 0 & 1 & 0\\-1 & 0  & 0\\0 & 0 & 1\end{pmatrix}$
+  and $\begin{pmatrix} 2 & 0 & 0\\0 & -1 & 0\\ 0 & 0 & 0\end{pmatrix}$
+\begin{equation}
+\det{
+\begin{pmatrix}
+-\lambda & 1 & 0\\
+-1 & -\lambda & 0\\
+0 & 0 & 1-\lambda
+\end{pmatrix}
+} = (1-\lambda)(\lambda+i)(\lambda-i)
+\end{equation}
+\begin{equation}
+\det{
+\begin{pmatrix}
+2-\lambda & 0 & 0\\
+0 & -1 -\lambda & 0\\
+0 & 0 & -\lambda 
+\end{pmatrix}
+} = (2-\lambda)(-1-\lambda)(-\lambda)
+\end{equation}
+Not unitarily equivalent  because they have different eigenvalues.
+\item $\begin{pmatrix}
+0 & 1 & 0\\
+-1 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}$ and
+$\begin{pmatrix}
+1 & 0 & 0\\
+0 & i & 0\\
+0 & 0 & -i
+\end{pmatrix}$
+\item $\begin{pmatrix}
+1 & 1 & 0\\
+0 & 2 & 2\\
+0 & 0 & 3
+  \end{pmatrix}$
+and 
+$
+\begin{pmatrix}
+1 & 0 & 0\\
+0 & 2 & 0\\
+0 & 0 & 3
+\end{pmatrix}$
+
+The two matrices have the same eigenvalues however since the former
+matrix as not asymmetric while the latter is symmetric they cannot be
+orthogonally equivalent.
+\end{enumerate}
