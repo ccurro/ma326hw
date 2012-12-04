@@ -1,0 +1,559 @@
+For each of the following matrices $A,$ find an orthogonal or unitary
+matrix $P$ and a diagonal matrix $D$ such that $P^*AP = D.$ 
+\begin{enumerate}
+\item $\begin{pmatrix} 1 & 2 \\ 2 &1 \end{pmatrix}$
+\begin{gather}
+\det{
+\begin{pmatrix}
+1-\lambda & 2\\
+2 & 1 -\lambda
+\end{pmatrix}
+}=(\lambda-3)(\lambda+1) = 0
+\end{gather}
+\begin{align}
+\implies \lambda_1 &= -1\\
+\lambda_2 &= 3
+\end{align}
+\begin{itemize}
+\item For $\lambda_1 = -1$
+\begin{gather}
+\begin{pmatrix}
+2 & 2\\
+2 & 2
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\
+x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\
+0
+\end{pmatrix}\\
+\implies x_1 = -x_2\\
+\implies E_{\lambda_1} = \left\{
+t\begin{pmatrix}-1\\1\end{pmatrix}\colon t\in \mathbb{R}
+\right\}
+\end{gather}
+\item For $\lambda_2 = 3$
+\begin{gather}
+\begin{pmatrix}
+-2 & 2 \\
+2 & -2
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\
+x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\
+0
+\end{pmatrix}\\
+\implies x_1 = x_2\\
+\implies E_{\lambda_2} = \left\{
+t\begin{pmatrix}1\\1\end{pmatrix} \colon t \in \mathbb{R}
+\right\}
+\end{gather}
+\end{itemize}
+Suppose
+\begin{align}
+w_1 = \begin{pmatrix}-1\\1\end{pmatrix} & & w_2 = \begin{pmatrix}1\\1\end{pmatrix}
+\end{align}
+Let
+\begin{align}
+v_1 &= w_1\\
+v_2 &= w_2 - \frac{\langle w_2,v_1\rangle}{\norm{v_1}}v_1
+\end{align}
+\begin{gather}
+\langle w_2,v_1 \rangle = 0\\
+\implies v_2 = w_2\\
+\norm{v_1}^2  = 2\\
+\implies \norm{v_1} = \sqrt{2}\\
+\implies o_1
+= \begin{pmatrix}\frac{-1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}\end{pmatrix}\\
+\norm{v_2}^2 = 2\\
+\implies \norm{v_2} = \sqrt{2}\\
+\implies o_2 = \begin{pmatrix}\frac{1}{\sqrt{2}}\\\frac{-1}{\sqrt{2}}\end{pmatrix}
+\end{gather}
+Let 
+\begin{gather}
+P = \begin{pmatrix}
+\frac{-1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}
+\end{pmatrix}\\
+P^t = \begin{pmatrix}
+\frac{-1}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}
+\end{pmatrix}\\
+P^tAP^t = D = \begin{pmatrix}
+-1 & 0\\
+0 & 3
+\end{pmatrix}
+\end{gather}
+\item $\begin{pmatrix} 0 & -1\\1 & 0\end{pmatrix}$
+\begin{gather}
+\det{
+\begin{pmatrix}
+-\lambda & -1\\
+1 & \lambda
+\end{pmatrix}
+} = 0\\
+\lambda^2 +1 =0  
+\end{gather}
+\begin{align}
+\implies \lambda_1 &= i\\
+\lambda_2 &= -i
+\end{align}
+\begin{itemize}
+\item For $\lambda_1 = i$
+\begin{gather}
+\begin{pmatrix}
+-i & -1 \\
+1 & -i
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\begin{pmatrix}
+-i & -1\\
+i & 1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\implies x_1 = ix_2\\
+\implies E_{\lambda_1} = \left\{
+t\begin{pmatrix}i\\1\end{pmatrix}\colon t \in \mathbb{C}
+\right\}
+\end{gather}
+\item For $\lambda_2 = -i$
+\begin{gather}
+\begin{pmatrix}
+i & -1\\
+1 & i
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\begin{pmatrix}
+0 & 0\\
+i & -1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\implies x_1 = -ix_2\\
+\implies E_{\lambda_2} =
+\left\{t\begin{pmatrix}-i\\1\end{pmatrix}\colon t \in \mathbb{C}\right\}
+\end{gather}
+\end{itemize}
+Suppose
+\begin{align}
+w_1 = \begin{pmatrix}i\\1\end{pmatrix} & & w_2 = \begin{pmatrix}-i\\1\end{pmatrix}
+\end{align}
+Let
+\begin{align}
+v_1 &= w_1\\
+v_2 &= w_2 -\frac{\langle w_2,v_1\rangle}{\norm{v_1}}v_1
+\end{align}
+\begin{gather}
+\langle w_2,v_1 \rangle = 0\\
+\implies v_2 = w_2\\
+\norm{v_1}^2 = 2\\
+\implies \norm{v_1} = \sqrt{2}\\
+\implies o_1
+= \begin{pmatrix}\frac{i}{\sqrt{2}}\\\frac{1}{\sqrt{2}}\end{pmatrix}\\
+\norm{v_2}^2 = 2\\
+\implies \norm{v_2} = \sqrt{2}\\
+\implies o_2 = \begin{pmatrix}\frac{-i}{\sqrt{2}}\\\frac{1}{\sqrt{2}}
+\end{pmatrix}
+\end{gather}
+\begin{gather}
+\implies P = \begin{pmatrix}
+\frac{i}{\sqrt{2}} & \frac{-i}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}
+\end{pmatrix}\\
+\implies P^* = \begin{pmatrix}
+\frac{-i}{\sqrt{2}} & \frac{1}{\sqrt{2}}\\
+\frac{i}{\sqrt{2}} & \frac{1}{\sqrt{2}}
+\end{pmatrix}\\
+P^*AP = D = \begin{pmatrix}
+i & 0\\
+0 & -i
+\end{pmatrix}
+\end{gather}
+\item $\begin{pmatrix}
+2 & 3-3i\\
+3+3i & 5
+\end{pmatrix}$
+\begin{gather}
+\det{
+\begin{pmatrix}
+2-\lambda & 3-3i\\
+3+3i & 5-\lambda
+\end{pmatrix}
+}=0\\
+(\lambda -8)(\lambda+1) = 0
+\end{gather}
+\begin{align}
+\implies \lambda_1 = -1\\
+\lambda_2 = 8
+\end{align}
+\begin{itemize}
+\item For $\lambda_1 = -1$
+\begin{gather}
+\begin{pmatrix}
+3 & 3-3i\\
+3+3i & 6
+\end{pmatrix}
+\begin{pmatrix}
+x_1 \\x_2
+\end{pmatrix}
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\begin{pmatrix}
+1 & 1-i\\
+1+i & 2
+\end{pmatrix}
+\begin{pmatrix}
+x_1 \\x_2
+\end{pmatrix}
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\implies x_1 = x_2(i-1)\\
+\implies E_{\lambda_1} = \left\{
+t\begin{pmatrix}-1 +i\\1\end{pmatrix}\colon t \in \mathbb{C}
+\right\}
+\end{gather}
+\item For $\lambda_2 = 8$
+\begin{gather}
+\begin{pmatrix}
+-6 & 3-3i\\
+3+3i & -3
+\end{pmatrix}
+\begin{pmatrix}
+x_1 \\x_2
+\end{pmatrix}
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\begin{pmatrix}
+0 & 0\\
+2 & i-1
+\end{pmatrix}
+\begin{pmatrix}
+x_1 \\x_2
+\end{pmatrix}
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\implies x_1 = \frac{1-i}{2}x_2\\
+\implies E_{\lambda_2} = \left\{
+t\begin{pmatrix}\frac{1-i}{2}\\1\end{pmatrix}\colon t \in \mathbb{C}
+\right\}
+\end{gather}
+\end{itemize}
+Suppose
+\begin{align}
+w_1 = \begin{pmatrix}-1 + i\\1\end{pmatrix} & & w_2 = \begin{pmatrix}\frac{1-i}{2}\\1\end{pmatrix}
+\end{align}
+Let
+\begin{align}
+v_1 &= w_1\\
+v_2 &= w_2 - \frac{\langle w_2,v_1\rangle}{\norm{v_1}}v_1
+\end{align}
+\begin{gather}
+\langle w_2,v_1 \rangle = 0 \\
+\implies v_2 = w_2\\
+\norm{v_1}^2 = 3\\
+\implies \norm{v_1} = \sqrt{3}\\
+\implies o_1 = \begin{pmatrix}
+\frac{-1+i}{\sqrt{3}}\\\frac{1}{\sqrt{3}}
+\end{pmatrix}\\
+\norm{v_2}^2 = \frac{3}{2}\\
+\norm{v_2} = \sqrt{\frac{3}{2}}\\
+\implies o_2  = \begin{pmatrix}
+\frac{1-i}{\sqrt{6}}\\\sqrt{\frac{2}{3}}
+\end{pmatrix}
+\end{gather}
+\begin{gather}
+\implies P = \begin{pmatrix}
+\frac{-i+1}{\sqrt{3}} & \frac{1-i}{\sqrt{6}}\\
+\frac{1}{\sqrt{2}}  & \sqrt{\frac{2}{3}}
+\end{pmatrix}\\
+\implies P^* = \begin{pmatrix}
+\frac{-i-i}{\sqrt{3}} & \frac{1}{\sqrt{2}}\\
+\frac{1+i}{\sqrt{6}} & \sqrt{\frac{2}{3}}
+\end{pmatrix}\\
+\implies P^*AP = D = \begin{pmatrix}
+-1 & 0\\
+0 & 8
+\end{pmatrix}
+\end{gather}
+\item $\begin{pmatrix}
+0 & 2 & 2\\
+2 & 0 & 2\\
+2 & 2 & 0
+\end{pmatrix}$
+\begin{gather}
+\det{
+\begin{pmatrix}
+-\lambda & 2 & 2\\
+2 & -\lambda & 2\\
+2 & 2 & -\lambda
+\end{pmatrix}
+}=0\\
+\implies (z+2)^2(x-4) = 0
+\end{gather}
+\begin{align}
+\implies \lambda_1 &= -2\\
+\lambda_2 &= 4
+\end{align}
+\begin{itemize}
+\item For $\lambda_1 = -2$
+\begin{gather}
+\begin{pmatrix}
+-2 & 2 & 2\\
+2 & -2 & 2\\
+2 & 2 & -2
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}\\
+\begin{pmatrix}
+1 & 1 & 1\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}\\
+\implies x_1 = -x_2 + -x_3\\
+\implies E_{\lambda_1} = \left\{
+t\begin{pmatrix}-1\\1\\0\end{pmatrix}
++s\begin{pmatrix}-1\\0\\1\end{pmatrix}\colon t,s \in \mathbb{R}
+\right\}
+\end{gather}
+\item For $\lambda_2 = 4$
+\begin{gather}
+\begin{pmatrix}
+-4 & 2 & 2\\
+2 & -4 & 2\\
+2 & 2 & -4
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}\\
+\begin{pmatrix}
+0 & 1 & -1\\
+1 & 0 & -1\\
+0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}\\
+\implies x_1 = x_3\\
+x_2 = x_3\\
+\implies E_{\lambda_2} = \left\{
+t\begin{pmatrix}1\\1\\1\end{pmatrix}\colon t \in \mathbb{R}
+\right\}
+\end{gather}
+\end{itemize}
+Suppose
+\begin{align}
+w_1 = \begin{pmatrix}-1\\1\\0\end{pmatrix} & & w_2
+= \begin{pmatrix}-1\\0\\1\end{pmatrix} & & w_3 =\begin{pmatrix}1\\1\\1\end{pmatrix}
+\end{align}
+Let
+\begin{align}
+v_1 &= w_1\\
+v_2 &= w_2 - \frac{\langle w_2,v_2\rangle}{\norm{v_1}^2}v_1\\
+v_3 &= w_3 - \left(\frac{\langle w_3,v_2\rangle}{\norm{v_2}^2}v_2 +
+  \frac{\langle w_3,v_1\rangle}{\norm{v_1}^2}v_1\right)\\
+\end{align}
+\begin{gather}
+\langle w_2,v_1 \rangle = 1\\
+\norm{v_1}^2 = 2\\
+\implies \norm{v_1} = \sqrt{2}\\
+\implies o_1 = \begin{pmatrix}\frac{-1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}\\0\end{pmatrix}\\
+\implies v_2
+= \begin{pmatrix}\mfrac{-1}{2}\\\mfrac{-1}{2}\\1\end{pmatrix}\\
+\norm{v_2}^2 = 2\\
+\implies \norm{v_2} = \sqrt{2}\\
+\implies o_2 = \begin{pmatrix}\frac{-1}{\sqrt{2}}\\0\\\frac{1}{\sqrt{2}}\end{pmatrix}\\
+\langle w_3,v_2\rangle = 0\\
+\langle w_3,v_2 \rangle = 0\\
+\implies v_3 = w_3\\
+\norm{v_3}^2 = 3\\
+\implies \norm{v_3} = \sqrt{3}\\
+\implies o_3 = \begin{pmatrix}\frac{1}{\sqrt{3}}\\\frac{1}{\sqrt{3}}\\\frac{1}{\sqrt{3}}\end{pmatrix}
+\end{gather}
+\begin{gather}
+\implies P = \begin{pmatrix}
+\frac{-1}{\sqrt{2}} & \frac{-1}{\sqrt{2}} & \frac{1}{\sqrt{3}}\\
+\frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{3}}\\
+0 & \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{3}}
+\end{pmatrix}\\
+\implies P^* = \begin{pmatrix}
+\frac{-1}{\sqrt{2}} & \frac{1}{\sqrt{2}} & 0\\
+\frac{-1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{3}} & \frac{1}{\sqrt{3}} & \frac{1}{\sqrt{3}}
+\end{pmatrix}\\
+P^*AP = D = \begin{pmatrix}
+-2 & 0 & 0\\
+0 & -2 & 0\\
+0 & 0 & 4
+\end{pmatrix}
+\end{gather}
+\item $\begin{pmatrix}
+2 & 1 & 1 \\
+1 & 2 & 1\\
+1 & 1 & 2
+  \end{pmatrix}$
+\begin{gather}
+\det{
+\begin{pmatrix}
+2-\lambda & 1 & 1 \\
+1 & 2-\lambda & 1\\
+1 & 1 & 2-\lambda
+\end{pmatrix}
+}=0\\
+(1-\lambda)^2(\lambda-4)
+\end{gather}
+\begin{align}
+\implies \lambda_1 &= 1\\
+\lambda_2 &= 4
+\end{align}
+\begin{itemize}
+\item For $\lambda_1=1$
+\begin{gather}
+\begin{pmatrix}
+1 & 1 & 1\\
+1 & 1 & 1\\
+1 & 1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}\\
+\begin{pmatrix}
+1 & 1 & 1\\
+0 & 0 & 0\\
+0 & 0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}\\
+\implies x_1 = -x_2+-x_3\\
+\implies E_{\lambda_1} = \left\{
+t\begin{pmatrix}-1\\1\\0\end{pmatrix}\colon t,s \in \mathbb{R}
+\right\}
+\end{gather}
+\item For $\lambda_2 = 4$
+\begin{gather}
+\begin{pmatrix}
+-2 & 1 & 1\\
+1 & -2 & 1\\
+1 & 1 & -2
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2\\x_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0\\0
+\end{pmatrix}\\
+\implies E_{\lambda_2} = \left\{
+t\begin{pmatrix}1\\1\\1\end{pmatrix}\colon t \in \mathbb{R}
+\right\}
+\end{gather}
+\end{itemize}
+Suppose
+\begin{align}
+w_1 = \begin{pmatrix}-1\\1\\0\end{pmatrix} & & w_2
+= \begin{pmatrix}-1\\0\\1\end{pmatrix} & & w_3 =\begin{pmatrix}1\\1\\1\end{pmatrix}
+\end{align}
+Let
+\begin{align}
+v_1 &= w_1\\
+v_2 &= w_2 - \frac{\langle w_2,v_2\rangle}{\norm{v_1}^2}v_1\\
+v_3 &= w_3 - \left(\frac{\langle w_3,v_2\rangle}{\norm{v_2}^2}v_2 +
+  \frac{\langle w_3,v_1\rangle}{\norm{v_1}^2}v_1\right)\\
+\end{align}
+\begin{gather}
+\langle w_2,v_1 \rangle = 1\\
+\norm{v_1}^2 = 2\\
+\implies \norm{v_1} = \sqrt{2}\\
+\implies o_1 = \begin{pmatrix}\frac{-1}{\sqrt{2}}\\\frac{1}{\sqrt{2}}\\0\end{pmatrix}\\
+\implies v_2
+= \begin{pmatrix}\mfrac{-1}{2}\\\mfrac{-1}{2}\\1\end{pmatrix}\\
+\norm{v_2}^2 = 2\\
+\implies \norm{v_2} = \sqrt{2}\\
+\implies o_2 = \begin{pmatrix}\frac{-1}{\sqrt{2}}\\0\\\frac{1}{\sqrt{2}}\end{pmatrix}\\
+\langle w_3,v_2\rangle = 0\\
+\langle w_3,v_2 \rangle = 0\\
+\implies v_3 = w_3\\
+\norm{v_3}^2 = 3\\
+\implies \norm{v_3} = \sqrt{3}\\
+\implies o_3 = \begin{pmatrix}\frac{1}{\sqrt{3}}\\\frac{1}{\sqrt{3}}\\\frac{1}{\sqrt{3}}\end{pmatrix}
+\end{gather}
+\begin{gather}
+\implies P = \begin{pmatrix}
+\frac{-1}{\sqrt{2}} & \frac{-1}{\sqrt{2}} & \frac{1}{\sqrt{3}}\\
+\frac{1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{3}}\\
+0 & \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{3}}
+\end{pmatrix}\\
+\implies P^* = \begin{pmatrix}
+\frac{-1}{\sqrt{2}} & \frac{1}{\sqrt{2}} & 0\\
+\frac{-1}{\sqrt{2}} & 0 & \frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{3}} & \frac{1}{\sqrt{3}} & \frac{1}{\sqrt{3}}
+\end{pmatrix}\\
+P^*AP = D = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0\\
+0 & 0 & 4
+\end{pmatrix}
+\end{gather}
+\end{enumerate}
