@@ -1,0 +1,28 @@
+Prove that if $\mathsf{V}=\mathsf{W}\oplus \mathsf{W}^\perp$ and
+$\mathsf{T}$ is the projection on $\mathsf{W}$ along
+$\mathsf{W}^\perp,$ then $\mathsf{T}=\mathsf{T}^*.$
+
+Suppose $\mathsf{V} = \mathsf{W}\oplus \mathsf{W}^\perp$ and
+$\mathsf{T}$ is a projection on $\mathsf{W}$ along $\mathsf{W}^\perp$
+
+Suppose $x,y \in \mathsf{V}$ such that $x=x_1+x_2$ and $y=y_1+y_2$
+where $x_1,y_1 \in \mathsf{W}$ and $x_2,y_2 \in \mathsf{W}^\perp$
+
+\begin{align}
+\langle \mathsf{T}(x), y \rangle &= \langle x,\mathsf{T}^*(y)\\
+&=\langle x,y_1+y_2\rangle\\
+&=\langle x_1,y_2 \rangle + \langle x_1,y_2\rangle\\
+&= \langle x_1,y_1 \rangle
+\end{align}
+\begin{align}
+\langle x, \mathsf{T}(y) \rangle &= \langle \mathsf{T}^*(x), y
+\rangle\\
+&= \langle x_1+x_2,y_1 \rangle\\
+&= \langle x_1,y_1 \rangle + \langle x_2,y_2 \rangle \\
+&=\langle x_1,y_1 \rangle
+\end{align}
+\begin{gather}
+\implies \langle x, \mathsf{T}(y) \rangle = \langle x, \mathsf{T}^*(y)
+\rangle \quad \forall x \in \mathsf{V}\\
+\implies \mathsf{T}(y) = \mathsf{T}^*(y) \quad \forall y \in \mathsf{V}
+\end{gather}

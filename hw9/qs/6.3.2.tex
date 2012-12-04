@@ -1,0 +1,61 @@
+For each of the following inner product spaces $\mathsf{V}$ (over F)
+and linear transformations $\mathsf{g}\colon \mathsf{V} \to F,$ find a
+vector $y$ such that $\mathsf{g}(x) = \langle x,y\rangle$ for all $x
+\in \mathsf{V}.$
+\begin{enumerate}
+\item $\mathsf{V} = \mathsf{R}^3,\, \mathsf{g}(a_1,a_2,a_3) =
+  a_1-2a_2+4a_3$
+\begin{equation}
+y = (1,-2,4)
+\end{equation}
+\item $\mathsf{V} = \mathsf{C}^2,\,\mathsf{g}(z_1,z_2) = z_1-2z_2$
+\begin{equation}
+y = (1,-2)
+\end{equation}
+\item $\mathsf{V}=\mathsf{P}^2(\mathbb{R})$ with $\langle f,h\rangle
+  =\int\limits_0^1 f(t)h(t)\; \mathrm{d}t,\; \mathsf{g}(f) =
+  f(0)+f^\prime(1)$
+
+Suppose 
+\begin{align}
+f(t) &= a_2t^2 + a_1t + a_0\\
+y(t) &= b_2t^2 + b_1t + b_0
+\end{align}
+\begin{gather}
+\langle f,y \rangle = \mathsf{g}(f)\\
+f(0) + f^\prime(1) = \int\limits_0^1 f(t)y(t)\; \mathrm{d}t\\
+\implies \begin{pmatrix}
+12 & 15 & 20\\
+3 & 4 & 6\\
+2 & 3 & 6
+\end{pmatrix}
+\begin{pmatrix}
+b_2 \\ b_1\\b_0
+\end{pmatrix}
+=
+\begin{pmatrix}
+120\\
+12\\
+6
+\end{pmatrix}\\
+\implies \begin{pmatrix}
+1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+b_0\\b_1\\b_2
+\end{pmatrix}
+=\begin{pmatrix}
+33 \\ -204\\ 210
+\end{pmatrix}
+\end{gather}
+\begin{align}
+\implies b_2 &= 210\\
+b_1 &= -204\\
+b_0 &= 33
+\end{align}
+\begin{equation}
+\implies y(t) = 210x^2 + -204x + 33
+\end{equation}
+\end{enumerate}
