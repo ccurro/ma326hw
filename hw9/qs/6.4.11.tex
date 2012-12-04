@@ -31,24 +31,25 @@ Let $z = x + y$
 \langle \mathsf{T}(z),z\rangle &= \langle \mathsf{T}(x+y),x+y\rangle
 \\
 &= \langle \mathsf{T}(x+y),x\rangle + \langle
-\mathsf{T}(x+y),x\rangle\\
-&= \langle\mathsf{T}(x)+\mathsf{T}(y),x\rangle + \langle
-\mathsf{T}(x)+\mathsf{T}(y),y\rangle \\
-&= \langle \mathsf{T}(x),x \rangle + \langle \mathsf{T}(y),x \rangle +
-\langle \mathsf{T}(x),y\rangle + \langle \mathsf{T}(y),y\rangle\\
-&= \langle \mathsf{T}(y),x \rangle + \langle \mathsf{T}(x),y\rangle \\
-&= 0
-\end{align}
-\begin{equation}
-\implies \langle \mathsf{T}(y),x \rangle =  -\langle \mathsf{T}(x),y\rangle
-\end{equation}
+\mathsf{T}(x+y),x \rangle\\
+ &= \langle\mathsf{T}(x)+\mathsf{T}(y),x\rangle + \langle
+ \mathsf{T}(x)+\mathsf{T}(y),y\rangle \\
+ &= \langle \mathsf{T}(x),x \rangle + \langle \mathsf{T}(y),x \rangle +
+ \langle \mathsf{T}(x),y\rangle + \langle \mathsf{T}(y),y\rangle\\
+ &= \langle \mathsf{T}(y),x \rangle + \langle \mathsf{T}(x),y\rangle \\
+ &= 0
+ \end{align}
+ \begin{equation}
+ \implies \langle \mathsf{T}(y),x \rangle =  -\langle \mathsf{T}(x),y\rangle
+ \end{equation}
 
-Let $x = x + iy$
+ Let $
+z = x + iy$
 \begin{align}
 \langle \mathsf{T}(z),z\rangle &= \langle \mathsf{T}(x+iy),x+iy\rangle
 \\
 &= \langle \mathsf{T}(x+iy),x\rangle + \langle
-\mathsf{T}(x+iy),x\rangle\\
+\mathsf{T}(x+iy),iy\rangle\\
 &= \langle\mathsf{T}(x)+\mathsf{T}(iy),x\rangle + \langle
 \mathsf{T}(x)+\mathsf{T}(iy),iy\rangle \\
 &= \langle \mathsf{T}(x),x \rangle + \langle \mathsf{T}(iy),x \rangle +
@@ -64,7 +65,7 @@ Let $x = x + iy$
 \begin{gather}
 \implies \langle\mathsf{T}(y),x \rangle =
 \langle\mathsf{T}(x),y\rangle = - \langle\mathsf{T}(x),y\rangle\\
-\implies \langle \mathsf{T}(x),x \rangle = \langle
+\implies \langle \mathsf{T}(y),x \rangle = \langle
 \mathsf{T}(x),y\rangle =0 \quad \forall x,y \in \mathsf{V}
 \end{gather}
 Suppose $x,y$ are nonzero.
@@ -85,7 +86,7 @@ Claim: $\mathsf{T} = \mathsf{T}^*$
 \overline{\langle \mathsf{T}(x),x \rangle} = \langle
 x,\mathsf{T}(x)\rangle\\
 \langle \mathsf{T}(x),x\rangle = \langle x,\mathsf{T}^*(x)\rangle\\
-\implies \langle x, \mathsf{T}(x)\rangle = \langle x
+\implies \langle x, \mathsf{T}(x)\rangle = \langle x,\textsc{}
 \mathsf{T}^*(x)\rangle \quad \forall x \in \mathsf{T}(x)\\
 \implies \mathsf{T}(x) = \mathsf{T}^*(x) \quad \forall x \in
 \mathsf{V}\\
