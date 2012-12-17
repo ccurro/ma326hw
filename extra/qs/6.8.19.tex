@@ -1,0 +1,40 @@
+Prove the following refinement of Theorem 6.37(d).
+\begin{enumerate}
+\item If $0 < \text{rank}A < n$ and $A$ has no negative eigenvalues,
+  then $f$ has no local maximum at $p.$
+\item If $0 < \text{rank}A < n$ and $A$ has no positive eigenvalues,
+  then $f$ has no local minimum at $p.$
+\end{enumerate}
+\begin{enumerate}
+\item Because the matrix $A$ does not have full rank at least 1 of the
+  eigenvalues of $A$ is equal to zero. Therefore some of the
+  eigenvalues are positive while some are zero. Futhermore because the
+  rank of $A$ is greater than zero at least one non-zero eigenvalue
+  is guarenteed. Without loss of
+  generality  assume that $p=0.$ Taking from the proof for Theorem
+  6.37 in the book 
+\begin{equation}
+f(0) = 0 \leq \sum\limits_{i=1}^n\left(\frac{1}{2}\lambda_i - \epsilon
+\right)s_i^2 < f(x)
+\end{equation}
+It follows that because there is at least one non-zero eigenvalue that
+the sum in the above inequality is greater than zero. Therefore
+$f(x)$ is greater than $f(0)=0$ around $0.$ Therefore there is no
+local maximum at $0.$ 
+
+\item Because the matrix $A$ does not have full rank at least 1 of the
+  eigenvalues of $A$ is equal to zero. Therefore some of the
+  eigenvalues are negative while some are zero. Futhermore because the
+  rank of $A$ is greater than zero at least one non-zero eigenvalue
+  is guarenteed. Without loss of
+  generality  assume that $p=0.$ Taking from the proof for Theorem
+  6.37 in the book 
+\begin{equation}
+f(x) < \sum\limits_{i=1}^n\left(\frac{1}{2}\lambda_i + \epsilon
+\right)s_i^2 \geq 0 = f(0)
+\end{equation}
+It follows that because there is at least one non-zero eigenvalue that
+the sum in the above inequality is less than zero. Therefore
+$f(x)$ is less than $f(0)=0$ around $0.$ Therefore there is no
+local minimum at $0.$ 
+\end{enumerate}

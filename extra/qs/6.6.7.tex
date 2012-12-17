@@ -1,0 +1,255 @@
+Let $\mathsf{T}$ be a normal operator on a finite-dimensional complex
+inner product space $\mathsf{V}.$ Use the spectral decomposition
+$\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{T}_k$ of $\mathsf{T}$ to prove the following results.
+\begin{enumerate}
+\item If $g$ is a polynomial, then
+\[
+g(\mathsf{T}) = \sum\limits_{i=1}^k g(\lambda_i)\mathsf{T}_i
+\]
+\begin{equation}
+g(\mathsf{T}) = a_n\mathsf{T}^n+a_{n-1}\mathsf{T}^{n-1} + \dotsb +
+a_1\mathsf{T}
+\end{equation}
+\begin{multline}
+g(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 +\dotsb +
+\lambda_k\mathsf{T}_k) = \\
+\shoveleft{= a_n(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 +\dotsb +
+\lambda_k\mathsf{T}_k)^n +}\\+a_{n+1}(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 +\dotsb+
+\lambda_k\mathsf{T}_k)^{n-1} + \dotsb + \\
++ a_1(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 +\dotsb +
+\lambda_k\mathsf{T}_k)
+\end{multline}
+It follows that the cross terms cancel because
+$\mathsf{T}_i\mathsf{T}_j = 0$ for $i\neq j$
+\begin{multline}
+\implies g(\mathsf{T}) = a_n\left(\lambda_1^n\mathsf{T}^n + \lambda_2^n\mathsf{T}_2^n+
+\dotsb + \lambda_k^n\mathsf{T}^n_k\right) + \\
++ a_{n-1}\left(\lambda_1^{n-1}\mathsf{T}^{n-1} + \lambda_2^{n-1}\mathsf{T}^{n-1}
++ \dotsb + \lambda^{n-1}_k\mathsf{T}^{n-1}_k\right) + \dotsb +\\
++ a_1\left(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+  \lambda_k\mathsf{T}_k\right)
+\end{multline}
+It follows that $\mathsf{T}^n = \mathsf{T}$ because $\mathsf{T}_i$ is a
+projection.
+\begin{multline}
+\implies g(\mathsf{T}) = a_n\left(\lambda_1^n\mathsf{T} + \lambda_2^n\mathsf{T}_2+
+\dotsb + \lambda_k^n\mathsf{T}_k\right) + \\
++ a_{n-1}\left(\lambda_1^{n-1}\mathsf{T} + \lambda_2^{n-1}\mathsf{T}
++ \dotsb + \lambda^{n-1}_k\mathsf{T}_k\right) + \dotsb +\\
++ a_1\left(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+  \lambda_k\mathsf{T}_k\right)
+\end{multline}
+Regroup terms.
+\begin{multline}
+\implies g(\mathsf{T}) = \left(a_n\lambda_1^n\mathsf{T}_1 +
+  a_{n-1}\lambda_1^{n-1}\mathsf{T}_1 + \dotsb +
+  \lambda_1\mathsf{T}_1\right) + \\+ \left(a_n\lambda_2^n\mathsf{T}_2 +
+  a_{n-1}\lambda_2^{n-1}\mathsf{T}_2 + \dotsb +
+  a_1\lambda_2\mathsf{T}_2\right) + \dotsb + \\
++\left(a_n\lambda_k^n\mathsf{T}_k +
+  a_{n-1}\lambda_k^{n-1}\mathsf{T}_k + \dotsb +a_1\lambda_k\mathsf{T}_k\right)
+\end{multline}
+Factoring out each  $\mathsf{T}_i$ yields 
+\begin{equation}
+g(\mathsf{T}) = \mathsf{T}_1g(\lambda_1) + \mathsf{T}_2g(\lambda_2) +
+\dotsb + \mathsf{T}_kg(\lambda_k)
+\end{equation}
+\item If $\mathsf{T}^n = \mathsf{T}_0$ for some $n,$ then $\mathsf{T}=\mathsf{T}_0$
+\begin{align}
+\mathsf{T} &= \lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{T}_k\\
+\mathsf{T}_0 &= \mathsf{T}^n\\
+&= \left(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{T}_k\right)^n\\
+&= \lambda_1^n\mathsf{T}_1^n + \lambda_2^n\mathsf{T}_2^n + \dotsb +
+\lambda_k^n\mathsf{T}_k^n\\
+&= \lambda_1^n\mathsf{T}_1 + \lambda_2^n\mathsf{T}_2 + \dotsb + \lambda_k^n\mathsf{T}_k
+\end{align}
+Let $\lambda_i^n$ be the corresponding eigenvalue of $\mathsf{T}_0.$
+All eigenvalues of $\mathsf{T}_0$ must be zero, therefore $\lambda_i^n
+= \lambda_i$ 
+\begin{align}
+\mathsf{T}_0 &= \lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb
++ \lambda_k\mathsf{T}_k\\
+&= \mathsf{T}
+\end{align}
+\item Let $\mathsf{U}$ be a linear operator on $\mathsf{V}.$ Then
+  $\mathsf{U}$ commutes with $\mathsf{T}$ if and only if $\mathsf{U}$
+  commutes with each $\mathsf{T}_i.$  
+
+$(\implies)$ Suppose $\mathsf{U}\mathsf{T} = \mathsf{T}\mathsf{U}$.
+\begin{gather}
+\mathsf{T} = \lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{T}_k\\
+\mathsf{U}\mathsf{T} = \lambda_1\mathsf{U}\mathsf{T}_1 +
+\lambda_2\mathsf{U}\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{U}\mathsf{T}_k\\
+\mathsf{T}\mathsf{U} = \lambda_1\mathsf{T}_1\mathsf{U} +
+\lambda_2\mathsf{T}_2\mathsf{U}  + \dotsb +
+\lambda_k\mathsf{T}_k\mathsf{U} \\
+\implies  \lambda_1\mathsf{T}_1\mathsf{U} +
+\lambda_2\mathsf{T}_2\mathsf{U}  + \dotsb +
+\lambda_k\mathsf{T}_k\mathsf{U} = \lambda_1\mathsf{U}\mathsf{T}_1 +
+\lambda_2\mathsf{U}\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{U}\mathsf{T}_k\\
+\implies \mathsf{U}\mathsf{T}_i = \mathsf{T}_i\mathsf{U}
+\end{gather}
+
+$(\Leftarrow)$ Suppose $\mathsf{U}\mathsf{T}_i = \mathsf{T}_i\mathsf{U}$
+\begin{align}
+\mathsf{U}\mathsf{T} &= \lambda_1\mathsf{U}\mathsf{T}_i +
+\lambda_2\mathsf{U}\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{U}\mathsf{T}_k\\
+&= \lambda_1\mathsf{T}_1\mathsf{U} + \lambda_2\mathsf{T}_2\mathsf{U} +
+\dotsb + \lambda_k\mathsf{T}_k\mathsf{U}\\
+&= \mathsf{T}\mathsf{U}
+\end{align}
+
+\item There exists a nomral operator $\mathsf{U}$ on $\mathsf{V}$ such
+  that $\mathsf{U}^2 = \mathsf{T}.$
+\begin{align}
+\mathsf{T} &= \lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{T}_k\\
+&= \lambda_1\mathsf{T}^2_1 + \lambda_2\mathsf{T}_2^2 + \dotsb +
+\lambda_k\mathsf{T}_k^2\\
+&= \mathsf{U}^2\\
+\implies \mathsf{U} &= \sqrt{\lambda_1}\mathsf{T}_1 +
+\sqrt{\lambda_2}\mathsf{T}_2 + \dotsb + \sqrt{\lambda_k}\mathsf{T}_k
+\end{align}
+
+\item $\mathsf{T}$ is invertible if and only if $\lambda_i \neq 0$ for
+  $1 \leq i \leq k$
+
+$(\implies)$ Suppose $\mathsf{T}$ is invertible
+
+\begin{equation}
+\mathsf{T} = \lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb + \lambda_k\mathsf{T}_k
+\end{equation}
+Let $\mathsf{T}^{-1} = \mathsf{U}$ 
+\begin{gather}
+\mathsf{U} = \frac{1}{\lambda_1}\mathsf{U}_1 +
+\frac{1}{\lambda_2}\mathsf{U}_2 + \dotsb +
+\frac{1}{\lambda_k}\mathsf{U}_k\\
+\implies \lambda_i \neq 0
+\end{gather}
+
+$(\Leftarrow)$ Suppose $\lambda_i \neq 0$
+\begin{equation}
+\mathsf{T} = \lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb + \lambda_k\mathsf{T}_k
+\end{equation}
+$\implies \exists \mathsf{U}$ with eigenvalues
+$\frac{1}{\lambda_1},\frac{1}{\lambda_2},\dotsc,\frac{1}{\lambda_k}$ 
+\begin{gather}
+\mathsf{U} = \frac{1}{\lambda_1}\mathsf{U}_1 +
+\frac{1}{\lambda_2}\mathsf{U}_2 + \dotsb +
+\frac{1}{\lambda_k}\mathsf{U}_k\\
+\mathsf{U}\mathsf{T} =
+\frac{\lambda_1}{\lambda_1}\mathsf{U}_1\mathsf{T}_1 + 
+\frac{\lambda_2}{\lambda_2}\mathsf{U}_2\mathsf{T}_2 + \dotsb +
+\frac{\lambda_k}{\lambda_k}\mathsf{U}_k\mathsf{T}_k\\
+\mathsf{U}\mathsf{T} = \mathsf{U}_1\mathsf{T}_1 +
+\mathsf{U}_2\mathsf{T}_2 + \dotsb + \mathsf{U}_k\mathsf{T}_k
+\end{gather}
+Because each $R(\mathsf{T}_i) \subseteq \mathsf{V}$ and each
+$\mathsf{U}_i$ is an orthogonal projection each
+$\mathsf{U}_i\mathsf{T}_i$ is an orthogonal projection.
+
+Let $\mathsf{S} = \mathsf{U}\mathsf{T}$ with $\mathsf{S}_i =
+\mathsf{U}_i\mathsf{T}_i$
+
+\begin{gather}
+\mathsf{S} = \mathsf{S}_1 + \mathsf{S}_2 + \dotsb + \mathsf{S}_k\\
+\implies \lambda_1 = \lambda_2 = \dotsb = \lambda_k = 1\\
+\implies \mathsf{S} = \mathsf{I}_\mathsf{V}\\
+\implies \mathsf{U} = \mathsf{T}^{-1}
+\end{gather}
+
+\item $\mathsf{T}$ is a projection if and only if every eigenvalue of
+  $\mathsf{T}$ is $1$ or $0.$
+
+$(\implies)$ Suppose $\mathsf{T}$ is a projection.
+
+\begin{equation}
+\mathsf{T}^n = \mathsf{T}
+\end{equation}
+\begin{align}
+\implies \mathsf{T} &= \left(\lambda_1\mathsf{T}_1 +
+  \lambda_2\mathsf{T}_2 + \dotsb + \lambda_k\mathsf{T}\right)^n\\
+&= \lambda_1^n\mathsf{T}_1^n + \lambda_2^n\mathsf{T}_2^n + \dotsb +
+\lambda_k^n\mathsf{T}_k^n\\
+&= \lambda_1^n\mathsf{T}_1 + \lambda_2^n + \dotsb +
+\lambda_k^n\mathsf{T}_k
+\end{align}
+\begin{gather}
+\implies \lambda_1^n\mathsf{T}_1 + \lambda_2^n + \dotsb +
+\lambda_k^n\mathsf{T}_k = \lambda_1\mathsf{T}_1 +
+\lambda_2\mathsf{T}_2 + \dotsb + \lambda_k\mathsf{T}_k\\
+\implies \lambda_i^n = \lambda_i \\
+\lambda_i^n = \lambda_i  \Leftrightarrow \lambda_i =0 \text{ or } \lambda_i = 1
+\end{gather}
+
+$(\Leftarrow)$ Suppose all $\lambda_1 = 0$ or all $\lambda_i = 1$
+
+\paragraph{Case 1:} Suppose all $\lambda_i =1$ 
+\begin{align}
+\mathsf{T} &= \mathsf{T}_1 + \mathsf{T}_2 + \dotsb + \mathsf{T}_k\\
+\mathsf{T}^n &= \left(\mathsf{T}_1 + \mathsf{T}_2 + \dotsb +
+  \mathsf{T}_k \right)^n\\ 
+&= \mathsf{T}_1^n + \mathsf{T}_2^n + \dotsb + \mathsf{T}_k^n\\
+&= \mathsf{T}_1 + \mathsf{T}_2 + \dotsb + \mathsf{T}_k\\
+&= \mathsf{T}
+\end{align}
+
+\paragraph{Case 1:} Suppose all $\lambda_i =0$ 
+\begin{align}
+\mathsf{T} &= 0\cdot \mathsf{T}_1 + 0\cdot \mathsf{T}_2 + \dotsb +
+0\cdot \mathsf{T}_k\\
+&= 0\\
+&= 0^n\\
+&= \mathsf{T}^n
+\end{align}
+\item $\mathsf{T}= -\mathsf{T}^*$ if and only if every $\lambda_i$ is
+  an imaginary number.
+
+$(\implies)$ Suppose $\mathsf{T}= -\mathsf{T}^*$
+\begin{align}
+\mathsf{T} &= \lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{T}_k\\ 
+\mathsf{T}^* &= \overline{\lambda}_1\mathsf{T}_1^* +
+\overline{\lambda}_2\mathsf{T}_2^* + \dotsb +
+\overline{\lambda}_k\mathsf{T}_k^*\\ 
+&= \overline{\lambda}_1\mathsf{T}_1 +
+\overline{\lambda}_2\mathsf{T}_2 + \dotsb +
+\overline{\lambda}_k\mathsf{T}_k
+\end{align}
+\begin{gather}
+-\mathsf{T}^* = \mathsf{T}\\
+\implies -\overline{\lambda}_1\mathsf{T}_1 -
+\overline{\lambda}_2\mathsf{T}_2 - \dotsb -
+\overline{\lambda}_k\mathsf{T}_k =  \lambda_1\mathsf{T}_1 +
+\lambda_2\mathsf{T}_2 + \dotsb + \lambda_k\mathsf{T}_k\\
+\Leftrightarrow -\overline{\lambda}_j = \lambda_j \Leftrightarrow
+\lambda_j = c_ji, \quad c \in \mathbb{R}
+\end{gather}
+
+$(\Leftarrow)$ Suppose $\lambda_i$ is imaginary.
+\begin{align}
+\mathsf{T} &= \lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{T}_k\\
+\mathsf{T}^* &= \overline{\lambda}_1\mathsf{T}_1^* +
+\overline{\lambda}_2\mathsf{T}_2^* + \dotsb + 
+\overline{\lambda}_k\mathsf{T}_k^*\\
+&= \overline{\lambda}_1\mathsf{T}_1 +
+\overline{\lambda}_2\mathsf{T}_2 + \dotsb + 
+\overline{\lambda}_k\mathsf{T}_k
+\end{align}
+\begin{equation}
+\lambda_j = c_ji \implies \overline{\lambda}_j = -\lambda_j
+\end{equation}
+\begin{align}
+\mathsf{T}^* &= -\lambda_1\mathsf{T}_1 -\lambda_2\mathsf{T}_2 - \dotsb
+- \lambda_k\mathsf{T}_k\\
+&= -\mathsf{T}s
+\end{align}
+\end{enumerate}

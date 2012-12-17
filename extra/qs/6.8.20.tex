@@ -1,0 +1,43 @@
+Prove the following variation of the second-deriviative test for the case of $n=2:$ define
+\[
+D - \left[\a\right]\left[\b\right]-\left[\c\right]^2
+\]
+\begin{enumerate}
+\item If $D > 0$ and $\a >0,$ then $f$ has a local minimum at $p.$
+\item If $D > 0$ and $\a <0,$ then $f$ has a local maximum at $p.$
+\item If $D < 0,$ then $f$ has no local extremum at $p.$
+\item If $D = 0,$ then the test is inconsclusive.
+\end{enumerate}
+\begin{gather}
+\det{
+\begin{pmatrix}[1.5]
+\a -\lambda & \c\\
+\c & \b - \lambda
+\end{pmatrix}} = 0\\
+\implies \lambda^2 - \lambda\left(\a + \b\right) + \a\b -\left(\c\right)^2
+\end{gather}
+\begin{multline}
+\label{fuck you}
+\implies 2\lambda = \a + \b \pm\\ \pm \sqrt{\left(\a\right)^2-\a\b+\left(\b\right)^2+4\left(\c\right)^2}
+\end{multline}
+\begin{enumerate}
+\item Based on the assumptions and equation \ref{fuck you},
+  $\lambda_1$ and $\lambda_2$ are stricly positive therefore $f$ has
+  a local minimum at $p.$
+\item Based on the assumptions and equation \ref{fuck you},
+  $\lambda_1$ and $\lambda_2$ are stricly negative therefore $f$ has
+  a local maximum at $p.$
+\item Based on the assumptions and equation \ref{fuck you},
+  $\lambda_1>0$ and $\lambda_2<0$ therefore $f$ has no local extrema
+  at $p.$
+\item 
+\begin{equation}
+\lambda^2 -\lambda\left(\a +\b\right)
+\end{equation}
+\begin{align}
+\label{double fuck} \implies \lambda_1 &= 0\\
+\lambda_2 &= \a + \b
+\end{align}
+Based on the assumptions and equation \ref{double fuck} the test is
+inconclusive because at least one of the eigen values is zero.
+\end{enumerate}

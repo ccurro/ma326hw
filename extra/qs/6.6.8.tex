@@ -1,0 +1,30 @@
+Use Corollary 1 of the spectral theorem to show that if $\mathsf{T}$
+is a normal operator on a complex finite-dimensional inner product
+space and $\mathsf{U}$ is a linear operator that commutes with
+$\mathsf{T},$ then $\mathsf{U}$ commutes with $\mathsf{T}^*.$
+
+\begin{gather}
+\mathsf{T} = \lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{T}_k\\ 
+\mathsf{T}^* = g(\mathsf{T}) \text{ for some polynomial } g \because
+\mathsf{T} \text{ is normal}
+\end{gather}
+\begin{align}
+\mathsf{T}^* &= g(\lambda_1)\mathsf{T}_1^* + g(\lambda_2)\mathsf{T}^* +
+\dotsb + g(\lambda_k)\mathsf{T}_k^*\\
+&= g(\lambda_1)\mathsf{T}_1 + g(\lambda_2)\mathsf{T} +
+\dotsb + g(\lambda_k)\mathsf{T}_k
+\end{align}
+Because $\mathsf{U}\mathsf{T}=\mathsf{T}\mathsf{U}$ for each
+$\mathsf{T}_i,$ $\mathsf{U}\mathsf{T}_i=\mathsf{T}_i\mathsf{U}$ 
+\begin{align}
+\implies \mathsf{T}^*\mathsf{U} &= g(\lambda_1)\mathsf{T}_1\mathsf{U}
++ g(\lambda_2)\mathsf{T}\mathsf{U} +
+\dotsb + g(\lambda_k)\mathsf{T}_k\mathsf{U}\\
+&= g(\lambda_1)\mathsf{U}\mathsf{T}_1
++ g(\lambda_2)\mathsf{U}\mathsf{T} +
+\dotsb + g(\lambda_k)\mathsf{U}\mathsf{T}_k\\
+&=\mathsf{U}g(\lambda_1)\mathsf{T}_1 + \mathsf{U}g(\lambda_2)\mathsf{T} +
+\dotsb +\mathsf{U}g(\lambda_k)\mathsf{T}_k\\
+&= \mathsf{U}\mathsf{T}^*
+\end{align}

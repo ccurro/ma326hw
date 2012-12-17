@@ -1,0 +1,85 @@
+Let $\mathsf{T}$ be a linear operator on a finite-dimensional inner
+product space $\mathsf{V}.$
+\begin{enumerate}
+\item If $\mathsf{T}$ is an orthogonal projection, prove that
+  $\norm{\mathsf{T}(x)} \leq \norm{x}$ for all $x \in \mathsf{V}.$
+  Give an example of a projection for which this inequality does not
+  hold. What can be concluded about a projection for which the
+  inequality is actually an equality for all $x \in \mathsf{V}.$
+\item Suppose that $\mathsf{T}$ is a projection such that
+  $\norm{\mathsf{T}(x)} \leq \norm{x}$ for $x \in \mathsf{V}.$ Prove
+  that $\mathsf{T}$ is a orthogonal projection.
+\end{enumerate}
+\begin{enumerate}
+\item Suppose $\mathsf{T}$ is an orthogonal projection of $\mathsf{V}$
+  on a subspace $\mathsf{W}.$ 
+
+Suppose $x \in \mathsf{V}$ can be written in the form $x = x_1+x_2$
+such that $x_1 \in \mathsf{W}$ and $x_2 \in \mathsf{W}^\perp$
+\begin{gather}
+\implies \mathsf{T}(x) = x_1\\
+\implies \norm{\mathsf{T}(x)} = \norm{x_1}\\
+\norm{x} = \norm{x_1+x_2}\\
+\implies \norm{x} = \sqrt{\norm{x_1}^2 + \norm{x_2}^2} \quad \because
+x_1 \perp x_2\\
+\sqrt{\norm{x_1}^2 + \norm{x_2}^2} \geq \norm{x_1}\\
+\implies \norm{x} \geq \norm{\mathsf{T}(x)}
+\end{gather} 
+This inequality does not hold for 
+\begin{equation}
+\mathsf{T}(x) = \begin{pmatrix}
+0 & 0\\
+1 & 1
+\end{pmatrix}x ,\quad x \in \mathsf{R}^2
+\end{equation}
+Let $x = (1,2)$
+\begin{gather}
+\begin{pmatrix}
+0 & 0\\
+1 & 1 
+\end{pmatrix}
+\begin{pmatrix}
+1\\2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\3
+\end{pmatrix}\\
+\norm{\begin{pmatrix}
+1\\2
+\end{pmatrix}} = \sqrt{5}\\
+\norm{\begin{pmatrix}
+0\\3
+\end{pmatrix}} = 3\\
+\sqrt{5} < 3
+\end{gather}
+If the inequality is actually an equality then $\mathsf{T}$ is an
+orthogonal linear operator.
+
+\item Suppose that $\mathsf{T}$ is a projection such that
+  $\norm{\mathsf{T}(x)} \leq \norm{x}$ for $x \in \mathsf{V}.$ Prove
+  that $\mathsf{T}$ is an orthogonal projection.
+\paragraph{Case 1} Suppose $\norm{\mathsf{T}(x)}= \norm{x}$
+\begin{gather}
+\mathsf{T}(x) = \lambda_1\mathsf{T}_1(x) + \lambda_2\mathsf{T}_2(x) +
+\dotsb + \lambda_k\mathsf{T}_k\\
+x = \mathsf{T}_1(x) + \mathsf{T}_2(x) + \dotsb + \mathsf{T}_k(x)\\
+\norm{x} = \sqrt{
+ \norm{\mathsf{T}_1(x)}^2 + \norm{\mathsf{T}_2(x)}^2 + \dotsb + \norm{\mathsf{T}_k(x)}^2
+}\\
+\norm{\mathsf{T}(x)} = \sqrt{
+ \lambda_1^2\norm{\mathsf{T}_1(x)}^2 +
+ \lambda_1^2\norm{\mathsf{T}_2(x)}^2 + \dotsb +
+ \lambda_1^2\norm{\mathsf{T}_k(x)}^2
+}\\
+\implies \lambda_1 = \lambda_2 = \dotsb = \lambda_k = 1\\
+\implies \mathsf{T}^* = \mathsf{T}_1^* + \mathsf{T}_2^* + \dotsb +
+\mathsf{T}_k^* =  \mathsf{T}_1 + \mathsf{T}_2 + \dotsb +
+\mathsf{T}_k = \mathsf{T}\\
+\implies \mathsf{T}^2 =  \mathsf{T}_1^2 + \mathsf{T}_2^2 + \dotsb +
+\mathsf{T}_k^2 = \mathsf{T}_1 + \mathsf{T}_2 + \dotsb +
+\mathsf{T}_k = \mathsf{T}
+\end{gather}
+It follows from Theorem 6.24 that $\mathsf{T}$ is an orthogonal projection.
+\paragraph{Case 2} Suppose $\norm{\mathsf{T}(x)} < \norm{x}$
+\end{enumerate}

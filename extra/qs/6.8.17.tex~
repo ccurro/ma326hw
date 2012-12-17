@@ -1,0 +1,110 @@
+For each of the give quadratic forms $K$ on a real inner product space
+$\mathsf{V},$ find a bilinear form $H$ such that $K(x) = H(x,x)$ for
+all $x \in \mathsf{V}.$ Then find an orthonormal basis $\beta$ for
+$\mathsf{V}$ such that $\psi_\beta(H)$ is a diagonal matrix.
+\begin{enumerate}
+\item $K \colon \mathsf{R}^2 \to \mathbb{R}$ defined by
+  $K\begin{pmatrix}t_1\\t_2\end{pmatrix} = -2t_1^2 + 4t_1t_2 +t_2^2$
+Let $ A = \begin{pmatrix} -2&2\\2 & 1\end{pmatrix}$
+\begin{equation}
+\det{
+\begin{pmatrix}
+-2 & -t & 2\\
+2  & 1- t
+\end{pmatrix}
+} = (t+3)(t-2)
+\end{equation}
+\begin{align}
+\implies \lambda_1 &= -3\\
+\lambda_2 &= 2
+\end{align}
+\begin{itemize}
+\item For $\lambda_1= -3$
+\begin{gather}
+\begin{pmatrix}
+1 & 2\\
+2 & 4\\
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\begin{pmatrix}
+1 & 2\\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\implies x_1 + 2x_2 = 0\\
+\implies E_{\lambda_1} = \left\{t\begin{pmatrix}1\\\mfrac{-1}{2}
+  \end{pmatrix}\colon t \in \mathbb{R}\right\}
+\end{gather}
+\item For $\lambda_2 = 2$
+\begin{gather}
+\begin{pmatrix}
+-4 & 2\\
+2 & -1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\begin{pmatrix}
+0 & 0\\
+2 & -1
+\end{pmatrix}
+\begin{pmatrix}
+x_1\\x_2
+\end{pmatrix}
+=
+\begin{pmatrix}
+0\\0
+\end{pmatrix}\\
+\implies 2x_1-x_2 = 0\\
+\implies E_{\lambda_2} = \left\{
+t\begin{pmatrix}\mfrac{1}{2}\\1\end{pmatrix}\colon t \in \mathbb{R}
+\right\}
+\end{gather}
+\end{itemize}
+\begin{gather}
+\left\langle\begin{pmatrix}1\\\mfrac{-1}{2} \end{pmatrix}, 
+\begin{pmatrix}\mfrac{1}{2}\\1\end{pmatrix}\right\rangle=0\\
+\norm{\begin{pmatrix}1\\\mfrac{-1}{2} \end{pmatrix}} =
+\norm{\begin{pmatrix}\mfrac{1}{2}\\1\end{pmatrix}} = \frac{\sqrt{5}}{2}
+\end{gather}
+\begin{align}
+\implies v_1 &=
+\frac{2}{\sqrt{5}}\begin{pmatrix}1\\\mfrac{-1}{2} \end{pmatrix}\\
+v_2 & = \frac{2}{\sqrt{5}}\begin{pmatrix}\mfrac{1}{2}\\1\end{pmatrix}
+\end{align}
+\begin{equation}
+\implies \beta = \left\{\frac{2}{\sqrt{5}}\begin{pmatrix}1\\\mfrac{-1}{2} \end{pmatrix}, \frac{2}{\sqrt{5}}\begin{pmatrix}\mfrac{1}{2}\\1\end{pmatrix}\right\}
+\end{equation}
+\begin{gather}
+\implies Q = 
+\frac{2}{\sqrt{5}} = \begin{pmatrix}
+1 & \mfrac{1}{2}\\
+\mfrac{-1}{2} & 1
+\end{pmatrix}\\
+Q^tAQ = \psi_\beta(H) = \frac{4}{5}\begin{pmatrix}
+\mfrac{-15}{4} & 0\\
+0 & \mfrac{5}{2}
+\end{pmatrix}
+= \begin{pmatrix}
+-3 & 0\\
+0 & 2
+\end{pmatrix}
+\end{gather}
+\item $K \colon \mathsf{R}^2 \to \mathbb{R}$ defined by 
+\end{enumerate}

@@ -1,0 +1,64 @@
+Let $\mathsf{T}$ be a normal operator on a finite-dimensional complex
+inner product space $\mathsf{V}.$ Use the spectral decomposition
+$\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+\lambda_k\mathsf{T}_k$ of $\mathsf{T}$ to prove the following results.
+\begin{enumerate}
+\item If $g$ is a polynomial, then
+\[
+g(\mathsf{T}) = \sum\limits_{i=1}^k g(\lambda_i)\mathsf{T}_i
+\]
+\begin{equation}
+g(\mathsf{T}) = a_n\mathsf{T}^n+a_{n-1}\mathsf{T}^{n-1} + \dotsb +
+a_1\mathsf{T} + a_0\mathsf{I}_\mathsf{V}
+\end{equation}
+\begin{multline}
+g(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 +\dotsb +
+\lambda_k\mathsf{T}_k) = \\
+\shoveleft{= a_n(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 +\dotsb +
+\lambda_k\mathsf{T}_k)^n +}\\+a_{n+1}(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 +\dotsb+
+\lambda_k\mathsf{T}_k)^{n-1} + \dotsb + \\
++ a_1(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 +\dotsb +
+\lambda_k\mathsf{T}_k) + a_0\mathsf{I}_\mathsf{V}
+\end{multline}
+It follows that the cross terms cancel because
+$\mathsf{T}_i\mathsf{T}_j = 0$ for $i\neq j$
+\begin{multline}
+\implies g(\mathsf{T}) = a_n\left(\lambda_1^n\mathsf{T}^n + \lambda_2^n\mathsf{T}_2^n+
+\dotsb + \lambda_k^n\mathsf{T}^n_k\right) + \\
++ a_{n-1}\left(\lambda_1^{n-1}\mathsf{T}^{n-1} + \lambda_2^{n-1}\mathsf{T}^{n-1}
++ \dotsb + \lambda^{n-1}_k\mathsf{T}^{n-1}_k\right) + \dotsb +\\
++ a_1\left(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+  \lambda_k\mathsf{T}_k\right) + a_0\mathsf{I}_\mathsf{V}
+\end{multline}
+It follows that $\mathsf{T}^n = \mathsf{T}$ because $\mathsf{T}_i$ is a
+projection.
+\begin{multline}
+\implies g(\mathsf{T}) = a_n\left(\lambda_1^n\mathsf{T} + \lambda_2^n\mathsf{T}_2+
+\dotsb + \lambda_k^n\mathsf{T}_k\right) + \\
++ a_{n-1}\left(\lambda_1^{n-1}\mathsf{T} + \lambda_2^{n-1}\mathsf{T}
++ \dotsb + \lambda^{n-1}_k\mathsf{T}_k\right) + \dotsb +\\
++ a_1\left(\lambda_1\mathsf{T}_1 + \lambda_2\mathsf{T}_2 + \dotsb +
+  \lambda_k\mathsf{T}_k\right) +  a_0\mathsf{I}_\mathsf{V}
+\end{multline}
+Regroup terms.
+\begin{multline}
+\implies g(\mathsf{T}) = \left(a_n\lambda_1^n\mathsf{T}_1 +
+  a_{n-1}\lambda_1^{n-1}\mathsf{T}_1 + \dotsb +
+  \lambda_1\mathsf{T}_1\right) + \\+ \left(a_n\lambda_2^n\mathsf{T}_2 +
+  a_{n-1}\lambda_2^{n-1}\mathsf{T}_2 + \dotsb +
+  a_1\lambda_2\mathsf{T}_2\right) + \dotsb + \\
++\left(a_n\lambda_k^n\mathsf{T}_k +
+  a_{n-1}\lambda_k^{n-1}\mathsf{T}_k + \dotsb +a_1\lambda_k\mathsf{T}_k\right)
+\end{multline}
+Factoring out each  $\mathsf{T}_i$ yields 
+\begin{equation}
+g(\mathsf{T}) = \mathsf{T}_1g(\lambda_1) + \mathsf{T}_2g(\lambda_2) +
+\dotsb + \mathsf{T}_kg(\lambda_k)
+\end{equation}
+\item
+\item
+\item
+\item
+\item
+\item
+\end{enumerate}
